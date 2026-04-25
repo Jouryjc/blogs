@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8B6914"/>
+    </marker>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+  </style>
+  <rect width="960" height="540" fill="#FFF8EE" rx="12"/>
+  <text x="480" y="45" text-anchor="middle" font-size="22" font-weight="bold" fill="#5C3D1A">Agent 记忆四层进化路径</text>
+  <g transform="translate(60, 100)">
+    <rect width="160" height="320" rx="16" fill="#FFF0DB" stroke="#E8A849" stroke-width="2" filter="url(#shadow)"/>
+    <text x="80" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#5C3D1A">第一层</text>
+    <text x="80" y="58" text-anchor="middle" font-size="14" fill="#8B6914">Python 列表</text>
+    <rect x="45" y="80" width="70" height="90" rx="6" fill="#FFFFFF" stroke="#E8A849" stroke-width="1.5"/>
+    <line x1="55" y1="100" x2="105" y2="100" stroke="#D4A853" stroke-width="1"/>
+    <line x1="55" y1="115" x2="105" y2="115" stroke="#D4A853" stroke-width="1"/>
+    <line x1="55" y1="130" x2="105" y2="130" stroke="#D4A853" stroke-width="1"/>
+    <line x1="55" y1="145" x2="95" y2="145" stroke="#D4A853" stroke-width="1"/>
+    <text x="80" y="210" text-anchor="middle" font-size="12" fill="#5C3D1A">持久化</text>
+    <text x="80" y="228" text-anchor="middle" font-size="18" fill="#E74C3C">✗</text>
+    <text x="80" y="258" text-anchor="middle" font-size="12" fill="#5C3D1A">语义理解</text>
+    <text x="80" y="276" text-anchor="middle" font-size="14" fill="#999999">—</text>
+    <text x="80" y="306" text-anchor="middle" font-size="12" fill="#5C3D1A">关系推理</text>
+    <text x="80" y="324" text-anchor="middle" font-size="14" fill="#999999">—</text>
+  </g>
+  <line x1="230" y1="260" x2="270" y2="260" stroke="#8B6914" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <g transform="translate(280, 100)">
+    <rect width="160" height="320" rx="16" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="80" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#2E7D32">第二层</text>
+    <text x="80" y="58" text-anchor="middle" font-size="14" fill="#388E3C">Markdown 文件</text>
+    <rect x="45" y="80" width="60" height="80" rx="4" fill="#FFFFFF" stroke="#4CAF50" stroke-width="1.5"/>
+    <path d="M95,80 L105,90 L105,160 L45,160 L45,80 Z" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+    <text x="75" y="130" text-anchor="middle" font-size="11" fill="#388E3C">.md</text>
+    <text x="80" y="210" text-anchor="middle" font-size="12" fill="#2E7D32">持久化</text>
+    <text x="80" y="228" text-anchor="middle" font-size="18" fill="#27AE60">✓</text>
+    <text x="80" y="258" text-anchor="middle" font-size="12" fill="#2E7D32">语义理解</text>
+    <text x="80" y="276" text-anchor="middle" font-size="18" fill="#E74C3C">✗</text>
+    <text x="80" y="306" text-anchor="middle" font-size="12" fill="#2E7D32">关系推理</text>
+    <text x="80" y="324" text-anchor="middle" font-size="18" fill="#E74C3C">✗</text>
+  </g>
+  <line x1="450" y1="260" x2="490" y2="260" stroke="#8B6914" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <g transform="translate(500, 100)">
+    <rect width="160" height="320" rx="16" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="80" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565C0">第三层</text>
+    <text x="80" y="58" text-anchor="middle" font-size="14" fill="#1976D2">向量搜索</text>
+    <circle cx="60" cy="100" r="6" fill="#E53935" opacity="0.8"/>
+    <circle cx="85" cy="115" r="5" fill="#1E88E5" opacity="0.8"/>
+    <circle cx="72" cy="130" r="7" fill="#43A047" opacity="0.8"/>
+    <circle cx="100" cy="105" r="5" fill="#FB8C00" opacity="0.8"/>
+    <circle cx="95" cy="135" r="6" fill="#8E24AA" opacity="0.8"/>
+    <circle cx="65" cy="148" r="4" fill="#00ACC1" opacity="0.8"/>
+    <circle cx="90" cy="155" r="5" fill="#E53935" opacity="0.7"/>
+    <text x="80" y="210" text-anchor="middle" font-size="12" fill="#1565C0">持久化</text>
+    <text x="80" y="228" text-anchor="middle" font-size="18" fill="#27AE60">✓</text>
+    <text x="80" y="258" text-anchor="middle" font-size="12" fill="#1565C0">语义理解</text>
+    <text x="80" y="276" text-anchor="middle" font-size="18" fill="#27AE60">✓</text>
+    <text x="80" y="306" text-anchor="middle" font-size="12" fill="#1565C0">关系推理</text>
+    <text x="80" y="324" text-anchor="middle" font-size="18" fill="#E74C3C">✗</text>
+  </g>
+  <line x1="670" y1="260" x2="710" y2="260" stroke="#8B6914" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <g transform="translate(720, 100)">
+    <rect width="180" height="320" rx="16" fill="#FFF3E0" stroke="#FF9800" stroke-width="2.5" filter="url(#shadow)"/>
+    <text x="90" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#E65100">第四层</text>
+    <text x="90" y="58" text-anchor="middle" font-size="14" fill="#F57C00">图谱混合架构</text>
+    <circle cx="70" cy="100" r="12" fill="#FF7043" stroke="#E65100" stroke-width="1.5"/>
+    <circle cx="110" cy="90" r="10" fill="#42A5F5" stroke="#1565C0" stroke-width="1.5"/>
+    <circle cx="90" cy="135" r="11" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+    <circle cx="130" cy="125" r="9" fill="#FFA726" stroke="#E65100" stroke-width="1.5"/>
+    <circle cx="60" cy="150" r="8" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1.5"/>
+    <line x1="70" y1="100" x2="110" y2="90" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+    <line x1="70" y1="100" x2="90" y2="135" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+    <line x1="110" y1="90" x2="130" y2="125" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+    <line x1="90" y1="135" x2="130" y2="125" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+    <line x1="60" y1="150" x2="90" y2="135" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+    <text x="90" y="210" text-anchor="middle" font-size="12" fill="#E65100">持久化</text>
+    <text x="90" y="228" text-anchor="middle" font-size="18" fill="#27AE60">✓</text>
+    <text x="90" y="258" text-anchor="middle" font-size="12" fill="#E65100">语义理解</text>
+    <text x="90" y="276" text-anchor="middle" font-size="18" fill="#27AE60">✓</text>
+    <text x="90" y="306" text-anchor="middle" font-size="12" fill="#E65100">关系推理</text>
+    <text x="90" y="324" text-anchor="middle" font-size="18" fill="#27AE60">✓</text>
+  </g>
+  <text x="480" y="470" text-anchor="middle" font-size="13" fill="#8B6914" font-style="italic">每一层解决前一层的核心缺陷，但也引入新的局限</text>
+  <text x="480" y="510" text-anchor="middle" font-size="11" fill="#A0845C">© 码农小余 · Agent 记忆架构解析</text>
+</svg>

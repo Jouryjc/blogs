@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8B6914"/>
+    </marker>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.1"/></filter>
+  </defs>
+  <style>
+    text { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+  </style>
+  <rect width="960" height="600" fill="#FFF8EE" rx="12"/>
+  <text x="480" y="45" text-anchor="middle" font-size="22" font-weight="bold" fill="#5C3D1A">Cognee 三层存储架构</text>
+  <g transform="translate(80, 80)">
+    <rect width="240" height="160" rx="16" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="120" y="35" text-anchor="middle" font-size="17" font-weight="bold" fill="#2E7D32">关系型存储</text>
+    <rect x="75" y="50" width="90" height="60" rx="4" fill="#FFFFFF" stroke="#4CAF50" stroke-width="1.5"/>
+    <line x1="75" y1="70" x2="165" y2="70" stroke="#4CAF50" stroke-width="1"/>
+    <line x1="75" y1="90" x2="165" y2="90" stroke="#4CAF50" stroke-width="1"/>
+    <line x1="120" y1="50" x2="120" y2="110" stroke="#4CAF50" stroke-width="1"/>
+    <text x="120" y="140" text-anchor="middle" font-size="12" fill="#388E3C">溯源：来源、时间、权限</text>
+  </g>
+  <g transform="translate(640, 80)">
+    <rect width="240" height="160" rx="16" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="120" y="35" text-anchor="middle" font-size="17" font-weight="bold" fill="#1565C0">向量存储</text>
+    <circle cx="90" cy="70" r="7" fill="#E53935" opacity="0.8"/>
+    <circle cx="115" cy="85" r="6" fill="#1E88E5" opacity="0.8"/>
+    <circle cx="100" cy="100" r="8" fill="#43A047" opacity="0.8"/>
+    <circle cx="135" cy="75" r="5" fill="#FB8C00" opacity="0.8"/>
+    <circle cx="130" cy="100" r="6" fill="#8E24AA" opacity="0.8"/>
+    <circle cx="150" cy="88" r="5" fill="#00ACC1" opacity="0.8"/>
+    <text x="120" y="140" text-anchor="middle" font-size="12" fill="#1976D2">语义：Embedding、相似度</text>
+  </g>
+  <g transform="translate(360, 380)">
+    <rect width="240" height="160" rx="16" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" filter="url(#shadow)"/>
+    <text x="120" y="35" text-anchor="middle" font-size="17" font-weight="bold" fill="#E65100">图存储</text>
+    <circle cx="80" cy="70" r="10" fill="#FF7043" stroke="#E65100" stroke-width="1.5"/>
+    <circle cx="120" cy="55" r="9" fill="#42A5F5" stroke="#1565C0" stroke-width="1.5"/>
+    <circle cx="160" cy="75" r="10" fill="#66BB6A" stroke="#2E7D32" stroke-width="1.5"/>
+    <circle cx="100" cy="100" r="8" fill="#FFA726" stroke="#E65100" stroke-width="1.5"/>
+    <circle cx="140" cy="105" r="8" fill="#AB47BC" stroke="#7B1FA2" stroke-width="1.5"/>
+    <line x1="80" y1="70" x2="120" y2="55" stroke="#8B6914" stroke-width="1" opacity="0.5"/>
+    <line x1="120" y1="55" x2="160" y2="75" stroke="#8B6914" stroke-width="1" opacity="0.5"/>
+    <line x1="80" y1="70" x2="100" y2="100" stroke="#8B6914" stroke-width="1" opacity="0.5"/>
+    <line x1="160" y1="75" x2="140" y2="105" stroke="#8B6914" stroke-width="1" opacity="0.5"/>
+    <line x1="100" y1="100" x2="140" y2="105" stroke="#8B6914" stroke-width="1" opacity="0.5"/>
+    <text x="120" y="140" text-anchor="middle" font-size="12" fill="#F57C00">关系：实体、因果、层级</text>
+  </g>
+  <g transform="translate(380, 230)">
+    <rect width="200" height="130" rx="20" fill="#FFFDE7" stroke="#FFC107" stroke-width="2.5" filter="url(#shadow)"/>
+    <circle cx="100" cy="40" r="22" fill="#FFE082" stroke="#F9A825" stroke-width="2"/>
+    <circle cx="90" cy="35" r="4" fill="#5C3D1A"/>
+    <circle cx="110" cy="35" r="4" fill="#5C3D1A"/>
+    <path d="M 88,48 Q 100,56 112,48" fill="none" stroke="#5C3D1A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="18" x2="100" y2="8" stroke="#F9A825" stroke-width="2"/>
+    <circle cx="100" cy="6" r="4" fill="#FF7043"/>
+    <text x="100" y="85" text-anchor="middle" font-size="18" font-weight="bold" fill="#5C3D1A">Cognee</text>
+    <text x="50" y="110" text-anchor="middle" font-size="10" fill="#E65100">cognify()</text>
+    <text x="100" y="120" text-anchor="middle" font-size="10" fill="#1565C0">memify()</text>
+    <text x="150" y="110" text-anchor="middle" font-size="10" fill="#2E7D32">recall()</text>
+    <text x="100" y="128" text-anchor="middle" font-size="10" fill="#8E24AA">forget()</text>
+  </g>
+  <line x1="320" y1="200" x2="400" y2="260" stroke="#4CAF50" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <line x1="640" y1="200" x2="560" y2="260" stroke="#2196F3" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <line x1="480" y1="380" x2="480" y2="365" stroke="#FF9800" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+  <text x="480" y="575" text-anchor="middle" font-size="11" fill="#A0845C">© 码农小余 · Cognee 三层存储架构解析</text>
+</svg>

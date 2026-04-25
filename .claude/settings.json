@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/yjcjour/.claude/skills/**)",
+      "Read(//Users/yjcjour/.claude/**)",
+      "Edit(~/.claude/skills/create-webchat-article/**)",
+      "WebFetch(domain:threadreaderapp.com)",
+      "WebFetch(domain:blog.dailydoseofds.com)",
+      "Read(//Users/yjcjour/.claude/skills/baoyu-image-gen/**)",
+      "Read(//Users/yjcjour/.agents/skills/baoyu-image-gen/**)"
+    ]
+  }
+}
