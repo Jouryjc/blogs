@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>NVIDIA API Key 怎么拿</title>
+</head>
+<body>
+  <p>NVIDIA API Key 的入口在 build.nvidia.com 的模型页面里，不是在单独的开发者后台。</p>
+  <p>直接按这几步操作：登录账号，进入任意 NIM 或模型页，点击 Get API Key，再点 Generate Key，最后把生成的 key 立即保存。</p>
+  <img src="./images/2026-04-20-nvidia-key/2026-04-20-nvidia-key-card-1.png" alt="NVIDIA API Key 获取流程">
+  <p>有三点需要提前记住：注册时可能会碰到手机验证码；key 通常不会反复展示；拿到以后最好第一时间存进密码管理器或安全环境变量。</p>
+  <img src="./images/2026-04-20-nvidia-key/2026-04-20-nvidia-key-card-2.png" alt="关键提醒">
+  <p>拿到 key 之后，最常见的接法就是把它配置成 NVIDIA_API_KEY 环境变量；如果你接 NVIDIA 的通用推理入口，Base URL 可以填 https://integrate.api.nvidia.com/v1 。</p>
+  <img src="./images/2026-04-20-nvidia-key/2026-04-20-nvidia-key-card-3.png" alt="如何使用">
+  <p>一句话：登录 build.nvidia.com，点 Get API Key，生成后马上保存。</p>
+</body>
+</html>

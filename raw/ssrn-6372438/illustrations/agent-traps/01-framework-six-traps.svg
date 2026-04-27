@@ -1,0 +1,93 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f3ea"/>
+      <stop offset="100%" stop-color="#efe4d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#7b5d3a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1504" height="1104" rx="28" fill="none" stroke="#cfb893" stroke-width="2"/>
+
+  <text x="120" y="130" font-size="56" font-weight="700" fill="#22313f" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+    AI Agent Traps 六层攻击面
+  </text>
+  <text x="120" y="182" font-size="24" fill="#5e6a71" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+    不是只防提示词，而是要沿着 Agent 的整条工作链路做安全设计
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="530" y="430" width="540" height="340" rx="34" fill="#213547"/>
+    <text x="800" y="535" text-anchor="middle" font-size="68" font-weight="700" fill="#f7efe2" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+      Agent
+    </text>
+    <text x="800" y="602" text-anchor="middle" font-size="28" fill="#d9e2e9" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+      感知 · 推理 · 记忆 · 行动
+    </text>
+    <text x="800" y="648" text-anchor="middle" font-size="28" fill="#d9e2e9" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+      协作系统 · 人类审批
+    </text>
+    <text x="800" y="708" text-anchor="middle" font-size="24" fill="#96b4c6" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+      攻击不一定打模型本体
+    </text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="118" y="250" width="360" height="190" rx="28" fill="#d95d39"/>
+    <text x="158" y="320" font-size="40" font-weight="700" fill="#fff6ef" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">1. 感知层陷阱</text>
+    <text x="158" y="370" font-size="24" fill="#fff6ef" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">隐藏文本、动态注入、</text>
+    <text x="158" y="405" font-size="24" fill="#fff6ef" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">图片隐写、格式语法伪装</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1122" y="250" width="360" height="190" rx="28" fill="#4f6d7a"/>
+    <text x="1162" y="320" font-size="40" font-weight="700" fill="#eef6fb" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">2. 推理层陷阱</text>
+    <text x="1162" y="370" font-size="24" fill="#eef6fb" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">偏置措辞、伪装红队、</text>
+    <text x="1162" y="405" font-size="24" fill="#eef6fb" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">人设回灌与角色固化</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="118" y="500" width="360" height="190" rx="28" fill="#2d936c"/>
+    <text x="158" y="570" font-size="40" font-weight="700" fill="#eefbf5" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">3. 记忆与学习</text>
+    <text x="158" y="620" font-size="24" fill="#eefbf5" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">RAG 污染、长期记忆投毒、</text>
+    <text x="158" y="655" font-size="24" fill="#eefbf5" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">few-shot / 反馈信号操控</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1122" y="500" width="360" height="190" rx="28" fill="#7a3e65"/>
+    <text x="1162" y="570" font-size="40" font-weight="700" fill="#fbf0f7" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">4. 行动层陷阱</text>
+    <text x="1162" y="620" font-size="24" fill="#fbf0f7" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">嵌入式 jailbreak、</text>
+    <text x="1162" y="655" font-size="24" fill="#fbf0f7" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">数据外泄、子代理劫持</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="118" y="750" width="360" height="190" rx="28" fill="#c0841a"/>
+    <text x="158" y="820" font-size="40" font-weight="700" fill="#fff8eb" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">5. 系统层陷阱</text>
+    <text x="158" y="870" font-size="24" fill="#fff8eb" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">拥塞、级联失稳、默契合谋、</text>
+    <text x="158" y="905" font-size="24" fill="#fff8eb" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">碎片重组、Sybil 攻击</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1122" y="750" width="360" height="190" rx="28" fill="#556271"/>
+    <text x="1162" y="820" font-size="40" font-weight="700" fill="#f2f5f7" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">6. 人类审批陷阱</text>
+    <text x="1162" y="870" font-size="24" fill="#f2f5f7" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">利用自动化偏见、</text>
+    <text x="1162" y="905" font-size="24" fill="#f2f5f7" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">审批疲劳和“看起来合理”</text>
+  </g>
+
+  <path d="M478 345 C550 360 580 400 620 470" stroke="#b98f5a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M1122 345 C1050 360 1020 400 980 470" stroke="#7f93a0" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M478 595 C545 595 580 595 620 595" stroke="#5a8b74" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M1122 595 C1055 595 1020 595 980 595" stroke="#8d6480" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M478 845 C550 830 580 790 620 730" stroke="#b99753" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M1122 845 C1050 830 1020 790 980 730" stroke="#76828d" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <text x="120" y="1060" font-size="28" font-weight="700" fill="#22313f" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+    核心变化
+  </text>
+  <text x="120" y="1105" font-size="24" fill="#4c5b63" font-family="PingFang SC, Noto Sans CJK SC, Heiti SC, sans-serif">
+    从“模型会不会被绕过”转向“整个外部环境会不会被武器化”
+  </text>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "prompt": "---\nillustration_id: 01\ntype: framework\nstyle: editorial\n---\n\nAI Agent Traps 六层攻击面 - Conceptual Framework\n\nSTRUCTURE: symmetrical framework diagram, central agent card in the middle, six surrounding category cards with clean connectors.\n\nNODES:\n- 中心: Agent\n- 左上: 感知层陷阱\n- 右上: 推理层陷阱\n- 左中: 记忆与学习\n- 右中: 行动层陷阱\n- 左下: 系统层陷阱\n- 右下: 人类审批陷阱\n\nRELATIONSHIPS:\n- All six outer nodes point toward the center Agent\n- Visual emphasis that attacks do not only target the model itself, but the whole operating environment\n- Add a short footer caption: 从“模型会不会被绕过”到“环境会不会被武器化”\n\nLABELS:\n- 感知层陷阱: 隐藏文本 / 动态注入 / 图片隐写\n- 推理层陷阱: 偏置措辞 / critic 绕过 / 人设回灌\n- 记忆与学习: RAG 污染 / 长期记忆投毒 / few-shot 操控\n- 行动层陷阱: jailbreak / 数据外泄 / 子代理劫持\n- 系统层陷阱: 拥塞 / 级联 / 默契合谋 / Sybil\n- 人类审批陷阱: 自动化偏见 / 审批疲劳\n\nCOLORS:\n- warm cream paper background\n- deep slate center card\n- coral, teal, ochre, and muted plum for category cards\n- soft shadows, restrained contrast, editorial tech explain style\n\nSTYLE:\n- clean composition with generous white space\n- modern editorial infographic, not cartoonish, not photorealistic\n- large legible Chinese text, at most one short line or two short lines per label\n- simple geometric shapes, rounded rectangles, subtle grid or paper texture\n- crisp vector-like illustration with polished magazine quality\n\nASPECT: 16:9\n\nClean composition with generous white space. Simple or no background. Main elements centered or positioned by content needs.\n",
+  "aspect_ratio": "16:9",
+  "output_format": "png",
+  "num_images": 1,
+  "resolution": "1K",
+  "safety_tolerance": "BLOCK_NONE"
+}
