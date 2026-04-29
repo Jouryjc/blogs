@@ -1,0 +1,57 @@
+{
+  "title": "别只跑 /init，AGENTS.md 和 CLAUDE.md 要这样养",
+  "platform": "xiaohongshu",
+  "format": "8-image carousel, 1080x1440",
+  "sourceArticle": "outputs/agents-md-claude-md.md",
+  "slides": [
+    {
+      "no": "01",
+      "svg": "slides/01-agents-md-claude-md.svg",
+      "png": "slides/01-agents-md-claude-md.png",
+      "title": "别只跑 /init"
+    },
+    {
+      "no": "02",
+      "svg": "slides/02-agents-md-claude-md.svg",
+      "png": "slides/02-agents-md-claude-md.png",
+      "title": "它不是配置文件 而是工作契约"
+    },
+    {
+      "no": "03",
+      "svg": "slides/03-agents-md-claude-md.svg",
+      "png": "slides/03-agents-md-claude-md.png",
+      "title": "别急着开工 先验证规则是否生效"
+    },
+    {
+      "no": "04",
+      "svg": "slides/04-agents-md-claude-md.svg",
+      "png": "slides/04-agents-md-claude-md.png",
+      "title": "只写会改变行为的内容"
+    },
+    {
+      "no": "05",
+      "svg": "slides/05-agents-md-claude-md.svg",
+      "png": "slides/05-agents-md-claude-md.png",
+      "title": "把 prompt 沉淀成规则"
+    },
+    {
+      "no": "06",
+      "svg": "slides/06-agents-md-claude-md.svg",
+      "png": "slides/06-agents-md-claude-md.png",
+      "title": "文件不是越厚越好"
+    },
+    {
+      "no": "07",
+      "svg": "slides/07-agents-md-claude-md.svg",
+      "png": "slides/07-agents-md-claude-md.png",
+      "title": "按作用范围 拆成三层记忆"
+    },
+    {
+      "no": "08",
+      "svg": "slides/08-agents-md-claude-md.svg",
+      "png": "slides/08-agents-md-claude-md.png",
+      "title": "最小模板 先从这 6 块开始"
+    }
+  ],
+  "caption": "caption.md"
+}

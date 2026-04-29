@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2752" height="1536" viewBox="0 0 2752 1536">
+  <defs>
+    <style>
+      .bg { fill: #fff7e8; }
+      .ink { fill: #0b2545; }
+      .muted { fill: #5f6f86; }
+      .stroke { stroke: #0b2545; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .card { fill: #fffdf8; stroke: #0b2545; stroke-width: 10; }
+      .blue { fill: #d8ecff; }
+      .orange { fill: #ffbe73; }
+      .green { fill: #d9f0d1; }
+      .coral { fill: #ff897d; }
+      text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+      .title { font-size: 108px; font-weight: 800; letter-spacing: 0; }
+      .subtitle { font-size: 42px; font-weight: 700; letter-spacing: 0; }
+      .layer-title { font-size: 66px; font-weight: 800; letter-spacing: 0; }
+      .body { font-size: 42px; font-weight: 600; letter-spacing: 0; }
+      .small { font-size: 34px; font-weight: 500; letter-spacing: 0; }
+      .code { font-family: "SFMono-Regular", Menlo, Consolas, monospace; font-size: 40px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="2752" height="1536"/>
+  <circle cx="250" cy="1280" r="230" fill="#d8ecff" opacity="0.75"/>
+  <circle cx="2420" cy="230" r="260" fill="#ffe0a6" opacity="0.68"/>
+  <circle cx="1460" cy="835" r="300" fill="#fff1d4" opacity="0.95"/>
+  <path d="M130 166 C430 90 610 150 760 80" fill="none" stroke="#ffbe73" stroke-width="22" stroke-linecap="round" opacity="0.65"/>
+  <path d="M2130 1380 C2320 1300 2440 1340 2600 1240" fill="none" stroke="#ffbe73" stroke-width="22" stroke-linecap="round" opacity="0.65"/>
+
+  <rect x="52" y="50" width="2648" height="1436" rx="44" fill="none" class="stroke"/>
+
+  <text x="150" y="160" class="subtitle ink">码农小余知识图解</text>
+  <text x="520" y="190" class="title ink">三层记忆，不要全塞一个文件</text>
+
+  <!-- Layer cards -->
+  <g transform="translate(300,285)">
+    <rect class="card" width="1900" height="300" rx="40"/>
+    <circle cx="135" cy="150" r="72" class="blue" stroke="#0b2545" stroke-width="9"/>
+    <path d="M100 166 L132 196 L188 106" fill="none" stroke="#0b2545" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="235" y="92" width="105" height="92" rx="20" class="orange" stroke="#0b2545" stroke-width="8"/>
+    <path d="M250 92 L270 52 H350 L370 92" fill="#ffbe73" stroke="#0b2545" stroke-width="8" stroke-linejoin="round"/>
+    <text x="430" y="128" class="layer-title ink">全局层：个人工作习惯</text>
+    <text x="430" y="205" class="code muted">~/.codex/AGENTS.md  /  ~/.claude/CLAUDE.md</text>
+  </g>
+
+  <path d="M1376 610 L1376 685" fill="none" class="stroke"/>
+  <path d="M1336 665 L1376 705 L1416 665" fill="none" class="stroke"/>
+
+  <g transform="translate(300,705)">
+    <rect class="card" width="1900" height="300" rx="40"/>
+    <circle cx="135" cy="150" r="72" class="green" stroke="#0b2545" stroke-width="9"/>
+    <path d="M105 135 H165 M105 165 H190 M105 195 H175" stroke="#0b2545" stroke-width="11" stroke-linecap="round"/>
+    <rect x="235" y="78" width="118" height="118" rx="24" class="blue" stroke="#0b2545" stroke-width="8"/>
+    <path d="M265 137 L292 162 L328 112" fill="none" stroke="#0b2545" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="430" y="128" class="layer-title ink">项目层：团队约定和验证命令</text>
+    <text x="430" y="205" class="code muted">AGENTS.md  /  CLAUDE.md</text>
+  </g>
+
+  <path d="M1376 1030 L1376 1105" fill="none" class="stroke"/>
+  <path d="M1336 1085 L1376 1125 L1416 1085" fill="none" class="stroke"/>
+
+  <g transform="translate(300,1125)">
+    <rect class="card" width="1900" height="300" rx="40"/>
+    <circle cx="135" cy="150" r="72" fill="#ffe1da" stroke="#0b2545" stroke-width="9"/>
+    <path d="M135 100 L190 200 H80 Z" class="coral" stroke="#0b2545" stroke-width="9" stroke-linejoin="round"/>
+    <text x="126" y="175" class="body ink">!</text>
+    <rect x="235" y="88" width="118" height="100" rx="18" class="orange" stroke="#0b2545" stroke-width="8"/>
+    <path d="M255 88 L275 54 H348 L370 88" fill="#ffbe73" stroke="#0b2545" stroke-width="8" stroke-linejoin="round"/>
+    <text x="430" y="128" class="layer-title ink">局部层：模块差异和高风险边界</text>
+    <text x="430" y="205" class="code muted">子目录 AGENTS.md  /  .claude/rules/</text>
+  </g>
+
+  <!-- Right summary rail -->
+  <g transform="translate(2290,330)">
+    <rect x="0" y="0" width="310" height="980" rx="38" fill="#fffdf8" stroke="#0b2545" stroke-width="10"/>
+    <path d="M155 100 L155 840" fill="none" class="stroke"/>
+    <path d="M105 790 L155 850 L205 790" fill="none" class="stroke"/>
+    <circle cx="155" cy="145" r="38" class="blue" stroke="#0b2545" stroke-width="8"/>
+    <circle cx="155" cy="490" r="38" class="green" stroke="#0b2545" stroke-width="8"/>
+    <circle cx="155" cy="835" r="38" class="orange" stroke="#0b2545" stroke-width="8"/>
+    <text x="78" y="250" class="body ink">越全局</text>
+    <text x="78" y="318" class="body ink">越稳定</text>
+    <text x="78" y="602" class="body ink">越靠近</text>
+    <text x="78" y="670" class="body ink">越具体</text>
+  </g>
+
+  <!-- Side helper notes -->
+  <g transform="translate(140,500)" opacity="0.95">
+    <rect x="0" y="0" width="105" height="135" rx="18" fill="#d8ecff" stroke="#0b2545" stroke-width="8"/>
+    <path d="M25 40 H80 M25 72 H68 M25 104 H80" stroke="#0b2545" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="88" cy="112" r="34" fill="#fffdf8" stroke="#0b2545" stroke-width="8"/>
+    <path d="M112 136 L145 170" stroke="#0b2545" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(150,1010)" opacity="0.95">
+    <rect x="0" y="0" width="125" height="95" rx="18" class="orange" stroke="#0b2545" stroke-width="8"/>
+    <path d="M18 0 L43 -34 H120 L148 0" fill="#ffbe73" stroke="#0b2545" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M36 43 H110 M36 66 H88" stroke="#0b2545" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="300" y="1462" class="small muted">原则：只把稳定、具体、会改变行为的规则放进长期记忆；更细的说明放到对应模块或外部文档。</text>
+</svg>

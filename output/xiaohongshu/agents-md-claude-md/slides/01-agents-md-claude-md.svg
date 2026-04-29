@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <style>text{letter-spacing:0}</style>
+  <rect width="1080" height="1440" fill="#fff7e8"/>
+  <circle cx="900" cy="165" r="190" fill="#ffe0a6" opacity="0.72"/>
+  <circle cx="145" cy="1280" r="210" fill="#d8ecff" opacity="0.78"/>
+  <path d="M70 170 C250 120 385 145 545 95" fill="none" stroke="#ffbe73" stroke-width="18" stroke-linecap="round" opacity="0.65"/>
+  <path d="M600 1310 C760 1260 900 1290 1040 1215" fill="none" stroke="#ffbe73" stroke-width="18" stroke-linecap="round" opacity="0.65"/>
+  <rect x="38" y="38" width="1004" height="1364" rx="44" fill="none" stroke="#0b2545" stroke-width="10"/>
+  <text x="86" y="112" fill="#5f6f86" font-size="28" font-weight="800" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">码农小余知识图解</text>
+  <text x="936" y="112" text-anchor="end" fill="#5f6f86" font-size="28" font-weight="800" font-family="SFMono-Regular, Menlo, monospace">01/08</text><g><rect x="86" y="150" width="434" height="54" rx="27" fill="#d9f0d1" stroke="#0b2545" stroke-width="5"/><text x="107" y="187" fill="#0b2545" font-size="28" font-weight="800" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">AI 编程工具真正好用的关键</text></g><rect x="104" y="235" width="872" height="430" rx="42" fill="#fffdf8" stroke="#0b2545" stroke-width="10"/><text x="540" y="370" text-anchor="middle" fill="#0b2545" font-size="112" font-weight="900" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif"><tspan x="540" dy="0">别只跑</tspan><tspan x="540" dy="117.60000000000001">/init</tspan></text><text x="540" y="590" text-anchor="middle" fill="#0b2545" font-size="44" font-weight="800" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif"><tspan x="540" dy="0">AGENTS.md / CLAUDE.md 真正该怎么养</tspan></text><g>
+    <path d="M172 780 h168 l46 48 v214 h-214 z" fill="#d8ecff" stroke="#0b2545" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M340 780 v52 h46" fill="none" stroke="#0b2545" stroke-width="8"/>
+    <text x="194" y="918" fill="#0b2545" font-size="34" font-weight="900" font-family="SFMono-Regular, Menlo, monospace">AGENTS</text>
+  </g><g>
+    <path d="M696 780 h168 l46 48 v214 h-214 z" fill="#fffdf8" stroke="#0b2545" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M864 780 v52 h46" fill="none" stroke="#0b2545" stroke-width="8"/>
+    <text x="718" y="918" fill="#0b2545" font-size="34" font-weight="900" font-family="SFMono-Regular, Menlo, monospace">CLAUDE</text>
+  </g><path d="M425 900 C500 820 600 820 675 900" fill="none" stroke="#0b2545" stroke-width="10" stroke-linecap="round"/>
+    <path d="M655 865 l28 35 l-44 8" fill="#ffbe73" stroke="#0b2545" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="215" y="1060" width="650" height="92" rx="32" fill="#ffbe73" stroke="#0b2545" stroke-width="8"/>
+    <text x="540" y="1120" text-anchor="middle" fill="#0b2545" font-size="35" font-weight="900" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">纠错 → 写规则 → 验证 → 修剪</text>
+    <text x="540" y="1270" text-anchor="middle" fill="#5f6f86" font-size="34" font-weight="700" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">让 AI 不再每次都像第一次进项目</text>
+</svg>
