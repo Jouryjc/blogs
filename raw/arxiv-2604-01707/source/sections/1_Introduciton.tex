@@ -1,0 +1,220 @@
+\section{Introduction}
+\label{sec:intro}
+%Todo: couldn't find a proper citation for llama4
+The development of Large Language Models (LLMs) like GPT-5~\cite{singh2025openaigpt5card}, Qwen3~\cite{yang2025qwen3}, and Claude Sonnet 4.6~\cite{anthropic2026claude46} has sparked a revolution in the field of artificial intelligence~\cite{liu2024survey,huang2023survey,wang2024survey,zheng2024large,li2023large,nie2024survey,ghimire2024generative,wang2024large}.
+Building on this success, LLM-powered agents have rapidly emerged and are being deployed across a wide range of domains, from industrial automation to personal assistance. 
+For example, SWE-agent systems for software engineering tasks~\cite{yang2024sweagentagentcomputerinterfacesenable} and personal assistant agents such as OpenClaw~\cite{openclaw2026} illustrate how LLM-based agents can autonomously plan, reason, and execute complex multi-step workflows.
+These agents are increasingly expected to operate autonomously, adapt to diverse environments, and support personalized interactions tailored to user needs.
+A key capability underlying such intelligent behavior is the {\it memory mechanism}~\cite{zhang2018personalizingdialogueagentsi,park2023generativeagents}. 
+As illustrated in Figure~\ref{fig:intro}, memory mechanisms allow agents to move beyond naive long-context prompting by maintaining and leveraging relevant information from past interactions.
+By equipping agents with memory mechanisms, they can accumulate experience over time, maintain contextual knowledge, and make more informed decisions—analogous to how humans rely on memory to learn from past experiences and guide future actions.
+%
+%
+% LLMs have enabled more nuanced and efficient interactions between humans and machines, profoundly impacting human life.
+\begin{figure}[]
+    \centering
+    \setlength{\abovecaptionskip}{0cm}
+    % \setlength{\belowcaptionskip}{-0.3cm}
+    \includegraphics[scale=0.33]{figures/intro.pdf}
+    \caption{Overview of naive long-context prompting and memory-augmented prompting.}
+    \label{fig:intro}
+\end{figure}
+
+% Despite their remarkable comprehension and generation capabilities, LLMs may still generate incorrect outputs due to a lack of domain-specific knowledge, real-time updated information, and proprietary knowledge, which are outside LLMs' pre-training corpus, known as ``hallucination''~\cite{huang2025hallucination_survey_tois,rawte2023surveyhallucinationlargefoundation,rawte-etal-2023-troubling}.
+
+% , where the model generates inaccurate or even fabricated information. 
+
+
+% \begin{table*}[]
+%   \centering
+%   \caption{Classification of existing representative agent memory methods .}
+%   \renewcommand{\arraystretch}{1.25} 
+%   \label{tab:overall_table}
+%   \resizebox{\textwidth}{!}{
+%   \begin{tabular}{l|l|l|l|l|c|c}
+%      \toprule
+%      	 \textbf{Method} & \textbf{Graph Type} & \textbf{Index Component} &  
+%        \textbf{Retrieval Primitive} & \textbf{Retrieval Granularity} & 
+%        \textbf{Specific QA} & \textbf{Abstract QA} \\
+%      \midrule
+     
+%      \texttt{RAPTOR}~\cite{sarthi2024raptor} & Tree & Tree node & Question vector & Tree node & \Yes & \Yes \\  
+
+%      \texttt{KGP}~\cite{wang2024knowledge} & Passage Graph & Entity & Question & Chunk & \Yes & \No \\  
+
+%     \texttt{HippoRAG}~\cite{gutierrez2024hipporag} & Knowledge Graph & Entity & Entities in question & Chunk & \Yes & \No \\  
+    
+%      \texttt{G-retriever}~\cite{he2024g} & Knowledge Graph & Entity, Relationship & Question vector & Subgraph & \Yes & \No \\  
+%      \texttt{ToG}~\cite{sunthink} & Knowledge Graph & Entity, Relationship & Question & Subgraph & \Yes & \No \\  
+
+%      \texttt{DALK}~\cite{li2024dalk} & Knowledge Graph & Entity & Entities in question & Subgraph & \Yes & \No \\  
+%      \texttt{LGraphRAG}~\cite{edge2024local} & Textual Knowledge Graph  
+%      & Entity, Community & Question vector & Entity, Relationship, Chunk, Community &  \Yes & \No \\ 
+     
+%      \texttt{GGraphRAG}~\cite{edge2024local} & Textual Knowledge Graph
+%      & Community & Question vector & Community  & \No & \Yes \\ 
+
+%      \texttt{FastGraphRAG}~\cite{fastgraphrag} & Textual Knowledge Graph & Entity & Entities in question & Entity, Relationship, Chunk & \Yes & \Yes \\  
+%      \texttt{LLightRAG}~\cite{guo2024lightrag} & Rich Knowledge Graph
+%      & Entity, Relationship & Low-level keywords in question & Entity, Relationship, Chunk & \Yes & \Yes  \\  
+
+%      \texttt{GLightRAG}~\cite{guo2024lightrag} & Rich Knowledge Graph  
+%      & Entity, Relationship  & High-level keywords in question & Entity, Relationship, Chunk & \Yes & \Yes \\  
+
+%      \texttt{HLightRAG}~\cite{guo2024lightrag} & Rich Knowledge Graph  
+%      & Entity, Relationship & Both high- and low-level keywords & Entity, Relationship, Chunk & \Yes & \Yes  \\   
+
+
+
+%      \bottomrule
+%   \end{tabular}
+%   }
+% \end{table*}
+
+
+\begin{table*}[]
+  \centering
+  \caption{Classification of representative agent memory methods.}
+  \renewcommand{\arraystretch}{1.25}
+  \label{tab:image_memory_methods}
+  \resizebox{\textwidth}{!}{
+  \begin{tabular}{l|l|l|l|l}
+     \toprule
+     \rowcolor{gray!20}
+      \textbf{Method} & \textbf{Information Extraction} & \textbf{Management Operations} & \textbf{Storage Structure} & \textbf{Retrieval Mechanism} \\
+     \midrule
+      {\tt A-MEM}~\cite{wujiang2025amem} & Direct archive, Summarization-based extract & Connect, Update & Flat, Vector & Vector-Based \\
+      {\tt MemoryBank}~\cite{zhong2024memorybank} & Direct archive & Integrate, Update, Filter & Flat, Vector & Vector-Based \\
+      {\tt MemGPT}~\cite{packer2023memgpt} & Direct archive & Integrate, Transform, Update & Hierarchical, Vector & Lexical-Based, Vector-Based \\
+      {\tt Mem0}~\cite{chhikara2025mem0} & Direct archive, Summarization-based extract & Integrate, Update, Filter & Flat, Vector & Vector-Based \\
+      {\tt Mem0$^g$}~\cite{chhikara2025mem0} & Graph-based extract & Connect, Update, Filter & Flat, Graph & Vector-Based, Structure-Based \\
+      {\tt MemoChat}~\cite{lu2023memochat} & Direct archive & Integrate & Flat & LLM-Assisted \\
+      {\tt Zep}~\cite{rasmussen2025zep} & Direct archive, Graph-based extract & Connect, Transform, Update & Hierarchical, Graph & Lexical-Based, Vector-Based, Structure-Based \\
+      {\tt MemTree}~\cite{rezazadeh2024isolated} & Direct archive & Connect, Integrate, Update & Flat, Tree & Vector-Based \\
+      {\tt MemoryOS}~\cite{kang2025memory} & Direct archive & Connect, Integrate, Transform, Update, Filter & Hierarchical, Vector & Lexical-Based, Vector-Based \\
+      {\tt MemOS}~\cite{li2025memos} & Direct archive, Summarization-based extract & Connect, Integrate, Update & Hierarchical, Tree & Lexical-Based, Vector-Based \\
+  % A-MEM~\cite{wujiang2025amem} & Vector & Memory Note & Agent-based & NA & Vector search \\
+  %     % MemoryBank~\cite{zhong2024memorybank} & Vector & Original content + Event summary (llm) + User profile summary (llm) & Decay curve & \No & Vector search \\
+  %     MemoryBank~\cite{zhong2024memorybank} & Vector & Original content + Summary & Decay curve & \No & Vector search \\
+  %     % MemGPT & Vector & (Original dialogue); Original document text in segment form & Agent-based & NA & Vector search + Keyword search 
+  % MemGPT~\cite{packer2023memgpt} & Vector & Original content & Agent-based & \No & Vector search + Keyword search \\
+  %     Mem0 & Vector & LLM extracted facts & Agent-based & \No & Vector search \\
+  %     Mem0$^g$ & Vector + knowledge graph & LLM extracted facts + triple & Agent-based & NA & Vector search + Graph traversal \\
+  %     MemoChat~\cite{lu2023memochat} & Structured memo (JSON) & Original content + Topic + Summary & Non-agent-based & \No & Topic and summary judged by llm \\
+  %     % Zep & Temporal KG & Triple + Time & Non-agent-based & Community & Vector search + Keyword search (BM25) + Graph traversal (BFS) \\
+  %     Zep~\cite{rasmussen2025zep} & Temporal KG & Triple + Time & Non-agent-based & \Yes & Vector search + Keyword search + Graph traversal \\
+  %     MemTree~\cite{rezazadeh2024isolated} & Tree & Node &  & \Yes & Vector search \\
+  %     % MemoryOS & Vector & LLM extraction & Heat eviction mechanism & NA & Vector search + Keyword search (Jaccard) \\
+  %     MemoryOS~\cite{kang2025memory} & Vector & LLM extraction & Heat eviction mechanism & \No & Vector search + Keyword search \\
+  %     MemOS~\cite{li2025memos} & Tree & Node &  & \Yes & Vector search \\
+     \bottomrule
+  \end{tabular}
+  }
+\end{table*}
+
+
+
+% To bridge this gap, the Retrieval Augmented Generation (RAG) technique~\cite{fan2024survey,gao2023retrieval,hu2024rag,huang2024survey,wu2024retrieval,yu2024evaluation,zhao2024retrieval} has been proposed, which supplements LLM with external knowledge to enhance its factual accuracy and trustworthiness. 
+% %
+% \change{Given a user query $Q$, the key idea of naive-based RAG \cite{lewis2020retrieval} (i.e., vanilla RAG) is to retrieve relevant chunks from the external corpus, and then feed them along with $Q$ as a prompt into LLM to generate answers.}
+% Consequently, RAG techniques have been widely applied in various fields, especially in domains where LLMs need to generate reliable outputs, such as healthcare ~\cite{liu2024survey,wang2024survey,zheng2024large}, finance \cite{nie2024survey,li2023large}, and education \cite{ghimire2024generative,wang2024large}.
+% Moreover, RAG has proven highly useful in many data management tasks, including NL2SQL~\cite{fan2024combining,li2024dawn}, data cleaning~\cite{li2024autodcworkflow,naeem2024retclean,fan2024cost,qian2024unidm}, knob tuning~\cite{lao2023gptuner,giannankouris2024lambda}, DBMS diagnosis~\cite{zhou2023d,zheng2024revolutionizing,singh2024panda}, and SQL rewrite~\cite{sun2024r,li2024llm}. 
+% \change{In turn, the database community has recently begun to actively explore how to build efficient and reliable RAG systems~\cite{jiang2024chameleon,agarwal2025cache}.}
+% Due to the important role of the RAG technique in LLM-based applications, numerous RAG methods have been proposed in the past year~\cite {hu2024rag}.
+% Among these methods, the state-of-the-art RAG approaches typically use the graph data as the external data (also called graph-based RAG), since they capture the rich semantic information and link relationships between entities.
+% \change{Unlike vanilla RAG, graph-based RAG methods retrieve relevant information related to the query $Q$—such as nodes, relationships, or subgraphs—from the graph, and then incorporate this information into the prompt along with $Q$ for the LLM to generate an answer. }
+% The overview of naive-based RAG and graph-based RAG are shown in Figure~\ref{fig:intro}.
+
+% \change{Recently, several mainstream database systems have started supporting graph-based RAG, including PostgreSQL \cite{postgresrag}, Neo4j \cite{neo4jrag}, and Databricks \cite{databricksrag}.
+% At the same time, graph-based RAG has become a core component in modern graph-native agentic systems, such as LangGraph \cite{LangGraph} and Chat2Graph \cite{chat2graph}.
+% }
+% Following the success of graph-based RAG, researchers from fields such as database, data mining, machine learning, and natural language processing have designed efficient and effective graph-based RAG methods~\cite{sarthi2024raptor,wu2024medical,wang2024knowledge,li2024dalk,gutierrez2024hipporag,edge2024local,guo2024lightrag,peng2024graph,huang2025ket}.
+% In Table \ref{tab:overall_table}, we summarize the key characteristics of 12 representative graph-based RAG methods based on the graph types they rely on, their index components, retrieval primitives and granularity, and the types of tasks they support.
+% %
+% After a careful literature review, we make the following observations. First, no prior work has proposed a unified framework to abstract the graph-based RAG solutions and identify key
+% performance factors. Second, existing works focus on evaluating
+% the overall performance, but not individual components. Third,
+% there is no existing comprehensive comparison between all these
+% methods in terms of accuracy and efficiency. 
+% \textcolor{red}{Do we need to discuss the applications of agent memory in the data management ar/ea?}
+
+In recent years, a growing number of memory methods have been proposed to enhance the capability of LLM-based agents to retain, organize, and utilize historical information across interactions. These methods aim to enable agents to move beyond stateless reasoning and instead support long-term planning, personalization, and adaptive decision-making.
+Motivated by the limitations of stateless LLM agents and the growing need for persistent contextual reasoning, researchers from multiple communities---including databases, data mining, machine learning, and natural language processing---have begun developing efficient and scalable memory mechanisms for intelligent agents~\cite{rezazadeh2024isolated, packer2023memgpt, park2023generativeagents, weng2023agent, wang2024llmagentsurvey}.
+In Table~\ref{tab:image_memory_methods}, we summarize ten representative agent memory methods. We categorize them according to four key dimensions: underlying storage structure, information extraction mechanism, memory management strategy, and retrieval method.
+%
+After a careful literature review, we make the following observations. First, there is a lack of a unified framework for abstracting and systematically analyzing agent memory methods. Second, most previous studies report overall performance results, but rarely examine the roles and effects of individual components within these methods. Third, comprehensive and systematic comparisons among different methods—especially regarding their accuracy and efficiency—are still lacking.
+
+% After a careful literature review, we make the following observations. First, no prior work has proposed a unified framework to abstract the graph-based RAG solutions and identify key
+% performance factors. Second, existing works focus on evaluating
+% the overall performance, but not individual components. Third,
+% there is no existing comprehensive comparison between all these
+% methods in terms of accuracy and efficiency. 
+
+
+% \textbf{Our work.} We address these gaps with a unified, modular framework and conduct an experimental study of representative memory methods. 
+% The framework decomposes memory systems into four stages, including {\Large \ding{182}} {\textit{Information Extraction}},  {\Large \ding{183}} {\textit{Memory Management}}, {{{\Large \ding{184}}} {\it Memory Storage}, and {{{\Large \ding{185}}} {\it Information Retrieval}. which captures the core ideas of all existing methods. 
+% Under this framework, we systematically compare 12 existing representative graph-based RAG methods.
+% We conduct comprehensive experiments on the widely used question-answering (QA) datasets, including the specific and abstract questions, which evaluate the effectiveness of these methods in handling diverse query types and provide an in-depth analysis.
+
+% In summary, our principal contributions are as follows.
+\textbf{Our work.} We address these gaps by proposing a unified, modular framework and conducting an in-depth experimental study of representative agent memory methods. 
+The framework decomposes memory mechanisms into four stages, including {\Large \ding{182}} {\textit{Information Extraction}},  {\Large \ding{183}} {\textit{Memory Management}}, {{{\Large \ding{184}}} {\it Memory Storage}, and {{{\Large \ding{185}}} {\it Information Retrieval}. Under this framework, we compare representative methods on two typical long-term conversational benchmarks, \textbf{LOCOMO}~\cite{maharana2024locomo} and \textbf{LONGMEMEVAL}~\cite{wu2025longmemeval}. Beyond overall performance, we analyze practical robustness dimensions, including context scalability and positional sensitivity. Based on these analyses, we further design a new agent memory method that achieves the best performance and cost efficiency.
+% % which captures the core ideas of all existing methods. 
+% Under this framework, we systematically compare 12 existing representative graph-based RAG methods.
+% We conduct comprehensive experiments on the widely used question-answering (QA) datasets, including the specific and abstract questions, which evaluate the effectiveness of these methods in handling diverse query types and provide an in-depth analysis.
+
+
+% In summary, we make the following contributions:
+In summary, our principal contributions are listed as follows:
+\begin{itemize}[topsep=1mm, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+    \item We propose a unified framework that decomposes representative agent memory methods into four modular components, enabling systematic comparisons of their differences.
+    % (Sections~\ref{sec:generic}--\ref{sec:mem_retrieval}).
+    \item We conduct comprehensive experimental studies on LOCOMO and LONGMEMEVAL, together with analyses of token cost, context scalability, evidence position sensitivity, and LLM backbone dependence.
+    % (Section~\ref{sec:experiments}).
+    \item Based on the above analyses, we propose a new agent memory method that achieves state-of-the-art performance. We further derive several key insights and highlight promising research directions for future work.
+    % (Section~\ref{sec:lessons_opp}).
+\end{itemize}
+
+% \begin{itemize}
+%     \item We propose a unified framework that decomposes representative agent memory systems into four modular components, enabling systematic comparisons of their differences (Sections~\ref{sec:generic}--\ref{sec:mem_retrieval}).
+%     \item We conduct comprehensive experimental studies on LOCOMO and LONGMEMEVAL, together with analyses of token cost, context scalability, evidence position sensitivity and LLM backbones dependence, and propose a new agent memory method that achieves state-of-the-art performance based on the above analyses (Section~\ref{sec:experiments}).
+%     \item We further derive several key insights and highlight promising research directions for future work (Section~\ref{sec:lessons_opp}).
+% \end{itemize}
+
+% The rest of the paper is organized as follows. Section~2 introduces preliminaries. Section~3 presents the unified framework. Sections~4--7 characterize representative design choices under this framework. Section~8 reports experimental results and analyses. Section~9 summarizes lessons and opportunities. Section~10 reviews related work, and Section~11 concludes.
+\textbf{Roadmap.} Section~\ref{sec:pre} introduces preliminaries. Section~\ref{sec:generic} presents the unified framework. Sections~\ref{sec:mem_extraction}--\ref{sec:mem_retrieval} characterize representative design choices within this framework. Section~\ref{sec:experiments} reports experimental results and analyses. Section~\ref{sec:lessons_opp} summarizes lessons and opportunities. Section~\ref{sec:related} reviews related work, and Section~\ref{sec:conclusions} concludes.
+
+% \begin{itemize}
+%     \item Summarize a novel unified framework with four stages for graph-based RAG solutions from a high-level perspective (Sections \ref{sec:generic} $\sim$ \ref{sec:retrieve_and_generation}).
+     
+%     \item Conduct extensive experiments from different angles using various benchmarks, providing a thorough analysis of graph-based RAG methods. Based on our analysis, we identify new variants of graph-based RAG methods, by combining existing techniques, which outperform the state-of-the-art methods (Section \ref{sec:experiments}).
+%     % \LL{We only propose new algorithms for UDS, not for DDS, right?}
+    
+%     \item  Summarize lessons learned and propose practical research opportunities that can facilitate future studies (Section \ref{sec:lessons_opp}).
+% \end{itemize}
+
+%\textbf{Outline.}
+% The rest of the paper is organized as follows.
+% %
+% In Section \ref{sec:pre}, we present the preliminaries and introduce a novel unified framework for graph-based RAG solutions in Section \ref{sec:generic}.
+% %
+% In Sections \ref{sec:graph_build} through \ref{sec:retrieve_and_generation}, we compare the graph-based RAG methods under our unified framework.
+% %
+% The comprehensive experimental results and analysis are reported in Section \ref{sec:experiments}. 
+% %
+% We present the learned lessons and a list of research opportunities in Section \ref{sec:lessons_opp},
+% %
+% and Section \ref{sec:related}  reviews related work while Section \ref{sec:conclusions} summarizes the paper.
+
+
+% The rest of the paper is organized as follows.
+% %
+% In Section \ref{sec:pre}, we present the preliminaries and introduce a novel unified framework for graph-based RAG solutions in Section \ref{sec:generic}.
+% %
+% In Sections \ref{sec:graph_build} through \ref{sec:retrieve_and_generation}, we compare the graph-based RAG methods under our unified framework.
+% %
+% The comprehensive experimental results and analysis are reported in Section \ref{sec:experiments}. 
+% %
+% We present the learned lessons and a list of research opportunities in Section \ref{sec:lessons_opp},
+% %
+% and Section \ref{sec:related}  reviews related work while Section \ref{sec:conclusions} summarizes the paper.

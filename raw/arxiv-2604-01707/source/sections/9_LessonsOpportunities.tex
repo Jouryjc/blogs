@@ -1,0 +1,54 @@
+\section{Lessons and Opportunities}
+\label{sec:lessons_opp}
+
+
+We summarize the lessons (L) for practitioners based on our observations and propose practical research opportunities (O).
+
+\noindent \textbf{Lessons}:  
+
+\noindent \begin{tikzpicture}
+\filldraw (0,0) -- (-0.15,0.08) -- (-0.15,-0.08) -- cycle ; 
+\end{tikzpicture} \textbf{\underline{L1.}}
+Compared to flat memory structures, hierarchical organization is more effective in capturing structural relationships between information, which can be achieved by either employing tree-based indices or designing multi-level storage.
+% Experiments on LONGMEMEVAL and LOCOMO show that memory systems with explicit layered organization—either via tree-structured representations (e.g., MemTree/MemOS) or hierarchical tiering (e.g., MemoryOS)—consistently achieve stronger overall performance and better robustness. Such designs provide a principled mechanism to balance granularity and scalability: higher layers offer abstraction and efficient localization, while lower layers retain fine-grained evidence needed for faithful answering.
+
+
+\noindent \begin{tikzpicture}
+\filldraw (0,0) -- (-0.15,0.08) -- (-0.15,-0.08) -- cycle ; 
+\end{tikzpicture} \textbf{\underline{L2.}}
+Information completeness is fundamental to memory mechanisms. While structured representations like triples in graphs improve organization, retaining raw dialogue context is essential to prevent semantic loss during the information extraction or retrieval stage.
+
+
+\noindent \begin{tikzpicture}
+\filldraw (0,0) -- (-0.15,0.08) -- (-0.15,-0.08) -- cycle ; 
+\end{tikzpicture} \textbf{\underline{L3.}}
+Optimizing memory granularity by processing multiple dialogue turns as a single unit during the information extraction or memory management stage significantly reduces token consumption, while appropriate partitioning further maintains the coherence of retrieved information.
+
+
+
+
+
+\noindent \textbf{Opportunities}:
+
+\noindent \begin{tikzpicture}
+\filldraw (0,0) -- (-0.15,0.08) -- (-0.15,-0.08) -- cycle ; 
+\end{tikzpicture} \textbf{\underline{O1.}}
+% more memory types
+In real-world settings, memory involves complex and diverse information sources, including textual conversations, historical interaction traces, and multimodal signals such as audio, images, and videos. Existing memory mechanisms often focus on a single or limited form, which constrains effective information utilization. A promising future research direction is to develop unified memory mechanisms that support heterogeneous and multimodal memory within a shared storage and retrieval framework.
+
+% Most methods focus on conversational dialogues, whereas real agents often need to integrate heterogeneous sources such as documents, databases, execution logs, etc. A key direction is unified memory architecture and operators that support multi-source memory management.
+% Extending agent memory beyond text to multi-modal signals like images and audio can yield richer and more complete memories, enabling broader real world applications like embodied intelligence. This calls for memory representations that can explicitly encode events and information across multiple modalities. 
+
+\noindent \begin{tikzpicture}
+\filldraw (0,0) -- (-0.15,0.08) -- (-0.15,-0.08) -- cycle ; 
+\end{tikzpicture} \textbf{\underline{O2.}}
+% less storage space, efficient compress
+Existing competitive memory methods often manage and maintain information in ways that lead to rapid growth in storage size and increasing management and retrieval overhead. How to compress memory without losing useful information remains a major challenge, which creates an opportunity to explore latent representations beyond explicit text and learned compression mechanisms to achieve high-density yet usable memory.
+
+\noindent \begin{tikzpicture}
+\filldraw (0,0) -- (-0.15,0.08) -- (-0.15,-0.08) -- cycle ; 
+\end{tikzpicture} \textbf{\underline{O3.}}
+% transform across long-short term
+Existing hierarchical memory mechanisms primarily focus on consolidating short-term memory into long-term storage but do not support the reverse transformation. A promising direction is to design bidirectional memory transformation mechanisms that enable efficient consolidation and reconstruction across memory hierarchies.
+
+

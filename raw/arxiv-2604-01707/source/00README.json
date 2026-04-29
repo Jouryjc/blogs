@@ -1,0 +1,41 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "main.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "ACM-Reference-Format.bbx"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "ACM-Reference-Format.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "ACM-Reference-Format.cbx"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "ACM-Reference-Format.dbx"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "main.bbl"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "ref.bib"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "sections/ACM-Reference-Format.bst_"
+      }
+   ],
+   "spec_version" : 1,
+   "texlive_version" : "2025",
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}

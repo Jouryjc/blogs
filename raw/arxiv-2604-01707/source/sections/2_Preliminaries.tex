@@ -1,0 +1,106 @@
+% \begin{figure*}[]
+%     \centering
+%          \setlength{\abovecaptionskip}{-0.01em}
+%         \setlength{\belowcaptionskip}{-1em}
+%     \includegraphics[scale=0.7]{figures/workflow_1.pdf}
+%     \caption{\change{Workflow of graph-based RAG methods under our unified framework.}}
+%     % \caption{\change{Workflow of graph-based RAG methods under our unified framework .}}
+%     \label{fig:overview}
+% \end{figure*}
+
+
+
+\section{Preliminaries}
+\label{sec:pre}
+
+% In this section, we go through some important concepts of LLM and typical workflow of existing agent memory methods. The relationship between RAG and memory is also discussed.
+  
+
+% \subsection{Large Language Models (LLMs)}
+% We introduce some fundamental concepts of LLMs, including LLM prompting and LLM-based Agents.
+
+% {\bf LLM Prompting.} After instruction tuning on large corpus of human interaction scenarios, LLM is capable of following human instructions to complete different tasks \cite{dong2022survey,ouyang2022training}. Specifically, given the task input, we construct a prompt that encapsulates a comprehensive task description. The LLM processes this prompt to fulfill the task and generate the corresponding output.
+% Note that pre-training on trillions of bytes of data enables LLM to generalize to diverse tasks by simply adjusting the prompt \cite{ouyang2022training}.
+
+% {\bf LLM-based Agents.}
+
+In this section, we go through some important concepts and the typical workflow of existing memory methods in the LLM era. The relationship between RAG and memory is also discussed. 
+  
+
+% \subsection{Large Language Models (LLMs)}
+% We introduce some fundamental concepts of LLMs~\cite{?}, including LLM prompting~\cite{?} and LLM-based Agents~\cite{?}. 
+\subsection{LLM-related Concepts}
+We introduce two fundamental LLM-related concepts below. 
+
+{\bf LLM Prompting.}
+Prompting~\cite{brown2020languagemodelsfewshotlearners, dong2024surveyincontextlearning,liu2021pretrainpromptpredictsystematic} specifies an LLM task by constructing an input context (prompt) that contains task instructions, the current input, and optionally demonstrations or auxiliary evidence. The model's output is then generated conditioned on this context. 
+
+Prompting is particularly important in LLM-based systems because it provides a lightweight, training-free interface for task adaptation~\cite{liu2021pretrainpromptpredictsystematic}. Model behavior can be redirected by revising the input context without modifying model parameters. This property has enabled a wide range of practical applications in which task specifications and constraints are expressed directly in natural language~\cite{ouyang2022training,achiam2023gpt}.
+%
+In addition to final response generation, prompting is often used to drive intermediate sub-tasks in an LLM-centered pipeline~\cite{yao2023reactsynergizingreasoningacting,schick2024toolformer,asai2023self, khattab2023dspy}. Typical examples include extracting key information, consolidating intermediate results, and so on. 
+
+
+% In memory-related systems, prompting is not limited to final response generation: it is also employed to instruct intermediate steps such as extracting storage information and resolving conflicts during updates. As a result, prompts effectively define the interaction protocol between LLM and memory mechanism. 
+
+
+% what's prompting, why prompting, what's special in memory-related prompting 
+
+
+% {\bf LLM-based Agent.}
+%TODO: Definie agent, define llm-based agent
+
+% After instruction tuning on large corpus of human interaction scenarios, LLM is capable of following human instructions to complete different tasks \cite{dong2022survey,ouyang2022training}. Specifically, given the task input, we construct a prompt that encapsulates a comprehensive task description. The LLM processes this prompt to fulfill the task and generate the corresponding output.
+% Note that pre-training on trillions of bytes of data enables LLM to generalize to diverse tasks by simply adjusting the prompt \cite{ouyang2022training}.
+
+% {\bf LLM-based Agents.}
+% An agent is an interactive system that operates over discrete time steps in an environment. Let $o_t$ denote the observation available at time step $t$ and $a_t$ denote the action taken by the agent. At time $t$, the agent obtains an observation  $o_t$ from the environment and produces an action $a_t$ using a policy $\pi$, written as $a_t \sim \pi(\cdot \mid h_t)$, where $h_t$ is the interaction history up to step $t$. Executing $a_t$ results in a subsequent observation $o_{t+1}$ from the environment; we write this abstractly as $o_{t+1} \sim \mathcal{E}(\cdot \mid h_t, a_t)$, where $\mathcal{E}$ denotes the (possibly unknown and non-stationary) environment response mechanism. This interaction induces a trajectory $(o_1,a_1,o_2,a_2,\ldots)$, and the key implication is that decision making is inherently sequential and history-dependent~\cite{kaelbling1996reinforcementlearningsurvey, sutton1999policygradient}.
+
+% An LLM-based agent instantiates the above abstraction by using an LLM as a policy model for action selection~\cite{yao2023reactsynergizingreasoningacting,shinn2023reflexion,li2024reviewprominentparadigmsllmbased}. The interaction history $h_t$ and any available state are serialized into a textual prompt that specifies the task context and the LLM-based agent produces the next action conditioned on this prompt. The action space normally includes natural-language responses as well as structured tool calls such as history search and  read/write operations over external stores, enabling multi-step task completion rather than single-turn prompting.
+
+
+
+{\bf LLM-based Agents.}
+An LLM-based agent utilizes an LLM as a core decision model for sequential action selection~\cite{yao2023reactsynergizingreasoningacting,shinn2023reflexion,li2024reviewprominentparadigmsllmbased}. In contrast to single-turn prompting, an agent operates in a closed loop: it receives observation, then performs reasoning or planning, executes an action (possibly via tools), obtains feedback from the environment, and further proceeds to the next step~\cite{yang2026graphbasedagentmemorytaxonomy}. The interaction history and available state are combined into textual context, based on which the agent predicts the next action. 
+
+The action space of an LLM-based agent typically includes both natural-language responses and structured tool calls~\cite{packer2023memgpt, li2025memos} (e.g., information search, API invocation and memory read/write operations), which enable multi-step task completion beyond one-shot generation. Therefore, the LLM-based agent must retain and reuse information across conversation turns and sessions, which motivates effective memory mechanisms.
+
+
+
+% The interaction history and any available state are serialized into a textual prompt that specifies the task context and the LLM-based agent produces the next action conditioned on this prompt. The action space normally includes natural-language responses as well as structured tool calls such as history search and  read/write operations over external stores, enabling multi-step task completion rather than single-turn prompting.
+
+ 
+% It perceives observations, selects actions that affect the environment, and uses the resulting feedback to continue the interaction. Compared with single-shot prediction, the agent setting is characterized by sequential decision making and the need to maintain state across steps.
+
+
+% {\bf Retrieval Augmented Generation.} During completing tasks
+% with prompting, LLMs often generate erroneous or meaningless responses, i.e., the hallucination problem ~\cite{huang2023survey}. 
+% To mitigate the problem, retrieval augmented generation (RAG) is utilized as an advanced LLM prompting technique by using the knowledge within the external corpus, typically including two major steps~\cite{gao2023retrieval}: {\it (1) retrieval}: given
+% a user question $Q$, using the index to retrieve the most relevant (i.e., top-$k$) chunks to $Q$, where the large corpus is first split into smaller chunks, and (2) {\it generation}: guiding LLM to generate answers with the retrieved chunks along with $Q$ as a prompt.
+
+
+\subsection{Agent Memory}
+
+
+% \textcolor{red}{We need to briefly introduce the memory here: 1) Why do we need the memory? 2) The typical workflow of existing memory systems, and 3) The relationship between RAG and memory}
+
+% Memory is introduced in large language model (LLM) systems to address a fundamental limitation: the bounded context window of current models. Due to this fixed window, LLMs are inherently unable to retain or access information beyond a certain span of tokens within a single session. This significantly restricts their capacity for long-term reasoning, knowledge accumulation, and consistent behavior across extended interactions. By equipping LLMs with dedicated memory modules, systems can persist and retrieve large volumes of historical data, user preferences, and contextual information, effectively breaking through the natural boundaries imposed by the context window. This enables models to become more intelligent, reliable, and adaptive in long-running tasks or multi-turn conversations.
+Memory is incorporated into LLM-based agents to compensate for the bounded context window~\cite{liu2024lost,maharana2024locomo, hsieh2024ruler}. Since the model conditions only on a limited number of tokens, information that comes from earlier turns and lies outside the current prompt can be easily lost, which degrades performance in long-horizon dialogue and multi-session tasks~\cite{ shaham-etal-2023-zeroscrolls, wu2025longmemeval, xu-etal-2022-beyond}. An explicit memory module~\cite{park2023generativeagents, packer2023memgpt, sumers2024cognitive, graves2016hybrid, bai-etal-2024-longbench} allows the system to persist interaction-derived information—such as user preferences, salient events, intermediate decisions, and task constraints—and to reintroduce it when relevant, thereby improving consistency and enabling reasoning that depends on long-term context~\cite{park2023generativeagents, graves2016hybrid}.
+
+The typical workflow of memory-augmented systems begins by selectively extracting important information from ongoing interactions—such as facts, user preferences, or important events—and storing them as memory entries. These entries then undergo a series of management operations: consolidation~\cite{zhong2024memorybank, du2025rethinkingmemoryllmbased,10.5120/ijca2026926236}, which integrates similar memories to improve coherence and reduce redundancy; updating~\cite{hu2023chatdbaugmentingllmsdatabases, packer2023memgpt, liu2025dynamem}, which modifies stored content to maintain accuracy and reflect the latest knowledge; filtering~\cite{zhong2024memorybank,park2023generativeagents,li-etal-2023-compressing}, which removes outdated, redundant, or low-utility memories to preserve the efficiency and relevance of the system; and enhancement~\cite{hu-etal-2025-hiagent,sun-etal-2026-h}, which marks or surfaces important memories for easy identification and retrieval. This structured process ensures that the memory system remains organized, scalable, and aligned with ongoing user needs. When additional context is required for reasoning or generation, the memory system retrieves and supplies the most relevant information to the LLM, supporting both short-term adaptation and long-term continuity across evolving interactions. 
+
+% Notably, in long-term settings, memories are often not uniformly 
+
+% A key distinction exists between memory techniques and retrieval-augmented generation (RAG). While both aim to extend the LLM’s capabilities beyond its pretrained knowledge, their focus and operational modes differ. Memory modules are designed to capture and maintain the evolving state of interactions—such as past conversations, user-specific histories, or accumulated knowledge—enabling continuity and personalization over time. In contrast, RAG approaches typically retrieve external factual information from static knowledge bases or document stores at inference time, focusing on supplementing the model with up-to-date or domain-specific facts. In practice, memory mechanisms emphasize temporal continuity and adaptive context, whereas retrieval modules prioritize factual completeness and accuracy. These two paradigms are often complementary: memory mechanisms strengthen the model’s ability to maintain and utilize long-term context, while retrieval mechanisms ensure access to authoritative information beyond the model’s parameter space.
+Memory and retrieval-augmented generation (RAG)~\cite{lewis2020retrieval, gutierrez2024hipporag, wang2024llmagentsurvey,gao2023retrieval} are related but distinct mechanisms. Memory primarily targets stateful, interaction-dependent information that evolves over time and is required for personalization and cross-session continuity~\cite{zhong2024memorybank, packer2023memgpt}. In contrast, RAG primarily targets external knowledge grounding, retrieving evidence from document collections or knowledge bases to supplement domain knowledge and reduce hallucinations~\cite{lewis2020retrieval, gao2023retrieval}. In practice, they are complementary: memory supplies user- and session-specific context, while RAG provides task-relevant factual evidence from external corpora.
+% \subsection{Agent Memory}
+
+
+% % \textcolor{red}{We need to briefly introduce the memory here: 1) Why do we need the memory? 2) The typical workflow of existing memory systems, and 3) The relationship between RAG and memory}
+
+% % Memory is introduced in large language model (LLM) systems to address a fundamental limitation: the bounded context window of current models. Due to this fixed window, LLMs are inherently unable to retain or access information beyond a certain span of tokens within a single session. This significantly restricts their capacity for long-term reasoning, knowledge accumulation, and consistent behavior across extended interactions. By equipping LLMs with dedicated memory modules, systems can persist and retrieve large volumes of historical data, user preferences, and contextual information, effectively breaking through the natural boundaries imposed by the context window. This enables models to become more intelligent, reliable, and adaptive in long-running tasks or multi-turn conversations.
+% Memory is incorporated into LLM-based agents to compensate for the bounded context window. Since the model conditions only on a limited number of tokens, information that comes from earlier turns and lies outside the current prompt can be easily lost, which degrades performance in long-horizon dialogue and multi-session tasks. An explicit memory module allows the system to persist interaction-derived information—such as user preferences, salient events, intermediate decisions, and task constraints—and to reintroduce it when relevant, thereby improving consistency and enabling reasoning that depends on long-term context.
+
+% The typical workflow of memory-augmented systems begins by selectively extracting important information from ongoing interactions—such as facts, user preferences, or important events—and storing them as memory entries. These entries then undergo a series of management operations: consolidation, which integrates similar memories to improve coherence and reduce redundancy; updating, which modifies stored content to maintain accuracy and reflect the latest knowledge; filtering, which removes outdated, redundant, or low-utility memories to preserve the efficiency and relevance of the system; and enhancement, which marks or surfaces important memories for easy identification and retrieval. This structured process ensures that the memory system remains organized, scalable, and aligned with ongoing user needs. When additional context is required for reasoning or generation, the memory system retrieves and supplies the most relevant information to the LLM, supporting both short-term adaptation and long-term continuity.
+
+% % A key distinction exists between memory techniques and retrieval-augmented generation (RAG). While both aim to extend the LLM’s capabilities beyond its pretrained knowledge, their focus and operational modes differ. Memory modules are designed to capture and maintain the evolving state of interactions—such as past conversations, user-specific histories, or accumulated knowledge—enabling continuity and personalization over time. In contrast, RAG approaches typically retrieve external factual information from static knowledge bases or document stores at inference time, focusing on supplementing the model with up-to-date or domain-specific facts. In practice, memory mechanisms emphasize temporal continuity and adaptive context, whereas retrieval modules prioritize factual completeness and accuracy. These two paradigms are often complementary: memory mechanisms strengthen the model’s ability to maintain and utilize long-term context, while retrieval mechanisms ensure access to authoritative information beyond the model’s parameter space.
+% Memory and retrieval-augmented generation (RAG)~\cite{lewis2021retrievalaugmentedgenerationknowledgeintensivenlp} are related but distinct mechanisms. Memory primarily targets stateful, interaction-dependent information that evolves over time and is required for personalization and cross-session continuity. In contrast, RAG primarily targets external knowledge grounding, retrieving evidence from document collections or knowledge bases to supplement domain knowledge and reduce hallucinations. In practice, they are complementary: memory supplies user- and session-specific context, while RAG provides task-relevant factual evidence from external corpora.

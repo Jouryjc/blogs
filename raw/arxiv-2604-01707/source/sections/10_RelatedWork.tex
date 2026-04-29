@@ -1,0 +1,52 @@
+\section{Related works}
+\label{sec:related}
+In this section, we briefly review the prior work most relevant to our study, including RAG frameworks and LLMs for database.
+
+$\bullet$ \textbf{RAG frameworks.} RAG has been proven
+to excel in many tasks, including open-ended question answering~\cite{jeong2024adaptive,siriwardhana2023improving}, programming context \cite{chen2024auto,chen2023haipipe,chen2024automatic}, SQL rewrite~\cite{lillm,sun2024r}, automatic DBMS configuration debugging~\cite{zhou2023d,singh2024panda}, and data cleaning~\cite{naeem2024retclean,narayan2022can,qian2024unidm}.
+%
+The naive RAG technique relies on retrieving query-relevant information from external knowledge bases to mitigate the ``hallucination'' of LLMs.
+% 
+Recently, most RAG approaches~\cite{wu2024medical,wang2024knowledge,li2024dalk,gutierrez2024hipporag,edge2024local,guo2024lightrag,sarthi2024raptor,peng2024graph} have adopted graphs as the external knowledge to organize the information and relationships within documents, achieving improved overall retrieval performance, which is extensively reviewed in this paper. 
+%
+In terms of open-source software, a variety of graph databases are
+supported by both the LangChain~\cite{Langchain} and LlamaIndex~\cite{llamaindex} libraries,
+while a more general class of graph-based RAG applications is also emerging, including systems that
+can create and reason over knowledge graphs in both Neo4j~\cite{neo4j} and NebulaGraph~\cite{nebula}. 
+%
+For more details, please refer to the recent surveys and experimental studies of graph-based RAG methods~\cite{peng2024graph,han2024retrieval,zhou2026indepth}.
+
+% $\bullet$ \textbf{Agent memory systems.}
+% As LLM applications move to long-horizon tasks, research on agent memory systems has advanced rapidly in recent years. Early memory methods~\cite{zhong2024memorybank,lu2023memochat,wujiang2025amem} [MemoryBank, MemoChat, ReadAgent] mainly store interaction history and rely on summarization, abstraction or compression to control memory size and support efficient retrieval. Other work borrows ideas from operating systems by organizing memory into functionally specialized storage spaces and using explicit management policies~\cite{packer2023memgpt,kang2025memory,li2025memos} [MemGPT, MemoryOS, MEMOS]. Some methods further organize memories with structured topologies such as graphs or trees to strengthen memory management and retrieval~\cite{rasmussen2025zep,rezazadeh2024isolated,chhikara2025mem0} [Zep, MemTree, Mem0g]. Beyond storing factual records of past interactions, some studies summarize experience from past trajectories and store it as memory that can guide future actionss~\cite{shinn2023reflexion} [Reflexion, ReasoningBank, G-Memory]. To make memory management more adaptive and efficient, recent agent memory systems further train specialized policies with supervised fine-tuning or reinforcement learning to decide when, what and how to store, update and retrieve [Mem1, MemR1, MemAgent, Mem-Alpha]. To evaluate memory methods in long-term scenarios, researchers have also introduced benchmark datasets for long-term memory~\cite{maharana2024locomo,wu2025longmemeval}[LOCOMO, LongMemEval, HaluMem, and RealMem].
+
+% $\bullet$ \textbf{Retrieval Augmented Generation.}
+
+
+$\bullet$ \textbf{LLMs for database.}  Due to the wealth of developer experience captured in a vast array of database forum discussions, recent studies \cite{zhou2023d,lao2023gptuner,fan2024combining,zhou2024db,lillm,sun2024r,chen2024automatic,giannankouris2024lambda,li2025agenttune,stolz2023galois} have begun leveraging LLMs to enhance database performance. 
+For instance, GPTuner \cite{lao2023gptuner} proposes to enhance database knob
+tuning using LLMs by leveraging domain knowledge to identify
+important knobs and coarsely initialize their values for subsequent
+refinement. 
+Besides, D-Bot \cite{zhou2023d} proposes an LLM-based database
+diagnosis system, which can retrieve relevant knowledge chunks
+and tools, and use them to identify typical root causes accurately.
+The LLM-based data analysis systems and tools have also been studied~\cite{liang2025revisiting,liu2025palimpchat,anderson2024design,lin2025twix,lin2024towards,patel2024lotus,liu2024declarative,chen2023seed,hong2025datainterpreter,li2023sheetcopilot,li2024autodcworkflow,zhang2024jellyfish,gao2024texttosql,yan2025mctuner}.
+
+To the best of our knowledge, our work is the first study that
+provides a unified framework for all existing agent memory methods and compares them comprehensively via in-depth experimental results.
+
+
+
+% \section{Related works}
+% \label{sec:related}
+% In this section,
+
+% $\bullet$ \textbf{Agent memory systems.}
+% As LLM applications move to long-horizon tasks, research on agent memory systems has advanced rapidly in recent years. Early memory methods~\cite{zhong2024memorybank,lu2023memochat,wujiang2025amem} [MemoryBank, MemoChat, ReadAgent] mainly store interaction history and rely on summarization, abstraction or compression to control memory size and support efficient retrieval. Other work borrows ideas from operating systems by organizing memory into functionally specialized storage spaces and using explicit management policies [MemGPT, MemoryOS, MEMOS]. Some methods further organize memories with structured topologies such as graphs or trees to strengthen memory management and retrieval [Zep, MemTree, Mem0g]. Beyond storing factual records of past interactions, some studies summarize experience from past trajectories and store it as memory that can guide future actions [Reflexion, ReasoningBank, G-Memory]. To make memory management more adaptive and efficient, recent agent memory systems further train specialized policies with supervised fine-tuning or reinforcement learning to decide when, what and how to store, update and retrieve [Mem1, MemR1, MemAgent, Mem-Alpha]. To evaluate memory methods in long-term scenarios, researchers have also introduced benchmark datasets for long-term memory[LOCOMO, LongMemEval, HaluMem, and RealMem].
+
+% $\bullet$ \textbf{Retrieval Augmented Generation.}
+
+% $\bullet$ \textbf{LLMs for data management.}
+
+
+

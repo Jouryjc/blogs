@@ -1,0 +1,17 @@
+\section{Information retrieval}
+\label{sec:mem_retrieval}
+
+This component governs how the agent system identifies and extracts the most relevant information from memory storage to support informed reasoning or context-aware response generation.
+Existing information retrieval strategies can be broadly categorized into four paradigms based on the fundamental mechanisms they employ:
+
+\noindent {\Large \ding{182}} \textbf{Lexical-Based Retrieval.}
+This paradigm relies on the overlap of surface-level tokens or terms, typically implemented through some representative techniques such as set-based matching via the Jaccard similarity coefficient or scoring models like BM25~\cite{robertson2009prf}. Lexical-based retrieval provides a strong baseline for exact term matching, which can be particularly effective for retrieving names, specific entities, or phrases where precise wording is critical.
+
+\noindent {\Large \ding{183}} \textbf{Vector-Based Retrieval.}
+This paradigm leverages semantic similarity in a continuous vector space to address the vocabulary mismatch problem inherent in exact keyword matching. By encoding both the query and memories into high-dimensional vectors via embedding models, vector-based retrieval is formulated as a top-$k$ search for the most relevant entries using distance metrics like cosine similarity. This approach excels at capturing latent semantic nuances, ensuring that relevance is determined by semantic content rather than surface-level lexical form. To maintain efficiency within the massive scale of memory storage, Approximate Nearest Neighbor (ANN) search algorithms, such as HNSW~\cite{malkov2018efficient} or PQ~\cite{jegou2011pq} (Product Quantization), are frequently employed.
+
+\noindent {\Large \ding{184}} \textbf{Structure-Based Retrieval.}
+This paradigm exploits the explicit relational connections between memory entities, often operating on graph-based or hierarchical storage, performing graph traversal, neighborhood expansion, or multi-hop reasoning to retrieve interconnected clusters of information instead of simple query-to-item matching. For example, {\tt Mem0$^g$} explores the relationships starting from nodes identified through similarity search to construct a comprehensive subgraph that captures relevant and multi-faceted information. Similarly, {\tt Zep} utilizes a BFS-based graph traversal algorithm to enhance initial search results by identifying additional nodes and edges.
+
+\noindent {\Large \ding{185}} \textbf{LLM-Assisted Retrieval.}
+This paradigm integrates LLMs as an active reasoning component to guide or refine the retrieval process. In addition to directly deciding which specific information should be retrieved, LLMs can also be utilized to transform ambiguous user prompts into precise search queries or to identify key entities within a query to facilitate more targeted retrieval. By leveraging the reasoning capabilities of LLMs, this paradigm excels at uncovering latent semantic dependencies, thereby ensuring a more closer alignment between queries and retrieved knowledge.

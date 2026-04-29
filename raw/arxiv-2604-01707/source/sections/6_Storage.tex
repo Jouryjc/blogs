@@ -1,0 +1,18 @@
+\section{Memory Storage}
+\label{sec:mem_storage}
+
+The memory storage component governs how the processed memory is organized and persisted across two primary dimensions: organization-centric and representation-centric.
+The former determines the architectural depth of the storage system, encompassing flat storage and hierarchical storage, and the latter characterizes the employed technological paradigm, primarily comprising vector-based storage and graph-based storage.
+
+\noindent {\Large \ding{182}} \textbf{Flat storage.}
+This approach represents a unified, single-tier storage that aggregates all information within a homogeneous space, such as a FIFO queue or a JSON file, defined relative to hierarchical storage within the organization-centric dimension.
+
+\noindent {\Large \ding{183}} \textbf{Hierarchical storage.}
+This approach partitions memory into specialized, multi-tiered architectures, allowing individual storage components to fulfill distinct functional roles and operate at different levels of granularity. For example, {\tt MemoryOS} organizes memory into a three-tier hierarchical structure: short-term memory for timely conversations, mid-term memory for topic summaries, and long-term memory for user preferences. % 可加MemGPT的例子
+By applying different, synergistic management and retrieval strategies to respective storage components, hierarchical storage effectively optimizes the trade-off between computational overhead and knowledge persistence.
+
+\noindent {\Large \ding{184}} \textbf{Vector-based storage.}
+This approach encodes textual memory into high-dimensional embeddings, subsequently indexed in dedicated vector libraries or databases, such as FAISS~\cite{douze2025faisslibrary} and Qdrant, to enable the agent to perform efficient semantic similarity search. Vector-based storage can function as a standalone repository or serve as a foundational building block frequently integrated into more complex storage architectures.
+
+\noindent {\Large \ding{185}} \textbf{Graph-based storage.}
+This approach utilizes diverse graph topologies, such as trees, knowledge graphs, and temporal graphs, to preserve the rich structural information inherent in memory. For instance, {\tt MemTree} organizes memory into a hierarchical tree where each node encapsulates aggregated textual content, providing varying levels of abstraction along the tree's depth; {\tt Zep} employs a layered temporal knowledge graph that concurrently organizes memory by representing raw messages as nodes, extracting subject–predicate–object triples, and clustering entities into communities. These graph-based storage methods capture intricate relationships and multi-hop associations that lie beyond the reach of simple vector similarity metrics.

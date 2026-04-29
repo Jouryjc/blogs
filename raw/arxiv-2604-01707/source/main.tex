@@ -1,0 +1,477 @@
+\documentclass[sigconf,nonacm]{acmart}
+\settopmatter{authorsperrow=5}
+\let\Bbbk\relax
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\setcopyright{acmcopyright}
+\copyrightyear{2026}
+\acmYear{2026}
+% \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float} 
+% \usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{utfsym}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{amsmath, amssymb}
+\usepackage{makecell}
+\usepackage{pifont}
+
+\usepackage{multirow}
+\usepackage{balance}
+\usepackage{adjustbox} % 引入 adjustbox 宏包
+\usepackage{threeparttable}
+\usepackage{xcolor}
+\usepackage{color,colortbl}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{tikz-qtree}
+\usetikzlibrary{fit,calc}
+\usepackage{pgfplots}
+\usepackage{varwidth}
+\usepackage{url}
+\usepackage{mathtools}
+\usepackage{rotating} %table rotate
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{cleveref}
+\newtheorem{Def}{Definition}
+\newtheorem{example}{Example}
+\usepackage[ruled,linesnumbered,vlined]{algorithm2e}
+\usetikzlibrary{patterns}
+\newtheorem{remark}{\textbf{Remark}}
+\usepackage[noend]{algpseudocode}   
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newcommand{\Method}{\tt CCAS}
+\newtheorem{problem}{Problem}
+\newtheorem{ob}{Observation}
+\newenvironment{proofsketch}{%
+  \renewcommand{\proofname}{Proof sketch}\proof}{\endproof}
+\newcommand{\revise}[1]{{\color{blue}#1}}
+\newenvironment{coloredalgorithm}{%
+  \begin{lrbox}{\algobox}%
+}{%
+  \end{lrbox}%
+  \colorbox{gray!20}{\usebox{\algobox}}%
+}   
+\definecolor{linecolor}{rgb}{0.55, 0, 0} % 深红色
+\definecolor{bgcolor}{rgb}{1, 0.95, 0.95} % 浅粉色
+\newcommand{\Yes}{\usym{2713}}
+\newcommand{\No}{\usym{2717}}
+\usepackage[most]{tcolorbox}
+
+\tcbset{highlightcode/.style=
+    {enhanced, 
+    colframe=gray!20, 
+    colback=gray!20, 
+    boxrule=0pt, 
+    boxsep=0pt, 
+    left=1mm, 
+    right=0mm, 
+    top=1mm, 
+    bottom=1mm,
+    overlay={
+        \begin{scope}[shift={(frame.north west)}]
+            % Adjust the values if necessary
+            \foreach \i in {1,2,3} {
+                \node[anchor=east] at (-5mm,{-\i*15mm + 1.5mm}) {\footnotesize\the\numexpr\value{AlgoLine}+\i\relax};
+            }
+        \end{scope}
+    },
+}}
+\usepackage{framed}
+
+% \definecolor{mycolor2}{RGB}{164,224,187} % green
+% \definecolor{mycolor1}{RGB}{53,122,162} % purple
+\definecolor{mycolor1}{RGB}{53,122,162}   % 比较偏蓝紫
+\definecolor{mycolor2}{RGB}{164,224,187} % 绿色
+
+% \newcommand{\colorcell}[1]{%
+%     \cellcolor{mycolor1!#1!mycolor2}%
+%     \ifnum#1>49%
+%         {\Large \textcolor{white}{{#1}}}% % <-- 在这里用 \Large、\small 等
+%     \else
+%         {\Large \textcolor{black}{{#1}}}% % 同理
+%     \fi
+% }
+
+% \newcommand{\colorcell}[1]{%
+%     \cellcolor{mycolor1!#1!mycolor2}%
+%     \ifnum#1>49%
+%         {\Large \textcolor{white}{#1}}%
+%     \else
+%         {\Large \textcolor{black}{#1}}%
+%     \fi
+% }
+\newcommand{\change}[1]{\textcolor{blue}{#1}}
+\newcommand{\colorcell}[1]{%
+    % 用 (mycolor1!#1!mycolor2) 从紫(blue-purple) 平滑过渡到绿
+    \cellcolor{mycolor1!#1!mycolor2}%
+    \ifnum#1>60
+      {\Large \textcolor{white}{#1}}%
+    \else
+      {\Large \textcolor{black}{#1}}%
+    \fi
+}
+
+
+
+\newcommand\vldbdoi{XX.XX/XXX.XX}
+\newcommand\vldbpages{XXX-XXX}
+% issue-specific
+\newcommand\vldbvolume{19}
+\newcommand\vldbissue{1}
+\newcommand\vldbyear{2026}
+% should be fine as it is
+\newcommand\vldbauthors{\authors}
+\newcommand\vldbtitle{\shorttitle} 
+% leave empty if no availability url should be set
+% \newcommand\vldbavailabilityurl{URL_TO_YOUR_ARTIFACTS}
+% % whether page numbers should be shown or not, use 'plain' for review versions, 'empty' for camera ready
+\newcommand\vldbpagestyle{plain} 
+\newcommand*{\tikzmk}[1]{\tikz[remember picture,overlay,] \node (#1) {};\ignorespaces}
+%define a boxing command, argument = colour of box
+\newcommand{\boxit}[2]{\tikz[remember picture,overlay]{\node[yshift=3pt,xshift = 3pt,fill=gray!80,opacity=.25,fit={(A)($(B)+(\dimexpr\algowidth-#2\algoskipindent+13pt,.8\baselineskip)$)}] {};}\ignorespaces}
+
+
+% \newcommand*{\tikzmw}[1]%{\tikz[remember picture,overlay,] \node (#1) {};\ignorespaces}
+% \newcommand{\boxitw}[2]{\tikz[remember picture,overlay]{\node[yshift=3pt,xshift = 3pt,fill=gray!80,opacity=.25,fit={(A)($(B)+(\dimexpr\algowidth-#2\algoskipindent-5pt,.8\baselineskip)$)}] {};}\ignorespaces}
+
+\newcommand*{\tikzmw}[1]{% 
+    \tikz[remember picture,overlay] \node (#1) {};\ignorespaces%
+}
+\newcommand{\boxitw}[2]{%
+    \tikz[remember picture,overlay]{%
+        \node[yshift=3pt,xshift = 3pt,fill=gray!80,opacity=.25,fit={(A)($(B)+(\dimexpr\algowidth-#2\algoskipindent-5pt,.8\baselineskip)$)}] {};
+    }\ignorespaces%
+}
+\newcommand{\cmark}{\ding{51}} % Checkmark symbol
+\newcommand{\xmark}{\ding{55}} % Cross symbol
+
+\newcommand*{\tikzmKCC}[1]{\tikz[remember picture,overlay,] \node (#1) {};\ignorespaces}
+\newcommand{\boxitKCC}[2]{\tikz[remember picture,overlay]{\node[yshift=2pt,xshift = 3pt,fill=gray!80,opacity=.25,fit={(A)($(B)+(\dimexpr\algowidth-#2\algoskipindent-82pt,.8\baselineskip)$)}] {};}\ignorespaces}
+%% These commands are for a PROCEEDINGS abstract or paper.
+
+
+% \textfloatsep 1.3mm plus/ 1.1mm \intextsep 1.2mm plus 1.2mm
+\textfloatsep 1.1mm plus 1.2mm \intextsep 1.1mm plus 1.1mm
+
+% \renewcommand{\baselinestretch}{0.9928}
+% define AIbox
+\usepackage[most]{tcolorbox}
+\usepackage{float}
+\usepackage{xspace}
+% \tcbset{
+%   aibox/.style={
+%     width=474.18663pt,
+%     top=10pt,
+%     colback=white,
+%     colframe=black,
+%     colbacktitle=black,
+%     enhanced,
+%     center,
+%     attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+%     boxed title style={boxrule=0pt,colframe=white,},
+%   }
+% }
+% \newtcolorbox{AIbox}[2][]{aibox,title=#2,#1}
+\tcbset{
+  aibox/.style={
+    width=\linewidth,
+    top=6pt,
+    bottom=2pt,          % 调小下方留白
+    left=2pt,            % 调小左边留白
+    right=2pt,           % 调小右边留白
+    colback=white,
+    colframe=black,
+    colbacktitle=black,
+    enhanced,
+    center,
+    attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+    boxed title style={boxrule=0pt,colframe=white,},
+  }
+}
+\newtcolorbox{AIbox}[2][]{aibox,title=#2,#1}
+
+
+\begin{document}
+\title{Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework [Experiment, Analysis \& Benchmark]}
+
+
+% \author{Yanchen Wu}
+% \authornote{Both authors contributed equally to this research.}
+% \author{Yingli Zhou}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{{{yanchenwu, yinglizhou}}}
+% \email{@link.cuhk.edu.cn}
+
+% \author{Tenghui Lin}
+% \authornotemark[1]
+% \author{Sibo Wang}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Hong Kong}
+%   \country{China}
+% }
+% \email{{{thlin, swang}}}
+% \email{@se.cuhk.edu.hk}
+
+% \author{Fangyuan Zhang}
+% \author{Xun Zhou}
+% \affiliation{
+%   \institution{Harbin Institute of Technology}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{{{zhangfangyuan, zhouxun2023}}}
+% \email{@hit.edu.cn}
+
+% \author{Qintian Guo}
+% \affiliation{
+%   \institution{Beijing Institute of Technology}
+%   \city{Zhuhai}
+%   \country{China}
+% }
+% \email{qtguo@bit.edu.cn}
+
+% \author{Xilin Liu}
+% \author{Yuchi Ma}
+% \affiliation{
+%   \institution{Huawei Cloud Computing Technologies Co., Ltd.}
+%   \country{}
+% }
+% \email{{{liuxilin3, mayuchi1}}}
+% \email{@huawei.com}
+
+% \author{Yixiang Fang}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{fangyixiang@cuhk.edu.cn}
+
+
+\author{Yanchen Wu}
+\authornote{The first two authors contributed equally to this research.}
+\affiliation{
+  \institution{CUHK-Shenzhen}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{yanchenwu@link.cuhk.edu.cn}
+
+\author{Tenghui Lin}
+\authornotemark[1]
+\affiliation{
+  \institution{CUHK}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Hong Kong}
+%   \country{China}
+% }
+% \email{tenghuilin@cuhk.edu.hk}
+
+\author{Yingli Zhou}
+\affiliation{
+  \institution{CUHK-Shenzhen}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{yinglizhou@link.cuhk.edu.cn}
+
+\author{Fangyuan Zhang}
+\affiliation{
+  \institution{HITSZ}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{Harbin Institute of Technology}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{zhangfangyuan@hit.edu.cn}
+
+\author{Qintian Guo}
+\affiliation{
+  \institution{BIT}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{Beijing Institute of Technology}
+%   \city{Zhuhai}
+%   \country{China}
+% }
+% \email{qtguo@bit.edu.cn}
+
+\author{Xun Zhou}
+\affiliation{
+  \institution{HITSZ}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{Harbin Institute of Technology}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{zhouxun2023@hit.edu.cn}
+
+\author{Sibo Wang}
+\affiliation{
+  \institution{CUHK}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Hong Kong}
+%   \country{China}
+% }
+% \email{swang@se.cuhk.edu.hk}
+
+\author{Xilin Liu}
+\affiliation{
+  \institution{Huawei Cloud}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{Huawei Cloud Computing Technologies Co., Ltd.}
+%   \country{}
+% }
+% \email{liuxilin3@huawei.com}
+
+\author{Yuchi Ma}
+\affiliation{
+  \institution{Huawei Cloud}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{Huawei Cloud Computing Technologies Co., Ltd.}
+%   \country{}
+% }
+% \email{mayuchi1@huawei.com}
+
+\author{Yixiang Fang}
+\affiliation{
+  \institution{CUHK-Shenzhen}
+  \city{}
+  \country{}
+}
+% \affiliation{
+%   \institution{The Chinese University of Hong Kong}
+%   \city{Shenzhen}
+%   \country{China}
+% }
+% \email{fangyixiang@cuhk.edu.cn}
+
+
+\input{sections/author}
+
+\input{sections/abstract}
+
+
+
+% \ccsdesc[500]{Theory of computation~Algorithm design techniques}
+
+% \keywords{Graph edit distance, Knowledge graph, Graph neural network}
+
+\maketitle
+
+\pagestyle{\vldbpagestyle}
+\begingroup\small\noindent\raggedright\textbf{PVLDB Reference Format:}\\
+\vldbauthors. \vldbtitle. PVLDB, \vldbvolume(\vldbissue): \vldbpages, \vldbyear.\\
+\href{https://doi.org/\vldbdoi}{doi:\vldbdoi}
+\endgroup
+\begingroup
+\renewcommand\thefootnote{}\footnote{\noindent
+This work is licensed under the Creative Commons BY-NC-ND 4.0 International License. Visit \url{https://creativecommons.org/licenses/by-nc-nd/4.0/} to view a copy of this license. For any use beyond those covered by this license, obtain permission by emailing \href{mailto:info@vldb.org}{info@vldb.org}. Copyright is held by the owner/author(s). Publication rights licensed to the VLDB Endowment. \\
+\raggedright Proceedings of the VLDB Endowment, Vol. \vldbvolume, No. \vldbissue\ %
+ISSN 2150-8097. \\
+\href{https://doi.org/\vldbdoi}{doi:\vldbdoi} \\
+}\addtocounter{footnote}{-1}\endgroup
+%%% VLDB block end %%%
+
+%%% do not modify the following VLDB block %%
+%%% VLDB block start %%%
+\ifdefempty{\vldbavailabilityurl}{}{
+\vspace{.3cm}
+\begingroup\small\noindent\raggedright\textbf{PVLDB Artifact Availability:}\\
+The source code, data, and/or other artifacts have been made available at \url{https://github.com/Yanchen398/Memory-in-the-LLM-Era}.
+\endgroup
+}
+%\definecolor{1000w}{HTML}{BB0C41}
+%\definecolor{1w}{HTML}{B77538}
+
+
+%\definecolor{10w}{HTML}{AE9EC8}
+%\definecolor{100w}{HTML}{5C88AB}
+
+\definecolor{1000w}{HTML}{AA0030} % A deeper red color
+% \definecolor{1w}{HTML}{D68830}    % A clearer orange color
+% \definecolor{1k}{HTML}{RRGGBB}    % A clearer 
+
+\definecolor{1w}{HTML}{6B238E}   % A darker purple color
+\definecolor{10w}{HTML}{00AA00}  % A green color
+
+
+\definecolor{DarkCoral}{HTML}{CD5B45}
+\definecolor{DarkSoftApricot}{HTML}{D1A655}
+
+
+
+\newcommand{\zhou}[1]{\textcolor{magenta}{[zhou: #1]}}
+\input{sections/1_Introduciton}
+\input{sections/2_Preliminaries}
+\input{sections/3_GenericModel}
+\input{sections/4_Information}
+\input{sections/5_Manage}
+\input{sections/6_Storage}
+\input{sections/7_Retrieve}
+\input{sections/8_Experiment}
+\input{sections/9_LessonsOpportunities}
+\input{sections/10_RelatedWork}
+\input{sections/11_Conclution}
+    
+%\section{Acknowledgments}
+
+\clearpage
+
+   
+\balance
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{ref}
+
+\newpage
+\appendix
+\input{sections/12_Appendix}
+\end{document}
+\endinputo

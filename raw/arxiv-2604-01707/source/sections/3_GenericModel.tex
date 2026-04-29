@@ -1,0 +1,62 @@
+
+
+\section{A UNIFIED FRAMEWORK}
+\label{sec:generic}
+
+\begin{figure}[]
+    \centering
+    \setlength{\abovecaptionskip}{0cm}
+    % \setlength{\belowcaptionskip}{-0.3cm}
+    \includegraphics[width=0.9\linewidth]{figures/overview.pdf}
+    \caption{An overview of the unified framework for agent memory systems.}
+    \label{fig:overview}
+\end{figure}
+
+In this section, we decompose existing agent memory systems into modular components under a unified framework, as illustrated in Figure~\ref{fig:overview}.
+The framework comprises four key components:
+{\Large \ding{182}} \textit{Information extraction},
+{\Large \ding{183}} \textit{Memory management},
+{\Large \ding{184}} \textit{Memory storage}, and
+{\Large \ding{185}} \textit{Information retrieval}.
+Taken together, these components capture how existing agent memory systems operate in practice.
+
+
+
+% \begin{algorithm}[]
+%   \caption{{A unified framework for agent memory systems}}
+%   \label{alg:framework}
+%   \small
+%   \SetKwInOut{Input}{input}\SetKwInOut{Output}{output}
+%   \Input{Current message $M$, historical dialogue memory $\mathcal{H}$, and system parameters $\mathcal{P}$}
+%   \Output{Updated memory $\mathcal{H}'$ and response $\mathcal{R}$}
+
+%   \tcp{\textcolor{teal}{{\Large \ding{182}} Information extraction}}
+%   $\mathcal{M}_{\text{new}} \gets$ {\tt ExtractInfo}$(M)$ \tcp*[r]{extract key facts, intents, or events from $M$}
+
+%   \tcp{\textcolor{teal}{{\Large \ding{183}} Memory management}}
+%   $\widehat{\mathcal{H}} \gets$ {\tt ManageMemory}$(\mathcal{H}, \mathcal{M}_{\text{new}})$ \tcp*[r]{consolidate, update, filter, enhance}
+%   $\mathcal{O} \gets$ {\tt ConfigureOperators}$(\mathcal{P}, \widehat{\mathcal{H}})$ \tcp*[r]{prepare retrieval operators / criteria}
+
+%   \tcp{\textcolor{teal}{{\Large \ding{184}} Memory storage}}
+%   $\mathcal{H}' \gets$ {\tt StoreMemory}$(\widehat{\mathcal{H}}, \mathcal{M}_{\text{new}})$ \tcp*[r]{persist updated memory entries}
+
+%   \tcp{\textcolor{teal}{{\Large \ding{185}} Retrieval}}
+%   $\mathcal{X} \gets$ {\tt RetrieveContext}$(M, \mathcal{H}', \mathcal{O})$ \tcp*[r]{fetch most relevant memories for current message}
+%   $\mathcal{R} \gets$ {\tt GenerateResponse}$(M, \mathcal{X})$\;
+
+%   \Return{$(\mathcal{H}', \mathcal{R})$}
+% \end{algorithm}
+
+Given the current user message $\mathcal{M}$ and the existing memory $\mathcal{H}$, the agent system operates through four key components:
+{\Large \ding{182}} {\it Information extraction}.
+This component describes how the agent system identifies and extracts essential information from $\mathcal{M}$ that is useful for updating the memory. It filters out redundant details and transforms the relevant content into different types of knowledge (e.g., triples derived from text, informational summaries) suitable for downstream processing.
+{\Large \ding{183}} {\it Memory management}.
+This component illustrates how the agent system integrates the newly extracted information with the existing memory $\mathcal{H}$ through operations such as consolidation, updating, filtering, and enhancement. The goal is to maintain a coherent, consistent, and up-to-date memory state that accurately reflects accumulated knowledge.
+{\Large \ding{184}} {\it Memory storage}.
+This component specifies how the agent system organizes and persists the processed memory. Depending on the system design, it may employ vector-based, graph-based, or hybrid storage formats to accommodate diverse information retrieval requirements.
+{\Large \ding{185}} {\it Information retrieval}.
+When a new query arrives, this component governs how the agent system retrieves the most relevant information from $\mathcal{H}$ to support reasoning or response generation. 
+The above four components capture the key functional distinctions among different agent memory methods.
+
+% The workflow of agent memory systems is illustrated in Figure~\ref{fig:overview}.
+% Existing systems vary across all four stages: the representation of extracted information in {\Large \ding{182}} (e.g., text, embedding, or structured triples); the consolidation and filtering strategies in {\Large \ding{183}}; the persistence forms in {\Large \ding{184}} (e.g., vector stores, relational databases, or graph-based memory); and the retrieval mechanisms in {\Large \ding{185}} (e.g., similarity search, attention recall, or hybrid matching).
