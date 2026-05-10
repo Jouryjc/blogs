@@ -1,0 +1,32 @@
+{
+  "title": "RAG 为什么越用越慢？从检索、上下文到 TTFT 讲清楚",
+  "author": "",
+  "summary": "RAG 变慢通常不是向量库一个环节的问题，而是检索、重排、上下文拼接、Prefill、KV Cache 共同把 TTFT 拉高。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-Hkti8M/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "RAG 延迟链路：检索、重排、上下文、Prefill、Decode",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-10/rag-ttft/imgs/article-cover.png"
+    },
+    {
+      "alt": "RAG 流水线从简单检索变成多阶段链路",
+      "originalPath": "illustrations/rag-pipeline.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-10/rag-ttft/illustrations/rag-pipeline.png"
+    },
+    {
+      "alt": "RAG 把上下文变长，Prefill 拉高 TTFT",
+      "originalPath": "illustrations/prefill-ttft.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-10/rag-ttft/illustrations/prefill-ttft.png"
+    },
+    {
+      "alt": "KV Cache 让长上下文变成显存和并发问题",
+      "originalPath": "illustrations/kv-cache.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-10/rag-ttft/illustrations/kv-cache.png"
+    }
+  ]
+}

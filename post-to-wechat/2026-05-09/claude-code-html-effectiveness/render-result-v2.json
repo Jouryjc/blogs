@@ -1,0 +1,68 @@
+{
+  "title": "Agent 交付物，不该只剩 Markdown",
+  "author": "",
+  "summary": "Claude Code 团队的 Thariq 提醒了一个关键变化：复杂 Agent 任务不一定适合继续交付 Markdown，很多场景更需要 HTML 工作台。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-4TxuhR/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Agent 交付物从 Markdown 变成 HTML 工作台",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/article-cover.png"
+    },
+    {
+      "alt": "HTML 能承载表格、设计、插图、代码、交互、工作流、空间数据和图片",
+      "originalPath": "imgs/original/original-01.jpg",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-01.jpg"
+    },
+    {
+      "alt": "Claude Code 在 Markdown 里模拟颜色展示",
+      "originalPath": "imgs/original/original-02.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-02.png"
+    },
+    {
+      "alt": "同一份规格说明，Markdown 偏线性，HTML 更适合阅读结构化信息",
+      "originalPath": "imgs/original/original-03.jpg",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-03.jpg"
+    },
+    {
+      "alt": "用 HTML 临时调试动效参数，再把结果贴回 Claude Code",
+      "originalPath": "imgs/original/original-04.jpg",
+      "placeholder": "WECHATIMGPH_5",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-04.jpg"
+    },
+    {
+      "alt": "把多个实现方案并排展示，读者可以直接比较取舍",
+      "originalPath": "imgs/original/original-05.jpg",
+      "placeholder": "WECHATIMGPH_6",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-05.jpg"
+    },
+    {
+      "alt": "PR 解释页可以把 diff、风险和旁注放到同一视图",
+      "originalPath": "imgs/original/original-06.png",
+      "placeholder": "WECHATIMGPH_7",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-06.png"
+    },
+    {
+      "alt": "从代码库提取设计 token，生成可视化参考页",
+      "originalPath": "imgs/original/original-07.jpg",
+      "placeholder": "WECHATIMGPH_8",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-07.jpg"
+    },
+    {
+      "alt": "把限流逻辑整理成一页带流程图、代码片段和 gotchas 的解释页",
+      "originalPath": "imgs/original/original-08.jpg",
+      "placeholder": "WECHATIMGPH_9",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-08.jpg"
+    },
+    {
+      "alt": "配置可以变成带校验和导出能力的临时编辑器",
+      "originalPath": "imgs/original/original-09.jpg",
+      "placeholder": "WECHATIMGPH_10",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/original/original-09.jpg"
+    }
+  ]
+}

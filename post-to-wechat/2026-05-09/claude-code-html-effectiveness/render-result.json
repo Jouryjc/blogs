@@ -1,0 +1,14 @@
+{
+  "title": "别再让 Agent 只交付 Markdown 了",
+  "author": "",
+  "summary": "Agent 不是只能写 Markdown。对复杂方案、评审、报告和可调参数，HTML 往往是更好的交付物。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-aq7UKA/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Agent 从 Markdown 文档转向 HTML 工作台",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-09/claude-code-html-effectiveness/imgs/article-cover.png"
+    }
+  ]
+}
