@@ -2,6 +2,13 @@
 url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372438
 title: "papers.ssrn.com"
 captured_at: "2026-04-20T14:24:47.841Z"
+tags:
+  - type/source
+  - topic/agent-safety
+moc:
+  - "[[agent-safety]]"
+related:
+  - "[[ai-agent-traps-xiaoyu]]"
 ---
 
 # papers.ssrn.com

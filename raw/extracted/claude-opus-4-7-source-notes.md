@@ -4,6 +4,14 @@ source: "https://www.anthropic.com/news/claude-opus-4-7"
 source_author: "Anthropic"
 captured_at: "2026-04-16"
 captured_by: "agent-browser"
+tags:
+  - type/source
+  - topic/ai-industry
+  - topic/claude-code
+moc:
+  - "[[ai-industry]]"
+related:
+  - "[[claude-opus-4-7]]"
 ---
 
 # 页面基本信息

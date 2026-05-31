@@ -1,3 +1,14 @@
+---
+title: "罗福莉访谈资料笔记"
+tags:
+  - type/source
+  - topic/ai-industry
+moc:
+  - "[[ai-industry]]"
+related:
+  - "[[luo-fuli-agent-era-wechat]]"
+---
+
 # 罗福莉访谈资料摘录
 
 created_at: 2026-04-26

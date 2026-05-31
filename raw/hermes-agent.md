@@ -6,6 +6,11 @@ coverImage: "imgs/article-cover.png"
 summary: "深度拆解 Hermes Agent 的核心源码设计：对话循环、提示词分层、上下文压缩、记忆冻结、工具系统、子代理隔离与训练数据流水线，看看一个成熟 Agent runtime 到底是怎么做出来的。"
 source_file: "/Users/jouryjc/Documents/code/2026.04/blogs/raw/hermes-agent.md"
 author: "码农小余"
+tags:
+  - type/source
+  - topic/agent-runtime
+moc:
+  - "[[agent-runtime]]"
 ---
 
 # 扒开 Hermes Agent 源码后，我发现它真正厉害的不是工具多，而是把 Agent 做成了“操作系统”

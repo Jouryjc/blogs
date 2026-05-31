@@ -7,6 +7,12 @@ created_at: "2026-04-22"
 coverImage: "imgs/article-cover.png"
 summary: "这篇论文基于公开源码拆解 Claude Code。它最值得看的结论是：生产级 AI Agent 的壁垒，不在提示词，而在权限、上下文、扩展和持久化这些运行时基础设施。"
 source_file: "/Users/jouryjc/Documents/code/2026.04/blogs/raw/arxiv-2604-14228/source.pdf"
+tags:
+  - type/source
+  - topic/agent-design
+  - topic/claude-code
+moc:
+  - "[[agent-design]]"
 ---
 
 # 把 Claude Code 拆开之后，我更确定：AI Agent 的壁垒在运行时，不在提示词

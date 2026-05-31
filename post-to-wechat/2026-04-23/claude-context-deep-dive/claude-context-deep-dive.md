@@ -6,6 +6,15 @@ created_at: "2026-04-23"
 coverImage: "imgs/cover.png"
 summary: "Claude Context 不是把整个仓库塞进上下文，而是先索引代码库，再用混合检索为 AI Agent 找到更相关的代码片段。"
 source_url: "https://github.com/zilliztech/claude-context"
+tags:
+  - type/article
+  - topic/context-engineering
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[context-engineering]]"
+related:
+  - "[[avi-context-engineering-claude-code]]"
 ---
 
 # Claude Context 深度拆解：AI Agent 为什么需要代码检索层

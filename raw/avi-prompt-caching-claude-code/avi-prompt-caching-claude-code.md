@@ -8,6 +8,13 @@ coverImage: "imgs/cover-zh.png"
 summary: "Prompt Caching 真正省钱的前提，是把系统提示词、工具定义和项目上下文固定成稳定前缀，让新增消息只长在后面。Claude Code 的 92% 命中率，靠的不是一个开关，而是一整套不破坏缓存的会话结构。"
 author: "蒸馏小余"
 source_file: "/Users/jouryjc/Documents/code/2026.04/blogs/x-to-markdown/avichawla/prompt-caching-in-llms-clearly-explained/2044670188998803855.md"
+tags:
+  - type/source
+  - topic/prompt-caching
+moc:
+  - "[[prompt-caching]]"
+related:
+  - "[[2044670188998803855]]"
 ---
 
 # Prompt Cache 为什么这么省钱？把 Claude Code 92% 命中率背后的门道讲清楚

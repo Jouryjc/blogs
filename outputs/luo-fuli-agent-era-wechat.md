@@ -5,6 +5,14 @@ source_author: "张小珺商业访谈录"
 written_style: "码农小余"
 created_at: "2026-04-26"
 summary: "从罗福莉访谈看大模型竞争如何从预训练转向 Agent 后训练，以及这会怎样重写算力、Infra、组织和个人工作方式。"
+tags:
+  - type/article
+  - topic/ai-industry
+  - platform/wechat
+moc:
+  - "[[ai-industry]]"
+related:
+  - "[[luo-fuli-interview-source-notes]]"
 ---
 
 # 罗福莉这场 3.5 小时访谈，真正说透了 Agent 时代的换挡

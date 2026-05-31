@@ -6,6 +6,15 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-10"
 coverImage: "imgs/article-cover.png"
 summary: "RAG 变慢通常不是向量库一个环节的问题，而是检索、重排、上下文拼接、Prefill、KV Cache 共同把 TTFT 拉高。"
+tags:
+  - type/article
+  - topic/rag
+  - topic/prompt-caching
+  - platform/wechat
+moc:
+  - "[[rag]]"
+related:
+  - "[[avi-prompt-caching-claude-code]]"
 ---
 
 # RAG 为什么越用越慢？从检索、上下文到 TTFT 讲清楚

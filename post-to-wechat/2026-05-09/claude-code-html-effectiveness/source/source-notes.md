@@ -1,3 +1,14 @@
+---
+title: "Claude Code HTML 有效性 · 资料笔记"
+tags:
+  - type/source
+  - topic/claude-code
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[claude-code-html-effectiveness]]"
+---
+
 # Using Claude Code: The Unreasonable Effectiveness of HTML
 
 - Source tweet: https://x.com/trq212/status/2052809885763747935

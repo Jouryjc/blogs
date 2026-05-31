@@ -6,6 +6,15 @@ written_style: "蒸馏小余"
 created_at: "2026-04-27"
 coverImage: "imgs/agent-skills-engineering-workflow-cover.png"
 summary: "如果你发现 AI 编程助手总是跳过测试、猜命令、乱改边界，问题往往不在 prompt 不够长，而在缺少可执行的工程流程。Agent Skills 的价值，是把规格、计划、实现、验证和发布写成 Agent 能稳定遵守的工作契约。"
+tags:
+  - type/article
+  - topic/agent-skills
+  - platform/wechat
+moc:
+  - "[[agent-skills]]"
+related:
+  - "[[agent-skills-engineering-workflow.optimized]]"
+  - "[[agent-skills-deep-dive]]"
 ---
 
 # 别再只给 AI 写提示词：Agent Skills 把工程流程变成可执行规则

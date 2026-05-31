@@ -6,6 +6,14 @@ written_style: "码农小余"
 created_at: "2026-04-16"
 coverImage: "imgs/agent-memory-cover.png"
 summary: "LLM 天生无状态，每次调用都从零开始。本文从第一性原理出发，拆解 Agent 记忆的四层演进——Python 列表、Markdown 文件、向量搜索、图谱混合架构，并说明开源方案 Cognee 为什么更像一套可落地的记忆工程。"
+tags:
+  - type/article
+  - topic/agent-memory
+  - platform/wechat
+moc:
+  - "[[agent-memory]]"
+related:
+  - "[[memory-in-llm-era-wechat-draft]]"
 ---
 
 # 别再让你的 AI Agent 失忆了：从 Python 列表到知识图谱的记忆进化之路

@@ -6,6 +6,14 @@ written_style: "码农小余"
 created_at: "2026-04-12"
 coverImage: "imgs/claude-code-boris-cherny-cover.png"
 summary: "这期 Boris Cherny 访谈真正值得看的，不是 Claude Code 写了多少代码，而是一个更大的信号：编码正在商品化，软件生产方式开始重排。"
+tags:
+  - type/article
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[Claude_Code_Boris_Cherny_深度总结]]"
 ---
 
 # Claude Code 负责人 Boris Cherny：编程被解决之后，会发生什么？

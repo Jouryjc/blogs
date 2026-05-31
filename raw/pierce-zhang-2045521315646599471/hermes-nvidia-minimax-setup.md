@@ -7,6 +7,14 @@ created_at: "2026-04-20"
 coverImage: "imgs/cover.png"
 summary: "omegaAI 分享了一套把 Hermes 接到 NVIDIA NIM 免费模型的实操流程。真正有价值的，不只是 10 个配置步骤，而是它给了我们一条低成本接入大厂推理基础设施的路径：注册、生成 API Key、配置 Provider、填好 Base URL、选中 minimax-m2.7，然后马上就能跑起来。"
 author: "蒸馏小余"
+tags:
+  - type/source
+  - topic/agent-runtime
+moc:
+  - "[[agent-runtime]]"
+related:
+  - "[[2045521315646599471]]"
+  - "[[hermes-agent]]"
 ---
 
 # 10 步把 Hermes 接上 NVIDIA 免费 Minimax-m2.7，这套低成本配置其实很适合日常折腾

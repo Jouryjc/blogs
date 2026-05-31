@@ -1,2 +1,10 @@
 .DS_Store
 travel
+# Obsidian: commit vault config, ignore per-session UI/cache state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# KB maintenance scaffolding (generated)
+_kb_build/inventory.json
+_kb_build/__pycache__/

@@ -1,3 +1,15 @@
+---
+title: "做 Agent 记忆，别只上向量库：10 种方法统一评测"
+tags:
+  - type/article
+  - topic/agent-memory
+  - platform/wechat
+moc:
+  - "[[agent-memory]]"
+related:
+  - "[[memory-in-llm-era-wechat-draft]]"
+---
+
 # 做 Agent 记忆，别只上向量库：10 种方法统一评测
 
 很多人做长期 Agent，第一反应是：加一个向量库，把历史对话存进去。

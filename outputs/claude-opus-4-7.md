@@ -7,6 +7,15 @@ author: "Codex整理"
 created_at: "2026-04-16"
 coverImage: "imgs/claude-opus-4-7-cover.png"
 summary: "Claude Opus 4.7 真正值得关注的，不只是分数更高，而是它开始更像一个能长期执行、会自查、能少盯着点的工程 Agent。"
+tags:
+  - type/article
+  - topic/ai-industry
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[ai-industry]]"
+related:
+  - "[[claude-opus-4-7-source-notes]]"
 ---
 
 # Claude Opus 4.7 发布了，但真正重要的是：更难的活，可以开始交给 Agent 了

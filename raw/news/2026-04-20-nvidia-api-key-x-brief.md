@@ -1,3 +1,13 @@
+---
+title: "NVIDIA API Key 获取步骤"
+tags:
+  - type/news
+  - topic/ai-news
+  - topic/agent-safety
+moc:
+  - "[[ai-industry]]"
+---
+
 # NVIDIA API Key 获取步骤
 
 `NVIDIA API Key` 的入口在 `build.nvidia.com` 的模型页面里，不是在一个单独的开发者后台。

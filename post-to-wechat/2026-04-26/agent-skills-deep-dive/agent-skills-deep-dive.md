@@ -6,6 +6,14 @@ created_at: "2026-04-26"
 coverImage: "imgs/cover.png"
 summary: "agent-skills 不是普通提示词集合，而是把规格、计划、实现、测试、评审和发布写成可执行工作流，让 AI 编程助手更稳定地参与真实工程。"
 source_url: "https://github.com/addyosmani/agent-skills"
+tags:
+  - type/article
+  - topic/agent-skills
+  - platform/wechat
+moc:
+  - "[[agent-skills]]"
+related:
+  - "[[agent-skills-engineering-workflow.optimized]]"
 ---
 
 # Agent Skills 深度拆解：让 AI 编程助手按工程流程干活
