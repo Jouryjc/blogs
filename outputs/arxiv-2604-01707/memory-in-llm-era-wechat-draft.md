@@ -8,6 +8,14 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-04-29"
 summary: "这篇论文把 Agent Memory 拆成信息提取、记忆管理、记忆存储、信息检索四个模块，对 10 种代表性方法做统一评测。结论很实用：层次结构通常更稳，原始信息不能丢，复杂 Agent 式记忆管理不一定更划算。"
 coverImage: ""
+tags:
+  - type/article
+  - topic/agent-memory
+  - platform/wechat
+moc:
+  - "[[agent-memory]]"
+related:
+  - "[[memory-in-llm-era-wechat-draft.optimized]]"
 ---
 
 # Agent 记忆不是越复杂越好：这篇新论文把 10 种方案拆开测了一遍

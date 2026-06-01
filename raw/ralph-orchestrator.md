@@ -1,3 +1,14 @@
+---
+title: "Ralph Orchestrator 笔记"
+tags:
+  - type/source
+  - topic/agent-runtime
+moc:
+  - "[[agent-runtime]]"
+related:
+  - "[[outputs/ralph-orchestrator]]"
+---
+
 # Ralph Orchestrator 深度解读：让 AI Agent 持续工作直到完成
 
 > Ralph Orchestrator 是一个多智能体 AI 编排框架，核心思想只有一句话：**让 AI Agent 不断循环迭代，直到任务真正完成为止。**

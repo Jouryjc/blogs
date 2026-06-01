@@ -7,6 +7,13 @@ created_at: "2026-04-19"
 coverImage: "imgs/cover.png"
 summary: "Ryan Mather 把 Claude Design 的实战方法讲得很直白：先搭设计系统和核心屏幕，再和工程师现场共创，用批注工具做精修，用连接器做异步方案探索，同时知道哪些关键细节必须亲手打磨。真正的重点，不是让 AI 替你设计，而是把设计闭环压缩得更短、更轻、更愉快。"
 author: "蒸馏小余"
+tags:
+  - type/source
+  - topic/agent-design
+moc:
+  - "[[agent-design]]"
+related:
+  - "[[2045162321589252458]]"
 ---
 
 # Ryan Mather 讲了 7 条 Claude Design 经验，我觉得最值钱的是这套“高带宽设计”方法

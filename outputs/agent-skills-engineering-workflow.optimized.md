@@ -6,6 +6,15 @@ written_style: "码农小余"
 created_at: "2026-04-27"
 coverImage: "imgs/agent-skills-engineering-workflow-cover.png"
 summary: "AI 编程助手真正缺的不是更多提示词，而是能稳定执行的工程流程。Agent Skills 把规格、计划、实现、测试、评审和发布拆成可触发、可验证、可复用的 Markdown 技能。"
+tags:
+  - type/article
+  - topic/agent-skills
+  - platform/wechat
+moc:
+  - "[[agent-skills]]"
+related:
+  - "[[agent-skills-engineering-workflow.xiaoyu]]"
+  - "[[agent-skills-deep-dive]]"
 ---
 
 # 别再只给 AI 写提示词：Agent Skills 把工程流程变成可执行规则

@@ -1,3 +1,15 @@
+---
+title: "AGENTS.md / CLAUDE.md 小红书文案"
+tags:
+  - type/article
+  - topic/claude-code
+  - platform/xiaohongshu
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[agents-md-claude-md]]"
+---
+
 # 小红书图文发布文案
 
 ## 标题备选

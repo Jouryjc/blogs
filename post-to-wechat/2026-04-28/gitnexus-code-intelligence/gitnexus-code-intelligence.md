@@ -3,6 +3,13 @@ title: GitNexus：给 AI Agent 装一套代码库神经系统
 author: 码农小余
 description: GitNexus 把代码库变成知识图谱，再通过 MCP 喂给 Agent。本文从源码视角拆它为什么有用、怎么实现、适合谁。
 cover: imgs/cover-style.jpg
+tags:
+  - type/article
+  - topic/rag
+  - topic/knowledge-base
+  - platform/wechat
+moc:
+  - "[[rag]]"
 ---
 
 # GitNexus：给 AI Agent 装一套代码库神经系统

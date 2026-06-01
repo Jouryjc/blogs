@@ -1,3 +1,12 @@
+---
+title: "Ralph：一个极简的 Agent 循环"
+tags:
+  - type/source
+  - topic/agent-runtime
+moc:
+  - "[[agent-runtime]]"
+---
+
 # AI Agent长任务执行核心概念深度总结
 本文为AI Agent长任务落地的小白入门指南，核心基于**Ralph开源框架**，通过**极简循环机制+细粒度任务拆分**，解决大模型长时任务执行不稳定的行业痛点，实现AI无人工干预6小时独立开发完整多人协作白板项目，核心概念拆解如下：
 

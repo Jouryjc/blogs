@@ -7,6 +7,13 @@ created_at: "2026-04-22"
 coverImage: "imgs/article-cover.png"
 summary: "这条帖子最有价值的地方，不是“某个后端更强”，而是把一个常被忽略的问题讲清楚了：Agent 的很多 token，其实浪费在和后端做低效沟通上。"
 source_file: "/Users/jouryjc/Documents/code/2026.04/blogs/x-to-markdown/avichawla/how-to-cut-claude-code-costs-by-3x-using-karpathy-s-context/2046500537584218438.md"
+tags:
+  - type/source
+  - topic/context-engineering
+moc:
+  - "[[context-engineering]]"
+related:
+  - "[[2046500537584218438]]"
 ---
 
 # Claude Code 成本怎么降 3 倍？真正该优化的，是后端上下文

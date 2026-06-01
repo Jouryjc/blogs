@@ -1,3 +1,12 @@
+---
+title: "Claude Code 深度总结（Boris Cherny）"
+tags:
+  - type/source
+  - topic/claude-code
+moc:
+  - "[[claude-code]]"
+---
+
 # 深度总结：Claude Code 负责人 Boris Cherny — 编程被"解决"之后会发生什么？
 
 > **播客**：Lenny's Podcast: Product | Career | Growth  

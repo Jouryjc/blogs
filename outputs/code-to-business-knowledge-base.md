@@ -5,6 +5,12 @@ source_author: "Spotify, Sourcegraph, GitHub, Joern, Semgrep, Microsoft Research
 written_style: "码农小余"
 created_at: "2026-04-26"
 summary: "业务知识库不是把代码切块后做向量搜索，而是把代码、接口、数据、配置、运行时、文档、工单和组织关系统一成可追溯、可演进、可评估的知识系统。本文结合开源项目和业内实践，拆解从存量代码构建业务知识的技术路线。"
+tags:
+  - type/article
+  - topic/knowledge-base
+  - platform/wechat
+moc:
+  - "[[knowledge-base]]"
 ---
 
 # 从代码到业务知识库：存量系统知识沉淀的工程路线

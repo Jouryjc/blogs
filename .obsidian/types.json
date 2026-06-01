@@ -1,0 +1,19 @@
+{
+  "types": {
+    "tags": "tags",
+    "moc": "multitext",
+    "related": "multitext",
+    "title": "text",
+    "summary": "text",
+    "source": "text",
+    "source_url": "text",
+    "source_author": "text",
+    "written_style": "text",
+    "created_at": "date",
+    "date": "date",
+    "report_date": "date",
+    "coverImage": "text",
+    "author": "text",
+    "aliases": "aliases"
+  }
+}

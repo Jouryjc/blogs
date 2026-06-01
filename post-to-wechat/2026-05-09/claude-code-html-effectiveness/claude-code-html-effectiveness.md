@@ -6,6 +6,12 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-09"
 coverImage: "imgs/article-cover.png"
 summary: "Claude Code 团队的 Thariq 提醒了一个关键变化：复杂 Agent 任务不一定适合继续交付 Markdown，很多场景更需要 HTML 工作台。"
+tags:
+  - type/article
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
 ---
 
 # Agent 交付物，不该只剩 Markdown

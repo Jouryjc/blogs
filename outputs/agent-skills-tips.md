@@ -6,6 +6,12 @@ written_style: "码农小余"
 created_at: "2026-04-14"
 coverImage: "imgs/article-cover.png"
 summary: "Skill 已经成为 AI Agent 最常用的扩展机制。但写好一个 Skill 比想象中难。本文从实战角度出发，总结了 8 个关键技巧，帮你写出真正可用的 Agent Skill。"
+tags:
+  - type/article
+  - topic/agent-skills
+  - platform/wechat
+moc:
+  - "[[agent-skills]]"
 ---
 
 # 写好 Agent Skill 的 8 个实战技巧

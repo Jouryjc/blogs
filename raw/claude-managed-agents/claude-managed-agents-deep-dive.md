@@ -6,6 +6,13 @@ written_style: "码农小余"
 created_at: "2026-04-09"
 coverImage: "imgs/cover.png"
 summary: "Anthropic 把 Agent 从一段提示词加一层脚本，做成了托管运行时。真正的变化，不是又多了个 SDK，而是把长期运行、安全边界和上下文管理都做成了基础设施。"
+tags:
+  - type/source
+  - topic/managed-agents
+moc:
+  - "[[managed-agents]]"
+related:
+  - "[[2041927992986009773]]"
 ---
 
 # Claude Managed Agents 发布了，但真正值得关注的，是 Agent 基础设施开始产品化

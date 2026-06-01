@@ -1,0 +1,11 @@
+{
+  "showInlineTitle": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": true,
+  "attachmentFolderPath": "./",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki",
+  "promptDelete": false
+}

@@ -8,6 +8,10 @@ tags:
   - ai-agent
   - x
   - news
+  - type/news
+  - topic/ai-news
+moc:
+  - "[[ai-industry]]"
 ---
 
 # 2026-04-17 X 英文技术圈 AI / AI Agent Top 3 热门简报

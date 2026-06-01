@@ -6,6 +6,15 @@ written_style: "码农小余"
 created_at: "2026-04-12"
 coverImage: "imgs/article-cover.png"
 summary: "AI 做短任务已经很强了，但超过 30 分钟的长任务就开始崩。Ralph Orchestrator 用一个极简循环解决了这个问题：让 AI 不断重试，直到真正做完。"
+tags:
+  - type/article
+  - topic/agent-runtime
+  - platform/wechat
+moc:
+  - "[[agent-runtime]]"
+related:
+  - "[[raw/ralph-orchestrator]]"
+  - "[[ralph]]"
 ---
 
 # Ralph Orchestrator：让 AI 死磕到底的编排框架

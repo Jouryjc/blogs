@@ -9,6 +9,13 @@ created_at: "2026-04-20"
 coverImage: "imgs/article-cover.png"
 summary: "DeepMind 把 Agent 时代的新攻击面讲清楚了：真正要防的，不只是提示词攻击，而是整个外部环境都可能在给 Agent 下套。"
 source_file: "/Users/jouryjc/Documents/code/2026.04/blogs/raw/ssrn-6372438/ssrn-6372438.pdf"
+tags:
+  - type/source
+  - topic/agent-safety
+moc:
+  - "[[agent-safety]]"
+related:
+  - "[[abstract-page]]"
 ---
 
 # AI Agent Traps：真正危险的，是环境开始给 Agent 下套

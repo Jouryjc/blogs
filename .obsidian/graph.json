@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "-path:prompts -path:illustrations -path:cover-image -path:imgs -file:outline -file:system-prompt",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#type/moc",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#type/article",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "tag:#type/source",
+      "color": {
+        "a": 1,
+        "rgb": 5025616
+      }
+    },
+    {
+      "query": "tag:#type/thread",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
+    },
+    {
+      "query": "tag:#type/report or tag:#type/news",
+      "color": {
+        "a": 1,
+        "rgb": 9019919
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518,
+  "repelStrength": 11,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.9966268260763764,
+  "close": true
+}

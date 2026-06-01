@@ -1,3 +1,14 @@
+---
+title: "AGENTS.md / CLAUDE.md 资料笔记"
+tags:
+  - type/source
+  - topic/claude-code
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[agents-md-claude-md]]"
+---
+
 # AGENTS.md / CLAUDE.md source notes
 
 Created: 2026-04-25

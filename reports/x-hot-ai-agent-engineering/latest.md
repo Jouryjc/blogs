@@ -1,3 +1,12 @@
+---
+title: "AI Agent 工程化 X 热点日报 - 2026-05-09"
+tags:
+  - type/report
+  - topic/ai-news
+moc:
+  - "[[ai-industry]]"
+---
+
 # AI Agent 工程化 X 热点日报 - 2026-05-09
 
 - generated_at: 2026-05-09T08:02:08+08:00

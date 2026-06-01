@@ -6,6 +6,15 @@ written_style: "码农小余"
 created_at: "2026-04-25"
 coverImage: "imgs/agents-md-claude-md-cover-knowledge-v2.png"
 summary: "跑完 /init 只是开始。真正让 Codex 和 Claude Code 少猜错、少乱改、少漏验证的，是把 AGENTS.md / CLAUDE.md 养成一份长期工作契约。"
+tags:
+  - type/article
+  - topic/claude-code
+  - topic/agent-memory
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[agents-md-claude-md-source-notes]]"
 ---
 
 # 别让 Claude Code 每次都像新员工：AGENTS.md 应该这样写
