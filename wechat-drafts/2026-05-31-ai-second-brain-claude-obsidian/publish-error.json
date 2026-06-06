@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "method": "api",
+  "error_code": 40164,
+  "error": "invalid ip 120.229.48.49 ipv6 ::ffff:120.229.48.49, not in whitelist",
+  "next_step": "Add 120.229.48.49 to the WeChat Official Account API IP whitelist, then rerun the publishing command."
+}

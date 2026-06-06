@@ -1,0 +1,44 @@
+{
+  "title": "Prompt Caching 为什么是 Agent 的地基？",
+  "author": "",
+  "summary": "Agent 成本和延迟的关键，不只是模型多强，而是稳定前缀能不能被持续复用。Prompt Caching 是让 Agent 长流程跑得动的基础设施。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-ghlIKP/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Prompt Caching 是 Agent 的地基：稳定前缀复用，动态后缀增长",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-12/prompt-caching-agent-foundation/imgs/article-cover.png"
+    },
+    {
+      "alt": "Agent 每一步都带着同一批系统规则、工具定义和项目上下文",
+      "originalPath": "illustrations/agent-repeated-prefix.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-12/prompt-caching-agent-foundation/illustrations/agent-repeated-prefix.png"
+    },
+    {
+      "alt": "Prompt Caching 复用的是已读前缀的中间状态，不是直接复用答案",
+      "originalPath": "illustrations/cache-not-answer.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-12/prompt-caching-agent-foundation/illustrations/cache-not-answer.png"
+    },
+    {
+      "alt": "Agent 上下文三层：稳定前缀、任务状态、动态尾巴",
+      "originalPath": "illustrations/three-layer-context.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-12/prompt-caching-agent-foundation/illustrations/three-layer-context.png"
+    },
+    {
+      "alt": "六类缓存破坏器：时间戳、schema 顺序、工具变化、切模型、改系统提示、检索漂移",
+      "originalPath": "illustrations/cache-breakers.png",
+      "placeholder": "WECHATIMGPH_5",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-12/prompt-caching-agent-foundation/illustrations/cache-breakers.png"
+    },
+    {
+      "alt": "Prompt Caching 监控面板：读缓存、写缓存、未缓存输入、命中率、TTFT",
+      "originalPath": "illustrations/cache-dashboard.png",
+      "placeholder": "WECHATIMGPH_6",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-12/prompt-caching-agent-foundation/illustrations/cache-dashboard.png"
+    }
+  ]
+}

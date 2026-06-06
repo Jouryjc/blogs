@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242" height="1660" viewBox="0 0 1242 1660">
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#2C3E50" flood-opacity="0.12"/>
+    </filter>
+    <pattern id="paper" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#F5F0E8"/>
+      <circle cx="12" cy="18" r="1.1" fill="#e7decf" opacity="0.5"/>
+      <circle cx="62" cy="44" r="1.2" fill="#e1d7c8" opacity="0.42"/>
+      <circle cx="35" cy="70" r="0.9" fill="#ece2d2" opacity="0.55"/>
+    </pattern>
+    <style>
+      .font { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; }
+      .ink { fill: #1A1A1A; }
+      .muted { fill: #6B6B6B; }
+      .line { stroke: #1A1A1A; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .thin { stroke: #1A1A1A; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .card { stroke: #1A1A1A; stroke-width: 5; fill: #FFFFFF; }
+      .small { font-size: 32px; font-weight: 700; }
+      .body { font-size: 34px; font-weight: 700; }
+      .label { font-size: 28px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="1242" height="1660" fill="url(#paper)"/>
+  <path d="M72 70 C55 320,58 620,70 870 C83 1150,64 1390,82 1580" class="thin" opacity="0.45"/>
+  <path d="M1170 62 C1190 340,1160 600,1174 870 C1188 1130,1166 1362,1178 1586" class="thin" opacity="0.45"/>
+  <g class="font" text-anchor="middle">
+    <text x="621" y="132" font-size="64" font-weight="900" class="ink">Codex 支持远程操作</text>
+    <rect x="222" y="168" width="798" height="64" rx="28" fill="#F9E79F" stroke="#1A1A1A" stroke-width="4"/>
+    <text x="621" y="212" font-size="34" font-weight="800" class="ink">手机接管开发环境，长任务继续跑</text>
+  </g>
+  <g filter="url(#shadow)" class="font">
+    <rect x="112" y="278" width="1018" height="172" rx="34" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="5"/>
+    <text x="621" y="350" font-size="48" font-weight="900" text-anchor="middle" class="ink">不是手机写代码</text>
+    <text x="621" y="405" font-size="40" font-weight="850" text-anchor="middle" fill="#0F4C81">是手机接管 agent 的关键决策点</text>
+    <path d="M225 418 C326 438,426 436,512 424" stroke="#E8655A" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+  </g>
+  <g transform="translate(80 510)" class="font" filter="url(#shadow)">
+    <g>
+      <rect width="286" height="286" rx="34" fill="#A8D8EA" stroke="#1A1A1A" stroke-width="5"/>
+      <text x="143" y="58" text-anchor="middle" font-size="36" font-weight="900" class="ink">手机端</text>
+      <rect x="86" y="86" width="92" height="128" rx="20" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="4"/>
+      <circle cx="132" cy="197" r="5" fill="#1A1A1A"/>
+      <text x="143" y="245" text-anchor="middle" class="label ink">看输出 / 批命令</text>
+      <text x="143" y="276" text-anchor="middle" class="label ink">改方向</text>
+    </g>
+    <path d="M314 140 H405" class="line"/>
+    <path d="M382 110 L418 140 L382 170" class="line"/>
+    <g transform="translate(434 0)">
+      <rect width="286" height="286" rx="34" fill="#B5E5CF" stroke="#1A1A1A" stroke-width="5"/>
+      <text x="143" y="58" text-anchor="middle" font-size="34" font-weight="900" class="ink">Codex 宿主机</text>
+      <rect x="67" y="92" width="152" height="86" rx="12" fill="#FAFAFA" stroke="#1A1A1A" stroke-width="4"/>
+      <path d="M100 206 H186" class="thin"/>
+      <text x="143" y="238" text-anchor="middle" class="label ink">文件 / 凭证</text>
+      <text x="143" y="270" text-anchor="middle" class="label ink">权限 / 工具</text>
+    </g>
+    <path d="M748 140 H839" class="line"/>
+    <path d="M816 110 L852 140 L816 170" class="line"/>
+    <g transform="translate(868 0)">
+      <rect width="286" height="286" rx="34" fill="#F8D5C4" stroke="#1A1A1A" stroke-width="5"/>
+      <text x="143" y="58" text-anchor="middle" font-size="34" font-weight="900" class="ink">Devbox / SSH</text>
+      <path d="M76 128 H210 M92 96 H194 M92 160 H194" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round"/>
+      <text x="143" y="232" text-anchor="middle" class="label ink">Remote SSH GA</text>
+      <text x="143" y="266" text-anchor="middle" class="label ink">远程项目也能跑</text>
+    </g>
+  </g>
+  <g class="font" transform="translate(112 852)" filter="url(#shadow)">
+    <g>
+      <rect width="492" height="218" rx="30" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="5"/>
+      <circle cx="54" cy="55" r="26" fill="#F9E79F" stroke="#1A1A1A" stroke-width="4"/>
+      <text x="54" y="67" font-size="28" font-weight="900" text-anchor="middle">1</text>
+      <text x="96" y="65" class="body ink">能做什么</text>
+      <text x="44" y="128" class="small ink">开始任务 / 审输出</text>
+      <text x="44" y="174" class="small ink">改方向 / 批准下一步</text>
+    </g>
+    <g transform="translate(526 0)">
+      <rect width="492" height="218" rx="30" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="5"/>
+      <circle cx="54" cy="55" r="26" fill="#D5C6E0" stroke="#1A1A1A" stroke-width="4"/>
+      <text x="54" y="67" font-size="28" font-weight="900" text-anchor="middle">2</text>
+      <text x="96" y="65" class="body ink">适合场景</text>
+      <text x="44" y="128" class="small ink">长任务 / 测试修复</text>
+      <text x="44" y="174" class="small ink">批量重构 / 远程 devbox</text>
+    </g>
+    <g transform="translate(0 252)">
+      <rect width="492" height="218" rx="30" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="5"/>
+      <circle cx="54" cy="55" r="26" fill="#B5E5CF" stroke="#1A1A1A" stroke-width="4"/>
+      <text x="54" y="67" font-size="28" font-weight="900" text-anchor="middle">3</text>
+      <text x="96" y="65" class="body ink">安全边界</text>
+      <text x="44" y="128" class="small ink">宿主机权限仍然生效</text>
+      <text x="44" y="174" class="small ink">重要命令保留审批</text>
+    </g>
+    <g transform="translate(526 252)">
+      <rect width="492" height="218" rx="30" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="5"/>
+      <circle cx="54" cy="55" r="26" fill="#F8D5C4" stroke="#1A1A1A" stroke-width="4"/>
+      <text x="54" y="67" font-size="28" font-weight="900" text-anchor="middle">4</text>
+      <text x="96" y="65" class="body ink">事实边界</text>
+      <text x="44" y="128" class="small ink">iOS / Android 预览</text>
+      <text x="44" y="174" class="small ink">Windows 宿主机即将支持</text>
+    </g>
+  </g>
+  <g class="font" filter="url(#shadow)">
+    <rect x="112" y="1370" width="1018" height="112" rx="30" fill="#D5C6E0" stroke="#1A1A1A" stroke-width="5"/>
+    <text x="621" y="1439" font-size="40" font-weight="900" text-anchor="middle" class="ink">远程操作 = 线程状态 + 人类判断 + 宿主机执行</text>
+    <rect x="172" y="1518" width="898" height="78" rx="28" fill="#F9E79F" stroke="#1A1A1A" stroke-width="5"/>
+    <text x="621" y="1568" font-size="34" font-weight="900" text-anchor="middle" class="ink">先从低风险仓库试，再接入重流程</text>
+  </g>
+  <g opacity="0.7" class="thin">
+    <path d="M148 248 C170 216,205 214,229 238"/>
+    <path d="M1050 246 C1072 216,1108 214,1132 238"/>
+    <path d="M100 1228 C128 1210,157 1215,174 1240"/>
+    <path d="M1076 1218 C1106 1200,1134 1210,1154 1238"/>
+    <circle cx="1032" cy="112" r="28" fill="#F9E79F"/>
+    <path d="M1025 99 l10 22 l15 -35"/>
+    <path d="M199 116 h50 M224 91 v50"/>
+    <path d="M1030 1320 h58 M1059 1291 v58"/>
+  </g>
+</svg>

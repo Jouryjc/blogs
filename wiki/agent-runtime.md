@@ -11,6 +11,7 @@ tags:
 
 ## 文章
 
+- [[goal-command-claude-code-codex|用 /goal 让 Claude Code 和 Codex 跑到有证据]]
 - [[outputs/ralph-orchestrator|Ralph Orchestrator:用一个循环让 AI Agent 自主完成复杂任务]]
 
 ## 原始素材

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1880" height="800" viewBox="0 0 1880 800">
+  <image href="gemini-cover-base.png" x="0" y="0" width="1880" height="800" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="88" y="86" width="650" height="628" rx="42" fill="#FFF8E7" opacity="0.92"/>
+  <rect x="126" y="126" width="268" height="62" rx="31" fill="#0F4C81"/>
+  <text x="260" y="168" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">蒸馏小余</text>
+  <text x="126" y="286" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="78" font-weight="900" fill="#132C46">
+    <tspan x="126" y="286">别只让 Codex</tspan>
+    <tspan x="126" y="384">帮你写代码</tspan>
+  </text>
+  <text x="126" y="492" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="38" font-weight="800" fill="#0F4C81">
+    <tspan x="126" y="492">把它用成一个</tspan>
+    <tspan x="126" y="548">可持续工作的 Agent 工作台</tspan>
+  </text>
+  <text x="126" y="646" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="28" font-weight="700" fill="#51657A">线程 · 工具 · 自动化 · 侧边栏 · 共享记忆</text>
+  <rect x="1200" y="342" width="390" height="118" rx="36" fill="#FFF8E7" opacity="0.88"/>
+  <text x="1395" y="416" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="48" font-weight="900" fill="#132C46">Agent 工作台</text>
+</svg>

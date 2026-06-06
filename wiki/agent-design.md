@@ -9,6 +9,10 @@ tags:
 
 Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设计空间,以及一线设计者怎么看待 AI 时代的产品设计与"快慢设计"。
 
+## 文章
+
+- [[goal-command-claude-code-codex|用 /goal 让 Claude Code 和 Codex 跑到有证据]]
+
 ## 原始素材
 
 - [[claude-code-design-space|Claude Code 的设计空间]]

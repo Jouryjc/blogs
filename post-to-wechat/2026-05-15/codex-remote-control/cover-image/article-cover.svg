@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="511" viewBox="0 0 1200 511">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8fd5f4"/>
+      <stop offset="0.55" stop-color="#c7eefb"/>
+      <stop offset="1" stop-color="#ffb15e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#31536b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="511" fill="url(#sky)"/>
+  <g opacity="0.9" stroke="#123047" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M38 82h130m0 0 30-32h86"/>
+    <path d="M46 166h180m0 0 26 26h82"/>
+    <path d="M922 78h128m0 0 26-28h84"/>
+    <path d="M870 406h156m0 0 34 34h96"/>
+    <circle cx="286" cy="50" r="7" fill="#fff4d6"/>
+    <circle cx="334" cy="192" r="7" fill="#fff4d6"/>
+    <circle cx="1160" cy="50" r="7" fill="#fff4d6"/>
+    <circle cx="1156" cy="440" r="7" fill="#fff4d6"/>
+  </g>
+  <g transform="translate(-40 -35)" fill="#ffd257" stroke="#123047" stroke-width="4">
+    <path d="M100 40l22 28 36-2 8 34 31 18-16 32 9 35-34 15-18 31-32-16-36 8-15-34-31-18 16-32-8-35 34-15z"/>
+    <circle cx="111" cy="131" r="45" fill="#9ed8f4"/>
+  </g>
+  <g transform="translate(1040 -30)" fill="#ff914d" stroke="#123047" stroke-width="4">
+    <path d="M100 40l22 28 36-2 8 34 31 18-16 32 9 35-34 15-18 31-32-16-36 8-15-34-31-18 16-32-8-35 34-15z"/>
+    <circle cx="111" cy="131" r="45" fill="#ffd257"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="89" y="44" width="1022" height="415" rx="34" fill="#f7fbff" opacity="0.9"/>
+    <rect x="117" y="72" width="966" height="359" rx="28" fill="#fff7e8" opacity="0.72"/>
+  </g>
+  <g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="142" font-size="64" font-weight="800" fill="#0f4c81">Codex 支持远程操作</text>
+    <rect x="314" y="172" width="572" height="58" rx="18" fill="#ffe15a"/>
+    <text x="600" y="213" font-size="37" font-weight="800" fill="#121212">手机接管开发环境，长任务继续跑</text>
+  </g>
+  <g transform="translate(246 270)" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">
+    <g>
+      <rect x="0" y="0" width="132" height="88" rx="22" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <rect x="38" y="13" width="56" height="62" rx="12" fill="#0f4c81"/>
+      <circle cx="66" cy="66" r="4" fill="#fff"/>
+      <text x="66" y="124" text-anchor="middle" font-size="24" font-weight="700" fill="#111">手机</text>
+    </g>
+    <path d="M154 43h76" stroke="#123047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M218 27l20 16-20 16" fill="none" stroke="#123047" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(254 0)">
+      <rect x="0" y="0" width="168" height="88" rx="22" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <rect x="30" y="18" width="108" height="50" rx="8" fill="#bfe9fb" stroke="#123047" stroke-width="3"/>
+      <path d="M55 78h58" stroke="#123047" stroke-width="4"/>
+      <text x="84" y="124" text-anchor="middle" font-size="24" font-weight="700" fill="#111">宿主机</text>
+    </g>
+    <path d="M446 43h76" stroke="#123047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M510 27l20 16-20 16" fill="none" stroke="#123047" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(546 0)">
+      <rect x="0" y="0" width="168" height="88" rx="22" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <path d="M38 56h92M48 36h72M58 20h52" stroke="#0f4c81" stroke-width="8" stroke-linecap="round"/>
+      <text x="84" y="124" text-anchor="middle" font-size="24" font-weight="700" fill="#111">devbox / SSH</text>
+    </g>
+  </g>
+</svg>
+

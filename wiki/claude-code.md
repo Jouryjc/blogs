@@ -11,6 +11,7 @@ tags:
 
 ## 文章
 
+- [[goal-command-claude-code-codex|用 /goal 让 Claude Code 和 Codex 跑到有证据]]
 - [[agents-md-claude-md|别让 Claude Code 每次都像新员工:AGENTS.md 应该这样写]]
 - [[claude-code-boris-cherny|Boris Cherny 深聊 Claude Code:AI 编程的现在与未来]]
 - [[claude-code-html-effectiveness|用 HTML 提升 Claude Code 的有效性]]

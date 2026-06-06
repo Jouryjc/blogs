@@ -27,12 +27,12 @@ tags:
 
 ## 🆕 最近文章
 
+- [[goal-command-claude-code-codex|用 /goal 让 Claude Code 和 Codex 跑到有证据]] · 2026-06-04
 - [[rag-ttft|RAG 系统的 TTFT 优化:从原理到工程实践]] · 2026-05-10
 - [[claude-code-html-effectiveness|用 HTML 提升 Claude Code 的有效性]] · 2026-05-09
 - [[gitnexus-code-intelligence|GitNexus:把整个代码仓库变成可对话的知识图谱]] · 2026-04-28
 - [[agent-skills-deep-dive|Agent Skills 深度拆解]] · 2026-04-26
 - [[agents-md-claude-md|别让 Claude Code 每次都像新员工:AGENTS.md 应该这样写]] · 2026-04-25
-- [[claude-context-deep-dive|Claude Code 上下文管理深度拆解]] · 2026-04-23
 
 ## 📊 报告与资讯
 

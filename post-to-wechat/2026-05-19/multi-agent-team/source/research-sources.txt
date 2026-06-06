@@ -1,0 +1,24 @@
+多 Agent 文章参考来源
+
+Source:
+- Khairallah AL-Awady, How to Build a Team of AI Agents That Actually Work Together (Full Course)
+  https://x.com/eng_khairallah1/status/2055215784092401966
+  Local capture: source/x-article.json, source/original-article.md
+
+Supporting references:
+- Anthropic, Claude Managed Agents
+  https://www.anthropic.com/engineering/managed-agents
+  Used for: managed agents framing, long-running autonomous agents, memory/skills/evaluation context.
+
+- Anthropic Engineering, How we built our multi-agent research system
+  https://www.anthropic.com/engineering/built-multi-agent-research-system
+  Used for: orchestrator-worker pattern, parallel exploration, multi-agent coordination tradeoffs.
+
+- Anthropic Docs, Subagents
+  https://docs.anthropic.com/en/docs/claude-code/sub-agents
+  Used for: specialized agents with separate context windows, tool permissions, focused prompts.
+
+Editorial notes:
+- Keep the source's useful three-pattern framework: pipeline, fan-out, specialist team.
+- Tone down unsupported production claims unless directly verifiable.
+- Reframe "build a team of agents" as an engineering problem: role boundaries, structured handoffs, failure handling, and review loops.

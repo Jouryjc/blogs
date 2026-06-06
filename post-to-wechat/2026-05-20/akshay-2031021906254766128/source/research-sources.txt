@@ -1,0 +1,31 @@
+Prompt Caching 文章参考来源
+
+Source:
+- Akshay, Prompt caching, clearly explained
+  https://x.com/akshay_pachaar/status/2031021906254766128
+  Local capture: source/x-article.json, source/original-article.md
+  Local images: raw/source-cover.jpg, raw/source-img-01.png ... raw/source-img-07.jpg
+
+Supporting references:
+- Anthropic Claude API Docs, Prompt caching
+  https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
+  Used for:
+  - Prompt caching uses cached prompt prefixes.
+  - Automatic caching and explicit cache breakpoints.
+  - Default 5-minute cache lifetime and 1-hour option.
+  - Pricing multipliers: 5-minute write 1.25x, 1-hour write 2x, cache read 0.1x.
+  - `tools`, `system`, `messages` ordering for cached prefixes.
+
+- OpenAI API Docs, Prompt caching
+  https://platform.openai.com/docs/guides/prompt-caching
+  Used for:
+  - Exact prefix matches.
+  - Static content at the beginning, dynamic content at the end.
+  - Prompt caching availability for prompts with 1024 tokens or more.
+  - `cached_tokens` metric.
+  - KV tensors as attention-layer intermediate representations from prefill.
+
+Editorial notes:
+- Preserve the source article's core explanation: static prefix vs dynamic tail, prefill/decode, KV cache, hash sensitivity, Claude Code session economics.
+- Reframe for Chinese WeChat readers around "Agent 为什么越跑越贵" rather than a concept-first title.
+- Treat the 92% cache hit rate and 81% reduction as source-case figures, not universal claims.

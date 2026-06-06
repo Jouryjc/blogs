@@ -1,0 +1,26 @@
+{
+  "title": "别只让 Codex 写代码：把它用成工作台",
+  "author": "",
+  "summary": "Jason 这篇 X article 的重点不是 Codex 会写代码，而是 Codex 正在变成一个能跨线程、浏览器、桌面、自动化和记忆持续工作的 Agent 工作台。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-pOqz0K/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "公众号封面：别只让 Codex 帮你写代码",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-25/jxnlco-codex-workbench/imgs/article-cover.png"
+    },
+    {
+      "alt": "原帖封面：Getting the most out of Codex",
+      "originalPath": "raw/source-cover.jpg",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-25/jxnlco-codex-workbench/raw/source-cover.jpg"
+    },
+    {
+      "alt": "Codex 工作台五件套",
+      "originalPath": "imgs/codex-workbench-map.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-25/jxnlco-codex-workbench/imgs/codex-workbench-map.png"
+    }
+  ]
+}

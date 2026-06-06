@@ -1,0 +1,62 @@
+{
+  "title": "Agent 为什么越跑越贵？从 Prompt Caching 到缓存命中讲清楚",
+  "author": "",
+  "summary": "Agent 成本高，不只是模型贵。很多钱花在每轮重复读取系统提示词、工具定义和项目上下文。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-u8TxDy/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Agent 成本高，常常贵在重复读取旧上下文",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/imgs/article-cover.png"
+    },
+    {
+      "alt": "原文封面：Prompt caching, clearly explained",
+      "originalPath": "raw/source-cover.jpg",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-cover.jpg"
+    },
+    {
+      "alt": "原文图解：静态前缀和动态尾巴",
+      "originalPath": "raw/source-img-01.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-01.png"
+    },
+    {
+      "alt": "原文图解：Prefill 和 Decode 两个阶段",
+      "originalPath": "raw/source-img-02.jpg",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-02.jpg"
+    },
+    {
+      "alt": "原文图解：KV Cache 复用已处理前缀",
+      "originalPath": "raw/source-img-03.jpg",
+      "placeholder": "WECHATIMGPH_5",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-03.jpg"
+    },
+    {
+      "alt": "原文图解：Prompt Caching 的价格结构",
+      "originalPath": "raw/source-img-04.png",
+      "placeholder": "WECHATIMGPH_6",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-04.png"
+    },
+    {
+      "alt": "原文图解：Claude Code 会话里的缓存命中",
+      "originalPath": "raw/source-img-05.jpg",
+      "placeholder": "WECHATIMGPH_7",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-05.jpg"
+    },
+    {
+      "alt": "原文图解：前缀顺序变化会导致 cache miss",
+      "originalPath": "raw/source-img-06.jpg",
+      "placeholder": "WECHATIMGPH_8",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-06.jpg"
+    },
+    {
+      "alt": "原文图解：缓存友好的上下文排布",
+      "originalPath": "raw/source-img-07.jpg",
+      "placeholder": "WECHATIMGPH_9",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/akshay-2031021906254766128/raw/source-img-07.jpg"
+    }
+  ]
+}

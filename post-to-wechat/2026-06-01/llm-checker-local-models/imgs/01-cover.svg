@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+  <rect width="1080" height="1440" fill="#F7F1E8"/>
+  <g font-family="PingFang SC, Hiragino Sans GB, STHeiti, Arial, sans-serif" fill="#102133">
+    <rect x="58" y="54" width="240" height="46" rx="23" fill="#E6F0EA" stroke="#102133" stroke-width="3"/>
+    <text x="82" y="85" font-size="24" font-weight="700">本地 LLM 选型</text>
+
+    <text x="64" y="176" font-size="76" font-weight="800">本地模型别瞎猜</text>
+    <text x="68" y="232" font-size="34" font-weight="500" fill="#385064">先检测硬件，再按场景推荐可跑模型</text>
+
+    <rect x="64" y="274" width="952" height="146" rx="28" fill="#FFFDF7" stroke="#102133" stroke-width="4"/>
+    <circle cx="137" cy="347" r="36" fill="#F6D56B" stroke="#102133" stroke-width="4"/>
+    <path d="M160 372 L187 399" stroke="#102133" stroke-width="9" stroke-linecap="round"/>
+    <text x="210" y="333" font-size="32" font-weight="800">问题：</text>
+    <text x="303" y="333" font-size="32" font-weight="700">这台电脑到底能跑哪个模型？</text>
+    <text x="210" y="383" font-size="28" fill="#385064">别只看参数量，先让工具读硬件，再给出 Ollama 拉取命令。</text>
+
+    <text x="64" y="492" font-size="40" font-weight="800">三条命令跑起来</text>
+    <g font-family="SFMono-Regular, Menlo, Monaco, monospace">
+      <rect x="64" y="530" width="288" height="186" rx="22" fill="#EAF4FF" stroke="#102133" stroke-width="4"/>
+      <text x="92" y="580" font-size="28" font-weight="800" font-family="PingFang SC, Hiragino Sans GB, STHeiti, Arial, sans-serif">1. 安装</text>
+      <rect x="92" y="612" width="232" height="78" rx="12" fill="#102133"/>
+      <text x="112" y="647" font-size="21" fill="#F7F1E8">npm install -g</text>
+      <text x="112" y="676" font-size="21" fill="#F7F1E8">llm-checker</text>
+
+      <rect x="396" y="530" width="288" height="186" rx="22" fill="#EAF1D7" stroke="#102133" stroke-width="4"/>
+      <text x="424" y="580" font-size="28" font-weight="800" font-family="PingFang SC, Hiragino Sans GB, STHeiti, Arial, sans-serif">2. 扫描硬件</text>
+      <rect x="424" y="612" width="232" height="78" rx="12" fill="#102133"/>
+      <text x="444" y="647" font-size="21" fill="#F7F1E8">llm-checker</text>
+      <text x="444" y="676" font-size="21" fill="#F7F1E8">hw-detect</text>
+
+      <rect x="728" y="530" width="288" height="186" rx="22" fill="#FCE8D8" stroke="#102133" stroke-width="4"/>
+      <text x="756" y="580" font-size="28" font-weight="800" font-family="PingFang SC, Hiragino Sans GB, STHeiti, Arial, sans-serif">3. 按场景推荐</text>
+      <rect x="756" y="612" width="232" height="86" rx="12" fill="#102133"/>
+      <text x="776" y="641" font-size="18" fill="#F7F1E8">llm-checker</text>
+      <text x="776" y="667" font-size="18" fill="#F7F1E8">recommend</text>
+      <text x="776" y="693" font-size="18" fill="#F7F1E8">--category coding</text>
+    </g>
+
+    <rect x="64" y="770" width="952" height="130" rx="28" fill="#102133"/>
+    <text x="96" y="820" font-size="32" font-weight="800" fill="#F7F1E8">核心机制</text>
+    <text x="96" y="864" font-size="27" fill="#F7F1E8">读取 CPU / GPU / RAM / VRAM / 后端能力，按任务类别打分。</text>
+    <g font-size="24" font-weight="700">
+      <rect x="96" y="928" width="126" height="42" rx="21" fill="#F6D56B"/>
+      <text x="123" y="957">CPU</text>
+      <rect x="240" y="928" width="126" height="42" rx="21" fill="#9BD3C4"/>
+      <text x="267" y="957">GPU</text>
+      <rect x="384" y="928" width="126" height="42" rx="21" fill="#C9D9FF"/>
+      <text x="411" y="957">RAM</text>
+      <rect x="528" y="928" width="140" height="42" rx="21" fill="#F2B7A7"/>
+      <text x="555" y="957">VRAM</text>
+      <rect x="686" y="928" width="170" height="42" rx="21" fill="#E6F0EA"/>
+      <text x="719" y="957">Ollama</text>
+    </g>
+
+    <text x="64" y="1048" font-size="40" font-weight="800">原帖案例：M4 Pro / 24GB RAM</text>
+    <g>
+      <rect x="64" y="1088" width="952" height="86" rx="20" fill="#FFFDF7" stroke="#102133" stroke-width="4"/>
+      <text x="96" y="1142" font-size="30" font-weight="800">Coding / Reasoning</text>
+      <text x="586" y="1142" font-size="30" font-weight="800" fill="#0F4C81">qwen3.5:27b</text>
+      <rect x="64" y="1192" width="952" height="86" rx="20" fill="#FFFDF7" stroke="#102133" stroke-width="4"/>
+      <text x="96" y="1246" font-size="30" font-weight="800">Multimodal / Overall</text>
+      <text x="586" y="1246" font-size="30" font-weight="800" fill="#0F4C81">gemma3:latest</text>
+    </g>
+
+    <rect x="64" y="1320" width="952" height="66" rx="20" fill="#F6D56B" stroke="#102133" stroke-width="4"/>
+    <text x="96" y="1363" font-size="28" font-weight="800">结果：拿到可直接执行的 ollama pull ... 命令</text>
+  </g>
+</svg>

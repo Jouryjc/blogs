@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1880" height="800" viewBox="0 0 1880 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF4FF"/>
+      <stop offset="0.55" stop-color="#FFF7E8"/>
+      <stop offset="1" stop-color="#EAF7F0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#15324D" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1880" height="800" fill="url(#bg)"/>
+  <rect x="82" y="74" width="1716" height="652" rx="46" fill="#FFFDF8" stroke="#132C46" stroke-width="6" filter="url(#shadow)"/>
+  <g transform="translate(142 98)">
+    <rect x="0" y="0" width="312" height="56" rx="28" fill="#0F4C81"/>
+    <text x="156" y="38" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">蒸馏小余</text>
+  </g>
+  <g transform="translate(142 235)">
+    <text font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="88" font-weight="900" fill="#132C46">
+      <tspan x="0" y="0">别只让 Codex</tspan>
+      <tspan x="0" y="108">帮你写代码</tspan>
+    </text>
+    <text x="0" y="250" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="42" font-weight="700" fill="#0F4C81">把它用成一个可持续工作的 Agent 工作台</text>
+  </g>
+  <g transform="translate(1080 150)">
+    <rect x="0" y="0" width="560" height="438" rx="34" fill="#F8FBFF" stroke="#132C46" stroke-width="5"/>
+    <rect x="42" y="42" width="476" height="72" rx="18" fill="#D9ECFF" stroke="#132C46" stroke-width="4"/>
+    <text x="280" y="90" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="32" font-weight="800" fill="#132C46">Codex Thread</text>
+    <g font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="30" font-weight="700" fill="#132C46">
+      <rect x="42" y="150" width="210" height="74" rx="18" fill="#FFF0C9" stroke="#132C46" stroke-width="4"/>
+      <text x="147" y="198" text-anchor="middle">浏览器</text>
+      <rect x="308" y="150" width="210" height="74" rx="18" fill="#DFF5E8" stroke="#132C46" stroke-width="4"/>
+      <text x="413" y="198" text-anchor="middle">桌面</text>
+      <rect x="42" y="264" width="210" height="74" rx="18" fill="#FFE0E0" stroke="#132C46" stroke-width="4"/>
+      <text x="147" y="312" text-anchor="middle">自动化</text>
+      <rect x="308" y="264" width="210" height="74" rx="18" fill="#ECE7FF" stroke="#132C46" stroke-width="4"/>
+      <text x="413" y="312" text-anchor="middle">记忆</text>
+    </g>
+    <path d="M280 114 C280 135 147 128 147 150" fill="none" stroke="#132C46" stroke-width="5"/>
+    <path d="M280 114 C280 135 413 128 413 150" fill="none" stroke="#132C46" stroke-width="5"/>
+    <path d="M147 224 C147 245 147 244 147 264" fill="none" stroke="#132C46" stroke-width="5"/>
+    <path d="M413 224 C413 245 413 244 413 264" fill="none" stroke="#132C46" stroke-width="5"/>
+  </g>
+  <g transform="translate(142 638)" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="28" font-weight="700" fill="#41556B">
+    <text x="0" y="0">线程 · 工具 · 自动化 · 侧边栏 · 共享记忆</text>
+  </g>
+</svg>

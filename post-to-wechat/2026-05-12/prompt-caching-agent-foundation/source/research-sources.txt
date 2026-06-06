@@ -1,0 +1,51 @@
+Prompt Caching 为什么是 Agent 的地基？参考来源
+
+Primary references:
+
+- OpenAI API Docs, Prompt caching
+  https://platform.openai.com/docs/guides/prompt-caching
+  Key points used:
+  - Prompt caching works on exact prefix matches.
+  - Put static content at the beginning and dynamic/user-specific content at the end.
+  - Caching is available for prompts containing 1024 tokens or more.
+  - Cached tokens are reported in usage.prompt_tokens_details.cached_tokens.
+  - In-memory retention is generally 5 to 10 minutes of inactivity, up to one hour; extended retention can keep cached prefixes up to 24 hours for supported models.
+  - Cached key/value tensors are intermediate representations from attention layers produced during prefill.
+
+- Anthropic Claude API Docs, Prompt caching
+  https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
+  Key points used:
+  - Prompt caching checks whether a prompt prefix up to a cache breakpoint is already cached.
+  - Default cache lifetime is 5 minutes and can be refreshed when reused; 1-hour cache exists at additional cost.
+  - Cache references tools, system, and messages in order up to the cache_control block.
+  - Cache write/read pricing multipliers: 5m writes 1.25x, 1h writes 2x, cache reads 0.1x.
+  - Exact matching requires identical prompt segments up to the cache control block.
+
+- In Gim et al., Prompt Cache: Modular Attention Reuse for Low-Latency Inference
+  https://arxiv.org/abs/2311.04934
+  Key points used:
+  - Reuses attention states across overlapping prompt segments such as system messages, prompt templates, and context documents.
+  - Shows large TTFT latency reductions for long prompts, especially document QA and recommendations.
+  - Introduces prompt modules and stresses positional correctness when reusing attention states.
+
+- Zaifeng Pan et al., KVFlow: Efficient Prefix Caching for Accelerating LLM-Based Multi-Agent Workflows
+  https://arxiv.org/abs/2507.07400
+  Key points used:
+  - Agentic workflows repeatedly invoke specialized agents with fixed prompts.
+  - Existing LRU cache eviction can discard KV caches shortly before reuse.
+  - Workflow-aware cache management and prefetching can improve speed for agent workflows.
+
+- Zhuohang Bian et al., TokenDance: Scaling Multi-Agent LLM Serving via Collective KV Cache Sharing
+  https://arxiv.org/abs/2604.03143
+  Key points used:
+  - Multi-agent synchronized rounds can create massive KV Cache redundancy.
+  - Collective KV Cache sharing improves concurrent agent serving and reduces per-agent KV storage.
+
+- Avi Chawla thread, Prompt caching in LLMs, clearly explained
+  https://x.com/_avichawla/status/2044670188998803855
+  Local capture:
+  /Users/yjcjour/Documents/code/2026/4/blogs/x-to-markdown/avichawla/prompt-caching-in-llms-clearly-explained/2044670188998803855.md
+  Key points used:
+  - Static prefix vs dynamic suffix framing.
+  - Claude Code as a prompt-cache-friendly agent case.
+  - Practical cache-breaking examples: timestamp, reordered schema, mid-session tool mutation.

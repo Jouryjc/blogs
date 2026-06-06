@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#FFFDF8"/>
+  <text x="800" y="92" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="56" font-weight="900" fill="#132C46">Codex 工作台五件套</text>
+  <text x="800" y="142" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="26" font-weight="700" fill="#62748A">从一次性写代码，变成长任务协作系统</text>
+  <g font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="28" font-weight="800" fill="#132C46" stroke="#132C46" stroke-width="4">
+    <rect x="590" y="402" width="420" height="150" rx="28" fill="#D9ECFF"/>
+    <text x="800" y="462" text-anchor="middle" stroke="none">持久线程</text>
+    <text x="800" y="508" text-anchor="middle" font-size="22" font-weight="600" fill="#41556B" stroke="none">保留上下文和工作流</text>
+
+    <rect x="120" y="232" width="360" height="138" rx="24" fill="#FFF0C9"/>
+    <text x="300" y="292" text-anchor="middle" stroke="none">语音 + Steering</text>
+    <text x="300" y="332" text-anchor="middle" font-size="22" font-weight="600" fill="#41556B" stroke="none">边说边纠偏</text>
+
+    <rect x="1120" y="232" width="360" height="138" rx="24" fill="#DFF5E8"/>
+    <text x="1300" y="292" text-anchor="middle" stroke="none">浏览器 / 桌面 / MCP</text>
+    <text x="1300" y="332" text-anchor="middle" font-size="22" font-weight="600" fill="#41556B" stroke="none">把触手伸出仓库</text>
+
+    <rect x="120" y="670" width="360" height="138" rx="24" fill="#FFE0E0"/>
+    <text x="300" y="730" text-anchor="middle" stroke="none">自动化 + Goals</text>
+    <text x="300" y="770" text-anchor="middle" font-size="22" font-weight="600" fill="#41556B" stroke="none">有周期，也有终点</text>
+
+    <rect x="1120" y="670" width="360" height="138" rx="24" fill="#ECE7FF"/>
+    <text x="1300" y="730" text-anchor="middle" stroke="none">侧边栏 + 共享记忆</text>
+    <text x="1300" y="770" text-anchor="middle" font-size="22" font-weight="600" fill="#41556B" stroke="none">让产物和上下文留下来</text>
+  </g>
+  <g fill="none" stroke="#132C46" stroke-width="5" stroke-linecap="round">
+    <path d="M480 302 C570 330 620 376 690 418"/>
+    <path d="M1120 302 C1030 330 980 376 910 418"/>
+    <path d="M480 740 C570 695 620 610 690 538"/>
+    <path d="M1120 740 C1030 695 980 610 910 538"/>
+  </g>
+  <g font-family="PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="24" font-weight="700" fill="#0F4C81">
+    <text x="800" y="618" text-anchor="middle">判断标准：能不能让人少重复上下文，少切工具，少丢工作状态</text>
+  </g>
+</svg>

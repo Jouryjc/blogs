@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#31536b" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="#fff7e8"/>
+  <g stroke="#123047" stroke-width="4" fill="none" opacity="0.55">
+    <path d="M65 80h150l32 32h110"/>
+    <path d="M780 72h160l26 26h170"/>
+    <path d="M70 585h190l25-25h92"/>
+    <path d="M826 575h190l35-35h80"/>
+  </g>
+  <g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="82" font-size="48" font-weight="800" fill="#0f4c81">Codex 远程操作，不是手机写代码</text>
+    <text x="600" y="128" font-size="26" fill="#333">手机做判断，宿主机和远程环境负责执行</text>
+  </g>
+  <g transform="translate(54 190)" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif" filter="url(#shadow)">
+    <g>
+      <rect x="0" y="0" width="230" height="240" rx="24" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <rect x="71" y="38" width="88" height="126" rx="18" fill="#0f4c81"/>
+      <circle cx="115" cy="146" r="5" fill="#fff"/>
+      <text x="115" y="206" text-anchor="middle" font-size="25" font-weight="800" fill="#111">ChatGPT 手机 App</text>
+    </g>
+    <g transform="translate(294 0)">
+      <rect x="0" y="0" width="230" height="240" rx="24" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <rect x="38" y="56" width="154" height="86" rx="12" fill="#bfe9fb" stroke="#123047" stroke-width="4"/>
+      <path d="M78 166h74" stroke="#123047" stroke-width="5" stroke-linecap="round"/>
+      <text x="115" y="206" text-anchor="middle" font-size="28" font-weight="800" fill="#111">Codex 宿主机</text>
+    </g>
+    <g transform="translate(588 0)">
+      <rect x="0" y="0" width="230" height="240" rx="24" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <path d="M52 128h126M70 96h90M86 64h58" stroke="#0f4c81" stroke-width="12" stroke-linecap="round"/>
+      <text x="115" y="206" text-anchor="middle" font-size="28" font-weight="800" fill="#111">远程环境 / SSH</text>
+    </g>
+    <g transform="translate(882 0)">
+      <rect x="0" y="0" width="230" height="240" rx="24" fill="#ffffff" stroke="#123047" stroke-width="4"/>
+      <path d="M56 68h112M56 105h112M56 142h76" stroke="#123047" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="168" cy="142" r="24" fill="#ffe15a" stroke="#123047" stroke-width="4"/>
+      <text x="115" y="206" text-anchor="middle" font-size="28" font-weight="800" fill="#111">输出和审批</text>
+    </g>
+  </g>
+  <g stroke="#123047" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M294 310h58"/>
+    <path d="M338 292l24 18-24 18"/>
+    <path d="M588 310h58"/>
+    <path d="M632 292l24 18-24 18"/>
+    <path d="M882 310h58"/>
+    <path d="M926 292l24 18-24 18"/>
+  </g>
+  <g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">
+    <g transform="translate(150 490)">
+      <rect width="250" height="84" rx="22" fill="#dff4ff" stroke="#123047" stroke-width="4"/>
+      <text x="125" y="36" text-anchor="middle" font-size="24" font-weight="800" fill="#0f4c81">手机端</text>
+      <text x="125" y="65" text-anchor="middle" font-size="22" fill="#111">判断、批准、补充上下文</text>
+    </g>
+    <g transform="translate(475 490)">
+      <rect width="250" height="84" rx="22" fill="#fff" stroke="#123047" stroke-width="4"/>
+      <text x="125" y="36" text-anchor="middle" font-size="24" font-weight="800" fill="#0f4c81">宿主机</text>
+      <text x="125" y="65" text-anchor="middle" font-size="22" fill="#111">保留文件、凭证和工具</text>
+    </g>
+    <g transform="translate(800 490)">
+      <rect width="250" height="84" rx="22" fill="#ffeab0" stroke="#123047" stroke-width="4"/>
+      <text x="125" y="36" text-anchor="middle" font-size="24" font-weight="800" fill="#0f4c81">远程环境</text>
+      <text x="125" y="65" text-anchor="middle" font-size="22" fill="#111">运行命令、读写项目文件</text>
+    </g>
+  </g>
+</svg>

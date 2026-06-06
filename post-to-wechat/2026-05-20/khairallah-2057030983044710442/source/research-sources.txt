@@ -1,0 +1,29 @@
+Claude Prompt Engineering 文章参考来源
+
+Source:
+- Khairallah AL-Awady, How to Master Claude Prompt Engineering From Zero (Full Course)
+  https://x.com/eng_khairallah1/status/2057030983044710442
+  Local capture: source/x-article.json, source/original-article.md
+  Local image: raw/source-cover.jpg
+
+Supporting references:
+- Anthropic Docs, Prompt engineering overview
+  https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+  Used for: official prompt engineering framing, prompt clarity, iterative improvement.
+
+- Anthropic Docs, Be clear and direct
+  https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/be-clear-and-direct
+  Used for: explicit context, task, format, and constraints.
+
+- Anthropic Docs, Use examples
+  https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/multishot-prompting
+  Used for: examples as stronger guidance than abstract instructions.
+
+- Anthropic Docs, Use XML tags
+  https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags
+  Used for: structured prompt sections.
+
+Editorial notes:
+- Preserve the source's useful framework: role, context, task, format, constraints; examples; chained prompts; negative constraints; self-evaluation; XML; iteration.
+- Reframe away from "zero to expert" hype and toward a practical developer workflow.
+- Add a reusable prompt template and review checklist.

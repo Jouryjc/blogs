@@ -1,0 +1,7 @@
+PagedAttention / vLLM: https://arxiv.org/abs/2309.06180
+Fast Transformer Decoding / MQA: https://arxiv.org/abs/1911.02150
+GQA: https://arxiv.org/abs/2305.13245
+DistServe: https://arxiv.org/abs/2401.09670
+MInference: https://arxiv.org/abs/2407.02490
+DeepSeek-V3 Technical Report: https://arxiv.org/abs/2412.19437
+KVQuant: https://arxiv.org/abs/2401.18079

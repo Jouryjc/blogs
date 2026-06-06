@@ -1,0 +1,44 @@
+{
+  "title": "多 Agent 为什么越跑越乱？从分工、交接到评审讲清楚",
+  "author": "",
+  "summary": "多 Agent 系统真正难的不是并行，而是分工、交接、失败处理和评审。先从两个 Agent 跑通。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-BjLWSv/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "多 Agent 系统：分工、交接、评审",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-19/multi-agent-team/imgs/article-cover.png"
+    },
+    {
+      "alt": "原文配图：How to Build a Team of AI Agents That Actually Work Together",
+      "originalPath": "raw/source-cover.jpg",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-19/multi-agent-team/raw/source-cover.jpg"
+    },
+    {
+      "alt": "单 Agent 扛全流程，容易注意力被摊薄",
+      "originalPath": "illustrations/single-vs-team.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-19/multi-agent-team/illustrations/single-vs-team.png"
+    },
+    {
+      "alt": "多 Agent 三种模式：Pipeline、Fan-out、Specialist Team",
+      "originalPath": "illustrations/three-patterns.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-19/multi-agent-team/illustrations/three-patterns.png"
+    },
+    {
+      "alt": "多 Agent 交接协议：角色、工具、输出、失败处理",
+      "originalPath": "illustrations/handoff-contract.png",
+      "placeholder": "WECHATIMGPH_5",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-19/multi-agent-team/illustrations/handoff-contract.png"
+    },
+    {
+      "alt": "多 Agent 五个常见坑：泛化、无格式、早并行、无兜底、不看成本",
+      "originalPath": "illustrations/five-mistakes.png",
+      "placeholder": "WECHATIMGPH_6",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-19/multi-agent-team/illustrations/five-mistakes.png"
+    }
+  ]
+}

@@ -70,6 +70,11 @@
     "moc": ["rag"],
     "related": ["avi-prompt-caching-claude-code"]
   },
+  "post-to-wechat/2026-06-04/goal-command-claude-code-codex/goal-command-claude-code-codex.md": {
+    "tags": ["type/article", "topic/claude-code", "topic/agent-runtime", "topic/agent-design", "platform/wechat"],
+    "moc": ["claude-code", "agent-runtime", "agent-design"],
+    "related": ["agent-skills-engineering-workflow.optimized", "agents-md-claude-md", "claude-code-html-effectiveness"]
+  },
   "outputs/arxiv-2604-01707/memory-in-llm-era-wechat-draft.md": {
     "tags": ["type/article", "topic/agent-memory", "platform/wechat"],
     "moc": ["agent-memory"],

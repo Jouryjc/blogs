@@ -1,0 +1,38 @@
+{
+  "title": "长上下文和 KV Cache：为什么上下文不是免费的",
+  "author": "",
+  "summary": "长上下文不是免费记忆。输入 token 会拉高 Prefill，历史 token 会变成 KV Cache，占用显存并挤压并发。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-vrxqkl/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "长上下文的真实账单：Prefill、KV Cache、显存、并发",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-11/long-context-kv-cache/imgs/article-cover.png"
+    },
+    {
+      "alt": "上下文越长，Prefill 越长，TTFT 越高",
+      "originalPath": "illustrations/prefill-cost.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-11/long-context-kv-cache/illustrations/prefill-cost.png"
+    },
+    {
+      "alt": "KV Cache 公式：token 越多，显存账单越大",
+      "originalPath": "illustrations/kv-formula.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-11/long-context-kv-cache/illustrations/kv-formula.png"
+    },
+    {
+      "alt": "长上下文请求会占用更多 KV Cache，挤压 batch size 和并发",
+      "originalPath": "illustrations/concurrency.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-11/long-context-kv-cache/illustrations/concurrency.png"
+    },
+    {
+      "alt": "长上下文慢请求排查：TTFT、ITL、KV Cache、调度",
+      "originalPath": "illustrations/diagnosis.png",
+      "placeholder": "WECHATIMGPH_5",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-11/long-context-kv-cache/illustrations/diagnosis.png"
+    }
+  ]
+}

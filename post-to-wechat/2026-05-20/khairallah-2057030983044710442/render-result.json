@@ -1,0 +1,38 @@
+{
+  "title": "为什么 Claude 总是不按你想的来？从角色、上下文到约束讲清楚",
+  "author": "",
+  "summary": "Claude 输出差，不一定是模型弱。多数时候，是角色、上下文、任务、格式和约束没有写清楚。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-omQkoI/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Claude 不按预期输出，常常是任务规格没写清楚",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/khairallah-2057030983044710442/imgs/article-cover.png"
+    },
+    {
+      "alt": "原文封面：How to Master Claude Prompt Engineering From Zero",
+      "originalPath": "raw/source-cover.jpg",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/khairallah-2057030983044710442/raw/source-cover.jpg"
+    },
+    {
+      "alt": "弱 prompt 和强 prompt 的差别：少猜测，多规格",
+      "originalPath": "illustrations/weak-vs-strong.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/khairallah-2057030983044710442/illustrations/weak-vs-strong.png"
+    },
+    {
+      "alt": "一个稳定 prompt 的 5 个部件",
+      "originalPath": "illustrations/five-part-framework.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/khairallah-2057030983044710442/illustrations/five-part-framework.png"
+    },
+    {
+      "alt": "复杂任务用链式 Prompt 拆开处理",
+      "originalPath": "illustrations/prompt-chain.png",
+      "placeholder": "WECHATIMGPH_5",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-05-20/khairallah-2057030983044710442/illustrations/prompt-chain.png"
+    }
+  ]
+}
