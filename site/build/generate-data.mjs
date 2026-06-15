@@ -106,18 +106,20 @@ function main() {
     const mocs = [...new Set(mocRaw.map((x) => x.trim()))].filter((x) => topicIds.has(x))
     const primary = mocs[0] || 'ai-industry'
 
-    // 配图复制 + 正文图片路径重写（去掉与标题重复的正文首个 H1，详情页另行渲染标题）
-    copyImgs(dir, slug)
+    // 正文渲染（去掉与标题重复的正文首个 H1，详情页另行渲染标题）
     const body = g.content.replace(/^\s*#\s+.*(\r?\n)+/, '')
-    const html = rewriteImgs(md.render(body), slug)
+    const htmlRaw = md.render(body)
 
-    // 封面：coverImage 优先，兼容 cover；仅文件存在才设
-    const coverRel = d.coverImage || d.cover
-    let cover = null
-    if (coverRel && exists(path.join(dir, coverRel))) {
-      copyOne(path.join(dir, coverRel), path.join(ASSET_DIR, slug, coverRel))
-      cover = `/article-assets/${slug}/${coverRel}`
-    }
+    // 仅复制被正文引用的配图 + 封面：outputs/ 下扁平文章共用一个 imgs/，
+    // 整目录复制会把 37MB 共享目录重复塞进每篇（9 篇×37MB），故按引用精确复制
+    const coverRel = (d.coverImage || d.cover || '').replace(/^\.\//, '')
+    const refs = new Set()
+    for (const m of htmlRaw.matchAll(/src="(?:\.\/)?(imgs\/[^"]+)"/g)) refs.add(m[1])
+    if (coverRel) refs.add(coverRel)
+    for (const rel of refs) copyOne(path.join(dir, rel), path.join(ASSET_DIR, slug, rel))
+
+    const html = rewriteImgs(htmlRaw, slug)
+    const cover = coverRel && exists(path.join(dir, coverRel)) ? `/article-assets/${slug}/${coverRel}` : null
 
     nodes.push({
       id: slug, type: 'article', title: d.title, slug,
@@ -165,19 +167,6 @@ function main() {
   for (const c of chosen) console.log(`  + ${c.slug}  [${c.p}]`)
 }
 
-function copyImgs(dir, slug) {
-  const src = path.join(dir, 'imgs')
-  if (!exists(src)) return
-  copyDir(src, path.join(ASSET_DIR, slug, 'imgs'))
-}
-function copyDir(s, d) {
-  fs.mkdirSync(d, { recursive: true })
-  for (const e of fs.readdirSync(s, { withFileTypes: true })) {
-    const sp = path.join(s, e.name), dp = path.join(d, e.name)
-    if (e.isDirectory()) copyDir(sp, dp)
-    else if (/\.(png|jpe?g|gif|webp|svg)$/i.test(e.name)) fs.copyFileSync(sp, dp)
-  }
-}
 function copyOne(src, dst) {
   if (!exists(src)) return
   fs.mkdirSync(path.dirname(dst), { recursive: true })

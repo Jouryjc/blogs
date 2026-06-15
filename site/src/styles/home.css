@@ -27,6 +27,9 @@
 .hud-enter:hover { border-color: #8fb6ff }
 @media (max-width: 768px) {
   .hud-legend { display: none }
-  .hud-search input { width: 180px }
+  /* 窄屏图例与搜索降级：避免品牌标题与居中搜索框重叠，搜索为桌面增强 */
+  .hud-search { display: none }
+  .hud-brand { right: 16px }
   .hud-brand h1 { font-size: 16px }
+  .hud-brand p { font-size: 12px }
 }
