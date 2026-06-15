@@ -1,3 +1,15 @@
+---
+title: "Codex Remote Control 资料笔记"
+tags:
+  - type/source
+  - topic/agent-runtime
+  - topic/ai-industry
+moc:
+  - "[[agent-runtime]]"
+related:
+  - "[[codex-remote-control]]"
+---
+
 # Codex remote control source notes
 
 Created: 2026-05-15 Asia/Shanghai

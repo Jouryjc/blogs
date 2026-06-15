@@ -4,6 +4,14 @@ author: "Akshay 🚀 (@akshay_pachaar)"
 title: "Prompt caching, clearly explained"
 created_at: "Mon Mar 09 14:58:51 +0000 2026"
 cover: "https://pbs.twimg.com/media/HC4X8E1bUAAfW1k.jpg"
+tags:
+  - type/source
+  - topic/prompt-caching
+moc:
+  - "[[prompt-caching]]"
+related:
+  - "[[avi-prompt-caching-claude-code]]"
+  - "[[long-context-kv-cache]]"
 ---
 
 # Prompt caching, clearly explained

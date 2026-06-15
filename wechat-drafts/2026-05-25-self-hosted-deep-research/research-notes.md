@@ -1,3 +1,15 @@
+---
+title: "Self-hosted Deep Research 研究笔记"
+tags:
+  - type/source
+  - topic/rag
+  - topic/knowledge-base
+moc:
+  - "[[rag]]"
+related:
+  - "[[wechat-drafts/2026-05-25-self-hosted-deep-research/article]]"
+---
+
 # Research Notes
 
 ## Title Candidates

@@ -6,6 +6,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-11"
 coverImage: "imgs/article-cover.png"
 summary: "长上下文不是免费记忆。输入 token 会拉高 Prefill，历史 token 会变成 KV Cache，占用显存并挤压并发。"
+tags:
+  - type/article
+  - topic/prompt-caching
+  - topic/rag
+  - platform/wechat
+moc:
+  - "[[prompt-caching]]"
+  - "[[rag]]"
+related:
+  - "[[rag-ttft]]"
+  - "[[avi-prompt-caching-claude-code]]"
 ---
 
 # 长上下文和 KV Cache：为什么上下文不是免费的

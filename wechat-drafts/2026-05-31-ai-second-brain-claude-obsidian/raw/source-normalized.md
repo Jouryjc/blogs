@@ -1,3 +1,14 @@
+---
+title: "AI 第二大脑 原文(规范化)"
+tags:
+  - type/source
+  - topic/knowledge-base
+moc:
+  - "[[knowledge-base]]"
+related:
+  - "[[wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article]]"
+---
+
 # How to Build an AI Second Brain With Claude and Obsidian (Full Course)
 
 Source: https://x.com/eng_khairallah1/status/2060652660773314833

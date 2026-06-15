@@ -7,6 +7,15 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-26"
 coverImage: "imgs/article-cover.png"
 summary: "项目 .claude 和全局 Plugin 同名时，不是一句项目优先能解释。真正要看组件类型：Skill、Agent、MCP、Hook 和 Settings 各有规则。"
+tags:
+  - type/article
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[wechat-drafts/2026-05-26-claude-instruction-conflicts/research-notes]]"
+  - "[[wechat-drafts/2026-05-26-custom-claude-plugins/article]]"
 ---
 
 # Claude 指令撞车时，谁说了算？

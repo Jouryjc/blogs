@@ -21,4 +21,4 @@ Avoid:
 - Dense unreadable text, tiny labels, cluttered diagrams, random English filler.
 - Overly bright blue/orange full-background posters, excessive clouds/gears, loose decorative composition.
 
-Only use a local reference image when the user explicitly asks for it or the current article prompt explicitly names it. Do not default to `raw/640.jpeg`. When a reference is used, borrow only the visual language; do not copy exact composition, text, branding, or protected visual details.
+Only use a local reference image when the user explicitly asks for it or the current article prompt explicitly names it.  When a reference is used, borrow only the visual language; do not copy exact composition, text, branding, or protected visual details.

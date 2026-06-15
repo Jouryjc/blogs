@@ -1,240 +1,1308 @@
 {
   "outputs/agent-memory-never-forget.md": {
-    "tags": ["type/article", "topic/agent-memory", "platform/wechat"],
-    "moc": ["agent-memory"],
-    "related": ["memory-in-llm-era-wechat-draft"]
+    "tags": [
+      "type/article",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-memory"
+    ],
+    "related": [
+      "memory-in-llm-era-wechat-draft"
+    ]
   },
   "outputs/agent-skills-engineering-workflow.optimized.md": {
-    "tags": ["type/article", "topic/agent-skills", "platform/wechat"],
-    "moc": ["agent-skills"],
-    "related": ["agent-skills-engineering-workflow.xiaoyu", "agent-skills-deep-dive"]
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills"
+    ],
+    "related": [
+      "agent-skills-engineering-workflow.xiaoyu",
+      "agent-skills-deep-dive"
+    ]
   },
   "outputs/agent-skills-engineering-workflow.xiaoyu.md": {
-    "tags": ["type/article", "topic/agent-skills", "platform/wechat"],
-    "moc": ["agent-skills"],
-    "related": ["agent-skills-engineering-workflow.optimized", "agent-skills-deep-dive"]
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills"
+    ],
+    "related": [
+      "agent-skills-engineering-workflow.optimized",
+      "agent-skills-deep-dive"
+    ]
   },
   "outputs/agent-skills-tips.md": {
-    "tags": ["type/article", "topic/agent-skills", "platform/wechat"],
-    "moc": ["agent-skills"]
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills"
+    ]
   },
   "outputs/agents-md-claude-md.md": {
-    "tags": ["type/article", "topic/claude-code", "topic/agent-memory", "platform/wechat"],
-    "moc": ["claude-code"],
-    "related": ["agents-md-claude-md-source-notes"]
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "agents-md-claude-md-source-notes"
+    ]
   },
   "outputs/claude-code-boris-cherny.md": {
-    "tags": ["type/article", "topic/claude-code", "platform/wechat"],
-    "moc": ["claude-code"],
-    "related": ["Claude_Code_Boris_Cherny_深度总结"]
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "Claude_Code_Boris_Cherny_深度总结"
+    ]
   },
   "outputs/claude-opus-4-7.md": {
-    "tags": ["type/article", "topic/ai-industry", "topic/claude-code", "platform/wechat"],
-    "moc": ["ai-industry"],
-    "related": ["claude-opus-4-7-source-notes"]
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "claude-opus-4-7-source-notes"
+    ]
   },
   "outputs/code-to-business-knowledge-base.md": {
-    "tags": ["type/article", "topic/knowledge-base", "platform/wechat"],
-    "moc": ["knowledge-base"]
+    "tags": [
+      "type/article",
+      "topic/knowledge-base",
+      "platform/wechat"
+    ],
+    "moc": [
+      "knowledge-base"
+    ]
   },
   "outputs/luo-fuli-agent-era-wechat.md": {
-    "tags": ["type/article", "topic/ai-industry", "platform/wechat"],
-    "moc": ["ai-industry"],
-    "related": ["luo-fuli-interview-source-notes"]
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "luo-fuli-interview-source-notes"
+    ]
   },
   "outputs/ralph-orchestrator.md": {
-    "tags": ["type/article", "topic/agent-runtime", "platform/wechat"],
-    "moc": ["agent-runtime"],
-    "related": ["raw/ralph-orchestrator", "ralph"]
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "raw/ralph-orchestrator",
+      "ralph"
+    ]
   },
   "post-to-wechat/2026-04-23/claude-context-deep-dive/claude-context-deep-dive.md": {
-    "tags": ["type/article", "topic/context-engineering", "topic/claude-code", "platform/wechat"],
-    "moc": ["context-engineering"],
-    "related": ["avi-context-engineering-claude-code"]
+    "tags": [
+      "type/article",
+      "topic/context-engineering",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "context-engineering"
+    ],
+    "related": [
+      "avi-context-engineering-claude-code"
+    ]
   },
   "post-to-wechat/2026-04-26/agent-skills-deep-dive/agent-skills-deep-dive.md": {
-    "tags": ["type/article", "topic/agent-skills", "platform/wechat"],
-    "moc": ["agent-skills"],
-    "related": ["agent-skills-engineering-workflow.optimized"]
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills"
+    ],
+    "related": [
+      "agent-skills-engineering-workflow.optimized"
+    ]
   },
   "post-to-wechat/2026-04-28/gitnexus-code-intelligence/gitnexus-code-intelligence.md": {
-    "tags": ["type/article", "topic/rag", "topic/knowledge-base", "platform/wechat"],
-    "moc": ["rag"]
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "topic/knowledge-base",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag"
+    ]
   },
   "post-to-wechat/2026-05-09/claude-code-html-effectiveness/claude-code-html-effectiveness.md": {
-    "tags": ["type/article", "topic/claude-code", "platform/wechat"],
-    "moc": ["claude-code"]
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code"
+    ]
   },
   "post-to-wechat/2026-05-10/rag-ttft/rag-ttft.md": {
-    "tags": ["type/article", "topic/rag", "topic/prompt-caching", "platform/wechat"],
-    "moc": ["rag"],
-    "related": ["avi-prompt-caching-claude-code"]
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "topic/prompt-caching",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag"
+    ],
+    "related": [
+      "avi-prompt-caching-claude-code"
+    ]
   },
   "post-to-wechat/2026-06-04/goal-command-claude-code-codex/goal-command-claude-code-codex.md": {
-    "tags": ["type/article", "topic/claude-code", "topic/agent-runtime", "topic/agent-design", "platform/wechat"],
-    "moc": ["claude-code", "agent-runtime", "agent-design"],
-    "related": ["agent-skills-engineering-workflow.optimized", "agents-md-claude-md", "claude-code-html-effectiveness"]
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "agent-skills-engineering-workflow.optimized",
+      "agents-md-claude-md",
+      "claude-code-html-effectiveness"
+    ]
+  },
+  "post-to-wechat/2026-06-06/codex-sdk-python/codex-sdk-python.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime"
+    ],
+    "related": [
+      "goal-command-claude-code-codex",
+      "claude-code-html-effectiveness"
+    ]
+  },
+  "post-to-wechat/2026-06-07/claude-code-workflow-goal/claude-code-workflow-goal.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "goal-command-claude-code-codex",
+      "codex-sdk-python",
+      "agents-md-claude-md"
+    ]
+  },
+  "post-to-wechat/2026-06-07/claude-code-workflow-goal/source/research-notes.md": {
+    "title": "Claude Code workflow / goal 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "claude-code-workflow-goal",
+      "goal-command-claude-code-codex"
+    ]
+  },
+  "post-to-wechat/2026-06-08/google-agentic-rag/google-agentic-rag.md": {
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "topic/managed-agents",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag",
+      "managed-agents"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-08/google-agentic-rag/source/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-06-08/google-agentic-rag/source/research-notes.md": {
+    "title": "Google Agentic RAG research notes",
+    "tags": [
+      "type/source",
+      "topic/rag",
+      "topic/managed-agents",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "rag",
+      "managed-agents"
+    ],
+    "related": [
+      "google-agentic-rag"
+    ]
   },
   "outputs/arxiv-2604-01707/memory-in-llm-era-wechat-draft.md": {
-    "tags": ["type/article", "topic/agent-memory", "platform/wechat"],
-    "moc": ["agent-memory"],
-    "related": ["memory-in-llm-era-wechat-draft.optimized"]
+    "tags": [
+      "type/article",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-memory"
+    ],
+    "related": [
+      "memory-in-llm-era-wechat-draft.optimized"
+    ]
   },
   "outputs/arxiv-2604-01707/memory-in-llm-era-wechat-draft.optimized.md": {
-    "tags": ["type/article", "topic/agent-memory", "platform/wechat"],
-    "moc": ["agent-memory"],
-    "related": ["memory-in-llm-era-wechat-draft"]
+    "tags": [
+      "type/article",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-memory"
+    ],
+    "related": [
+      "memory-in-llm-era-wechat-draft"
+    ]
   },
   "output/xiaohongshu/agents-md-claude-md/caption.md": {
     "title": "AGENTS.md / CLAUDE.md 小红书文案",
-    "tags": ["type/article", "topic/claude-code", "platform/xiaohongshu"],
-    "moc": ["claude-code"],
-    "related": ["agents-md-claude-md"]
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "platform/xiaohongshu"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "agents-md-claude-md"
+    ]
   },
   "raw/Claude_Code_Boris_Cherny_深度总结.md": {
     "title": "Claude Code 深度总结（Boris Cherny）",
-    "tags": ["type/source", "topic/claude-code"],
-    "moc": ["claude-code"]
+    "tags": [
+      "type/source",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "claude-code"
+    ]
   },
   "raw/arxiv-2604-14228/claude-code-design-space.md": {
-    "tags": ["type/source", "topic/agent-design", "topic/claude-code"],
-    "moc": ["agent-design"]
+    "tags": [
+      "type/source",
+      "topic/agent-design",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "agent-design"
+    ]
   },
   "raw/avi-context-engineering-claude-code/avi-context-engineering-claude-code.md": {
-    "tags": ["type/source", "topic/context-engineering"],
-    "moc": ["context-engineering"],
-    "related": ["2046500537584218438"]
+    "tags": [
+      "type/source",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "context-engineering"
+    ],
+    "related": [
+      "2046500537584218438"
+    ]
   },
   "raw/avi-prompt-caching-claude-code/avi-prompt-caching-claude-code.md": {
-    "tags": ["type/source", "topic/prompt-caching"],
-    "moc": ["prompt-caching"],
-    "related": ["2044670188998803855"]
+    "tags": [
+      "type/source",
+      "topic/prompt-caching"
+    ],
+    "moc": [
+      "prompt-caching"
+    ],
+    "related": [
+      "2044670188998803855"
+    ]
   },
   "raw/claude-design-ryan-mather/claude-design-ryan-mather.md": {
-    "tags": ["type/source", "topic/agent-design"],
-    "moc": ["agent-design"],
-    "related": ["2045162321589252458"]
+    "tags": [
+      "type/source",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-design"
+    ],
+    "related": [
+      "2045162321589252458"
+    ]
   },
   "raw/claude-managed-agents/claude-managed-agents-deep-dive.md": {
-    "tags": ["type/source", "topic/managed-agents"],
-    "moc": ["managed-agents"],
-    "related": ["2041927992986009773"]
+    "tags": [
+      "type/source",
+      "topic/managed-agents"
+    ],
+    "moc": [
+      "managed-agents"
+    ],
+    "related": [
+      "2041927992986009773"
+    ]
   },
   "raw/extracted/agents-md-claude-md-source-notes.md": {
     "title": "AGENTS.md / CLAUDE.md 资料笔记",
-    "tags": ["type/source", "topic/claude-code"],
-    "moc": ["claude-code"],
-    "related": ["agents-md-claude-md"]
+    "tags": [
+      "type/source",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "agents-md-claude-md"
+    ]
   },
   "raw/extracted/claude-opus-4-7-source-notes.md": {
-    "tags": ["type/source", "topic/ai-industry", "topic/claude-code"],
-    "moc": ["ai-industry"],
-    "related": ["claude-opus-4-7"]
+    "tags": [
+      "type/source",
+      "topic/ai-industry",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "claude-opus-4-7"
+    ]
   },
   "raw/extracted/luo-fuli-interview-source-notes.md": {
     "title": "罗福莉访谈资料笔记",
-    "tags": ["type/source", "topic/ai-industry"],
-    "moc": ["ai-industry"],
-    "related": ["luo-fuli-agent-era-wechat"]
+    "tags": [
+      "type/source",
+      "topic/ai-industry"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "luo-fuli-agent-era-wechat"
+    ]
   },
   "raw/hermes-agent.md": {
-    "tags": ["type/source", "topic/agent-runtime"],
-    "moc": ["agent-runtime"]
+    "tags": [
+      "type/source",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-runtime"
+    ]
   },
   "raw/pierce-zhang-2045521315646599471/hermes-nvidia-minimax-setup.md": {
-    "tags": ["type/source", "topic/agent-runtime"],
-    "moc": ["agent-runtime"],
-    "related": ["2045521315646599471", "hermes-agent"]
+    "tags": [
+      "type/source",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "2045521315646599471",
+      "hermes-agent"
+    ]
   },
   "raw/ralph-orchestrator.md": {
     "title": "Ralph Orchestrator 笔记",
-    "tags": ["type/source", "topic/agent-runtime"],
-    "moc": ["agent-runtime"],
-    "related": ["outputs/ralph-orchestrator"]
+    "tags": [
+      "type/source",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "outputs/ralph-orchestrator"
+    ]
   },
   "raw/ralph.md": {
     "title": "Ralph：一个极简的 Agent 循环",
-    "tags": ["type/source", "topic/agent-runtime"],
-    "moc": ["agent-runtime"]
+    "tags": [
+      "type/source",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-runtime"
+    ]
   },
   "raw/ssrn-6372438/abstract-page.md": {
-    "tags": ["type/source", "topic/agent-safety"],
-    "moc": ["agent-safety"],
-    "related": ["ai-agent-traps-xiaoyu"]
+    "tags": [
+      "type/source",
+      "topic/agent-safety"
+    ],
+    "moc": [
+      "agent-safety"
+    ],
+    "related": [
+      "ai-agent-traps-xiaoyu"
+    ]
   },
   "raw/ssrn-6372438/ai-agent-traps-xiaoyu.md": {
-    "tags": ["type/source", "topic/agent-safety"],
-    "moc": ["agent-safety"],
-    "related": ["abstract-page"]
+    "tags": [
+      "type/source",
+      "topic/agent-safety"
+    ],
+    "moc": [
+      "agent-safety"
+    ],
+    "related": [
+      "abstract-page"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-04-27.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-05-02.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-05-03.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-05-04.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-05-05.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-05-07.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/2026-05-09.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "reports/x-hot-ai-agent-engineering/latest.md": {
-    "tags": ["type/report", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "raw/news/2026-04-17-ai-agent-x-digest.md": {
-    "tags": ["type/news", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/news",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "raw/news/2026-04-19-ai-agent-x-digest.md": {
-    "tags": ["type/news", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/news",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "raw/news/2026-04-20-ai-agent-x-digest.md": {
-    "tags": ["type/news", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/news",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "raw/news/2026-04-20-nvidia-api-key-x-brief.md": {
-    "tags": ["type/news", "topic/ai-news", "topic/agent-safety"], "moc": ["ai-industry"]
+    "tags": [
+      "type/news",
+      "topic/ai-news",
+      "topic/agent-safety"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "raw/news/2026-04-26-ai-agent-x-digest.md": {
-    "tags": ["type/news", "topic/ai-news"], "moc": ["ai-industry"]
+    "tags": [
+      "type/news",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
   },
   "raw/claude-design-ryan-mather/x-to-markdown/Flomerboy/1/2045162321589252458.md": {
-    "tags": ["type/thread", "topic/agent-design"],
-    "moc": ["agent-design"],
-    "related": ["claude-design-ryan-mather"]
+    "tags": [
+      "type/thread",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-design"
+    ],
+    "related": [
+      "claude-design-ryan-mather"
+    ]
   },
   "raw/claude-managed-agents/x-to-markdown/RLanceMartin/launching-claude-managed-agents/2041927992986009773.md": {
-    "tags": ["type/thread", "topic/managed-agents"],
-    "moc": ["managed-agents"],
-    "related": ["claude-managed-agents-deep-dive"]
+    "tags": [
+      "type/thread",
+      "topic/managed-agents"
+    ],
+    "moc": [
+      "managed-agents"
+    ],
+    "related": [
+      "claude-managed-agents-deep-dive"
+    ]
   },
   "raw/pierce-zhang-2045521315646599471/x-to-markdown/PierceZhang34/10-hermes-nvidia-minimax-m2-7/2045521315646599471.md": {
-    "tags": ["type/thread", "topic/agent-runtime"],
-    "moc": ["agent-runtime"],
-    "related": ["hermes-nvidia-minimax-setup"]
+    "tags": [
+      "type/thread",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "hermes-nvidia-minimax-setup"
+    ]
   },
   "x-to-markdown/avichawla/how-to-cut-claude-code-costs-by-3x-using-karpathy-s-context/2046500537584218438.md": {
-    "tags": ["type/thread", "topic/context-engineering"],
-    "moc": ["context-engineering"],
-    "related": ["avi-context-engineering-claude-code"]
+    "tags": [
+      "type/thread",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "context-engineering"
+    ],
+    "related": [
+      "avi-context-engineering-claude-code"
+    ]
   },
   "x-to-markdown/avichawla/prompt-caching-in-llms-clearly-explained/2044670188998803855.md": {
-    "tags": ["type/thread", "topic/prompt-caching"],
-    "moc": ["prompt-caching"],
-    "related": ["avi-prompt-caching-claude-code"]
+    "tags": [
+      "type/thread",
+      "topic/prompt-caching"
+    ],
+    "moc": [
+      "prompt-caching"
+    ],
+    "related": [
+      "avi-prompt-caching-claude-code"
+    ]
   },
   "post-to-wechat/2026-05-09/claude-code-html-effectiveness/source/source-notes.md": {
     "title": "Claude Code HTML 有效性 · 资料笔记",
-    "tags": ["type/source", "topic/claude-code"],
-    "moc": ["claude-code"],
-    "related": ["claude-code-html-effectiveness"]
+    "tags": [
+      "type/source",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "claude-code-html-effectiveness"
+    ]
+  },
+  "post-to-wechat/2026-06-09/rag-embedding-rerank/rag-embedding-rerank.md": {
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "topic/context-engineering",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-09/rag-embedding-rerank/source/research-notes",
+      "google-agentic-rag"
+    ]
+  },
+  "post-to-wechat/2026-06-09/rag-embedding-rerank/source/research-notes.md": {
+    "title": "RAG Embedding 和 Rerank 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/rag",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "rag",
+      "context-engineering"
+    ],
+    "related": [
+      "rag-embedding-rerank"
+    ]
+  },
+  "post-to-wechat/2026-06-10/claude-fable-5-programmers/claude-fable-5-programmers.md": {
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry",
+      "claude-code",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-10/claude-fable-5-programmers/source/research-notes",
+      "claude-opus-4-7",
+      "claude-code-workflow-goal"
+    ]
+  },
+  "post-to-wechat/2026-06-10/claude-fable-5-programmers/source/research-notes.md": {
+    "title": "Claude Fable 5 / Mythos 5 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/ai-industry",
+      "topic/claude-code",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "ai-industry",
+      "claude-code",
+      "agent-runtime"
+    ],
+    "related": [
+      "claude-fable-5-programmers"
+    ]
+  },
+  "post-to-wechat/2026-06-11/agent-loop-engineering/agent-loop-engineering.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "topic/agent-skills",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design",
+      "agent-skills",
+      "agent-memory"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-11/agent-loop-engineering/source/research-notes",
+      "claude-code-workflow-goal",
+      "goal-command-claude-code-codex",
+      "outputs/ralph-orchestrator"
+    ]
+  },
+  "post-to-wechat/2026-06-11/agent-loop-engineering/source/research-notes.md": {
+    "title": "Agent Loop Engineering 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "topic/agent-skills",
+      "topic/agent-memory"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design",
+      "agent-skills",
+      "agent-memory"
+    ],
+    "related": [
+      "agent-loop-engineering"
+    ]
+  },
+  "post-to-wechat/2026-05-11/long-context-kv-cache/long-context-kv-cache.md": {
+    "tags": [
+      "type/article",
+      "topic/prompt-caching",
+      "topic/rag",
+      "platform/wechat"
+    ],
+    "moc": [
+      "prompt-caching",
+      "rag"
+    ],
+    "related": [
+      "rag-ttft",
+      "avi-prompt-caching-claude-code"
+    ]
+  },
+  "post-to-wechat/2026-05-15/codex-remote-control/codex-remote-control.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/ai-industry",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "ai-industry"
+    ],
+    "related": [
+      "claude-code-remote-control",
+      "jxnlco-codex-workbench",
+      "post-to-wechat/2026-05-15/codex-remote-control/sources"
+    ]
+  },
+  "post-to-wechat/2026-05-15/codex-remote-control/sources.md": {
+    "title": "Codex Remote Control 资料笔记",
+    "tags": [
+      "type/source",
+      "topic/agent-runtime",
+      "topic/ai-industry"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "codex-remote-control"
+    ]
+  },
+  "post-to-wechat/2026-05-19/karpathy-anthropic/karpathy-anthropic.md": {
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "output/wechat-karpathy-anthropic-2026-05-19/article",
+      "claude-opus-4-7"
+    ]
+  },
+  "output/wechat-karpathy-anthropic-2026-05-19/article.md": {
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "karpathy-anthropic"
+    ]
+  },
+  "post-to-wechat/2026-05-19/multi-agent-team/multi-agent-team.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-05-19/multi-agent-team/source/original-article",
+      "akshay-agent-harness",
+      "agent-loop-engineering"
+    ]
+  },
+  "post-to-wechat/2026-05-19/multi-agent-team/source/original-article.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "multi-agent-team"
+    ]
+  },
+  "post-to-wechat/2026-05-20/claude-md-rules-from-x/claude-md-rules-from-x.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-memory"
+    ],
+    "related": [
+      "agents-md-claude-md",
+      "claude-code-setup-plugin"
+    ]
+  },
+  "post-to-wechat/2026-05-20/khairallah-2057030983044710442/claude-prompt-engineering.md": {
+    "tags": [
+      "type/article",
+      "topic/context-engineering",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "context-engineering",
+      "claude-code"
+    ],
+    "related": [
+      "post-to-wechat/2026-05-20/khairallah-2057030983044710442/source/original-article",
+      "claude-context-deep-dive"
+    ]
+  },
+  "post-to-wechat/2026-05-20/khairallah-2057030983044710442/source/original-article.md": {
+    "tags": [
+      "type/source",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "context-engineering"
+    ],
+    "related": [
+      "claude-prompt-engineering"
+    ]
+  },
+  "post-to-wechat/2026-05-20/akshay-2031021906254766128/source/original-article.md": {
+    "tags": [
+      "type/source",
+      "topic/prompt-caching"
+    ],
+    "moc": [
+      "prompt-caching"
+    ],
+    "related": [
+      "avi-prompt-caching-claude-code",
+      "long-context-kv-cache"
+    ]
+  },
+  "post-to-wechat/2026-05-21/claude-code-setup-plugin/claude-code-setup-plugin.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "claude-md-rules-from-x",
+      "agents-md-claude-md"
+    ]
+  },
+  "post-to-wechat/2026-05-24/akshay-agent-harness/akshay-agent-harness.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "multi-agent-team",
+      "agent-loop-engineering"
+    ]
+  },
+  "post-to-wechat/2026-05-25/claude-code-remote-control/claude-code-remote-control.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/ai-industry",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "ai-industry"
+    ],
+    "related": [
+      "codex-remote-control"
+    ]
+  },
+  "post-to-wechat/2026-05-25/deepseek-v4-pro-api/deepseek-v4-pro-api.md": {
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry"
+    ],
+    "related": [
+      "long-context-kv-cache"
+    ]
+  },
+  "post-to-wechat/2026-05-25/jxnlco-codex-workbench/jxnlco-codex-workbench.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "codex-remote-control",
+      "codex-sdk-python"
+    ]
+  },
+  "reports/x-hot-ai-agent-engineering/2026-05-11.md": {
+    "tags": [
+      "type/report",
+      "topic/ai-news"
+    ],
+    "moc": [
+      "ai-industry"
+    ]
+  },
+  "wechat-drafts/2026-05-25-self-hosted-deep-research/article.md": {
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "topic/knowledge-base",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag",
+      "knowledge-base"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-25-self-hosted-deep-research/research-notes",
+      "google-agentic-rag"
+    ]
+  },
+  "wechat-drafts/2026-05-25-self-hosted-deep-research/research-notes.md": {
+    "title": "Self-hosted Deep Research 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/rag",
+      "topic/knowledge-base"
+    ],
+    "moc": [
+      "rag"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-25-self-hosted-deep-research/article"
+    ]
+  },
+  "wechat-drafts/2026-05-25-self-hosted-deep-research/raw/source-normalized.md": {
+    "title": "Self-hosted Deep Research 原文(规范化)",
+    "tags": [
+      "type/source",
+      "topic/rag"
+    ],
+    "moc": [
+      "rag"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-25-self-hosted-deep-research/article"
+    ]
+  },
+  "wechat-drafts/2026-05-26-claude-instruction-conflicts/article.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-26-claude-instruction-conflicts/research-notes",
+      "wechat-drafts/2026-05-26-custom-claude-plugins/article"
+    ]
+  },
+  "wechat-drafts/2026-05-26-claude-instruction-conflicts/research-notes.md": {
+    "title": "Claude 指令冲突 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-26-claude-instruction-conflicts/article"
+    ]
+  },
+  "wechat-drafts/2026-05-26-custom-claude-plugins/article.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-skills",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-skills"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-26-custom-claude-plugins/research-notes",
+      "claude-code-setup-plugin"
+    ]
+  },
+  "wechat-drafts/2026-05-26-custom-claude-plugins/research-notes.md": {
+    "title": "Claude 自定义 Plugin 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/claude-code",
+      "topic/agent-skills"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-26-custom-claude-plugins/article"
+    ]
+  },
+  "wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article.md": {
+    "tags": [
+      "type/article",
+      "topic/knowledge-base",
+      "topic/claude-code",
+      "platform/wechat"
+    ],
+    "moc": [
+      "knowledge-base",
+      "claude-code"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/research-notes",
+      "code-to-business-knowledge-base"
+    ]
+  },
+  "wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/research-notes.md": {
+    "title": "AI 第二大脑(Claude + Obsidian)研究笔记",
+    "tags": [
+      "type/source",
+      "topic/knowledge-base",
+      "topic/claude-code"
+    ],
+    "moc": [
+      "knowledge-base"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article"
+    ]
+  },
+  "wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/raw/source-normalized.md": {
+    "title": "AI 第二大脑 原文(规范化)",
+    "tags": [
+      "type/source",
+      "topic/knowledge-base"
+    ],
+    "moc": [
+      "knowledge-base"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article"
+    ]
+  },
+  "wechat-drafts/2026-05-31-claude-dynamic-workflows/article.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-31-claude-dynamic-workflows/research-notes",
+      "claude-code-workflow-goal",
+      "agent-loop-engineering"
+    ]
+  },
+  "wechat-drafts/2026-05-31-claude-dynamic-workflows/research-notes.md": {
+    "title": "Claude Dynamic Workflows 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/claude-code",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "claude-code"
+    ],
+    "related": [
+      "wechat-drafts/2026-05-31-claude-dynamic-workflows/article"
+    ]
+  },
+  "post-to-wechat/2026-06-12/enterprise-plugin-governance/enterprise-plugin-governance.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/agent-safety",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-skills",
+      "agent-design",
+      "agent-safety"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-12/enterprise-plugin-governance/source/research-notes",
+      "wechat-drafts/2026-05-26-custom-claude-plugins/article",
+      "agent-loop-engineering"
+    ]
+  },
+  "post-to-wechat/2026-06-12/enterprise-plugin-governance/source/research-notes.md": {
+    "title": "Codex 与 Claude 企业级 Plugin 管理研究笔记",
+    "tags": [
+      "type/source",
+      "topic/claude-code",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/agent-safety"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-skills",
+      "agent-design",
+      "agent-safety"
+    ],
+    "related": [
+      "enterprise-plugin-governance",
+      "wechat-drafts/2026-05-26-custom-claude-plugins/article"
+    ]
+  },
+  "wechat-drafts/2026-06-13-gsd-build-sdd/article.md": {
+    "tags": [
+      "type/article",
+      "topic/context-engineering",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-skills",
+      "agent-design"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-13-gsd-build-sdd/research-notes",
+      "agent-loop-engineering",
+      "goal-command-claude-code-codex"
+    ]
+  },
+  "wechat-drafts/2026-06-13-gsd-build-sdd/research-notes.md": {
+    "title": "GSD Core 与 SDD 对比研究笔记",
+    "tags": [
+      "type/source",
+      "topic/context-engineering",
+      "topic/agent-skills",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-skills",
+      "agent-design"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-13-gsd-build-sdd/article"
+    ]
   }
 }

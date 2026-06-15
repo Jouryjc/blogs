@@ -6,6 +6,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-20"
 coverImage: "imgs/article-cover.png"
 summary: "Claude 输出差，不一定是模型弱。多数时候，是角色、上下文、任务、格式和约束没有写清楚。"
+tags:
+  - type/article
+  - topic/context-engineering
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[context-engineering]]"
+  - "[[claude-code]]"
+related:
+  - "[[post-to-wechat/2026-05-20/khairallah-2057030983044710442/source/original-article]]"
+  - "[[claude-context-deep-dive]]"
 ---
 
 # 为什么 Claude 总是不按你想的来？从角色、上下文到约束讲清楚

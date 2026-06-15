@@ -7,6 +7,18 @@ summary: "OpenAI 把 Codex 带进 ChatGPT 手机 App。重点不是手机写代�
 source: "https://openai.com/index/work-with-codex-from-anywhere/"
 source_author: "OpenAI"
 written_style: "蒸馏小余"
+tags:
+  - type/article
+  - topic/agent-runtime
+  - topic/ai-industry
+  - platform/wechat
+moc:
+  - "[[agent-runtime]]"
+  - "[[ai-industry]]"
+related:
+  - "[[claude-code-remote-control]]"
+  - "[[jxnlco-codex-workbench]]"
+  - "[[post-to-wechat/2026-05-15/codex-remote-control/sources]]"
 ---
 
 # Codex 支持远程操作：手机接管开发环境

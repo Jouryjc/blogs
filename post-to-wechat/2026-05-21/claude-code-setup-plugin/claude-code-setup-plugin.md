@@ -3,6 +3,15 @@ title: 先让Claude读项目
 author: 蒸馏小余
 summary: Claude Code Setup 是 Anthropic 官方插件，用只读方式分析代码库，并按项目结构、依赖和技术栈推荐 Claude Code 自动化配置。
 cover: imgs/01-claude-code-setup.png
+tags:
+  - type/article
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[claude-md-rules-from-x]]"
+  - "[[agents-md-claude-md]]"
 ---
 
 ![](imgs/01-claude-code-setup.png)

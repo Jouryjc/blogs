@@ -4,6 +4,16 @@ author: 蒸馏小余
 summary: Claude Code 新增 Remote Control：电脑终端里启动任务，离开工位后可以从手机 Claude App 或网页继续控制同一个会话。
 cover: imgs/01-claude-code-remote-control.png
 source_url: https://x.com/claudeai/status/2026418433911603668
+tags:
+  - type/article
+  - topic/claude-code
+  - topic/ai-industry
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+  - "[[ai-industry]]"
+related:
+  - "[[codex-remote-control]]"
 ---
 
 ![](imgs/01-claude-code-remote-control.png)

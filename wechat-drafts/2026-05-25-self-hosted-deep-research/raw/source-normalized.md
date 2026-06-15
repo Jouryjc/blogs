@@ -1,3 +1,14 @@
+---
+title: "Self-hosted Deep Research 原文(规范化)"
+tags:
+  - type/source
+  - topic/rag
+moc:
+  - "[[rag]]"
+related:
+  - "[[wechat-drafts/2026-05-25-self-hosted-deep-research/article]]"
+---
+
 # How to build a Deep Researcher
 
 Source: https://x.com/akshay_pachaar/status/2047395420935229724

@@ -3,6 +3,15 @@ title: Karpathy加入Anthropic
 author: 蒸馏小余
 summary: Karpathy 宣布加入 Anthropic，回到前沿 LLM 研发一线；这更像是模型研发竞争继续升温的信号。
 cover: imgs/karpathy-anthropic-gemini.png
+tags:
+  - type/article
+  - topic/ai-industry
+  - platform/wechat
+moc:
+  - "[[ai-industry]]"
+related:
+  - "[[output/wechat-karpathy-anthropic-2026-05-19/article]]"
+  - "[[claude-opus-4-7]]"
 ---
 
 ![](imgs/karpathy-anthropic-gemini.png)

@@ -6,6 +6,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-25"
 coverImage: "imgs/gemini-cover.png"
 summary: "Jason 这篇 X article 的重点不是 Codex 会写代码，而是 Codex 正在变成一个能跨线程、浏览器、桌面、自动化和记忆持续工作的 Agent 工作台。"
+tags:
+  - type/article
+  - topic/agent-runtime
+  - topic/agent-design
+  - platform/wechat
+moc:
+  - "[[agent-runtime]]"
+  - "[[agent-design]]"
+related:
+  - "[[codex-remote-control]]"
+  - "[[codex-sdk-python]]"
 ---
 
 # 别只让 Codex 写代码：把它用成工作台

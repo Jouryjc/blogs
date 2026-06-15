@@ -7,6 +7,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-31"
 coverImage: "imgs/article-cover.png"
 summary: "第二大脑不是多一个收藏夹，而是让 AI 能读懂、检索、串联并维护你的知识库。本文给出 Claude + Obsidian 的最小可用工作流。"
+tags:
+  - type/article
+  - topic/knowledge-base
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[knowledge-base]]"
+  - "[[claude-code]]"
+related:
+  - "[[wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/research-notes]]"
+  - "[[code-to-business-knowledge-base]]"
 ---
 
 # 别再囤笔记了：让 Claude 读懂你的 Obsidian

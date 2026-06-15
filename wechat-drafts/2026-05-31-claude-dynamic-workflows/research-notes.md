@@ -1,3 +1,15 @@
+---
+title: "Claude Dynamic Workflows 研究笔记"
+tags:
+  - type/source
+  - topic/claude-code
+  - topic/agent-runtime
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[wechat-drafts/2026-05-31-claude-dynamic-workflows/article]]"
+---
+
 # Claude Dynamic Workflows 研究笔记
 
 生成日期：2026-05-31

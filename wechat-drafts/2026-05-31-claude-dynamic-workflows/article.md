@@ -7,6 +7,18 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-31"
 coverImage: "imgs/article-cover.png"
 summary: "Claude Code 的 Dynamic workflows 不是一个新按钮，而是把多代理协作、分支计划和中间检查写进可执行脚本。本文用入门视角讲清它和子代理、SDK、GitHub Actions 的边界，并给一份上手清单。"
+tags:
+  - type/article
+  - topic/claude-code
+  - topic/agent-runtime
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+  - "[[agent-runtime]]"
+related:
+  - "[[wechat-drafts/2026-05-31-claude-dynamic-workflows/research-notes]]"
+  - "[[claude-code-workflow-goal]]"
+  - "[[agent-loop-engineering]]"
 ---
 
 # Claude 大任务为什么烂尾？Workflows 把计划写进脚本

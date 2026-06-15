@@ -7,6 +7,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-26"
 coverImage: "imgs/article-cover.png"
 summary: "Claude Plugin 入门不是先学一堆配置，而是把一个反复使用的工作流打包成可复用能力。本文从一个最小 Skill 插件开始，讲清目录、manifest、本地测试、组件选择和共享边界。"
+tags:
+  - type/article
+  - topic/claude-code
+  - topic/agent-skills
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+  - "[[agent-skills]]"
+related:
+  - "[[wechat-drafts/2026-05-26-custom-claude-plugins/research-notes]]"
+  - "[[claude-code-setup-plugin]]"
 ---
 
 # Claude 总跑偏？做个 Plugin 固化工作流

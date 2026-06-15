@@ -1,0 +1,27 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-48gKYi/temp-article.html
+[wechat-api] Placeholder images: 6
+[wechat-api] Title: Codex、Claude 插件越装越乱？企业落地先管边界
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 企业落地 Codex 和 Claude 插件，关键不是装更多能力，而是把来源、权限、版本、审计和回滚...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/article-cover.png
+[wechat-api] Processed article-cover.png for body upload: compressed 2.05MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/01-capability-stack.png
+[wechat-api] Processed 01-capability-stack.png for body upload: compressed 1.92MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/02-codex-claude-map.png
+[wechat-api] Processed 02-codex-claude-map.png for body upload: compressed 2.35MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/03-plugin-bom.png
+[wechat-api] Processed 03-plugin-bom.png for body upload: compressed 2.13MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/04-permission-gates.png
+[wechat-api] Processed 04-permission-gates.png for body upload: compressed 2.26MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/05-rollout-loop.png
+[wechat-api] Processed 05-rollout-loop.png for body upload: compressed 2.44MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-12/enterprise-plugin-governance/imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6FeW5RS7K0XPA4TZ5G9Ykl3zuojtICXYtHi9_Bg43w6SyK
+[wechat-api] Publishing to draft...
+[wechat-api] Published successfully! media_id: GHixSPLvYVluGTAOLz6FeXBpjSobt-6skLM8b1zIMkc2Q9nomMGoZZGKO-Un_Mcf

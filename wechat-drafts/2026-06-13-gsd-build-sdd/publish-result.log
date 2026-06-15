@@ -1,0 +1,25 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-DD0Gwv/temp-article.html
+[wechat-api] Placeholder images: 5
+[wechat-api] Digest truncated to 104 chars
+[wechat-api] Title: Agent 长任务总烂尾？GSD 用阶段循环跑到 PR
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: GSD Core 不是让 Agent 多写几句提示词，而是把长任务拆进 Discuss、Plan、E...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-13-gsd-build-sdd/imgs/article-cover.png
+[wechat-api] Processed article-cover.png for body upload: compressed 2.11MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-13-gsd-build-sdd/imgs/phase-loop.png
+[wechat-api] Processed phase-loop.png for body upload: compressed 2.22MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-13-gsd-build-sdd/imgs/planning-artifacts.png
+[wechat-api] Processed planning-artifacts.png for body upload: compressed 2.62MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-13-gsd-build-sdd/imgs/when-to-use-gsd.png
+[wechat-api] Processed when-to-use-gsd.png for body upload: compressed 2.29MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-13-gsd-build-sdd/imgs/sdd-comparison.png
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-13-gsd-build-sdd/imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6Feeb9X5aHxZQYtgnaHCVe65979TAg1jUf7bZnTjNRPWP_
+[wechat-api] Publishing to draft...
+[wechat-api] Published successfully! media_id: GHixSPLvYVluGTAOLz6FeYq-u7-19GZ58fu5mrglzdVb3ilA__JC1q3AAOWc9EOf
