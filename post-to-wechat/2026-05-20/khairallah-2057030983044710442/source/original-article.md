@@ -4,6 +4,13 @@ author: "Khairallah AL-Awady (@eng_khairallah1)"
 title: "How to Master Claude Prompt Engineering From Zero (Full Course)"
 created_at: "Wed May 20 09:29:38 +0000 2026"
 cover: "https://pbs.twimg.com/media/HIt-4aKbsAAntf2.jpg"
+tags:
+  - type/source
+  - topic/context-engineering
+moc:
+  - "[[context-engineering]]"
+related:
+  - "[[claude-prompt-engineering]]"
 ---
 
 # How to Master Claude Prompt Engineering From Zero (Full Course)

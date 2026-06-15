@@ -3,6 +3,17 @@ title: 规则文件才是记忆
 author: 蒸馏小余
 summary: 把项目约定、成功标准和验证命令写进规则文件，Agent 才不会每次都从零开始猜。
 cover: imgs/01-context-memory.png
+tags:
+  - type/article
+  - topic/claude-code
+  - topic/agent-memory
+  - platform/wechat
+moc:
+  - "[[claude-code]]"
+  - "[[agent-memory]]"
+related:
+  - "[[agents-md-claude-md]]"
+  - "[[claude-code-setup-plugin]]"
 ---
 
 ![](imgs/01-context-memory.png)

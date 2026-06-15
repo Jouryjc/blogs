@@ -1,3 +1,15 @@
+---
+title: "AI 第二大脑(Claude + Obsidian)研究笔记"
+tags:
+  - type/source
+  - topic/knowledge-base
+  - topic/claude-code
+moc:
+  - "[[knowledge-base]]"
+related:
+  - "[[wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article]]"
+---
+
 # Research Notes: Claude + Obsidian AI Second Brain
 
 Created: 2026-05-31

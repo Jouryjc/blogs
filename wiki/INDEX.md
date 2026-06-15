@@ -27,12 +27,21 @@ tags:
 
 ## 🆕 最近文章
 
-- [[goal-command-claude-code-codex|用 /goal 让 Claude Code 和 Codex 跑到有证据]] · 2026-06-04
-- [[rag-ttft|RAG 系统的 TTFT 优化:从原理到工程实践]] · 2026-05-10
-- [[claude-code-html-effectiveness|用 HTML 提升 Claude Code 的有效性]] · 2026-05-09
-- [[gitnexus-code-intelligence|GitNexus:把整个代码仓库变成可对话的知识图谱]] · 2026-04-28
-- [[agent-skills-deep-dive|Agent Skills 深度拆解]] · 2026-04-26
-- [[agents-md-claude-md|别让 Claude Code 每次都像新员工:AGENTS.md 应该这样写]] · 2026-04-25
+- [[enterprise-plugin-governance|Codex、Claude 插件越装越乱？企业落地先管边界]] · 2026-06-12
+- [[agent-loop-engineering|Agent 不是靠好 Prompt，而是靠循环跑到验收]] · 2026-06-11
+- [[claude-fable-5-programmers|Claude 5来了，程序员该交出去哪些任务]] · 2026-06-10
+- [[rag-embedding-rerank|RAG 总找错资料？Embedding 和 Rerank 讲清楚]] · 2026-06-09
+- [[google-agentic-rag|RAG 为什么总漏一跳？Google Agentic RAG 讲清楚]] · 2026-06-08
+- [[claude-code-workflow-goal|Agent 长任务别乱开:Claude Code workflow 和 goal 怎么选]] · 2026-06-07
+
+## 📝 在写草稿(wechat-drafts)
+
+- [[wechat-drafts/2026-06-13-gsd-build-sdd/article|Agent 长任务总烂尾？GSD 用阶段循环跑到 PR]]
+- [[wechat-drafts/2026-05-31-claude-dynamic-workflows/article|Claude 大任务为什么烂尾?Workflows 把计划写进脚本]]
+- [[wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article|别再囤笔记了:让 Claude 读懂你的 Obsidian]]
+- [[wechat-drafts/2026-05-26-claude-instruction-conflicts/article|Claude 指令撞车时,谁说了算?]]
+- [[wechat-drafts/2026-05-26-custom-claude-plugins/article|Claude 总跑偏?做个 Plugin 固化工作流]]
+- [[wechat-drafts/2026-05-25-self-hosted-deep-research/article|Deep Research 最大坑:数据和流程都不在你手里]]
 
 ## 📊 报告与资讯
 

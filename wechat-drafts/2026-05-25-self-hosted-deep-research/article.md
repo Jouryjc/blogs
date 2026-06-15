@@ -7,6 +7,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-25"
 coverImage: "imgs/article-cover.png"
 summary: "闭源 Deep Research 很强，但敏感团队真正卡住的不是模型能力，而是查询、索引、引用链和权限边界都在别人云上。Onyx + CrewAI + Voxtral 这套开源栈的价值，是把研究拆成可控的工程流程。"
+tags:
+  - type/article
+  - topic/rag
+  - topic/knowledge-base
+  - platform/wechat
+moc:
+  - "[[rag]]"
+  - "[[knowledge-base]]"
+related:
+  - "[[wechat-drafts/2026-05-25-self-hosted-deep-research/research-notes]]"
+  - "[[google-agentic-rag]]"
 ---
 
 # Deep Research 最大坑：数据和流程都不在你手里

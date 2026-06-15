@@ -9,9 +9,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP_DIR_PREFIXES = ('.git', '.claude', '.obsidian', 'docs', '_kb_build', 'node_modules')
 
 # Path segments that mark a .md as an attachment (production artifact)
-ATTACH_SEGMENTS = {'illustrations', 'cover-image', 'imgs', 'prompts'}
+ATTACH_SEGMENTS = {'illustrations', 'cover-image', 'imgs', 'prompts', 'image-cards'}
 # Filename patterns that mark a .md as an attachment
-ATTACH_NAME_RE = re.compile(r'(^outline\.md$|^system-prompt\.md$|^prompt-.*\.md$|^cover.*\.md$)')
+ATTACH_NAME_RE = re.compile(r'(^outline\.md$|^system-prompt\.md$|^prompt-.*\.md$|^cover.*\.md$|^gen-image\.md$|^title-candidates\.md$|^article-.*\.md$)')
 
 def rel(p):
     return os.path.relpath(p, ROOT)
@@ -50,6 +50,10 @@ def is_attachment(relpath, name):
         return True
     if ATTACH_NAME_RE.match(name):
         return True
+    # publishing variants: <slug>/<slug>-foo.md (e.g. -min, -punchy, -final, -safe)
+    stem = os.path.splitext(name)[0]
+    if len(segs) >= 2 and stem.startswith(segs[-2] + '-'):
+        return True
     return False
 
 def classify_type(relpath):
@@ -70,9 +74,15 @@ def classify_type(relpath):
             stem = os.path.splitext(segs[-1])[0]
             parent = segs[-2] if len(segs) >= 2 else ''
             if stem != parent:
-                # supporting file: source notes become sources, others are attachments
-                return 'source' if 'source' in segs else None
+                # source notes -> source; other slug-level docs are standalone articles
+                # (publishing variants are already filtered out by is_attachment)
+                if 'source' in segs or segs[-1] == 'sources.md':
+                    return 'source'
+                return 'article'
         return 'article'
+    if segs[0] == 'wechat-drafts':
+        # drafts: article.md is the draft article; research notes & raw dumps are sources
+        return 'article' if segs[-1] == 'article.md' else 'source'
     return None
 
 records = []
@@ -88,8 +98,8 @@ for dirpath, dirnames, filenames in os.walk(ROOT):
         r = rel(full)
         if r.split(os.sep)[0] in SKIP_DIR_PREFIXES:
             continue
-        if r in ('AGENTS.md', 'AGETNS.md', 'README.md'):
-            continue  # schema/readme docs, not notes
+        if r in ('AGENTS.md', 'AGETNS.md', 'README.md', 'CLAUDE.md', 'gen-image.md'):
+            continue  # schema/readme/utility docs, not notes
         if r == 'wiki/xiaoyu-2.0-rewrite-prompt.md':
             attachments.append(r); continue
         if is_attachment(r, fn):

@@ -1,0 +1,25 @@
+source_url: https://developers.openai.com/codex/sdk#python-library
+source_title: Codex SDK
+source_author: OpenAI Developers
+accessed_at: 2026-06-06
+refreshed_at: 2026-06-06
+media_urls: none
+
+Core evidence:
+- Codex SDK is for programmatically controlling local Codex agents.
+- It is useful for CI/CD, internal tools, custom agent workflows, and app integration.
+- Python SDK controls the local Codex app-server over JSON-RPC.
+- Python SDK requires Python 3.10 or later.
+- Installation command: pip install openai-codex.
+- Published SDK builds include a pinned Codex CLI runtime dependency.
+- The Python API supports starting Codex, creating a thread, running prompts, using AsyncCodex, and setting Sandbox presets.
+- Sandbox presets listed by the official page: read_only, workspace_write, full_access.
+
+Sticker angle:
+- Explain one point only: Codex SDK turns local Codex agent into a programmatically callable engineering capability.
+- Good first uses: CI diagnosis, internal engineering tools, app workflow integration.
+- Boundary: start with diagnosis/planning; increase Sandbox permissions only when writes are needed.
+
+Current sticker format:
+- Default image prompt: 9:16 hand-drawn infographic card, beige paper texture, red/black brush-style Chinese title, 2-4 sections, simple doodles, enough whitespace.
+- Caption style: title line + check-mark context + capability block + concrete API/command evidence + closing implication + source attribution.

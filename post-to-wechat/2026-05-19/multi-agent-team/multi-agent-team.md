@@ -6,6 +6,18 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-19"
 coverImage: "imgs/article-cover.png"
 summary: "多 Agent 系统真正难的不是并行，而是分工、交接、失败处理和评审。先从两个 Agent 跑通。"
+tags:
+  - type/article
+  - topic/agent-runtime
+  - topic/agent-design
+  - platform/wechat
+moc:
+  - "[[agent-runtime]]"
+  - "[[agent-design]]"
+related:
+  - "[[post-to-wechat/2026-05-19/multi-agent-team/source/original-article]]"
+  - "[[akshay-agent-harness]]"
+  - "[[agent-loop-engineering]]"
 ---
 
 # 多 Agent 为什么越跑越乱？从分工、交接到评审讲清楚

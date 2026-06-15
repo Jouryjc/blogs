@@ -6,6 +6,15 @@ cover: imgs/01-deepseek-v4-pro-1m.png
 source_url: https://x.com/deepseek_ai/status/2048062777357750316
 docs_pricing_url: https://api-docs.deepseek.com/quick_start/pricing
 docs_claude_code_url: https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code
+tags:
+  - type/article
+  - topic/ai-industry
+  - topic/claude-code
+  - platform/wechat
+moc:
+  - "[[ai-industry]]"
+related:
+  - "[[long-context-kv-cache]]"
 ---
 
 ![](imgs/01-deepseek-v4-pro-1m.png)

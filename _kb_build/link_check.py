@@ -23,7 +23,14 @@ for r in md_files:
 LINK = re.compile(r'\[\[([^\]]+)\]\]')
 unresolved, ambiguous = [], []
 total = 0
+verbatim_skipped = 0
 for r in md_files:
+    # verbatim external content (raw dumps, captured threads): never link-scanned
+    # (their bodies are immutable, so example [[links]] inside them are not errors)
+    segs = r.split(os.sep)[:-1]
+    if 'raw' in segs or 'x-to-markdown' in segs:
+        verbatim_skipped += 1
+        continue
     with open(os.path.join(ROOT, r), encoding='utf-8') as fh:
         text = fh.read()
     # strip code (fenced + inline) so documentation examples aren't treated as links
@@ -44,7 +51,7 @@ for r in md_files:
             elif len(hits) > 1:
                 ambiguous.append((r, target, hits))
 
-print(f'Scanned {len(md_files)} md files, {total} wikilinks.')
+print(f'Scanned {len(md_files) - verbatim_skipped} md files ({verbatim_skipped} verbatim sources skipped), {total} wikilinks.')
 print(f'UNRESOLVED: {len(unresolved)}')
 for r, t in unresolved:
     print(f'  ✗ [[{t}]]  in  {r}')

@@ -1,3 +1,14 @@
+---
+title: "Claude 指令冲突 研究笔记"
+tags:
+  - type/source
+  - topic/claude-code
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[wechat-drafts/2026-05-26-claude-instruction-conflicts/article]]"
+---
+
 # Research Notes: Claude .claude vs Global Plugins Conflicts
 
 Created: 2026-05-26

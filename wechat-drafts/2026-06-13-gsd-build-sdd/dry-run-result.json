@@ -1,0 +1,9 @@
+{
+  "articleType": "news",
+  "title": "Agent 长任务总烂尾？GSD 用阶段循环跑到 PR",
+  "author": "蒸馏小余",
+  "digest": "GSD Core 不是让 Agent 多写几句提示词，而是把长任务拆进 Discuss、Plan、Execute、Verify、Ship 的阶段循环。本文讲清安装、使用路径，以及它和 Superpowers、",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-sANf9c/temp-article.html",
+  "contentLength": 38460,
+  "placeholderImageCount": 5
+}

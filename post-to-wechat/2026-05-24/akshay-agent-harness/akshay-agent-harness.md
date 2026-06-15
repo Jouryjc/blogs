@@ -6,6 +6,17 @@ written_style: "蒸馏小余 2.0"
 created_at: "2026-05-24"
 coverImage: "imgs/article-cover.jpg"
 summary: "很多 Agent 跑不稳，不是模型不够聪明，而是工具、上下文、记忆、验证和权限这一层 harness 没搭好。"
+tags:
+  - type/article
+  - topic/agent-runtime
+  - topic/agent-design
+  - platform/wechat
+moc:
+  - "[[agent-runtime]]"
+  - "[[agent-design]]"
+related:
+  - "[[multi-agent-team]]"
+  - "[[agent-loop-engineering]]"
 ---
 
 # 别再怪模型了，Agent 真正拼的是 Harness

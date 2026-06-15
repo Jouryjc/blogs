@@ -4,6 +4,14 @@ author: "Khairallah AL-Awady (@eng_khairallah1)"
 title: "How to Build a Team of AI Agents That Actually Work Together (Full Course)"
 created_at: "Fri May 15 09:16:41 +0000 2026"
 cover: "https://pbs.twimg.com/media/HITD9ucaAAA2Dxj.jpg"
+tags:
+  - type/source
+  - topic/agent-runtime
+  - topic/agent-design
+moc:
+  - "[[agent-runtime]]"
+related:
+  - "[[multi-agent-team]]"
 ---
 
 # How to Build a Team of AI Agents That Actually Work Together (Full Course)

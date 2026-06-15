@@ -1,3 +1,15 @@
+---
+title: "Claude 自定义 Plugin 研究笔记"
+tags:
+  - type/source
+  - topic/claude-code
+  - topic/agent-skills
+moc:
+  - "[[claude-code]]"
+related:
+  - "[[wechat-drafts/2026-05-26-custom-claude-plugins/article]]"
+---
+
 # Research Notes: Custom Claude Plugins
 
 Created: 2026-05-26
