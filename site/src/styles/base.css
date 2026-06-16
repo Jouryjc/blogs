@@ -1,0 +1,17 @@
+:root {
+  --bg: #05060f;
+  --panel: #0d1020;
+  --fg: #e8ecf6;
+  --muted: #9aa3bd;
+  --line: #1d2340;
+}
+* { box-sizing: border-box }
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+a { color: #8fb6ff; text-decoration: none }
+#app { min-height: 100% }
