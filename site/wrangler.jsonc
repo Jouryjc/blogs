@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers 静态资源托管（assets-only Worker，无需 Worker 脚本）。
+  // name 必须与你在 Cloudflare 上已有的 Worker 名称一致，否则会新建一个 Worker。
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "blogs",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist",
+    // SPA 路由：未命中的路径回退到 index.html（替代 Pages 的 _redirects）。
+    // 真实资源（/assets/*.js、*.css）仍按正确 MIME 直接返回。
+    "not_found_handling": "single-page-application"
+  }
+}
