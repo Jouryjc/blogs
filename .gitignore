@@ -8,3 +8,10 @@ travel
 # KB maintenance scaffolding (generated)
 _kb_build/inventory.json
 _kb_build/__pycache__/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
