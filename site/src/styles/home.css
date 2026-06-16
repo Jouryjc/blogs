@@ -1,5 +1,17 @@
 .home { position: fixed; inset: 0 }
 .home .graph { position: absolute; inset: 0 }
+
+/* 主题常显标签（CSS2D 叠层，不受 bloom 影响） */
+.graph-label {
+  color: #eaf0ff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 1px 3px #000, 0 0 6px rgba(0, 0, 0, .9);
+}
 .hud { position: absolute; pointer-events: none; z-index: 2 }
 .hud-brand { top: 24px; left: 28px }
 .hud-brand h1 { margin: 0; font-size: 20px; letter-spacing: .5px }
