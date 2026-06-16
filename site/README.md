@@ -40,19 +40,31 @@ npm run build    # = npm run gen（prebuild）+ vite build，产出 site/dist
 npm run preview  # 本地预览 dist
 ```
 
-`dist/` 含 `index.html`、`assets/`、`data/*.json`、`article-assets/**`、`_redirects`。
+`dist/` 含 `index.html`、`assets/`、`data/*.json`、`article-assets/**`。
 
-## Cloudflare Pages 部署
+## Cloudflare 部署
 
-CF Pages 连接本 GitHub 仓库，按以下配置：
+本仓库用 **Cloudflare Workers 静态资源**（assets-only Worker）托管，配置见 `site/wrangler.jsonc`。
 
-- **Build command**：`cd site && npm ci && npm run build`
-- **Build output directory**：`site/dist`
-- **框架预设**：None；**Node 版本 ≥ 18**
-- Root 目录留空（命令里已 `cd site`）。
-- `vite.config.js` 用 `base: '/'`（根路径部署）。
-- `public/_redirects`（`/*  /index.html  200`）处理 SPA history 路由的刷新 fallback。
-- 自定义域名后续在 CF 面板绑定，无需改代码。
+Workers Builds（Git 集成）按以下设置：
+
+- **构建命令（Build command）**：`cd site && npm ci && npm run build`
+- **部署命令（Deploy command）**：`cd site && npx wrangler deploy`
+- **根目录**：留空（命令里已 `cd site`）。
+- **Node 版本**：≥ 18。
+
+`site/wrangler.jsonc` 关键字段：
+
+- `assets.directory: "./dist"` —— 只发布构建产物（不含 `node_modules`）。
+- `assets.not_found_handling: "single-page-application"` —— SPA 路由 fallback，
+  未命中路径回退 `index.html`；真实 `/assets/*.js`、`*.css` 仍按正确 MIME 返回。
+  **不要**用 Pages 的 `_redirects`（`/* /index.html 200`），Workers 会判定为无限循环而拒绝部署。
+- `name` 必须与 CF 上的 Worker 名称一致，否则会新建 Worker。
+
+> 注：部署命令必须 `cd site`，让 wrangler 读到 `site/wrangler.jsonc`（指向 `./dist`）。
+> 若从仓库根运行，会误把整个 `site/`（含 `node_modules`）当资源上传。
+> Cloudflare 的 workers-autoconfig 可能在仓库根自动生成一份 `wrangler.jsonc`（assets 指向 `site`）——
+> 因部署命令已 `cd site`，那份配置不会被使用；如出现可直接删除。
 
 ## 已知事项 / 后续优化（不在当前范围）
 
