@@ -1,0 +1,25 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-HuJYTL/temp-article.html
+[wechat-api] Placeholder images: 5
+[wechat-api] Title: 论文 Agent 很努力，为什么还是找偏？ScholarQuest 量出来了
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: ScholarQuest 评测的不是搜索框能不能返回论文，而是论文搜索 Agent 在多轮检索里会不...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-20-scholarquest/imgs/article-cover.png
+[wechat-api] Processed article-cover.png for body upload: compressed 2.80MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-20-scholarquest/imgs/search-eval-shift.png
+[wechat-api] Processed search-eval-shift.png for body upload: compressed 2.51MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-20-scholarquest/imgs/four-intents.png
+[wechat-api] Processed four-intents.png for body upload: compressed 2.43MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-20-scholarquest/imgs/construction-pipeline.png
+[wechat-api] Processed construction-pipeline.png for body upload: compressed 2.31MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-20-scholarquest/imgs/off-target-exploration.png
+[wechat-api] Processed off-target-exploration.png for body upload: compressed 2.47MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading cover: imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6FeSAILvyhOXYGt-UHbsSMzAZvwOGIfTBOC9S0Oo-Ptlvr
+[wechat-api] Updating draft...
+[wechat-api] Updated successfully! media_id: GHixSPLvYVluGTAOLz6FeTnVD7Y-nlG_63z9FEye8357gw6anNKr2mIbQHMTNZno

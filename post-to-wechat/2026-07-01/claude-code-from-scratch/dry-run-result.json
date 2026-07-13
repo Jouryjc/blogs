@@ -1,0 +1,12 @@
+{
+  "articleType": "news",
+  "title": "别硬啃 50 万行源码：先读这本 Claude Code 小书",
+  "author": "蒸馏小余",
+  "digest": "这本书把 Claude Code 的关键工程机制拆成可运行的小系统，适合想理解 Coding Agent 运行时的开发者。",
+  "contentLength": 21037,
+  "placeholderImageCount": 1,
+  "theme": "grace",
+  "color": "#0F4C81",
+  "dryRun": true,
+  "success": true
+}

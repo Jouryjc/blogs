@@ -1,0 +1,6 @@
+interface:
+  display_name: "Xiaoyu WeChat Article Reviewer"
+  short_description: "Detect and remove AI smell from 蒸馏小余 WeChat drafts"
+  brand_color: "#0F4C81"
+  default_prompt: "Use $xiaoyu-wechat-article-reviewer to detect AI smell, score the draft, and create a human-edited anti-AI version."
+

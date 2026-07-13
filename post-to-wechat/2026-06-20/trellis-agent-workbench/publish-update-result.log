@@ -1,0 +1,23 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-xtaIgq/temp-article.html
+[wechat-api] Placeholder images: 4
+[wechat-api] Title: 别再反复教 AI 项目规则了：Trellis 把规范和任务写回仓库
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 如果 Codex、Claude Code、Cursor 每次都像新同事，Trellis 的价值不是多...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/article-cover.png
+[wechat-api] Processed article-cover.png for body upload: compressed 2.42MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/01-agent-amnesia.png
+[wechat-api] Processed 01-agent-amnesia.png for body upload: compressed 2.25MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/02-trellis-loop.png
+[wechat-api] Processed 02-trellis-loop.png for body upload: compressed 2.51MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/03-first-run.png
+[wechat-api] Processed 03-first-run.png for body upload: compressed 1.97MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6Fec4MvS4f6pKR5HZJQHbfdwfFtkmWdJ5qwB_v4HTpNV6l
+[wechat-api] Updating draft...
+[wechat-api] Updated successfully! media_id: GHixSPLvYVluGTAOLz6FeSc3iwDNObojOFdoIWjjdj5kdlGzJO2azgahD9icseJD

@@ -1304,5 +1304,476 @@
     "related": [
       "wechat-drafts/2026-06-13-gsd-build-sdd/article"
     ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/article.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/agent-memory",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design",
+      "agent-memory"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/source-article",
+      "agent-loop-engineering"
+    ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes.md": {
+    "title": "Agent Skill 自我改进闭环研究笔记",
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/agent-memory"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design",
+      "agent-memory"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/source-article"
+    ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/source-article.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/agent-memory"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design",
+      "agent-memory"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes"
+    ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/issue-triage-loop-README.md": {
+    "title": "issue-triage-loop README",
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes"
+    ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/triage-issue-SKILL.md": {
+    "title": "triage-issue Skill",
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes"
+    ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/improve-triage-skill-SKILL.md": {
+    "title": "improve-triage-skill Skill",
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/agent-memory"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design",
+      "agent-memory"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes"
+    ]
+  },
+  "wechat-drafts/2026-06-18-skill-self-improvement-loop/raw/oz-for-oss-README.md": {
+    "title": "oz-for-oss README",
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-design",
+      "topic/managed-agents"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-design",
+      "managed-agents"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes"
+    ]
+  },
+  "wechat-drafts/2026-06-20-scholarquest/article.md": {
+    "tags": [
+      "type/article",
+      "topic/managed-agents",
+      "topic/agent-design",
+      "topic/rag",
+      "platform/wechat"
+    ],
+    "moc": [
+      "managed-agents",
+      "agent-design",
+      "rag"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-20-scholarquest/research-notes",
+      "raw/arxiv-2606-20235/github-readme"
+    ]
+  },
+  "wechat-drafts/2026-06-20-scholarquest/research-notes.md": {
+    "title": "ScholarQuest 论文编译研究笔记",
+    "tags": [
+      "type/source",
+      "topic/managed-agents",
+      "topic/agent-design",
+      "topic/rag"
+    ],
+    "moc": [
+      "managed-agents",
+      "agent-design",
+      "rag"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-20-scholarquest/article",
+      "raw/arxiv-2606-20235/github-readme"
+    ]
+  },
+  "raw/arxiv-2606-20235/github-readme.md": {
+    "title": "ScholarQuest README",
+    "tags": [
+      "type/source",
+      "topic/managed-agents",
+      "topic/agent-design",
+      "topic/rag"
+    ],
+    "moc": [
+      "managed-agents",
+      "agent-design",
+      "rag"
+    ],
+    "related": [
+      "wechat-drafts/2026-06-20-scholarquest/article",
+      "wechat-drafts/2026-06-20-scholarquest/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-06-20/trellis-agent-workbench/trellis-agent-workbench.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/agent-memory",
+      "topic/context-engineering",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-memory",
+      "context-engineering",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-20/trellis-agent-workbench/source/research-notes",
+      "agent-loop-engineering",
+      "goal-command-claude-code-codex"
+    ]
+  },
+  "post-to-wechat/2026-06-20/trellis-agent-workbench/source/research-notes.md": {
+    "title": "Trellis 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/agent-runtime",
+      "topic/agent-memory",
+      "topic/context-engineering",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-memory",
+      "context-engineering",
+      "agent-design"
+    ],
+    "related": [
+      "trellis-agent-workbench"
+    ]
+  },
+  "post-to-wechat/2026-06-20/context-attention-drift/context-attention-drift.md": {
+    "tags": [
+      "type/article",
+      "topic/context-engineering",
+      "topic/agent-memory",
+      "topic/agent-design",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-memory",
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-20/context-attention-drift/source/research-notes",
+      "agent-memory-never-forget",
+      "agent-loop-engineering",
+      "trellis-agent-workbench"
+    ]
+  },
+  "post-to-wechat/2026-06-20/context-attention-drift/source/research-notes.md": {
+    "title": "上下文没爆，模型为什么还漏指令？研究笔记",
+    "tags": [
+      "type/source",
+      "topic/context-engineering",
+      "topic/agent-memory",
+      "topic/agent-design",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-memory",
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-20/context-attention-drift/context-attention-drift",
+      "agent-memory-never-forget",
+      "agent-loop-engineering",
+      "trellis-agent-workbench"
+    ]
+  },
+  "post-to-wechat/2026-06-22/rag-ideablock/rag-ideablock.md": {
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag"
+    ],
+    "related": [
+      "rag-embedding-rerank",
+      "google-agentic-rag",
+      "rag-ttft"
+    ]
+  },
+  "post-to-wechat/2026-06-25/skill-hidden-configs/article.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "topic/agent-runtime",
+      "topic/context-engineering",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-runtime",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-25/skill-hidden-configs/research-notes",
+      "agent-skills-engineering-workflow.xiaoyu",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article-anti-ai"
+    ]
+  },
+  "post-to-wechat/2026-06-25/skill-hidden-configs/research-notes.md": {
+    "title": "Skill hidden configuration research notes",
+    "tags": [
+      "type/source",
+      "topic/agent-skills",
+      "topic/agent-runtime",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "agent-skills",
+      "agent-runtime",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-25/skill-hidden-configs/article"
+    ]
+  },
+  "post-to-wechat/2026-06-29/task-specific-knowledge-bases/task-specific-knowledge-bases.md": {
+    "tags": [
+      "type/article",
+      "topic/knowledge-base",
+      "topic/agent-memory",
+      "topic/context-engineering",
+      "platform/wechat"
+    ],
+    "moc": [
+      "knowledge-base",
+      "agent-memory",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-29/task-specific-knowledge-bases/research-notes",
+      "agent-memory-never-forget",
+      "memory-in-llm-era-wechat-draft"
+    ]
+  },
+  "post-to-wechat/2026-06-29/task-specific-knowledge-bases/research-notes.md": {
+    "title": "Task-specific knowledge bases 论文研究笔记",
+    "tags": [
+      "type/source",
+      "topic/knowledge-base",
+      "topic/agent-memory",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "knowledge-base",
+      "agent-memory",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-06-29/task-specific-knowledge-bases/task-specific-knowledge-bases"
+    ]
+  },
+  "wechat-drafts/2026-06-30-multi-agent-skills-management/article.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-skills",
+      "topic/managed-agents",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-skills",
+      "managed-agents",
+      "agent-design"
+    ],
+    "related": [
+      "agent-skills-engineering-workflow.optimized",
+      "agent-skills-tips",
+      "wechat-drafts/2026-06-18-skill-self-improvement-loop/article",
+      "post-to-wechat/2026-06-25/skill-hidden-configs/article"
+    ]
+  },
+  "post-to-wechat/2026-07-01/claude-code-from-scratch/article.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "topic/context-engineering",
+      "topic/agent-memory",
+      "topic/agent-skills",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design",
+      "context-engineering",
+      "agent-memory",
+      "agent-skills"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-01/claude-code-from-scratch/research-notes",
+      "agent-loop-engineering",
+      "claude-context-deep-dive",
+      "post-to-wechat/2026-06-25/skill-hidden-configs/article"
+    ]
+  },
+  "post-to-wechat/2026-07-01/claude-code-from-scratch/research-notes.md": {
+    "title": "Claude Code From Scratch 研究笔记",
+    "tags": [
+      "type/source",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "topic/context-engineering",
+      "topic/agent-memory",
+      "topic/agent-skills"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design",
+      "context-engineering",
+      "agent-memory",
+      "agent-skills"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-01/claude-code-from-scratch/article"
+    ]
+  },
+  "post-to-wechat/2026-07-01/microservice-agent-context/article.md": {
+    "tags": [
+      "type/article",
+      "topic/context-engineering",
+      "topic/agent-design",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes",
+      "post-to-wechat/2026-07-01/microservice-agent-context/source/dotey-microservice-agent-source"
+    ]
+  },
+  "post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes.md": {
+    "title": "跨微服务 Agent 上下文与契约验证：研究笔记",
+    "tags": [
+      "type/source",
+      "topic/context-engineering",
+      "topic/agent-design",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-01/microservice-agent-context/article",
+      "post-to-wechat/2026-07-01/microservice-agent-context/source/dotey-microservice-agent-source"
+    ]
+  },
+  "post-to-wechat/2026-07-01/microservice-agent-context/source/dotey-microservice-agent-source.md": {
+    "title": "宝玉：跨微服务场景下如何让 AI Agent 做系统设计和编码",
+    "source": "https://x.com/dotey/status/2071961238528012358",
+    "tags": [
+      "type/source",
+      "topic/context-engineering",
+      "topic/agent-design",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-01/microservice-agent-context/article",
+      "post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes"
+    ]
   }
 }

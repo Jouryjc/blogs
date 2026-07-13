@@ -1,0 +1,17 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-8eVYId/temp-article.html
+[wechat-api] Placeholder images: 3
+[wechat-api] Title: Skill 老是不听话？先看这 5 个冷门配置
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 很多 Skill 不是写得不够长，而是触发、权限、上下文和运行时集成没有配对位置。...
+[wechat-api] Type: news
+{
+  "articleType": "news",
+  "title": "Skill 老是不听话？先看这 5 个冷门配置",
+  "author": "蒸馏小余",
+  "digest": "很多 Skill 不是写得不够长，而是触发、权限、上下文和运行时集成没有配对位置。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-8eVYId/temp-article.html",
+  "contentLength": 38687,
+  "placeholderImageCount": 3
+}

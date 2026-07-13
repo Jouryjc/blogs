@@ -1,0 +1,55 @@
+Source capture
+
+- Original X status: https://x.com/akshay_pachaar/status/2052743644411765230
+- X Article: https://x.com/i/article/2052725748121956352
+- Author: Akshay Pachaar / @akshay_pachaar
+- Published: 2026-05-08 13:33:17 UTC
+- Accessed: 2026-06-22
+- Local structured capture: source/fxtwitter-2052743644411765230.json
+- Fallback status capture: source/x-status-rjina.txt
+
+Primary supporting source
+
+- GitHub repo: https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization
+- Local repo metadata: source/github-repo.json
+- Local README capture: source/blockify-readme.txt
+- GitHub README snapshot notes: stars 247, updated_at 2026-06-22T09:21:35Z, default branch main.
+
+Original images preserved
+
+- Cover: https://pbs.twimg.com/media/HHzOinabYAEF8Wo.jpg -> imgs/00-cover-original.jpg
+- Inline 1: https://pbs.twimg.com/media/HHy_-Y-aQAAALNV.jpg -> imgs/01-original.jpg
+- Inline 2: https://pbs.twimg.com/media/HHzAEyfbsAANN-G.jpg -> imgs/02-original.jpg
+- Inline 3: https://pbs.twimg.com/media/HHzBLQ4acAAoTWY.jpg -> imgs/03-original.jpg
+- Inline 4: https://pbs.twimg.com/media/HHzBQsHaQAAEZb7.jpg -> imgs/04-original.jpg
+- Inline 5: https://pbs.twimg.com/media/HHzBd8QbYAA3E49.jpg -> imgs/05-original.jpg
+
+Article facts to preserve carefully
+
+- The source argues that many RAG failures start upstream of retrieval, because fixed-size chunks are weak knowledge units.
+- The alternative unit is an IdeaBlock: a question, a trusted answer, and governance fields such as source, version, clearance, tags, entities, and keywords.
+- Source claims include 40x corpus size reduction, about 3x fewer tokens per query, and about 2.3x better vector-search relevance.
+- The X Article cites an internal Blockify benchmark across 17 documents and 298 pages: average cosine distance was 0.1585 for IdeaBlocks and 0.3624 for naive chunks.
+- The same source says 2,042 raw IdeaBlocks collapsed to 1,200 canonical IdeaBlocks; word count dropped from 88,877 to 44,537; distilled data outperformed undistilled data by 13.55% on vector accuracy.
+- The README claims 78x aggregate performance, 2.29x vector search accuracy, 29.93x distillation, 3.09x token efficiency, and 40x size reduction. Treat these as project/source claims, not independently verified industry facts.
+- Supported ecosystem claims from README include ChromaDB, Pinecone, Cloudflare Vectorize, Neo4j, SQLite, PostgreSQL, Redis, filesystem, Docker, Helm, FastAPI service, and Claude Code skill.
+
+Title candidates
+
+1. Recommended: RAG 总答偏，问题可能在 chunk
+2. Safe: 别急着调检索，先看 RAG 的知识单元
+3. Broad: RAG 为什么总漏信息？先查 chunk
+4. Expert: 从 chunk 到 IdeaBlock：RAG 该换知识单元了
+5. Contrast: RAG 的坑不在 reranker，而在 chunk
+
+Writing boundary
+
+- Use 蒸馏小余 2.0 style: concrete developer scene, direct judgment, no template transitions.
+- This is a translation/adaptation, not a full independent benchmark review.
+- Keep original images in the article body and use the original cover as the WeChat cover.
+
+Publish result
+
+- WeChat draft media_id: GHixSPLvYVluGTAOLz6FeWvfZ_92qSNB6Gb29YwytZoxCY3Dg4Sd8ryyqTu38i4Q
+- Final canonical markdown: post-to-wechat/2026-06-22/rag-ideablock/rag-ideablock.md
+- Review artifact: post-to-wechat/2026-06-22/rag-ideablock/article-ai-smell-review.md

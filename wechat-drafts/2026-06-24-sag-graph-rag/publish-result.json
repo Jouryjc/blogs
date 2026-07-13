@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "published_at": "2026-06-25T19:26:00+08:00",
+  "updated_at": "2026-06-25T23:03:06+08:00",
+  "media_id": "GHixSPLvYVluGTAOLz6Fea9aKmBZbfDhCe6NfnuqDegTpOsEDK1tyEhJEpzUXiUv",
+  "cover_media_id": "GHixSPLvYVluGTAOLz6FeUpekj1fLspfP9niY6GL057hlPdIrhSaNdXcmlc1nVLE",
+  "title": "RAG 别再硬塞 chunk：SAG 用「事项+实体」接证据链",
+  "article_type": "news",
+  "updated": true,
+  "index": 0,
+  "theme": "grace",
+  "color": "#0F4C81",
+  "placeholder_image_count": 4,
+  "source_markdown": "article-anti-ai.md",
+  "cover": "imgs/article-cover.png",
+  "rendered_html": "doocs-wechat-rendered.html"
+}

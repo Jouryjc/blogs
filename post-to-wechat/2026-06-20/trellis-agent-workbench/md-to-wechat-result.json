@@ -1,0 +1,32 @@
+{
+  "title": "AI 编程总是失忆？Trellis 把规范和任务写回仓库",
+  "author": "蒸馏小余",
+  "summary": "Trellis 不是替代 Codex、Claude Code 或 Cursor，而是把 AI 编程需要的规范、任务和工作记忆沉淀进仓库，让 Agent 不再每次从零开始。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-N3ELo5/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Trellis：给 Coding Agent 一张不会丢的工作台",
+      "originalPath": "imgs/article-cover.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/article-cover.png"
+    },
+    {
+      "alt": "旧方式为什么失忆：规范、任务、复盘散落在对话里",
+      "originalPath": "imgs/01-agent-amnesia.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/01-agent-amnesia.png"
+    },
+    {
+      "alt": "Trellis 四阶段循环：Plan、Implement、Verify、Finish",
+      "originalPath": "imgs/02-trellis-loop.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/02-trellis-loop.png"
+    },
+    {
+      "alt": "Trellis 第一次使用：安装、初始化、建规范、跑小任务、收尾",
+      "originalPath": "imgs/03-first-run.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-20/trellis-agent-workbench/imgs/03-first-run.png"
+    }
+  ]
+}

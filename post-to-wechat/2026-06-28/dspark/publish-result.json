@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeYcEzD2mGgSMPZ5pkLoE9LeLgJVEkObkvKbm05YnR2Z8",
+  "cover_media_id": "GHixSPLvYVluGTAOLz6FeXZGg5eilyMLuCdHGL3oCu-voNM6_GVAuTrsQ8eIzphK",
+  "title": "大模型变快，不是只靠更小模型：DSpark 的草稿验证法",
+  "articleType": "news",
+  "updated": true,
+  "published_at": "2026-06-28T16:08:00+08:00",
+  "source_markdown": "article-anti-ai.md",
+  "theme": "grace",
+  "color": "#0F4C81",
+  "inline_images": 4,
+  "updated_at": "2026-06-28T18:25:39+08:00",
+  "cover_source": "original DSpark paper Figure 1 crop",
+  "previous_generated_cover_backup": "imgs/article-cover.generated.png",
+  "reviewer_second_pass": {
+    "skill": "xiaoyu-wechat-article-reviewer",
+    "ai_smell_hits": [],
+    "warnings": [],
+    "chinese_chars_excluding_code": 2631
+  }
+}

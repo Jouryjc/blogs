@@ -1,0 +1,716 @@
+ScholarQuest: A Taxonomy-Guided Benchmark for Agentic Academic Paper Search in Open Literature Environments
+
+##### Report GitHub Issue
+×
+Title:
+Content selection saved. Describe the issue below:
+Description:
+Submit without GitHubSubmit in GitHub
+Back to arXiv
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+License: arXiv.org perpetual non-exclusive license
+arXiv:2606.20235v1 [cs.IR] 18 Jun 2026
+
+# ScholarQuest: A Taxonomy-Guided Benchmark for Agentic Academic Paper Search in Open Literature Environments
+
+Tingyue Pan, Mingyue Cheng , Daoyu Wang, Yitong Zhou, Jie Ouyang, Qi Liu, Enhong Chen State Key Lab of Cognitive Intelligence, University of Science and Technology of China {pty12345,wdy030428,yitong.zhou,ouyang_jie}@mail.ustc.edu.cn{mycheng,qiliuql,cheneh}@ustc.edu.cn Corresponding author.
+
+###### Abstract
+
+Academic paper search is a core step in scientific research, and LLM-based search agents are emerging as a promising paradigm for iterative, intent-driven literature exploration. However, existing benchmarks are insufficient for systematically evaluating agentic academic search under realistic open literature environments. We propose ScholarQuest, a large-scale, taxonomy-guided benchmark for agentic academic paper search. ScholarQuest is constructed from over 1,000 computer science topics and four representative research intents, including method-oriented, setting-anchored, comparison-based, and scope-controlled queries. It further provides scalable answer construction and a shared retrieval backend ScholarBase for reproducible evaluation. Benchmarking results show that agentic methods outperform single-shot retrieval baselines, yet the best-performing agent only achieves 0.314 Recall@100 and 0.355 Recall@All, indicating substantial room for improvement. In addition, analyses of search efficiency, intent-level robustness, and failure cases further highlight the benchmark’s ability to provide multi-dimensional evaluation signals for academic paper search agents. Our code and data are publicly available111https://github.com/pty12345/ScholarQuest.
+
+## 1 Introduction
+
+Academic paper search underpins effective knowledge discovery in scientific research Timmins and McCabe (2005); Marchionini (2006). Traditional approaches mainly rely on lexical or semantic matching, offering efficient access to large-scale literature collections Shi et al. (2025). However, when facing fine-grained and conditional queries, they remain limited by the single-shot ranked-list paradigm Gusenbauer and Haddaway (2020). This motivates the rise of agentic paper search, where LLM-based agents can autonomously decide when and how to search, expand, and refine candidate papers based on accumulated evidence He et al. (2025); Pan et al. (2026).
+
+Figure 1:  Motivation of ScholarQuest. Agentic paper search moves beyond similarity-based retrieval through iterative exploration. This calls for better benchmarks with controlled queries and standardized evaluation.
+
+Table 1:  Comparison with existing academic paper search benchmarks. ScholarQuest differs in broader topic coverage, taxonomy-guided queries, controlled intents, and automatically built answers.
+
+| Benchmark | Topic Scope | Query Source | Construction | Query Intent Design | Answer Source
+
+| RealScholar He et al. (2025) | CV / NLP | Human | Query-first | Uncontrolled | Human-labeled
+
+| AutoScholar He et al. (2025) | Seed Papers | Answer-derived | Answer-first | Uncontrolled | Related Work
+
+| SPARBench Shi et al. (2025) | AI / NLP | Human | Query-first | Uncontrolled | Human-labeled
+
+| ScholarQuest | 1,000+ CS topics | Taxonomy-guided | Query-first | 4 intent types | Automatically-built
+
+Despite this progress, the systematic evaluation of agentic academic paper search remains underdeveloped. Existing benchmarks are mainly limited in three aspects. On the query side, they often rely on manually constructed or paper-derived queries, which may introduce annotator bias and provide limited coverage of diverse research intents He et al. (2025); Shi et al. (2025). On the answer side, constructing high-quality relevant paper sets is costly and difficult to scale, since relevant papers are often scattered across different terminologies and subfields He et al. (2025). Moreover, existing benchmarks do not provide a publicly available and standardized evaluation environment, making tool-calling results difficult to reproduce across different systems. As shown in Table 1, these limitations make existing benchmarks insufficient for evaluating agentic paper search under broad topics, diverse query types, and reproducible environments.
+
+To address these challenges, we propose ScholarQuest, a large-scale, taxonomy-guided evaluation benchmark for agentic academic paper search. ScholarQuest covers over 1,000 computer science topics and includes four common types of research queries: method-oriented, setting-anchored, comparison-based, and scope-controlled queries. These query types reflect common scientific search needs, such as finding papers using a specific method, studying a problem under a given setting, comparing technical claims, or restricting the search scope. This taxonomy-guided design gives ScholarQuest broad topic coverage and controlled query diversity beyond ad-hoc query collection.
+
+ScholarQuest also provides scalable answer construction and a standardized literature environment. To build high-quality answer sets, we develop an automated pipeline that combines initial retrieval, citation expansion, multi-stage relevance filtering, and quality verification. This pipeline aims to improve both coverage and precision while reducing the cost of large-scale manual annotation. To support reproducible evaluation, we further build a million-scale testbed ScholarBase based on the arXiv database. Beyond storing paper metadata and citation relations, ScholarBase provides unified retrieval, inspection, and citation-expansion interfaces, enabling different systems to be evaluated under the same controlled literature environment.
+
+Built on ScholarBase, ScholarQuest evaluates academic search systems beyond final retrieval quality, covering Recall@k, search efficiency, tool-use behavior, and robustness across research intents and answer-set sizes. Experiments show that agentic methods outperform single-shot retrievers, but still face limitations in efficiency, constraint-sensitive search, and robustness under different query conditions. Failure analysis further shows that many errors stem from off-target exploration rather than insufficient search effort. These findings highlight the need to evaluate not only what papers are retrieved, but also how the search process is conducted. We release the benchmark and our retrieval backend ScholarBase to support reproducible research on academic paper search.
+
+Our contributions are summarized as follows:
+
+- •
+
+We propose ScholarQuest, a large-scale, taxonomy-guided benchmark for agentic academic paper search, covering over 1,000 CS topics, four research intents, and a million-scale paper retrieval backend ScholarBase.
+
+- •
+
+We build a scalable construction pipeline that integrates taxonomy-guided query generation, multi-source retrieval, citation expansion, relevance filtering, and quality verification.
+
+- •
+
+We benchmark representative search systems and identify key limitations of current agents in search efficiency, scope control, and robustness across query conditions.
+
+## 2 Related Work
+
+### 2.1 Academic Paper Search Benchmarks
+
+Academic paper search is essential for both human researchers and deep-search agents that rely on trustworthy scholarly evidence Wang et al. (2025); Cheng et al. (2026); Jin et al. (2025). Recent benchmarks have begun to evaluate LLM-based systems for academic paper search. PaSa introduces AutoScholarQuery, a large synthetic dataset constructed from top-tier AI conference publications, and RealScholarQuery, a small set of real-world academic queries for realistic evaluation (He et al., 2025). AutoScholarQuery provides useful scale, but its construction is tied to source papers and their Related Work section, which may inherit topic and citation biases. RealScholarQuery improves realism, but its limited size makes it difficult to systematically cover fine-grained CS topics and diverse query intents. SPARBench further improves annotation quality through expert-screened queries and multi-source relevance validation, but it remains small-scale with broad domain coverage rather than a systematic CS topic hierarchy (Shi et al., 2025). In contrast, our benchmark offers taxonomy-grounded topic coverage, controllable query distributions, and broader gold answer pools.
+
+### 2.2 LLM-based Paper Search Agents
+
+LLM-based methods have recently been explored for academic paper search. Agentic workflow-based approaches, such as PaSa, formulate paper search as a multi-step process that searches, inspects, and selects relevant papers (He et al., 2025). SPAR further integrates query understanding, multi-source retrieval, citation-based exploration, and reranking for training-free academic retrieval (Shi et al., 2025). Building on this line of work, PaperScout improves tool-use autonomy by enabling the agent to decide when and how to invoke search and expansion actions according to the evolving search state (Pan et al., 2026). These studies show the promise of agentic literature exploration beyond conventional single-shot retrieval. ScholarQuest complements them by providing a systematic benchmark to evaluate such agents across retrieval quality, search efficiency, multi-turn decision ability, and robustness under diverse research intents.
+
+## 3 ScholarQuest
+
+In this section, we first establish a clear task formulation, then describe the benchmark construction pipeline, followed by the four research intents used to evaluate different retrieval capabilities.
+
+### 3.1 Task Formulation
+
+ScholarQuest evaluates academic paper search as a multi-turn retrieval task. Given a research query qq and a literature database 𝒟\mathcal{D}, a search system iteratively analyzes the current paper pool 𝒫t\mathcal{P}_{t} and issues retrieval or exploration requests to 𝒟\mathcal{D}. The returned papers are merged into 𝒫t+1\mathcal{P}_{t+1}, allowing the system to accumulate candidate papers and update search state over multiple turns. The system finally returns a ranked paper list 𝒫^\hat{\mathcal{P}}, which is evaluated against the ground-truth relevant paper set 𝒫∗\mathcal{P}^{*}.
+
+Figure 2: Dataset distribution of ScholarQuest. Side bars show query counts across arXiv CS categories, while the center pie shows query intent distribution.
+
+### 3.2 Benchmark Construction
+
+#### 3.2.1 Query Generation
+
+We first collect over 1,600 topics from the ACM Computing Classification System (CCS), which provides a poly-hierarchical organization of computing topics (Rous, 2012). To focus the benchmark on computer science paper search, we utilize Qwen3-Max Yang et al. (2025) to map each ACM CCS topic to one or more arXiv subject categories according to the arXiv category taxonomy222https://arxiv.org/category_taxonomy. We retain topics assigned to arXiv CS categories and discard topics outside the computer science scope. This process results in over 1,000 CS topic seeds, which serve as the input for query generation.
+
+Given each topic seed, we further utilize Qwen3-Max to generate research queries under four intent types: method-oriented, setting-anchored, comparison-based, and scope-controlled queries. This design allows us to systematically cover diverse academic search intents rather than relying on queries derived from individual papers. We then apply deduplication and quality control to remove queries that are ambiguous, overly broad, overly narrow, duplicated, or difficult to judge from paper titles and abstracts. After filtering, we obtain 1,111 high-quality queries for ScholarQuest.
+
+Figure 3: Cases of the four research-intent types in ScholarQuest. Each quadrant presents a representative specific-type query with its domains, topic seed, constraints and example gold papers from the answer set.
+
+#### 3.2.2 Answer Discovery
+
+##### Multi-source Candidate Retrieval.
+
+In the retrieval stage, we collect an initial candidate set that serves as the starting point for subsequent expansion. For each query, we use both the original query and multiple LLM-generated rewrites, including method-focused, task-focused, broader-topic, narrower-topic, and terminology-based formulations. These queries are issued to multiple complementary retrieval sources, including Google Search API333https://serper.dev, arXiv API444https://info.arxiv.org, and Semantic Scholar API555https://www.semanticscholar.org. We retain only papers that can be matched to the arXiv database, and merge duplicated results by arXiv identifier. Formally, the retrieval-based candidate pool is
+
+|  | 𝒞qr​e​t=⋃r∈ℛ​(q)⋃s∈𝒮Retrieves​(r),\mathcal{C}^{ret}_{q}=\bigcup_{r\in\mathcal{R}(q)}\bigcup_{s\in\mathcal{S}}\text{Retrieve}_{s}(r), |  | (1)
+
+where ℛ​(q)\mathcal{R}(q) contains the original query and its rewrites, 𝒮\mathcal{S} denotes the retrieval sources.
+
+##### Citation-Graph Expansion.
+
+Since direct retrieval may miss relevant papers with different terminology, we further expand the retrieved candidates through citation relations. Starting from high-confidence papers in 𝒞qr​e​t\mathcal{C}^{ret}_{q}, we collect their references and citing papers when available, and selectively perform second-hop expansion from high-confidence neighbors while pruning noisy branches. The final candidate pool is defined as
+
+|  | 𝒞q=𝒞qr​e​t∪𝒞qc​i​t​e,\mathcal{C}_{q}=\mathcal{C}^{ret}_{q}\cup\mathcal{C}^{cite}_{q}, |  | (2)
+
+where 𝒞qc​i​t​e\mathcal{C}^{cite}_{q} denotes papers obtained from citation-graph expansion. This step complements direct retrieval by recovering papers that are connected through scholarly relations but may be missed by lexical or semantic matching.
+
+##### Multi-stage Relevance Adjudication.
+
+We derive the final answer set from the expanded candidate pool through multi-stage relevance adjudication. First, we remove clear mismatches using retrieval scores, metadata signals, and a small relevance model, while keeping the filtering stage recall-oriented. The remaining candidates are evaluated by multiple LLM-based relevance judges using the query, paper title, and abstract. Each judge assigns a score from 0 to 2, denoting mismatch, partial match, and strict match, respectively. After aggregating the scores into Rel​(q,p)\text{Rel}(q,p), we select papers above threshold τ=2\tau=2:
+
+|  | 𝒜q={p∈𝒞q∣Rel​(q,p)≥τ}.\mathcal{A}_{q}=\{p\in\mathcal{C}_{q}\mid\text{Rel}(q,p)\geq\tau\}. |  | (3)
+
+Borderline and high-disagreement cases are further adjudicated to reduce labeling errors.
+
+#### 3.2.3 Human Audit
+
+To assess label quality without requiring exhaustive manual annotation, we conduct a targeted human audit over 450 query-paper pairs stratified by automatic relevance score. Human annotators judge relevance based on the query, paper title, abstract, and metadata. The audit results show that final high-confidence positives have 86.0% strict-match precision and 98.7% relaxed precision, where relaxed precision counts both strict and partial matches. The audit also helps localize residual false-negative risk to borderline candidates, motivating the additional adjudication of high-disagreement cases. Detailed statistics are provided in Appendix A.
+
+Table 2: Recall-oriented results on ScholarQuest. We report Recall@25, Recall@100, and Recall@All across four query types and the overall query set. The bold indicates the best result, while underline indicates the second-best.
+
+| Method | Method Oriented | Setting Anchored | Scope Controlled | Comparison Based | Overall
+
+| R@25 | R@100 | R@All | R@25 | R@100 | R@All | R@25 | R@100 | R@All | R@25 | R@100 | R@All | R@25 | R@100 | R@All
+
+| Dense Retrieval | 0.155 | 0.300 | 0.403 | 0.110 | 0.219 | 0.306 | 0.029 | 0.087 | 0.159 | 0.136 | 0.234 | 0.326 | 0.104 | 0.208 | 0.290
+
+| Hybrid Retrieval | 0.153 | 0.303 | 0.344 | 0.115 | 0.226 | 0.257 | 0.038 | 0.091 | 0.111 | 0.133 | 0.250 | 0.276 | 0.107 | 0.214 | 0.244
+
+| Google Search | 0.106 | 0.146 | 0.167 | 0.059 | 0.094 | 0.117 | 0.003 | 0.006 | 0.013 | 0.122 | 0.135 | 0.143 | 0.068 | 0.094 | 0.112
+
+| Google Scholar | 0.084 | 0.111 | 0.143 | 0.073 | 0.102 | 0.120 | 0.004 | 0.010 | 0.010 | 0.107 | 0.125 | 0.130 | 0.071 | 0.100 | 0.113
+
+| Semantic Scholar | 0.064 | 0.085 | 0.101 | 0.103 | 0.116 | 0.125 | 0.001 | 0.002 | 0.002 | 0.089 | 0.103 | 0.103 | 0.057 | 0.084 | 0.099
+
+| DeepXiv Qian et al. (2026) | 0.091 | 0.214 | 0.341 | 0.068 | 0.181 | 0.304 | 0.007 | 0.023 | 0.064 | 0.039 | 0.118 | 0.286 | 0.054 | 0.138 | 0.288
+
+| PaSa (He et al., 2025) | 0.245 | 0.345 | 0.366 | 0.230 | 0.296 | 0.312 | 0.103 | 0.193 | 0.242 | 0.256 | 0.294 | 0.324 | 0.201 | 0.281 | 0.310
+
+| SPAR (Shi et al., 2025) | 0.242 | 0.333 | 0.351 | 0.223 | 0.282 | 0.293 | 0.102 | 0.188 | 0.222 | 0.246 | 0.280 | 0.301 | 0.197 | 0.270 | 0.291
+
+| PaperScout (Pan et al., 2026) | 0.275 | 0.408 | 0.451 | 0.246 | 0.341 | 0.366 | 0.091 | 0.182 | 0.239 | 0.275 | 0.327 | 0.358 | 0.214 | 0.314 | 0.355
+
+### 3.3 Key Features of ScholarQuest
+
+ScholarQuest covers four representative research intents in academic paper search. As shown in Figure 3, each type reflects a common search scenario and targets a distinct retrieval capability.
+
+##### Method-oriented Queries.
+
+This dimension focuses on finding papers that use, extend, or analyze a specific method. It tests whether systems can identify methodological relevance beyond surface-level keyword overlap.
+
+##### Setting-anchored Queries.
+
+This category targets papers under a specific task, dataset, or experimental setting. It evaluates whether systems can satisfy fine-grained contextual constraints rather than retrieve broadly related papers.
+
+##### Scope-controlled Queries.
+
+This feature specifies explicit boundaries for the desired paper set, such as a target domain, task, or model family. It evaluates whether systems can control retrieval breadth and avoid loosely relevant results.
+
+##### Comparison-based Queries.
+
+This aspect focuses on papers that compare methods, assumptions, results, or technical claims. It tests whether systems can capture relational search intents involving multiple research objects.
+
+## 4 Experiment
+
+In this section, we evaluate the overall retrieval performance and analyze agentic search behavior in terms of efficiency and robustness. Finally, we diagnose shared failure patterns across search agents.
+
+### 4.1 Experimental Setup
+
+##### Dataset.
+
+We evaluate all methods on ScholarQuest, which contains 1,111 high-quality queries constructed from over 1,000 computer science topic seeds. As shown in Figure 2, the dataset spans a broad range of arXiv CS categories, covering major areas such as cs.LG, cs.CV, cs.AI, and cs.CL, while also preserving a long-tail distribution over diverse subfields. The queries are divided into four intent types: method-oriented, setting-anchored, scope-controlled, and comparison-based, with relatively balanced proportions of 27.2%, 29.0%, 28.5%, and 15.3%, respectively.
+
+##### Environment.
+
+We build ScholarBase, an open-source paper-search environment constructed from the S2 PaperData snapshot Lo et al. (2020), which retains arXiv papers with abstracts, and stores paper metadata and citation relations. It supports BM25 Harman (1995) sparse retrieval with SQLite FTS5666https://sqlite.org, dense retrieval with Qdrant over BGE-M3 Chen et al. (2024) title–abstract embeddings, and RRF-based hybrid retrieval Cormack et al. (2009). The environment further provides RESTful APIs for semantic search, title matching, metadata lookup, and citation/reference traversal, enabling all methods to search, inspect, and expand papers under the same controlled literature backend.
+
+Figure 4: Efficiency and process statistics of paper search agents, including number of tool calls, rounds, observed candidates, and R@100/100 Cand., which normalizes Recall@100 by every 100 observed candidates.
+
+##### Baselines.
+
+We compare three groups of baselines. The first group includes standard retrieval baselines implemented in our ScholarBase, including dense retrieval and RRF-based hybrid search. The second group includes widely used academic search systems, including Google Search777https://serper.dev, Google Scholar888https://scholar.google.com, Semantic Scholar API999https://www.semanticscholar.org and DeepXiv Qian et al. (2026). The third group includes open-source agentic paper search systems, including PaSa (He et al., 2025), SPAR (Shi et al., 2025), and PaperScout (Pan et al., 2026).
+
+##### Metrics.
+
+Considering that paper search emphasizes comprehensive answer coverage, we primarily report Recall@25, Recall@100, and Recall@All under different retrieval budgets. To analyze the search process, we further report the number of interaction rounds, search calls, expansion calls, observed candidates, and Recall@100 per 100 observed candidates. We also examine robustness across research intents and answer-set sizes.
+
+### 4.2 Main Results
+
+Figure 5: Recall@All density distributions of agentic paper search methods. Panels (a)–(c) show query-type distributions within each method, while panel (d) compares the three methods over all queries. The x-axis is Recall@All and the y-axis is probability density.
+
+Table 2 reports Recall@25, Recall@100, and Recall@All across four research intents and the overall query set. Traditional retrieval methods show clear limitations on complex paper search queries, especially on compositional constraints, as shown by the low R@100 of Google Search (0.006) and Google Scholar (0.010) on scope-controlled queries. Dense and Hybrid retrieval improve over sparse retrieval, achieving 0.208 and 0.214 overall R@100. However, they remain single-shot retrievers and cannot iteratively refine queries, expand promising papers, or integrate intermediate evidence. In contrast, agentic methods with multi-round decision-making achieve higher overall R@100 scores, ranging from 0.270 to 0.314.
+
+Figure 6: Recall trajectories under increasing tool-call budgets. The upper and lower panels show Recall@All and Recall@50, respectively, with shaded regions indicating query-level variation.
+
+The results also show clear differences among agentic search methods. PaperScout achieves 0.408 R@100 on method-oriented, outperforming PaSa and SPAR by 0.063 and 0.075, respectively. It also leads on setting-anchored and comparison-based, with R@100 scores of 0.341 and 0.327, higher than PaSa (0.296, 0.294) and SPAR (0.282, 0.280). One possible explanation is that more adaptive multi-turn search can help agents better navigate scattered literature evidence. We conduct further analysis in the next section to examine tool-use patterns, search efficiency, and exploration behavior.
+
+### 4.3 Analysis of Agentic Search Behavior
+
+Beyond overall retrieval performance, we further analyze agentic search behavior from the perspectives of search efficiency, research-intent robustness, and answer-set-size robustness.
+
+##### Search Efficiency.
+
+Retrieval quality alone is insufficient for paper search, where agents should avoid exhaustive candidate expansion. As shown in Figure 4, the three agents exhibit distinct tool-use patterns. PaSa uses the most tool calls (60.1), mainly expansions (55.1), and observes the largest candidate set (744), but its recall efficiency is relatively low at 0.051 Recall@100 per 100 candidates. SPAR is also expansion-oriented, with 39.1 expansion calls out of 47.1 tool calls, observing 515 candidates and achieving 0.064 recall efficiency. In contrast, PaperScout uses fewer expansions (19.0) while making more search calls (15.3) across more interaction rounds (9.2), leading to fewer observed candidates (408) and the highest recall efficiency (0.120). This efficiency advantage may stem from its autonomous tool-use policy, which allows PaperScout to decide when and how to search or expand based on the evolving search state.
+
+Figure 6 further shows recall trajectories under different tool-call budgets. PaSa improves rapidly at the early stage but soon saturates, while SPAR shows steadier but more limited gains. PaperScout starts more gradually, but continues to improve with additional interactions and eventually reaches higher recall under a smaller or comparable tool-call budget. This suggests that adaptive tool-use can improve the marginal utility of each tool call.
+
+Table 3: Average Recall@All across gold answer-set size buckets. #Query denotes the number of queries.
+
+| Answer Size | #Query | Recall@All
+
+| PaSa | SPAR | PaperScout
+
+| 5–25 | 457 | 0.352 | 0.338 | 0.405
+
+| 26–50 | 218 | 0.319 | 0.307 | 0.371
+
+| 51–100 | 225 | 0.267 | 0.242 | 0.304
+
+| 101–150 | 130 | 0.265 | 0.239 | 0.281
+
+| 151–200 | 81 | 0.235 | 0.205 | 0.278
+
+##### Robustness Across Research Intents.
+
+Agentic methods generally outperform traditional retrieval methods across metrics. However, their performance varies substantially across research intents, revealing important limitations of current paper search agents. As shown in Table 2, all three agents perform relatively well on method-oriented, setting-anchored, and comparison-based queries, where the search intent is mainly guided by positive semantic cues such as methods, tasks, settings, or comparative claims. In contrast, scope-controlled is consistently the most challenging category: PaSa, SPAR, and PaperScout achieve only 0.193, 0.188, and 0.182 R@100, respectively, which are clearly lower than their performance on other intents.
+
+Figure 5 further provides a distributional view of this limitation. For all three agents, the recall distributions of scope-controlled queries are concentrated in the low-recall region, indicating that this category is not only worse on average but also more prone to query-level failures. Unlike positive-intent queries, scope-control queries require agents to retrieve papers that match the main topic while preserving exclusion constraints or fine-grained scope boundaries during multi-round exploration. Although PaperScout shows a more right-shifted overall recall distribution, its scope-control curve remains heavily skewed toward low recall. These results suggest that adaptive tool use improves robustness, but constraint-sensitive paper search remains a shared limitation of agentic methods.
+
+##### Robustness Across Answer-set Sizes.
+
+We further evaluate robustness by grouping queries according to the number of ground-truth answers. As shown in Table 3, all agents exhibit lower average recall as the answer set becomes larger, suggesting that broad-answer queries remain challenging under limited search budgets. For instance, PaSa drops from 0.352 in the 5–25 bucket to 0.235 in the 150–200 bucket, while SPAR drops from 0.338 to 0.205. PaperScout achieves the highest average recall in every bucket, with scores of 0.405, 0.371, 0.304, 0.281, and 0.278 from small to large answer sets. Its advantage persists even in the largest bucket, where it outperforms PaSa and SPAR by 0.043 and 0.073 average recall, respectively. These results indicate that PaperScout better balances focused exploration and broad coverage across varying answer-set sizes. More detailed results are shown in Table 7.
+
+Figure 7: Representative common zero-recall cases across query types. Each case shows a query where all three agents retrieve no gold papers, together with the corresponding gold-answer size and the main failure cause.
+
+### 4.4 Failure Analysis
+
+Table 4: Common zero-recall cases by query type. #Failures denotes the number of queries where all three agents retrieve no gold papers; Avg. Candidates report the average accessed candidate papers.
+
+| Query Type | #Failures | Avg. Candidates
+
+| PaSa | SPAR | PaperScout
+
+| Comparison-based | 7 | 926.6 | 589.9 | 405.7
+
+| Scope-controlled | 6 | 871.2 | 618.0 | 315.3
+
+| Setting-anchored | 5 | 713.6 | 551.8 | 472.8
+
+| Method-oriented | 2 | 1306.0 | 831.0 | 532.0
+
+| Overall | 20 | 894.6 | 612.9 | 408.0
+
+We analyze common zero-recall cases, where PaSa, SPAR, and PaperScout all fail to retrieve any gold paper. As shown in Table 4, such failures appear across all four query types. Although these cases are rare, covering only 20 out of 1,111 complete agentic queries (1.80%), they are highly diagnostic: all three agents access a substantial number of candidate papers on these queries, yet none of the retrieved papers match the gold answers.
+
+Figure 7 presents representative examples for each query type, showing that failures arise from different forms of intent mismatch rather than a uniform retrieval error. For claim-comparison queries, agents retrieve related papers but miss evidence for the specific comparison. In the autonomous-robot case, they fail to find papers explicitly showing autonomous robots outperform human teleoperation, yielding 0 out of 9 gold papers. For scope-control queries, agents struggle with negative constraints: in the remote replication case, the target is essentially “remote replication minus local replication,” but agents treat the excluded concept as a positive keyword, yielding 0 out of 8 gold papers. For setting-anchor queries, agents recognize anchors such as CIFAR-10 or Pascal VOC, but drift toward popular benchmark papers instead of papers evaluating the target method under the specified setting. For method-capability queries, agents match the method keyword but fail to preserve compositional intent, such as reinforcement learning for collaborative content creation.
+
+Beyond query-specific failure patterns, Table 4 further shows that common zero-recall failures are not due to a lack of search effort, but to off-target exploration. PaSa and SPAR access hundreds of candidate papers on average across all failed query types, while PaperScout also explores a non-trivial candidate pool through iterative search. The core problem is therefore not whether agents search, but whether they can reach the correct region of the literature space. When the initial search direction is biased toward a semantically plausible but incorrect neighborhood, further retrieval or citation expansion tends to enlarge that neighborhood rather than recover the missing gold papers. This highlights a key challenge in paper search: agents should not only search broadly, but also target the right evidence, constraints, and method–setting combinations.
+
+## 5 Conclusion
+
+We propose ScholarQuest, a taxonomy-guided benchmark for agentic academic paper search in open literature environments. Unlike existing benchmarks that rely on limited human queries or paper-derived query construction, ScholarQuest provides broad CS topic coverage, four representative research intents, scalable answer construction, and a shared ScholarBase backend for reproducible evaluation. Experiments show that agentic search methods outperform single-shot retrieval systems, with the best agentic method improving overall R@100 from 0.214 to 0.314 over the strongest non-agentic baseline, yielding a relative gain of 46.7%. Meanwhile, our analysis reveals limitations in search efficiency, query-type robustness, and constraint handling, with key failures caused by off-target exploration rather than insufficient effort. ScholarQuest offers a transparent and diagnostic testbed for identifying these limitations and tracking future progress in agentic paper search. Future work may develop agents with stronger intent preservation, constraint-aware filtering, and evidence-level reasoning throughout multi-round exploration. We invite the community to use ScholarQuest to study, compare, and build more reliable academic paper search agents.
+
+## 6 Limitations
+
+ScholarQuest is designed as a controlled benchmark for agentic paper search, but it still has several boundaries. First, ScholarQuest focuses on computer science topics and uses an arXiv-grounded literature environment, so it does not cover the full diversity of scholarly communication across disciplines, venues, and publication formats. Second, relevance judgments are based on paper titles, abstracts, and metadata rather than full-text evidence, which makes the benchmark scalable but may miss fine-grained claims that only appear in the body of a paper. Finally, although our answer construction pipeline combines multi-source retrieval, citation expansion, LLM-based relevance adjudication, and human audit, automatic construction may still miss some relevant papers in open literature environments. These limitations motivate future extensions toward broader literature sources, full-text-aware relevance assessment, and stronger answer-set validation.
+
+## References
+
+- J. Chen, S. Xiao, P. Zhang, K. Luo, D. Lian, and Z. Liu (2024)Bge m3-embedding: multi-lingual, multi-functionality, multi-granularity text embeddings through self-knowledge distillation. arXiv preprint arXiv:2402.032164 (5). Cited by: §4.1.
+
+- M. Cheng, D. Wang, Q. Liu, S. Yu, X. Tao, Y. Wang, C. Chu, Y. Duan, M. Long, and E. Chen (2026)Mind2Report: a cognitive deep research agent for expert-level commercial report synthesis. arXiv preprint arXiv:2601.04879. Cited by: §2.1.
+
+- J. Cohen (1968)Weighted kappa: nominal scale agreement provision for scaled disagreement or partial credit.. Psychological bulletin70 (4),  pp. 213. Cited by: §A.1.
+
+- G. V. Cormack, C. L. Clarke, and S. Buettcher (2009)Reciprocal rank fusion outperforms condorcet and individual rank learning methods. In Proceedings of the 32nd international ACM SIGIR conference on Research and development in information retrieval,  pp. 758–759. Cited by: §4.1.
+
+- M. Gusenbauer and N. R. Haddaway (2020)Which academic search systems are suitable for systematic reviews or meta-analyses? evaluating retrieval qualities of google scholar, pubmed, and 26 other resources. Research synthesis methods11 (2),  pp. 181–217. Cited by: §1.
+
+- D. K. Harman (1995)Overview of the third text retrieval conference (trec-3). Vol. 225, DIANE Publishing. Cited by: §4.1.
+
+- Y. He, G. Huang, P. Feng, Y. Lin, Y. Zhang, H. Li, et al. (2025)Pasa: an llm agent for comprehensive academic paper search. arXiv preprint arXiv:2501.10120. Cited by: Table 1, Table 1, §1, §1, §2.1, §2.2, Table 2, §4.1.
+
+- B. Jin, H. Zeng, Z. Yue, J. Yoon, S. Arik, D. Wang, H. Zamani, and J. Han (2025)Search-r1: training llms to reason and leverage search engines with reinforcement learning. arXiv preprint arXiv:2503.09516. Cited by: §2.1.
+
+- K. Lo, L. L. Wang, M. Neumann, R. Kinney, and D. Weld (2020)S2ORC: the semantic scholar open research corpus. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, Online,  pp. 4969–4983. External Links: Link, DocumentCited by: §4.1.
+
+- G. Marchionini (2006)Exploratory search: from finding to understanding. Communications of the ACM49 (4),  pp. 41–46. Cited by: §1.
+
+- T. Pan, J. Ouyang, M. Cheng, Q. Li, Z. Liu, D. Wang, M. Pan, S. Yu, and Q. Liu (2026)Paperscout: an autonomous agent for academic paper search with process-aware sequence-level policy optimization. arXiv preprint arXiv:2601.10029. Cited by: §1, §2.2, Table 2, §4.1.
+
+- K. Pearson (1896)VII. mathematical contributions to the theory of evolution.—iii. regression, heredity, and panmixia. Philosophical Transactions of the Royal Society of London. Series A, containing papers of a mathematical or physical character (187),  pp. 253–318. Cited by: §A.1.
+
+- H. Qian, Z. Xia, Z. Liu, J. Chen, K. Luo, M. Qin, C. Li, L. Xiong, J. Lan, S. Wang, et al. (2026)DeepXiv-sdk: an agentic data interface for scientific literature. arXiv preprint arXiv:2603.00084. Cited by: Table 2, §4.1.
+
+- B. Rous (2012)Major update to acm’s computing classification system. Communications of the ACM55 (11),  pp. 12–12. Cited by: §3.2.1.
+
+- X. Shi, Y. Li, Q. Kou, L. Yu, J. Xie, and H. Zhou (2025)Spar: scholar paper retrieval with llm-based agents for enhanced academic search. arXiv preprint arXiv:2507.15245. Cited by: Table 1, §1, §1, §2.1, §2.2, Table 2, §4.1.
+
+- C. Spearman (1961)The proof and measurement of association between two things.. Cited by: §A.1.
+
+- F. Timmins and C. McCabe (2005)How to conduct an effective literature search. Nursing standard20 (11),  pp. 41–47. Cited by: §1.
+
+- D. Wang, M. Cheng, S. Yu, Z. Liu, Z. Guo, X. Li, and Q. Liu (2025)Paperarena: an evaluation benchmark for tool-augmented agentic reasoning on scientific literature. arXiv preprint arXiv:2510.10909. Cited by: §2.1.
+
+- A. Yang, A. Li, B. Yang, B. Zhang, B. Hui, B. Zheng, B. Yu, C. Gao, C. Huang, C. Lv, et al. (2025)Qwen3 technical report. arXiv preprint arXiv:2505.09388. Cited by: §3.2.1.
+
+## Appendix A Implementation Details
+
+We provide reproducibility details for ScholarQuest here. We organize the details into benchmark construction and dataset evaluation.
+
+### A.1 Details of Benchmark Construction
+
+##### Query Construction.
+
+We start from 1,682 ACM CCS topics and use Qwen3-Max to map each topic to one or more arXiv subject categories. Only topics assigned to arXiv CS categories in Table 8 are retained, resulting in 1,638 CS topic seeds. For each seed, Qwen3-Max generates exactly four queries, one for each intent type: method-oriented, setting-anchored, comparison-based, and scope-controlled. After deduplication and quality filtering, we keep 1,111 high-quality queries.
+
+##### Answer Construction.
+
+For each query, we generate 10 rewritten search queries and retrieve the top 10 results for each rewrite from complementary retrieval sources, including Google Search, arXiv, and Semantic Scholar. Candidate papers are matched to arXiv records, normalized by arXiv ID, and deduplicated before scoring. We use a recall-oriented prefilter to remove clear mismatches, followed by LLM-based relevance adjudication using the query, paper title, abstract and metadata. Papers judged as strict matches are treated as primary answer candidates.
+
+For citation expansion, each high-confidence seed paper retrieves up to 30 citing papers and all available references. We further perform second-hop expansion from high-confidence first-hop neighbors while pruning noisy branches. Newly discovered papers are normalized, deduplicated, and scored with the same relevance-filtering pipeline. The expansion stops when no eligible high-confidence seed remains, the answer set reaches 500 papers, or the number of scored unique papers reaches 10,000 for a query.
+
+##### Human Evaluation.
+
+To validate the final-stage LLM relevance scoring, we sample 150 query-paper pairs from each score group, resulting in 450 pairs in total, and ask three Ph.D. experts to re-score them based on the user query, paper title, abstract, and metadata. Human annotators follow the same three-level rubric as the LLM judges: 0 = mismatch, 1 = partial match, and 2 = strict match. For each pair, we aggregate the three expert annotations by majority vote and use this aggregated label as the human score in the following agreement analysis. As shown in Table 6, LLM scores align well with human annotations, with Pearson correlation of 0.867 Pearson (1896), Spearman correlation of 0.867 Spearman (1961), and quadratic weighted Cohen’s κ\kappa of 0.866 Cohen (1968). The score-2 group used for final answer selection reaches 86.0% strict-match precision (129/150) and 98.7% relaxed precision (148/150 with human score ≥1\geq 1). In contrast, only 1/150 score-0 candidates and 12/150 score-1 candidates are judged as strict matches by humans, suggesting that residual false-negative risk is concentrated in borderline cases.
+
+Overall, these results indicate that the automated construction pipeline can reliably separate strict-match answers from mismatches, with residual errors mainly concentrated in borderline cases. We further present four representative disagreement cases in Table 9, illustrating typical failure modes of LLM-based relevance scoring, such as over-reliance on topical overlap and insufficient sensitivity to fine-grained query constraints.
+
+Table 5: Default configuration for ScholarQuest benchmark construction.
+
+| Configuration | Value
+
+| Raw ACM CCS topics | 1,682
+
+| Retained CS topic seeds | 1,638
+
+| Final queries | 1,111
+
+| Queries per topic seed | 4
+
+| Query rewrites per query | 10
+
+| Search top-kk per rewrite | 10
+
+| Retrieval sources | Google Search, arXiv, Semantic Scholar
+
+| Query-level concurrency | 4
+
+| Citation expansion depth | Up to 2 hops
+
+| Citation limit per seed paper | 30
+
+| Reference limit per seed paper | All available references
+
+| First-stage filtering | Recall-oriented prefilter
+
+| Relevance scoring rubric | 0–2
+
+| Answer relevance threshold | 2.0
+
+| Maximum answer count | 500
+
+| Maximum scored papers per query | 10,000
+
+| Relevance judges | Multiple LLM-based judges
+
+### A.2 Details of Dataset Evaluation
+
+We compare nine baselines from three groups: standard retrieval methods, external academic search systems, and agentic search methods.
+
+- •
+
+Dense Retrieval. Dense retriever using BGE-M3 title–abstract embeddings.
+
+- •
+
+Hybrid Retrieval. Hybrid retriever combining BM25 and dense retrieval with RRF.
+
+- •
+
+Google Search. A general web search baseline for paper discovery.
+
+- •
+
+Google Scholar. A widely used academic search engine baseline.
+
+- •
+
+Semantic Scholar. An academic search API with paper metadata and citation information.
+
+- •
+
+DeepXiv. An external scientific literature search interface.
+
+- •
+
+PaSa. LLM-based agent for multi-step academic paper search.
+
+- •
+
+SPAR. Training-free workflow with retrieval, citation exploration, and reranking.
+
+- •
+
+PaperScout. Autonomous paper search agent that adaptively decides when and how to search or expand.
+
+| LLM Score | Human Score | Total | Hit Rate
+
+| 0 | 1 | 2
+
+| 0 | 133 | 16 | 1 | 150 | 88.7%
+
+| 1 | 21 | 117 | 12 | 150 | 78.0%
+
+| 2 | 2 | 19 | 129 | 150 | 86.0%
+
+| Total | 156 | 152 | 142 | 450 | 84.2%
+
+Table 6: Confusion matrix between LLM-based relevance scores and human annotations. Hit Rate denotes the exact agreement rate within each LLM score group.
+
+##### Retrieval Baselines.
+
+We evaluate two ScholarBase retrieval baselines: dense retrieval and RRF-based hybrid retrieval. Dense retrieval ranks papers with BGE-M3 title–abstract embeddings. Hybrid retrieval combines sparse and dense rankings through reciprocal rank fusion. Both methods take the original query as input and return ranked papers from ScholarBase.
+
+##### Academic Search Systems.
+
+We evaluate four external academic search systems: Google Search, Google Scholar, and search APIs of Semantic Scholar and DeepXiv. For each query, each system returns up to 300 papers. Returned papers are matched to ScholarQuest answers through arXiv identifiers, titles, and available metadata, ensuring that all methods are evaluated against the same arXiv-grounded answer sets.
+
+##### Agentic Search Methods.
+
+We evaluate three agentic paper search systems: PaSa, SPAR, and PaperScout. To ensure a fair comparison, we run their released inference code and open checkpoints without modifying their model weights or decision logic. All tool interfaces are provided by ScholarBase, including paper search, metadata lookup, and citation/reference expansion, so that different agents interact with the same literature backend. During evaluation, all retrieved or expanded papers are normalized by arXiv ID before metric computation. We also record process statistics, including interaction rounds, search calls, expansion calls, observed candidates, and Recall@100 per 100 observed candidates.
+
+Table 7: Average Recall@100 of agentic paper search methods across gold answer-set size buckets and query types. PaperScout is strongest on method and setting queries, while scope-control remains difficult and recall decreases as answer sets grow.
+
+| Answer Size | Method-oriented | Setting-anchored | Scope-controlled | Comparison-based | Overall
+
+|  | PaSa | SPAR | PaperScout | PaSa | SPAR | PaperScout | PaSa | SPAR | PaperScout | PaSa | SPAR | PaperScout | PaSa | SPAR | PaperScout
+
+| 5–25 | 0.401 | 0.390 | 0.512 | 0.342 | 0.337 | 0.389 | 0.268 | 0.252 | 0.252 | 0.311 | 0.300 | 0.342 | 0.338 | 0.327 | 0.387
+
+| 26–50 | 0.346 | 0.340 | 0.413 | 0.312 | 0.296 | 0.370 | 0.214 | 0.219 | 0.190 | 0.235 | 0.230 | 0.294 | 0.295 | 0.288 | 0.337
+
+| 51–100 | 0.320 | 0.299 | 0.344 | 0.241 | 0.216 | 0.285 | 0.147 | 0.149 | 0.152 | 0.182 | 0.139 | 0.213 | 0.229 | 0.215 | 0.251
+
+| 101–150 | 0.257 | 0.249 | 0.262 | 0.242 | 0.213 | 0.262 | 0.168 | 0.166 | 0.143 | 0.183 | 0.127 | 0.173 | 0.214 | 0.202 | 0.209
+
+| 151–200 | 0.238 | 0.237 | 0.243 | 0.175 | 0.159 | 0.195 | 0.144 | 0.130 | 0.142 | 0.165 | 0.110 | 0.177 | 0.176 | 0.164 | 0.181
+
+Table 8: Full names of arXiv computer science subject categories. These categories are used to map ACM CCS topics into the CS topic space for ScholarQuest construction.
+
+| Category | Full Name | Category | Full Name
+
+| cs.AI | Artificial Intelligence | cs.AR | Hardware Architecture
+
+| cs.CC | Computational Complexity | cs.CE | Computational Engineering, Finance, and Science
+
+| cs.CG | Computational Geometry | cs.CL | Computation and Language
+
+| cs.CR | Cryptography and Security | cs.CV | Computer Vision and Pattern Recognition
+
+| cs.CY | Computers and Society | cs.DB | Databases
+
+| cs.DC | Distributed, Parallel, and Cluster Computing | cs.DL | Digital Libraries
+
+| cs.DM | Discrete Mathematics | cs.DS | Data Structures and Algorithms
+
+| cs.ET | Emerging Technologies | cs.FL | Formal Languages and Automata Theory
+
+| cs.GL | General Literature | cs.GR | Graphics
+
+| cs.GT | Computer Science and Game Theory | cs.HC | Human-Computer Interaction
+
+| cs.IR | Information Retrieval | cs.IT | Information Theory
+
+| cs.LG | Machine Learning | cs.LO | Logic in Computer Science
+
+| cs.MA | Multiagent Systems | cs.MM | Multimedia
+
+| cs.MS | Mathematical Software | cs.NA | Numerical Analysis
+
+| cs.NE | Neural and Evolutionary Computing | cs.NI | Networking and Internet Architecture
+
+| cs.OH | Other Computer Science | cs.OS | Operating Systems
+
+| cs.PF | Performance | cs.PL | Programming Languages
+
+| cs.RO | Robotics | cs.SC | Symbolic Computation
+
+| cs.SD | Sound | cs.SE | Software Engineering
+
+| cs.SI | Social and Information Networks | cs.SY | Systems and Control
+
+Table 9:  Representative disagreement cases between human judgments and LLM-generated labels. Human labels are obtained through manual review, while LLM labels correspond to the original automatic relevance labels. Scores 0, 1, and 2 denote mismatch, partial match, and strict match, respectively.
+
+| Query and Label | Paper Title and Abstract Evidence | LLM Label Bias
+
+| Query: Which papers evaluate network domains in the context of data center networks? Human: 0 (mismatch) LLM: 1 (partial match) | Title: Efficient Coflow Scheduling in Hybrid-Switched Data Center Networks Evidence: The paper studies coflow scheduling in hybrid-switched data center networks, focusing on scheduling, communication time, hybrid links, and performance guarantees. However, it does not explicitly evaluate network domains. | Keyword over-crediting. The LLM is attracted by the strong topic match “data center networks,” but overlooks the missing constraint of “network domains,” leading to an overestimated relevance label.
+
+| Query: Which papers report that machine learning-based information extraction outperforms rule-based systems? Human: 1 (partial match) LLM: 0 (mismatch) | Title: PAM: Understanding Product Images in Cross Product Category Attribute Extraction Evidence: The paper studies product attribute extraction with a transformer-based model using product text, OCR tokens, and visual objects. It is related to machine learning-based information extraction, but does not directly report outperforming rule-based systems. | Over-strict claim matching. The LLM treats the comparison with rule-based systems as mandatory, while human reviewers still regard the paper as a partial match due to its clear task-level match.
+
+| Query: Which papers study image search using deep learning techniques? Human: 1 (partial match) LLM: 2 (strict match) | Title: Visual Discovery at Pinterest Evidence: The paper presents Pinterest’s visual discovery engine for visual search and recommendation products. It mentions object detection and improved engagement, but does not explicitly state “deep learning” or specify neural architectures. | Implicit-knowledge overuse. The LLM likely infers deep learning from visual search and object detection, upgrading the paper to a strict match without explicit textual evidence for the method constraint.
+
+| Query: Which papers claim that modern imaging techniques outperform traditional methods? Human: 2 (strict match) LLM: 1 (partial match) | Title: Twin-beam sub-shot-noise raster-scanning microscope Evidence: The paper proposes a quantum imaging microscope and reports improved precision over a shot-noise-limited classical version while preserving resolution and optical power. | Terminology mismatch. The LLM underestimates relevance because the paper expresses “traditional methods” as a domain-specific “classical version,” whereas human reviewers recognize the comparison as sufficient evidence.
+
+## Appendix B Tool-call Evidence for Agentic Search
+
+We further inspect the tool-use trajectory of BQ_002897, the method-capability case shown in Appendix D. The query asks for papers that explore deep reinforcement learning for video summarization. This case is useful because the gold answers form a compact but nontrivial neighborhood: some answers are directly reachable through targeted keyword search, while others are only recovered through citation/reference expansion.
+
+Table 10 lists every tool call that directly increases cumulative recall. PaperScout reaches all 12 gold answers after 20 tool calls. Its first four search calls recover 9/12 answers, and two later expansion calls recover the remaining three answers. In contrast, SPAR and PaSa both stop at 8/12. The missing answers are also systematic: both SPAR and PaSa miss 2109.01309 and 1807.09418; SPAR additionally misses 2007.14552 and 2002.03740, while PaSa additionally misses 2105.06441 and 2007.14552.
+
+Table 10: Evidence chain for BQ_002897. Each row is a tool call that directly increases cumulative recall. PaperScout first locates most gold answers through targeted search, then uses expansion to recover the remaining answers.
+
+| Method | Call | Tool | Query or Expansion Seed | Newly Found Gold Answers | Recall
+
+| PaperScout | 1 | search | deep reinforcement learning AND video summarization | 2001.05864 | 1/12
+
+| PaperScout | 2 | search | reinforcement learning AND video summarization | 2007.14552, 2106.10528, 2109.01309 | 4/12
+
+| PaperScout | 3 | search | deep reinforcement learning AND action selection AND video summarization | 1801.00054, 1807.03089, 2005.09531, 2407.04258 | 8/12
+
+| PaperScout | 4 | search | reinforcement learning AND keyframe selection AND video summarization | 2505.23268 | 9/12
+
+| PaperScout | 6 | expand | 1801.00054 | 2002.03740, 2105.06441 | 11/12
+
+| PaperScout | 20 | expand | 1805.02792 | 1807.09418 | 12/12
+
+| SPAR | 1 | search | Literature review of application domains in deep reinforcement learning for video summarization | 2407.04258 | 1/12
+
+| SPAR | 2 | expand | 2405.08890 | 1801.00054, 2001.05864 | 3/12
+
+| SPAR | 3 | expand | 2101.06072 | 1807.03089, 2005.09531 | 5/12
+
+| SPAR | 7 | expand | 2407.04258 | 2505.23268 | 6/12
+
+| SPAR | 14 | search | State-of-the-art in deep reinforcement learning for video summarization | 2105.06441 | 7/12
+
+| SPAR | 32 | expand | 2412.08357 | 2106.10528 | 8/12
+
+| PaSa | 1 | search | Survey papers on video summarization using deep reinforcement learning | 1801.00054, 1807.03089, 2005.09531, 2407.04258, 2505.23268 | 5/12
+
+| PaSa | 8 | expand | 2101.06072 | 2001.05864 | 6/12
+
+| PaSa | 10 | expand | 2410.04449 | 2106.10528 | 7/12
+
+| PaSa | 50 | expand | 2105.04066 | 2002.03740 | 8/12
+
+Table 11 gives a gold-answer-level view of the same query. It shows that PaperScout’s advantage does not come from more direct hits alone: it uses early successful searches as anchors and then follows expansion paths from relevant seeds. For example, expanding 1801.00054 recovers 2002.03740 and 2105.06441, while expanding 1805.02792 recovers 1807.09418. This explains why only a small number of tool calls change recall: marginal gold discoveries are sparse, and many additional calls inspect already relevant neighborhoods or provide post-saturation confirmation rather than adding new gold answers.
+
+## Appendix C Annotator Compensation
+
+All human annotators are compensated for their work. The compensation rate is set to no less than ten times the local minimum hourly wage for each participant, reflecting both the specialized expertise required and the time-intensive nature of benchmark refinement and evaluation.
+
+Table 11: Gold-answer provenance for BQ_002897. S# and E# denote the order of search and expansion calls, respectively, through which a method discovers each answer.
+
+| Gold Answer | Title | PaperScout Route | SPAR Route | PaSa Route
+
+| 2505.23268 | Unsupervised Transcript-assisted Video Summarization and Highlight Detection | S4 search: keyframe selection query | E7 expand 2407.04258 | S1 search: survey query
+
+| 2407.04258 | Reinforcement Learning for Unsupervised Video Summarization With Reward Generator Training | S3 search: action-selection query | S1 search: literature-review query | S1 search: survey query
+
+| 2109.01309 | Unsupervised multi-latent space reinforcement learning framework for video summarization in ultrasound imaging | S2 search: reinforcement learning query | Missed | Missed
+
+| 2106.10528 | Video Summarization Through Reinforcement Learning With a 3D Spatio-Temporal U-Net | S2 search: reinforcement learning query | E32 expand 2412.08357 | E10 expand 2410.04449
+
+| 2105.06441 | DeepQAMVS: Query-Aware Hierarchical Pointer Networks for Multi-Video Summarization | E6 expand 1801.00054 | S14 search: state-of-the-art query | Missed
+
+| 2007.14552 | Compare and Select: Video Summarization with Multi-Agent Reinforcement Learning | S2 search: reinforcement learning query | Missed | Missed
+
+| 2005.09531 | Ultrasound Video Summarization using Deep Reinforcement Learning | S3 search: action-selection query | E3 expand 2101.06072 | S1 search: survey query
+
+| 2002.03740 | Query-Biased Self-Attentive Network for Query-Focused Video Summarization | E6 expand 1801.00054 | Missed | E50 expand 2105.04066
+
+| 2001.05864 | Weakly Supervised Video Summarization by Hierarchical Reinforcement Learning | S1 search: deep reinforcement learning query | E2 expand 2405.08890 | E8 expand 2101.06072
+
+| 1807.09418 | Video Storytelling: Textual Summaries for Events | E20 expand 1805.02792 | Missed | Missed
+
+| 1807.03089 | Video Summarisation by Classification with Deep Reinforcement Learning | S3 search: action-selection query | E3 expand 2101.06072 | S1 search: survey query
+
+| 1801.00054 | Deep Reinforcement Learning for Unsupervised Video Summarization with Diversity-Representativeness Reward | S3 search: action-selection query | E2 expand 2405.08890 | S1 search: survey query
+
+## Appendix D Case Studies
+
+We provide four representative ScholarQuest cases, one for each query intent. Each case shows the query metadata and its complete gold-answer set sorted in descending order by the first arXiv submission date.
+
+## Appendix E Prompt Templates
+
+To make the LLM-assisted components of ScholarQuest transparent, we provide the main prompt templates used in query construction, answer discovery, agentic search, and relevance filtering. The templates serve the following roles:
+
+- •
+
+Query Generation Prompt. Generates one taxonomy-guided paper-retrieval query for each intent type from a given topic seed.
+
+- •
+
+Query Rewrite Prompt. Rewrites a benchmark query into multiple first-round search anchors while preserving the original retrieval intent.
+
+- •
+
+Scorer Prompt. Asks a relevance judge to assess whether a candidate paper satisfies the user query based on its title and abstract.
+
+- •
+
+Strict Batch Filter Prompt. Performs conservative batched relevance filtering for final answer curation, requiring explicit satisfaction of all core query constraints.
+
+Experimental support, please view the build logs for errors. Generated by  L A T Exml.
+
+## Instructions for reporting errors
+
+We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the methods listed below:
+
+- Click the "Report Issue" () button, located in the page header.
+
+Tip: You can select the relevant text first, to include it in your report.
+
+Our team has already identified the following issues. We appreciate your time reviewing and reporting rendering errors we may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability should not be a barrier to accessing research. Thank you for your continued support in championing open access for all.
+
+Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a list of packages that need conversion, and welcome developer contributions.
+
+BETA

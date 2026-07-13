@@ -6,7 +6,7 @@ import os, re, json, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Directories never scanned
-SKIP_DIR_PREFIXES = ('.git', '.claude', '.obsidian', 'docs', '_kb_build', 'node_modules')
+SKIP_DIR_PREFIXES = ('.git', '.claude', '.obsidian', '.agents', 'docs', '_kb_build', 'node_modules')
 
 # Path segments that mark a .md as an attachment (production artifact)
 ATTACH_SEGMENTS = {'illustrations', 'cover-image', 'imgs', 'prompts', 'image-cards'}

@@ -1,0 +1,28 @@
+name: Triage new issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: warpdotdev/oz-agent-action@v1
+        id: agent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        with:
+          skill: 'triage-issue'
+          prompt: |
+            Triage issue #${{ github.event.issue.number }} in the repository ${{ github.repository }}.
+            Issue title: ${{ github.event.issue.title }}
+          warp_api_key: ${{ secrets.WARP_API_KEY }}
+      - name: Print agent output
+        env:
+          AGENT_OUTPUT: ${{ steps.agent.outputs.agent_output }}
+        run: printf '%s\n' "$AGENT_OUTPUT"

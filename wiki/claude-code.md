@@ -11,6 +11,7 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 见 [[agent-runtime]] / [[context-engineering]] / [[agent-skills]]
 - [[enterprise-plugin-governance|Codex、Claude 插件越装越乱？企业落地先管边界]] · 见 [[agent-skills]] / [[agent-safety]]
 - [[claude-fable-5-programmers|Claude 5来了，程序员该交出去哪些任务]] · 见 [[ai-industry]]
 - [[claude-code-workflow-goal|Agent 长任务别乱开:Claude Code workflow 和 goal 怎么选]]
@@ -34,6 +35,7 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-07-01/claude-code-from-scratch/research-notes|Claude Code From Scratch 研究笔记]] · 见 [[agent-runtime]] / [[context-engineering]] / [[agent-skills]]
 - [[post-to-wechat/2026-06-12/enterprise-plugin-governance/source/research-notes|Codex 与 Claude 企业级 Plugin 管理研究笔记]] · 见 [[agent-skills]]
 - [[post-to-wechat/2026-06-10/claude-fable-5-programmers/source/research-notes|Claude Fable 5 / Mythos 5 研究笔记]] · 见 [[ai-industry]]
 - [[post-to-wechat/2026-06-07/claude-code-workflow-goal/source/research-notes|Claude Code workflow / goal 研究笔记]]

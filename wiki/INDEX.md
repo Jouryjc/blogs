@@ -27,6 +27,13 @@ tags:
 
 ## 🆕 最近文章
 
+- [[post-to-wechat/2026-07-01/microservice-agent-context/article|微服务别直接塞给 Agent：先补上下文地图和契约测试]] · 2026-07-01
+- [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 2026-07-01
+- [[post-to-wechat/2026-06-29/task-specific-knowledge-bases/task-specific-knowledge-bases|别把模型当统一知识库：同一事实，换问法就换参数]] · 2026-06-29
+- [[post-to-wechat/2026-06-25/skill-hidden-configs/article|Skill 老是不听话？先看这 5 个冷门配置]] · 2026-06-25
+- [[rag-ideablock|RAG 总答偏，先查 chunk]] · 2026-06-22
+- [[context-attention-drift|上下文没爆，模型为什么还漏指令？]] · 2026-06-20
+- [[trellis-agent-workbench|AI 编程总是失忆？Trellis 把规范和任务写回仓库]] · 2026-06-20
 - [[enterprise-plugin-governance|Codex、Claude 插件越装越乱？企业落地先管边界]] · 2026-06-12
 - [[agent-loop-engineering|Agent 不是靠好 Prompt，而是靠循环跑到验收]] · 2026-06-11
 - [[claude-fable-5-programmers|Claude 5来了，程序员该交出去哪些任务]] · 2026-06-10
@@ -36,6 +43,9 @@ tags:
 
 ## 📝 在写草稿(wechat-drafts)
 
+- [[wechat-drafts/2026-06-30-multi-agent-skills-management/article|多 Agent 最大坑不在数量，而在 Skill 边界]]
+- [[wechat-drafts/2026-06-20-scholarquest/article|论文 Agent 搜得多还找偏？ScholarQuest 把坑量出来了]]
+- [[wechat-drafts/2026-06-18-skill-self-improvement-loop/article|Agent 为什么总学不会？把反馈写回 Skill]]
 - [[wechat-drafts/2026-06-13-gsd-build-sdd/article|Agent 长任务总烂尾？GSD 用阶段循环跑到 PR]]
 - [[wechat-drafts/2026-05-31-claude-dynamic-workflows/article|Claude 大任务为什么烂尾?Workflows 把计划写进脚本]]
 - [[wechat-drafts/2026-05-31-ai-second-brain-claude-obsidian/article|别再囤笔记了:让 Claude 读懂你的 Obsidian]]

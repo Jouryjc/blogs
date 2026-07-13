@@ -1,0 +1,9 @@
+{
+  "articleType": "news",
+  "title": "别把模型当统一知识库：同一事实，换问法就换参数",
+  "author": "蒸馏小余",
+  "digest": "这篇 arXiv 新论文用训练轨迹、参数定位和 CoT 消融说明：大模型事实知识并不总像统一知识库，同一个事实可能按任务格式分散在不同参数编码里。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-C68ajH/temp-article.html",
+  "contentLength": 24682,
+  "placeholderImageCount": 3
+}

@@ -1,0 +1,32 @@
+{
+  "title": "大模型变快，不是只靠更小模型：DSpark 的草稿验证法",
+  "author": "蒸馏小余",
+  "summary": "DeepSeek 最新 DSpark 论文不是新模型故事，而是一套推理加速流水线：半自回归草稿、置信度调度和负载感知验证，解决大模型服务里最贵的冤枉计算。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-Cnmf48/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "DSpark 架构与解码循环。图源：DeepSeek DSpark paper Figure 1",
+      "originalPath": "imgs/figure-1-dspark-architecture.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-28/dspark/imgs/figure-1-dspark-architecture.png"
+    },
+    {
+      "alt": "不同草稿长度下的接受长度与延迟开销。图源：DeepSeek DSpark paper Figure 4",
+      "originalPath": "imgs/figure-4-proposal-length-latency.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-28/dspark/imgs/figure-4-proposal-length-latency.png"
+    },
+    {
+      "alt": "线上吞吐与单用户生成速度的边界。图源：DeepSeek DSpark paper Figure 7",
+      "originalPath": "imgs/figure-7-throughput-vs-tps.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-28/dspark/imgs/figure-7-throughput-vs-tps.png"
+    },
+    {
+      "alt": "负载变化下的吞吐与验证预算。图源：DeepSeek DSpark paper Figure 8",
+      "originalPath": "imgs/figure-8-load-adaptive-budget.png",
+      "placeholder": "WECHATIMGPH_4",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-28/dspark/imgs/figure-8-load-adaptive-budget.png"
+    }
+  ]
+}

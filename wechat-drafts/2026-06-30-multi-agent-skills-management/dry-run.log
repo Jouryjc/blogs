@@ -1,0 +1,17 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-dlmLbE/temp-article.html
+[wechat-api] Placeholder images: 2
+[wechat-api] Title: 多 Agent 最大坑不在数量，而在 Skill 边界
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 多 Agent 协作最容易失控的，不是 agent 数量，而是 Skill 边界、触发条件和交接物没...
+[wechat-api] Type: news
+{
+  "articleType": "news",
+  "title": "多 Agent 最大坑不在数量，而在 Skill 边界",
+  "author": "蒸馏小余",
+  "digest": "多 Agent 协作最容易失控的，不是 agent 数量，而是 Skill 边界、触发条件和交接物没有写清楚。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-dlmLbE/temp-article.html",
+  "contentLength": 31111,
+  "placeholderImageCount": 2
+}

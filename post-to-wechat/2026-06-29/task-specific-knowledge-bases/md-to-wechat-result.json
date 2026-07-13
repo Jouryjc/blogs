@@ -1,0 +1,26 @@
+{
+  "title": "别把模型当统一知识库：同一事实，换问法就换参数",
+  "author": "蒸馏小余",
+  "summary": "这篇 arXiv 新论文用训练轨迹、参数定位和 CoT 消融说明：大模型事实知识并不总像统一知识库，同一个事实可能按任务格式分散在不同参数编码里。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-ewW12u/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "传统知识库依赖统一事实源；论文认为语言模型更像按任务格式维护多个事实入口。图源：arXiv:2606.27237 Figure 1",
+      "originalPath": "imgs/figure-1-task-invariance.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-1-task-invariance.png"
+    },
+    {
+      "alt": "参数定位实验里，目标任务消融出现明显下降，其他任务和其他事实基本不动。图源：arXiv:2606.27237 Figure 4",
+      "originalPath": "imgs/figure-4-localization-heatmap.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-4-localization-heatmap.png"
+    },
+    {
+      "alt": "CoT 在同任务消融下更抗打，但在跨任务消融下更容易受影响。图源：arXiv:2606.27237 Figure 5",
+      "originalPath": "imgs/figure-5-cot-ablation.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-5-cot-ablation.png"
+    }
+  ]
+}

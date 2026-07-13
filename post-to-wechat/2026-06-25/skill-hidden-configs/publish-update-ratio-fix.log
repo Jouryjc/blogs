@@ -1,0 +1,26 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-YQC5wA/temp-article.html
+[wechat-api] Placeholder images: 3
+[wechat-api] Title: Skill 老是不听话？先看这 5 个冷门配置
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 很多 Skill 不是写得不够长，而是触发、权限、上下文和运行时集成没有配对位置。...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-25/skill-hidden-configs/illustrations/skill-hidden-configs/config-boundary.png
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-25/skill-hidden-configs/illustrations/skill-hidden-configs/fork-vs-subagent.png
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-25/skill-hidden-configs/illustrations/skill-hidden-configs/config-checklist.png
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-25/skill-hidden-configs/imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6FeQFFBUbL1Rcm2zVSFaICb9jH46K-dD97Dupfa3Sz7d8s
+[wechat-api] Updating draft...
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FebvJwKfD90JEbhhwSYP_oJYczbTCsU0Mc4ps9LCcSBzc",
+  "title": "Skill 老是不听话？先看这 5 个冷门配置",
+  "articleType": "news",
+  "updated": true,
+  "index": 0
+}
+[wechat-api] Updated successfully! media_id: GHixSPLvYVluGTAOLz6FebvJwKfD90JEbhhwSYP_oJYczbTCsU0Mc4ps9LCcSBzc

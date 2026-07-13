@@ -11,6 +11,8 @@ tags:
 
 ## 文章
 
+- [[rag-ideablock|RAG 总答偏，先查 chunk]]
+- [[wechat-drafts/2026-06-20-scholarquest/article|论文 Agent 搜得多还找偏？ScholarQuest 把坑量出来了]]〔草稿〕 · 见 [[managed-agents]] / [[agent-design]]
 - [[rag-embedding-rerank|RAG 总找错资料？Embedding 和 Rerank 讲清楚]]
 - [[google-agentic-rag|RAG 为什么总漏一跳？Google Agentic RAG 讲清楚]]
 - [[rag-ttft|RAG 系统的 TTFT 优化:从原理到工程实践]]
@@ -21,6 +23,8 @@ tags:
 
 ## 原始素材
 
+- [[wechat-drafts/2026-06-20-scholarquest/research-notes|ScholarQuest 论文编译研究笔记]] · 见 [[managed-agents]] / [[agent-design]]
+- [[raw/arxiv-2606-20235/github-readme|ScholarQuest README]] · 见 [[managed-agents]] / [[agent-design]]
 - [[post-to-wechat/2026-06-09/rag-embedding-rerank/source/research-notes|RAG Embedding 和 Rerank 研究笔记]]
 - [[post-to-wechat/2026-06-08/google-agentic-rag/source/research-notes|Google Agentic RAG research notes]]
 - [[wechat-drafts/2026-05-25-self-hosted-deep-research/research-notes|Self-hosted Deep Research 研究笔记]]

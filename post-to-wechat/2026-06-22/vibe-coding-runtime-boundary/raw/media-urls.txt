@@ -1,0 +1,9 @@
+https://pbs.twimg.com/media/HLGj7-jaEAACfv_.jpg	imgs/article-cover.jpg
+https://pbs.twimg.com/media/HLG-LhZagAASqoX.jpg	imgs/01-image-2067642809092571136.jpg
+https://pbs.twimg.com/media/HLG-Sp_akAAb7GH.jpg	imgs/02-image-2067642931658526720.jpg
+https://pbs.twimg.com/amplify_video_thumb/2067644089286418432/img/rvb1EgVdfqgDEGmL.jpg	imgs/03-video-thumb-2067644089286418432.jpg
+https://pbs.twimg.com/media/HLG_b9nbYAAeGo8.png	imgs/04-image-2067644191057076224.png
+https://pbs.twimg.com/media/HLG_lFDaMAEOcx3.jpg	imgs/05-image-2067644347672309761.jpg
+https://pbs.twimg.com/amplify_video_thumb/2067645088529002499/img/_m4Helg_dUiMKyV9.jpg	imgs/06-video-thumb-2067645088529002499.jpg
+https://pbs.twimg.com/media/HLHAZ__aIAAOH8U.jpg	imgs/07-image-2067645256846417920.jpg
+https://pbs.twimg.com/media/HLHAf2eaMAEsJg9.jpg	imgs/08-image-2067645357371305985.jpg

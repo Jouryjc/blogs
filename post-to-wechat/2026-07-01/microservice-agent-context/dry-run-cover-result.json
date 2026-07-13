@@ -1,0 +1,8 @@
+{
+  "articleType": "news",
+  "title": "微服务别直接塞给 Agent：先补上下文地图和契约测试",
+  "digest": "别把十几个微服务直接丢给 Agent，先补服务地图、接口契约和本地验证证据。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-57LM0P/temp-article.html",
+  "contentLength": 19407,
+  "placeholderImageCount": 5
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FebvJwKfD90JEbhhwSYP_oJYczbTCsU0Mc4ps9LCcSBzc",
+  "cover_media_id": "GHixSPLvYVluGTAOLz6FeQhsNi5bmuxjr2VpgHVItVI86t6GE1OeFCOvxqKxpbE0",
+  "previous_cover_media_id": "GHixSPLvYVluGTAOLz6FeQFFBUbL1Rcm2zVSFaICb9jH46K-dD97Dupfa3Sz7d8s",
+  "title": "Skill 老是不听话？先看这 5 个冷门配置",
+  "articleType": "news",
+  "updated": true,
+  "updated_at": "2026-06-27",
+  "update_reason": "regenerate all article images through codex-image-gen with stricter 蒸馏小余知识卡 style",
+  "image_generation": "codex-image-gen style-v2",
+  "image_ratios": {
+    "cover": "2350x1000",
+    "inline": "1600x900"
+  },
+  "image_paths": {
+    "cover": "imgs/article-cover.png",
+    "config_boundary": "illustrations/skill-hidden-configs/config-boundary.png",
+    "agent_context": "illustrations/skill-hidden-configs/fork-vs-subagent.png",
+    "config_checklist": "illustrations/skill-hidden-configs/config-checklist.png"
+  },
+  "published_at": "2026-06-25",
+  "theme": "grace",
+  "color": "#0F4C81",
+  "source": "post-to-wechat/2026-06-25/skill-hidden-configs/article-anti-ai.md"
+}

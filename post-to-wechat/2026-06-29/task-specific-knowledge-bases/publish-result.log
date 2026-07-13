@@ -1,0 +1,18 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-5qSmdz/temp-article.html
+[wechat-api] Placeholder images: 3
+[wechat-api] Title: 别把模型当统一知识库：同一事实，换问法就换参数
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 这篇 arXiv 新论文用训练轨迹、参数定位和 CoT 消融说明：大模型事实知识并不总像统一知识库，...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-1-task-invariance.png
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-4-localization-heatmap.png
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-5-cot-ablation.png
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-06-29/task-specific-knowledge-bases/imgs/figure-1-task-invariance.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6FeeOECfwEhdwN5HkldGLm7EHRkLzk0BCIN-54EHByiWgg
+[wechat-api] Publishing to draft...
+[wechat-api] Published successfully! media_id: GHixSPLvYVluGTAOLz6Fee-8ssMFQ0aT0u-DuE0Mw2OGJNpjIw28Mjo_6hUej-gg

@@ -1,0 +1,21 @@
+[md-to-wechat] Rendering markdown with theme: grace, color: #0F4C81, citeStatus: true
+{
+  "title": "多 Agent 最大坑不在数量，而在 Skill 边界",
+  "author": "",
+  "summary": "多 Agent 协作最容易失控的地方，不是 agent 太少，而是每个 agent 该在什么时候接手、读什么上下文、产出什么交接物没有被 Skill 写清楚。本文给出一套可复制的 Skill 管理表。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-FNYLPD/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "多 Agent 按交接物分工",
+      "originalPath": "imgs/01-handoff-pipeline.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-30-multi-agent-skills-management/imgs/01-handoff-pipeline.png"
+    },
+    {
+      "alt": "一张 Skill Registry 管住多个 Agent",
+      "originalPath": "imgs/02-skill-registry.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-06-30-multi-agent-skills-management/imgs/02-skill-registry.png"
+    }
+  ]
+}

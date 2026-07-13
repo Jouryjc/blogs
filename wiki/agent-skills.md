@@ -11,6 +11,10 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 见 [[claude-code]] / [[agent-runtime]] / [[context-engineering]]
+- [[wechat-drafts/2026-06-30-multi-agent-skills-management/article|多 Agent 最大坑不在数量，而在 Skill 边界]]〔草稿〕· 见 [[managed-agents]] / [[agent-design]]
+- [[post-to-wechat/2026-06-25/skill-hidden-configs/article|Skill 老是不听话？先看这 5 个冷门配置]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[wechat-drafts/2026-06-18-skill-self-improvement-loop/article|Agent 为什么总学不会？把反馈写回 Skill]]〔草稿〕· 见 [[agent-design]] / [[agent-memory]]
 - [[enterprise-plugin-governance|Codex、Claude 插件越装越乱？企业落地先管边界]] · 见 [[claude-code]] / [[agent-safety]]
 - [[wechat-drafts/2026-06-13-gsd-build-sdd/article|Agent 长任务总烂尾？GSD 用阶段循环跑到 PR]]〔草稿〕· 见 [[context-engineering]] / [[agent-design]]
 - [[agent-loop-engineering|Agent 不是靠好 Prompt，而是靠循环跑到验收]] · 见 [[agent-runtime]]
@@ -22,6 +26,9 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-07-01/claude-code-from-scratch/research-notes|Claude Code From Scratch 研究笔记]] · 见 [[claude-code]] / [[agent-runtime]] / [[context-engineering]]
+- [[post-to-wechat/2026-06-25/skill-hidden-configs/research-notes|Skill 冷门配置研究笔记]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[wechat-drafts/2026-06-18-skill-self-improvement-loop/research-notes|Agent Skill 自我改进闭环研究笔记]] · 见 [[agent-design]] / [[agent-memory]]
 - [[post-to-wechat/2026-06-12/enterprise-plugin-governance/source/research-notes|Codex 与 Claude 企业级 Plugin 管理研究笔记]] · 见 [[claude-code]]
 - [[wechat-drafts/2026-06-13-gsd-build-sdd/research-notes|GSD Core 与 SDD 对比研究笔记]] · 见 [[context-engineering]] / [[agent-design]]
 - [[post-to-wechat/2026-06-11/agent-loop-engineering/source/research-notes|Agent Loop Engineering 研究笔记]] · 见 [[agent-runtime]]

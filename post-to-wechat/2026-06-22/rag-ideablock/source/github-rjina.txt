@@ -1,0 +1,454 @@
+Title: GitHub - iternal-technologies-partners/blockify-agentic-data-optimization: Blockify: Agentic data optimization for enterprise RAG and agentic search. Blockify replaces naive chunking with deduplicated IdeaBlocks — ≈78X accuracy aggregate improvement, 2.29X vector search accuracy, 40X compression, 3.09X token efficiency. Integrates with LlamaIndex, LangChain, Obsidian, Milvus, Elastic, Supabase, Cloudflare.
+
+URL Source: http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization
+
+Markdown Content:
+[![Image 1: Blockify — Agentic Data Optimization for Enterprise AI](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/raw/main/assets/images/light/1.jpg)](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/assets/images/light/1.jpg)
+
+### Transform messy enterprise content into compact, validated knowledge units optimized for AI
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#transform-messy-enterprise-content-into-compact-validated-knowledge-units-optimized-for-ai)
+_Patented data ingestion, distillation, and governance pipeline. IdeaBlocks replace naive chunking with structured, deduplicated, LLM-ready knowledge._
+
+[![Image 2: License: Community License](https://camo.githubusercontent.com/831f321be49fdb06e3e1e780236ac40a055e7f7a2e0e4261d129f1ff8881380a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d436f6d6d756e6974795f4c6963656e73652d3130423938313f7374796c653d666c61742d737175617265)](https://camo.githubusercontent.com/831f321be49fdb06e3e1e780236ac40a055e7f7a2e0e4261d129f1ff8881380a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d436f6d6d756e6974795f4c6963656e73652d3130423938313f7374796c653d666c61742d737175617265)[![Image 3: Python 3.10+](https://camo.githubusercontent.com/dc80024dc93b3a253fb677dd4be954e4d8c6264674eca220cf5e9b993852e3a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d332e31302532422d3337373641423f7374796c653d666c61742d737175617265266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465)](https://camo.githubusercontent.com/dc80024dc93b3a253fb677dd4be954e4d8c6264674eca220cf5e9b993852e3a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d332e31302532422d3337373641423f7374796c653d666c61742d737175617265266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465)[![Image 4: Docker Ready](https://camo.githubusercontent.com/0a91d39688f7d01ac5ac0efcd64396ea509d38cda849ce92744b032fdc3f5f5a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f636b65722d72656164792d3234393645443f7374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465)](https://camo.githubusercontent.com/0a91d39688f7d01ac5ac0efcd64396ea509d38cda849ce92744b032fdc3f5f5a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646f636b65722d72656164792d3234393645443f7374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465)[![Image 5: Helm Chart](https://camo.githubusercontent.com/e6759882a3d25e1884d17094d033dd24a540d719724926dc009b3719aaa69ae7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68656c6d2d63686172742d3046313638393f7374796c653d666c61742d737175617265266c6f676f3d68656c6d266c6f676f436f6c6f723d7768697465)](https://camo.githubusercontent.com/e6759882a3d25e1884d17094d033dd24a540d719724926dc009b3719aaa69ae7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f68656c6d2d63686172742d3046313638393f7374796c653d666c61742d737175617265266c6f676f3d68656c6d266c6f676f436f6c6f723d7768697465)[![Image 6: Claude Code Skill](https://camo.githubusercontent.com/5e31edf71b97504419437b64206a2741283dacd295ce7fc1630d303c45cfccc6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c617564655f436f64652d736b696c6c2d3642344642423f7374796c653d666c61742d737175617265266c6f676f3d616e7468726f706963266c6f676f436f6c6f723d7768697465)](https://camo.githubusercontent.com/5e31edf71b97504419437b64206a2741283dacd295ce7fc1630d303c45cfccc6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436c617564655f436f64652d736b696c6c2d3642344642423f7374796c653d666c61742d737175617265266c6f676f3d616e7468726f706963266c6f676f436f6c6f723d7768697465)[![Image 7: PRs Welcome](https://camo.githubusercontent.com/12c808afec690d78698439bfbd9189587ca895410698db0a4a95e0e6b6197362/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d3130423938313f7374796c653d666c61742d737175617265)](https://camo.githubusercontent.com/12c808afec690d78698439bfbd9189587ca895410698db0a4a95e0e6b6197362/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d3130423938313f7374796c653d666c61742d737175617265)
+
+**78X** Aggregate Performance ·**2.29X** Vector Search Accuracy ·**29.93X** Distillation ·**3.09X** Token Efficiency ·**40X** Size Reduction
+
+[![Image 8: Get Started](https://camo.githubusercontent.com/3271732dee162af7aa2e9edcf237ed9709196bf3b09d4456a7555e96033923fb/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4765745f537461727465642d3134423841363f7374796c653d666f722d7468652d6261646765266c6f676f436f6c6f723d7768697465)](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#quick-start)[![Image 9: API Console](https://camo.githubusercontent.com/93577af85845dc697437b5113e86ce5085273ebde93cc0f8e9dafac8d34583aa/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4150495f436f6e736f6c652d3342383246363f7374796c653d666f722d7468652d6261646765266c6f676f3d73776167676572266c6f676f436f6c6f723d7768697465)](https://console.blockify.ai/)[![Image 10: Sign Up Free — $1,000 Credit](https://camo.githubusercontent.com/12e50035a87e17a74ebcc19a94270dc6d2b896cdf99ec473f8b52661b98893df/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5369676e5f55705f467265652d253234312532433030305f4372656469742d3130423938313f7374796c653d666f722d7468652d6261646765)](https://console.blockify.ai/signup)[![Image 11: Enterprise Edition](https://camo.githubusercontent.com/8a123b946dc3acd21c914a65ce94bc2e0762301ebb853036b4fb9b659b2fb0e8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f456e74657270726973652d436f6e7461696e6572735f2532365f4175746f6d6174696f6e2d3131313832373f7374796c653d666f722d7468652d6261646765)](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#enterprise-edition)
+
+* * *
+
+## What is Blockify?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#what-is-blockify)
+Traditional Retrieval-Augmented Generation (RAG) pipelines split documents into fixed-size chunks, then hope that vector similarity will surface the right context. It rarely does. Chunks break mid-sentence, duplicate content inflates token bills, and hallucinations slip through because the LLM is reasoning over fragments rather than facts.
+
+**Blockify** replaces naive chunking with a patented ingestion and distillation pipeline that transforms raw enterprise content into **IdeaBlocks** — structured, semantically complete XML knowledge units. Every IdeaBlock carries its own question, trusted answer, tags, entities, and keywords. Similar blocks are deduplicated and merged so the knowledge base stays compact, coherent, and governable.
+
+Tip
+
+An **IdeaBlock** is the smallest unit of curated knowledge: a self-contained XML unit with a `name`, `critical_question`, `trusted_answer`, `tags`, `entity`, and `keywords`. Unlike fixed-size chunks, IdeaBlocks preserve full semantic coherence.
+
+* * *
+
+## How It Works
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#how-it-works)
+[![Image 12: Blockify end-to-end architecture](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/raw/main/assets/images/light/2.jpg)](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/assets/images/light/2.jpg)
+
+1.   **Ingest** — Documents (SharePoint, Confluence, Git, local docs) are parsed and transformed into structured IdeaBlocks via the Blockify API
+2.   **Distill** — Similar blocks are clustered with embeddings + LSH, then merged by the `distill` LLM to eliminate duplicates while preserving distinct facts
+3.   **Retrieve** — Optimized blocks are stored in vector databases (ChromaDB, Pinecone, Cloudflare Vectorize, Neo4j) for high-accuracy RAG retrieval
+
+* * *
+
+## Features
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#features)
+|  |  |
+| --- | --- |
+| **Semantic Ingestion** — Transforms raw text into structured IdeaBlocks with question/answer alignment, entities, and tags | **Intelligent Distillation** — Deduplicates and merges similar blocks using embeddings, LSH clustering, and LLM synthesis |
+| **40X Compression** — Reduces enterprise datasets to ~2.5% of original size while preserving 99%+ information fidelity | **2.29X Search Accuracy** — IdeaBlocks dramatically outperform naive chunks in vector similarity retrieval |
+| **Production-Ready Service** — Docker, Helm, Prometheus metrics, OpenTelemetry tracing, health checks | **Claude Code Skill** — First-class integration as a Claude Code skill for developer workstations |
+| **Pluggable Storage** — SQLite, PostgreSQL, Redis, or filesystem backends for the distillation service | **Benchmark Suite** — Built-in benchmarking with HTML reports to quantify ROI on your own data |
+
+* * *
+
+## Repository Structure
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#repository-structure)
+This repository contains two deployable components plus comprehensive technical documentation:
+
+| Component | Description | Path |
+| --- | --- | --- |
+| **Distillation Service** | FastAPI microservice for IdeaBlock deduplication and merging | [`blockify-distillation-service/`](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/blockify-distillation-service) |
+| **Claude Code Skill** | Skill package for document ingestion, distillation, semantic search, and benchmarks | [`blockify-skill-for-claude-code/`](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/blockify-skill-for-claude-code) |
+| **Documentation** | Technical guides covering architecture, API, setup, research, and 12 platform integrations | [`documentation/`](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation) |
+
+Full directory tree
+
+```
+blockify-agentic-data-optimization/
+├── blockify-distillation-service/   FastAPI microservice
+│   ├── app/                         Source (api, service, dedupe, llm, db)
+│   ├── tests/                       Pytest suite
+│   ├── helm/                        Kubernetes Helm chart
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── requirements.txt
+├── blockify-skill-for-claude-code/  Claude Code skill package
+│   └── skills/blockify-integration/
+│       ├── SKILL.md                 Skill definition
+│       ├── scripts/                 Ingest, distill, search, benchmark
+│       ├── references/              API, schema, distillation docs
+│       └── tests/
+├── documentation/                   Technical guides + platform integrations
+│   ├── BLOCKIFY-DEEP-DIVE.md
+│   ├── BLOCKIFY-API-REFERENCE.md
+│   ├── ARCHITECTURE-END-TO-END.md
+│   ├── IDEABLOCK-STRUCTURE.md
+│   ├── GETTING-STARTED-GUIDE.md
+│   ├── LOCAL-VECTOR-DATABASE-SETUP.md
+│   ├── DISTILLATION-SERVICE.md
+│   ├── CLAUDE-CODE-BLOCKIFY-SKILL.md
+│   ├── OPENCLAW-RAG-INTEGRATION.md
+│   ├── RAG-AGENTIC-SEARCH-RESEARCH.md
+│   └── integrations/                12 platform integration guides
+│       ├── BLOCKIFY-OBSIDIAN.md
+│       ├── BLOCKIFY-LLAMAINDEX.md
+│       ├── BLOCKIFY-LANGCHAIN.md
+│       ├── BLOCKIFY-N8N.md
+│       ├── BLOCKIFY-ELASTIC.md
+│       ├── BLOCKIFY-SUPABASE.md
+│       ├── BLOCKIFY-STARBURST.md
+│       ├── BLOCKIFY-KIBANA.md
+│       ├── BLOCKIFY-CLOUDFLARE.md
+│       ├── BLOCKIFY-MILVUS.md
+│       ├── BLOCKIFY-ZILLIZ.md
+│       └── BLOCKIFY-UNSTRUCTURED.md
+├── assets/images/                   README visuals + AI image prompts
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── LICENSE
+└── README.md
+```
+
+* * *
+
+## Quick Start
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#quick-start)
+
+Note
+
+New to Blockify? [Sign up for free](https://console.blockify.ai/signup) to get **$1,000 in API credits**, then pick the path below that fits your workflow.
+
+### Path 1 — Test the API in 30 seconds
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#path-1--test-the-api-in-30-seconds)
+
+curl --location 'https://api.blockify.ai/v1/chat/completions' \
+  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{
+ "model": "ingest",
+ "messages": [{"role": "user", "content": "Your text to process here"}],
+ "max_tokens": 8000,
+ "temperature": 0.5
+}'
+
+### Path 2 — Claude Code Skill (5 minutes)
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#path-2--claude-code-skill-5-minutes)
+
+git clone https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization.git
+cd blockify-agentic-data-optimization/blockify-skill-for-claude-code/skills/blockify-integration
+
+pip install -r requirements.txt
+python3 scripts/setup_check.py
+
+# Ingest your docs, distill, and run semantic search
+python3 scripts/run_full_pipeline.py --source ./my-docs
+
+See [`blockify-skill-for-claude-code/`](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/blockify-skill-for-claude-code) for full skill documentation.
+
+### Path 3 — Distillation Service (Docker)
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#path-3--distillation-service-docker)
+
+cd blockify-distillation-service
+cp .env.example .env
+# Edit .env with your BLOCKIFY_API_KEY and OPENAI_API_KEY
+
+docker-compose up -d
+
+# Verify
+curl http://localhost:8315/healthz
+
+Path 4 — Deploy with Helm (Kubernetes)
+
+cd blockify-distillation-service/helm/blockify-distillation
+
+# Edit values.yaml with your config
+helm install blockify-distill . --namespace blockify --create-namespace
+
+kubectl get pods -n blockify
+kubectl port-forward svc/blockify-distill 8315:8315 -n blockify
+
+Supports Prometheus ServiceMonitor, PVC for SQLite persistence, Ingress, and Secret management out of the box.
+
+* * *
+
+## Enterprise Edition
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#enterprise-edition)
+[![Image 13: Blockify Enterprise Edition — productionized containers with advanced capabilities](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/raw/main/assets/images/light/4.jpg)](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/assets/images/light/4.jpg)
+
+Important
+
+The open-source components in this repository are a fully capable starting point. For production workloads at enterprise scale, **Blockify Enterprise** provides productionized containers with significantly expanded capabilities.
+
+### What Enterprise Adds on Top of Open Source
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#what-enterprise-adds-on-top-of-open-source)
+| Capability | Open Source | Enterprise |
+| --- | --- | --- |
+| IdeaBlock ingestion & distillation API | Yes | Yes |
+| Self-hosted distillation microservice | Yes | Yes (hardened, pre-built containers) |
+| Advanced distillation algorithms (hierarchical, multi-pass, domain-tuned) | — | Yes |
+| Automated ingestion pipelines (scheduled connectors for SharePoint, Confluence, Drive, S3, Git) | — | Yes |
+| Enterprise connectors & parsers (PDF, DOCX, PPTX, HTML, Markdown, structured data) | Basic | Full suite |
+| Role-based access control & audit logging | — | Yes |
+| Governance dashboard & content lifecycle management | — | Yes |
+| Priority support & SLAs | — | Yes |
+| Air-gapped / on-prem deployment (AirgapAI) | — | Yes |
+| Professional services & implementation support | — | Yes |
+
+**Who is Enterprise for?** Teams ingesting millions of documents, running regulated workloads, needing automated refresh pipelines, or deploying in air-gapped environments.
+
+[![Image 14: Contact Sales](https://camo.githubusercontent.com/b6936b8edb39d2dfc2794c3cd5894af9d1da93bd01b52d850ef3f4d840eb8fc0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f6e746163745f53616c65732d73616c6573253430697465726e616c2e61692d3131313832373f7374796c653d666f722d7468652d6261646765)](mailto:sales@iternal.ai?subject=Blockify%20Enterprise%20Inquiry)[![Image 15: Learn More](https://camo.githubusercontent.com/03f78e7ec33e4b9e354c1efbc2b29307ef7f16baecf8025c6580a6074b935ca4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6561726e5f4d6f72652d697465726e616c2e6169253246626c6f636b6966792d3134423841363f7374796c653d666f722d7468652d6261646765)](https://iternal.ai/blockify)
+
+* * *
+
+## API Models
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#api-models)
+The Blockify API exposes three models via an OpenAI-compatible chat completions endpoint:
+
+| Model | API Name | Use Case |
+| --- | --- | --- |
+| Blockify Ingest | `ingest` | Convert raw text to IdeaBlocks |
+| Blockify Distill | `distill` | Merge and deduplicate similar IdeaBlocks |
+| Technical Manual Ingest | `technical-ingest` | Ordered content (manuals, procedures, runbooks) |
+
+See [BLOCKIFY-API-REFERENCE.md](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/BLOCKIFY-API-REFERENCE.md) for full endpoint documentation.
+
+* * *
+
+## The IdeaBlock Format
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#the-ideablock-format)
+Every IdeaBlock is a self-contained XML knowledge unit:
+
+<ideablock>
+  <name>Blockify Overview</name>
+  <critical_question>What is Blockify?</critical_question>
+  <trusted_answer>Blockify is an agentic data optimization pipeline that converts unstructured enterprise content into compact, deduplicated XML IdeaBlocks to improve retrieval accuracy and reduce token usage in RAG and LLM workflows.</trusted_answer>
+  <tags>RAG, DATA_OPTIMIZATION, KNOWLEDGE_MANAGEMENT</tags>
+  <entity>
+    <entity_name>BLOCKIFY</entity_name>
+    <entity_type>PRODUCT</entity_type>
+  </entity>
+  <keywords>blockify, ideablock, RAG, distillation, deduplication, enterprise AI</keywords>
+</ideablock>
+
+Full field specification
+| Field | Required | Purpose |
+| --- | --- | --- |
+| `name` | Yes | Short human-readable title |
+| `critical_question` | Yes | The question this block answers |
+| `trusted_answer` | Yes | Verified answer content |
+| `tags` | Yes | Comma-separated topical tags |
+| `entity` / `entity_name` | Yes | Primary entity (product, person, concept) |
+| `entity` / `entity_type` | Yes | Entity classification |
+| `keywords` | Yes | Search keywords for retrieval |
+
+Full schema in [IDEABLOCK-STRUCTURE.md](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/IDEABLOCK-STRUCTURE.md).
+
+* * *
+
+## Performance
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#performance)
+[![Image 16: Blockify performance metrics: 78X, 2.29X, 29.93X, 3.09X, 40X](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/raw/main/assets/images/light/3.jpg)](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/assets/images/light/3.jpg)
+
+| Metric | Improvement | What It Means |
+| --- | --- | --- |
+| **Aggregate Enterprise Performance** | 78X | Combined effect across the full pipeline |
+| **Vector Search Accuracy** | 2.29X | Measurably more relevant results, fewer false matches |
+| **Information Distillation** | 29.93X | Enterprise-wide deduplication factor |
+| **Token Efficiency** | 3.09X | Substantial cost savings at scale |
+| **Dataset Size Reduction** | 40X | From 100% down to ~2.5% of original |
+
+Tip
+
+Prove the numbers on your own data: run the built-in benchmark suite from the Claude Code skill — `python3 scripts/run_benchmark.py --company "Your Company"` — and get an HTML report comparing IdeaBlocks vs. traditional chunking.
+
+* * *
+
+## Documentation
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#documentation)
+| Document | Description | Audience |
+| --- | --- | --- |
+| [Getting Started Guide](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/GETTING-STARTED-GUIDE.md) | Step-by-step setup for any skill level | Everyone |
+| [Blockify Deep Dive](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/BLOCKIFY-DEEP-DIVE.md) | Complete technical understanding | All Engineers |
+| [IdeaBlock Structure](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/IDEABLOCK-STRUCTURE.md) | XML format specification | Data Engineers |
+| [API Reference](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/BLOCKIFY-API-REFERENCE.md) | API endpoints and examples | Backend Engineers |
+| [Architecture (End-to-End)](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/ARCHITECTURE-END-TO-END.md) | Complete integration architecture | Architects |
+| [Distillation Service](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/DISTILLATION-SERVICE.md) | Deduplication algorithm reference | Platform Engineers |
+| [Local Vector DB Setup](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/LOCAL-VECTOR-DATABASE-SETUP.md) | ChromaDB setup for 100k+ blocks | DevOps |
+| [Claude Code Skill Guide](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/CLAUDE-CODE-BLOCKIFY-SKILL.md) | Skill installation and usage | Claude Code users |
+| [OpenClaw RAG Integration](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/OPENCLAW-RAG-INTEGRATION.md) | Chatbot + Blockify implementation | Full-Stack Engineers |
+| [RAG & Agentic Search Research](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/RAG-AGENTIC-SEARCH-RESEARCH.md) | Architecture patterns research | All Engineers |
+| [Platform Integrations](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/README.md) | 12 integration guides (Obsidian, LlamaIndex, LangChain, n8n, Elastic, Supabase, Starburst, Kibana, Cloudflare, Milvus, Zilliz, Unstructured.io) | All Engineers |
+
+* * *
+
+## Integrations
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#integrations)
+Blockify sits between your document source and your retrieval / storage layer. It plugs into every major RAG framework, vector database, data platform, and workflow engine. Each guide below covers the problem Blockify solves on that stack, an architecture diagram, quick-start code, advanced patterns, and a side-by-side comparison with the platform's default behavior.
+
+### RAG Frameworks
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#rag-frameworks)
+| Platform | Use Case | Guide |
+| --- | --- | --- |
+| **LlamaIndex** | Drop-in `NodeParser` producing deduplicated `TextNode`s | [Blockify + LlamaIndex](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-LLAMAINDEX.md) |
+| **LangChain** | `BaseDocumentTransformer` for any RAG chain or LangGraph agent | [Blockify + LangChain](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-LANGCHAIN.md) |
+
+### Knowledge & Workflow
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#knowledge--workflow)
+| Platform | Use Case | Guide |
+| --- | --- | --- |
+| **Obsidian** | Turn a personal or team vault into a high-accuracy RAG knowledge base | [Blockify + Obsidian](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-OBSIDIAN.md) |
+| **n8n** | No-code HTTP node for AI workflow automation | [Blockify + n8n](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-N8N.md) |
+
+### Vector & Search Databases
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#vector--search-databases)
+| Platform | Use Case | Guide |
+| --- | --- | --- |
+| **Milvus** | Self-hosted billion-scale vector DB with hybrid dense + BM25 retrieval | [Blockify + Milvus](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-MILVUS.md) |
+| **Zilliz Cloud** | Managed Milvus with autoscaling and serverless pricing | [Blockify + Zilliz Cloud](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-ZILLIZ.md) |
+| **Elastic** | Hybrid BM25 + ELSER + dense retrieval on deduplicated IdeaBlocks | [Blockify + Elastic](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-ELASTIC.md) |
+| **Supabase** | Postgres + pgvector with row-level security on IdeaBlock tags | [Blockify + Supabase](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-SUPABASE.md) |
+| **Cloudflare** | Edge-native RAG on Workers + Vectorize + R2 + Workers AI | [Blockify + Cloudflare](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-CLOUDFLARE.md) |
+
+### Data Platform & Observability
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#data-platform--observability)
+| Platform | Use Case | Guide |
+| --- | --- | --- |
+| **Starburst** | Federated IdeaBlock generation across data-lake catalogs (Trino / Iceberg) | [Blockify + Starburst](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-STARBURST.md) |
+| **Kibana** | Governance dashboards for knowledge-base coverage, drift, and retrieval | [Blockify + Kibana](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-KIBANA.md) |
+
+### Document Parsing
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#document-parsing)
+| Platform | Use Case | Guide |
+| --- | --- | --- |
+| **Unstructured.io** | Parse PDF, DOCX, PPTX, HTML, email, images — then Blockify | [Blockify + Unstructured.io](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-UNSTRUCTURED.md) |
+
+Tip
+
+See the full [integrations index](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/README.md) for pattern references. Don't see your stack? Blockify exposes an OpenAI-compatible API — if your platform can POST HTTP, it can use Blockify.
+
+### Generic Pattern
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#generic-pattern)
+
+```
+Documents -> Parser -> Blockify (Ingest + Distill) -> Embeddings -> Vector DB -> LLM / Agent
+```
+
+**Claude Code** — Install the skill (see [Path 2](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#quick-start)) to let Claude Code ingest project documentation into local ChromaDB and perform high-accuracy semantic retrieval during development work.
+
+**Chatbot & Customer Support** — Blockify-processed knowledge reduces hallucination risk and improves answer quality in production chatbots. See [OPENCLAW-RAG-INTEGRATION.md](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/OPENCLAW-RAG-INTEGRATION.md) for a Cloudflare Workers example.
+
+* * *
+
+## Frequently Asked Questions
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#frequently-asked-questions)
+### What is Blockify and how is it different from naive RAG chunking?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#what-is-blockify-and-how-is-it-different-from-naive-rag-chunking)
+Blockify is a patented ingestion and distillation pipeline that replaces fixed-size text chunking with **IdeaBlocks** — structured XML knowledge units containing a name, critical question, trusted answer, tags, entity, and keywords. Unlike `RecursiveCharacterTextSplitter` (LangChain) or `SentenceSplitter` (LlamaIndex), Blockify is semantically aware, deduplicates across the corpus, and produces ~2.5% of the original dataset size while preserving 99%+ information fidelity.
+
+### How does Blockify improve vector search accuracy?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#how-does-blockify-improve-vector-search-accuracy)
+On real enterprise corpora, Blockify delivers **2.29X improvement in vector search precision** (average-distance-to-best-match from 0.3624 to 0.1585). Because duplicates are collapsed before vectorization, the top-K neighbors are semantically distinct rather than near-duplicates of the same boilerplate.
+
+### Does Blockify work with my existing vector database?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#does-blockify-work-with-my-existing-vector-database)
+Yes. Blockify is embedding-model and vector-database agnostic. There are dedicated integration guides for [Milvus](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-MILVUS.md), [Zilliz Cloud](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-ZILLIZ.md), [Elastic](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-ELASTIC.md), [Supabase](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-SUPABASE.md), and [Cloudflare Vectorize](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-CLOUDFLARE.md). Pinecone, ChromaDB, Qdrant, Weaviate, and pgvector work through the LangChain and LlamaIndex adapters.
+
+### Does Blockify replace LlamaIndex or LangChain?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#does-blockify-replace-llamaindex-or-langchain)
+No — Blockify **composes with** LlamaIndex and LangChain. It replaces the chunking stage (`NodeParser` / `TextSplitter`) with a higher-quality transformer that produces IdeaBlock-backed nodes or documents. See [Blockify + LlamaIndex](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-LLAMAINDEX.md) and [Blockify + LangChain](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-LANGCHAIN.md).
+
+### How does Blockify reduce LLM token costs?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#how-does-blockify-reduce-llm-token-costs)
+Blockify delivers **3.09X token efficiency** — ~98 tokens per retrieved block vs. ~303 per traditional chunk. On 1B queries/year this translates to ~$738,000 in token cost savings. Cost reduction comes from two compounding sources: (1) 40X fewer embeddings to generate and store, and (2) denser retrieved context means fewer tokens per LLM call.
+
+### What's the difference between Blockify Ingest and Blockify Distill?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#whats-the-difference-between-blockify-ingest-and-blockify-distill)
+**Ingest** converts raw text into draft IdeaBlocks. **Distill** clusters similar IdeaBlocks (embeddings + LSH + LLM synthesis) and merges them into canonical blocks, eliminating duplicates. A typical pipeline runs Ingest per-document then Distill across the corpus. Both are exposed as models via the same OpenAI-compatible API.
+
+### Can Blockify run air-gapped / offline?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#can-blockify-run-air-gapped--offline)
+Yes. The open-source distillation service runs fully offline with a local LLM runtime (VLLM, NVIDIA NIM, Intel OpenVino). Blockify Enterprise ships air-gapped deployment (AirgapAI) with hardened containers for classified environments.
+
+### Is Blockify open source?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#is-blockify-open-source)
+The Claude Code skill, distillation microservice, Helm chart, benchmark suite, and 12 integration guides in this repository are open source under the [Blockify EULA](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/LICENSE). Blockify Enterprise adds hardened containers, scheduled connectors, RBAC, governance dashboards, and professional services — see [Enterprise Edition](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#enterprise-edition).
+
+### How do I migrate from naive chunking to Blockify?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#how-do-i-migrate-from-naive-chunking-to-blockify)
+Three paths: (1) run the [Claude Code skill](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/blockify-skill-for-claude-code) against your docs for immediate local results, (2) add a single HTTP call to `api.blockify.ai/v1/chat/completions` in your existing pipeline, or (3) self-host the [distillation service](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/blockify-distillation-service) via Docker or Helm. The [Getting Started Guide](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/GETTING-STARTED-GUIDE.md) walks through all three.
+
+### What document formats does Blockify support?
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#what-document-formats-does-blockify-support)
+Via Unstructured.io or native parsers: DOCX, PDF, PPTX, PNG/JPG (OCR), Markdown, HTML, email. See [Blockify + Unstructured.io](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/documentation/integrations/BLOCKIFY-UNSTRUCTURED.md) for the recommended parsing pipeline.
+
+* * *
+
+## Contributing
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#contributing)
+Contributions are welcome. See [CONTRIBUTING.md](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/CONTRIBUTING.md) for development setup, code style, and the pull request process.
+
+Note
+
+This project is governed by the [Blockify Community License](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/LICENSE). By contributing, you agree that your contributions will be subject to these terms, including the Contribution License (Section 2.4).
+
+Security issues should be reported privately — see [SECURITY.md](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/SECURITY.md).
+
+* * *
+
+## Support & Community
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#support--community)
+| Channel | Link |
+| --- | --- |
+| **Enterprise Sales** (productionized containers) | [sales@iternal.ai](mailto:sales@iternal.ai) |
+| **Technical Support** | [support@iternal.ai](mailto:support@iternal.ai) |
+| **Website** | [iternal.ai/blockify](https://iternal.ai/blockify) |
+| **API Console** | [console.blockify.ai](https://console.blockify.ai/) |
+| **GitHub Issues** | [Open an issue](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/issues) |
+
+* * *
+
+Star History
+[![Image 17: Star History Chart](https://camo.githubusercontent.com/b9f0c4b3e17c3d74432097e99ba57ec97a9af6578f55c453f111564b8765f4b2/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d697465726e616c2d746563686e6f6c6f676965732d706172746e6572732f626c6f636b6966792d6167656e7469632d646174612d6f7074696d697a6174696f6e26747970653d44617465)](https://star-history.com/#iternal-technologies-partners/blockify-agentic-data-optimization&Date)
+
+* * *
+
+## License
+
+[](http://github.com/iternal-technologies-partners/blockify-agentic-data-optimization#license)
+This project is licensed under the [Blockify Community License](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/LICENSE). Free for developers, researchers, and companies under $1M annual revenue. Organizations exceeding $1M annual revenue require an enterprise license — contact [sales@iternal.ai](mailto:sales@iternal.ai). See [ENTERPRISE.md](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization/blob/main/ENTERPRISE.md) for details on enterprise capabilities.
+
+_Blockify_, _IdeaBlock_, and _AirgapAI_ are trademarks of [Iternal Technologies, Inc.](https://iternal.ai/)

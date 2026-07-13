@@ -1,0 +1,8 @@
+{
+  "articleType": "news",
+  "title": "微服务别直接塞给 Agent：先补上下文地图和契约测试",
+  "digest": "跨微服务需求交给 Agent 前，先把全局视图、服务边界和契约验证补齐。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-C8gdDf/temp-article.html",
+  "contentLength": 19130,
+  "placeholderImageCount": 1
+}
