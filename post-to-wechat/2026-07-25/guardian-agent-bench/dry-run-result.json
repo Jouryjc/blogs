@@ -1,0 +1,8 @@
+{
+  "articleType": "news",
+  "title": "Agent 安全别再只改 Prompt：先给工具调用加一道闸",
+  "digest": "580 个真实工具场景显示：强模型最常见的问题不是乱调用，而是漏掉必要调用。比继续堆安全提示更有效的做法，是在执行前拦截、校验和纠错。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-l4J1H6/temp-article.html",
+  "contentLength": 15522,
+  "placeholderImageCount": 3
+}

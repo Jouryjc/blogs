@@ -1775,5 +1775,71 @@
       "post-to-wechat/2026-07-01/microservice-agent-context/article",
       "post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes"
     ]
+  },
+  "post-to-wechat/2026-07-25/guardian-agent-bench/article.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-safety",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-safety",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-25/guardian-agent-bench/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-07-25/guardian-agent-bench/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-safety",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-safety",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-25/guardian-agent-bench/article"
+    ]
+  },
+  "post-to-wechat/2026-07-25/claude-opus-5/article.md": {
+    "tags": [
+      "type/article",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-25/claude-opus-5/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-07-25/claude-opus-5/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/claude-code",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "claude-code",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-25/claude-opus-5/article"
+    ]
   }
 }

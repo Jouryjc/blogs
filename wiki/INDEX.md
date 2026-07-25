@@ -27,6 +27,8 @@ tags:
 
 ## 🆕 最近文章
 
+- [[post-to-wechat/2026-07-25/claude-opus-5/article|Opus 5 不是全面替换：先把最难的任务交给它]] · 2026-07-25
+- [[post-to-wechat/2026-07-25/guardian-agent-bench/article|Agent 安全别再只改 Prompt：先给工具调用加一道闸]] · 2026-07-25
 - [[post-to-wechat/2026-07-01/microservice-agent-context/article|微服务别直接塞给 Agent：先补上下文地图和契约测试]] · 2026-07-01
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 2026-07-01
 - [[post-to-wechat/2026-06-29/task-specific-knowledge-bases/task-specific-knowledge-bases|别把模型当统一知识库：同一事实，换问法就换参数]] · 2026-06-29

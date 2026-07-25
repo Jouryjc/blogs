@@ -11,6 +11,7 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-07-25/claude-opus-5/article|Opus 5 不是全面替换：先把最难的任务交给它]] · 见 [[claude-code]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/article|微服务别直接塞给 Agent：先补上下文地图和契约测试]] · 见 [[context-engineering]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 见 [[claude-code]] / [[context-engineering]] / [[agent-skills]]
 - [[post-to-wechat/2026-06-25/skill-hidden-configs/article|Skill 老是不听话？先看这 5 个冷门配置]] · 见 [[agent-skills]] / [[context-engineering]]
@@ -30,6 +31,7 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-07-25/claude-opus-5/research-notes|Claude Opus 5 官方发布资料]] · 见 [[claude-code]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes|跨微服务 Agent 上下文与契约验证研究笔记]] · 见 [[context-engineering]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/source/dotey-microservice-agent-source|宝玉：跨微服务 Agent 问答源文]] · 见 [[context-engineering]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/research-notes|Claude Code From Scratch 研究笔记]] · 见 [[claude-code]] / [[context-engineering]] / [[agent-skills]]

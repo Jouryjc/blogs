@@ -1,0 +1,26 @@
+{
+  "title": "Agent 安全别再只改 Prompt：先给工具调用加一道闸",
+  "author": "",
+  "summary": "580 个真实工具场景显示：强模型最常见的问题不是乱调用，而是漏掉必要调用。比继续堆安全提示更有效的做法，是在执行前拦截、校验和纠错。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-wAqWYq/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "强模型漏调用，较弱模型选错或重复调用",
+      "originalPath": "illustrations/guardian-agent-bench/failure-profiles.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-07-25/guardian-agent-bench/illustrations/guardian-agent-bench/failure-profiles.png"
+    },
+    {
+      "alt": "任务链变长带来的性能下降，比工具数量增加更明显",
+      "originalPath": "illustrations/guardian-agent-bench/complexity-drop.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-07-25/guardian-agent-bench/illustrations/guardian-agent-bench/complexity-drop.png"
+    },
+    {
+      "alt": "工具执行前的四层闸门：参数、覆盖、成本与人工审批",
+      "originalPath": "illustrations/guardian-agent-bench/runtime-gate.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-07-25/guardian-agent-bench/illustrations/guardian-agent-bench/runtime-gate.png"
+    }
+  ]
+}

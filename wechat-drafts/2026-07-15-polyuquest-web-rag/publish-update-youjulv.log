@@ -1,0 +1,28 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-ngS3Tw/temp-article.html
+[wechat-api] Placeholder images: 3
+[wechat-api] Title: RAG 一问官网就翻车？坑不在模型，而在网页被拍平成纯文本
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: 网页有超链接、DOM 层级、跨页实体三层结构，普通 RAG 切块时全丢了。PolyUQuest 用一...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-07-15-polyuquest-web-rag/imgs/illustration-01-three-layers.png
+[wechat-api] Processed illustration-01-three-layers.png for body upload: compressed 2.12MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-07-15-polyuquest-web-rag/imgs/illustration-02-architecture.png
+[wechat-api] Processed illustration-02-architecture.png for body upload: compressed 2.49MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-07-15-polyuquest-web-rag/imgs/illustration-03-benchmark.png
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/wechat-drafts/2026-07-15-polyuquest-web-rag/imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6FebNutDoNzuNvMPGDu0DRXq-KJvrFcwvSFOUDLeJKpN5f
+[wechat-api] Updating draft...
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeUkN3c8SMN0miV3hR2VHfnXRS8hjRQzI8rFQo7wdwe7x",
+  "title": "RAG 一问官网就翻车？坑不在模型，而在网页被拍平成纯文本",
+  "articleType": "news",
+  "updated": true,
+  "index": 0
+}
+[wechat-api] Updated successfully! media_id: GHixSPLvYVluGTAOLz6FeUkN3c8SMN0miV3hR2VHfnXRS8hjRQzI8rFQo7wdwe7x
