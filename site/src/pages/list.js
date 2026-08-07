@@ -1,40 +1,65 @@
-// site/src/pages/list.js —— 文章列表：卡片网格 + 主题筛选
-import './../styles/list.css'
-import { getArticles, getGraph } from '../data.js'
-import { navigate } from '../router.js'
+// site/src/pages/list.js —— 文章存档:主题筛选 + 编号列表
+import { getArticles } from '../data.js'
+import { TOPICS } from '../topics.js'
+import { siteHead, signoff, esc } from '../ui.js'
 
 export async function renderList(app, ctx) {
-  const [articles, graph] = await Promise.all([getArticles(), getGraph()])
-  const topics = graph.nodes.filter((n) => n.type === 'topic')
-  const tColor = Object.fromEntries(topics.map((t) => [t.id, t.color]))
-  const sel = ctx.query.get('topic') || 'all'
-  const items = Object.entries(articles)
-    .map(([slug, a]) => ({ slug, ...a }))
-    .filter((a) => sel === 'all' || a.topic === sel || (a.tags || []).includes('topic/' + sel))
-    .sort((x, y) => (y.date || '').localeCompare(x.date || ''))
-  const tabs = [{ id: 'all', title: '全部', color: '#9db4ff' }, ...topics]
-  app.innerHTML = `
-    <div class="list-wrap">
-      <header class="list-top">
-        <a href="/" data-link class="back">← 星图首页</a>
-        <h2>全部文章 · ${items.length}</h2>
-        <nav class="tabs">${tabs.map((t) => `
-          <a data-link href="/articles${t.id === 'all' ? '' : '?topic=' + t.id}"
-             class="tab ${t.id === sel ? 'on' : ''}">
-             <span class="dot" style="background:${t.color}"></span>${t.title}</a>`).join('')}</nav>
-      </header>
-      <div class="grid">${items.map((a) => card(a, tColor)).join('')}</div>
-    </div>`
-  app.querySelectorAll('.card').forEach((c) => c.addEventListener('click', () => navigate('/article/' + c.dataset.slug)))
-}
+  const articles = (await getArticles()).filter((a) => a.date)
+  const total = articles.length
+  const counts = {}
+  for (const a of articles) counts[a.topic] = (counts[a.topic] || 0) + 1
+  const topics = Object.entries(TOPICS)
+    .map(([id, t]) => ({ id, zh: t.zh, n: counts[id] || 0 }))
+    .filter((t) => t.n > 0)
 
-function card(a, tColor) {
-  const c = tColor[a.topic] || '#9db4ff'
-  const cover = a.cover
-    ? `<img loading="lazy" src="${a.cover}" alt="">`
-    : `<div class="ph" style="background:linear-gradient(135deg,${c}33,${c}11)"></div>`
-  return `<article class="card" data-slug="${a.slug}" style="--c:${c}">
-    <div class="cover">${cover}</div>
-    <div class="body"><h3>${a.title}</h3><p>${a.summary || ''}</p>
-      <span class="meta">${a.date || ''}</span></div></article>`
+  let active = ctx.query.get('topic') || 'all'
+  if (active !== 'all' && !counts[active]) active = 'all'
+
+  app.innerHTML = `
+    ${siteHead('archive')}
+    <section class="archive-head">
+      <p class="kicker">Archive · ${total} Articles</p>
+      <h1>文章存档</h1>
+      <p class="sub">${total} 篇深度长文,按时间倒序。每一篇都指向一个工程问题:不是"是什么",而是"怎么做才成立"。</p>
+    </section>
+    <div class="filters" id="filters">
+      <button data-t="all" class="${active === 'all' ? 'on' : ''}">全部<span class="n">${total}</span></button>
+      ${topics
+        .map(
+          (t) =>
+            `<button data-t="${t.id}" class="${active === t.id ? 'on' : ''}">${t.zh}<span class="n">${t.n}</span></button>`,
+        )
+        .join('')}
+    </div>
+    <section class="archive" id="archive"></section>
+    ${signoff()}
+  `
+
+  const archive = document.getElementById('archive')
+  const draw = () => {
+    const rows = articles.filter((a) => active === 'all' || a.topic === active)
+    archive.innerHTML = rows.length
+      ? rows
+          .map(
+            (a) => `
+        <a class="entry" href="/article/${a.slug}" data-link>
+          <span class="idx">${String(total - articles.indexOf(a)).padStart(3, '0')}</span>
+          <span class="date">${a.date}</span>
+          <span class="ttl">${esc(a.title)}</span>
+          <span class="pill">${TOPICS[a.topic]?.zh || a.topic}</span>
+        </a>`,
+          )
+          .join('')
+      : '<p class="empty">// 这个方向还没有文章</p>'
+  }
+  draw()
+
+  document.getElementById('filters').addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-t]')
+    if (!btn) return
+    active = btn.dataset.t
+    document.querySelectorAll('#filters button').forEach((b) => b.classList.toggle('on', b === btn))
+    history.replaceState({}, '', active === 'all' ? '/articles' : `/articles?topic=${active}`)
+    draw()
+  })
 }

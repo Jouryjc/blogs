@@ -1,17 +1,146 @@
+/* site/src/styles/base.css —— 设计令牌 + 全局基础 */
 :root {
-  --bg: #05060f;
-  --panel: #0d1020;
-  --fg: #e8ecf6;
-  --muted: #9aa3bd;
-  --line: #1d2340;
+  --accent: #0e63ff;
+  --accent-deep: #162456;
+  --ink: #141414;
+  --body: #4d4d4d;
+  --muted: #8c8c8c;
+  --faint: #c9c9c9;
+  --paper: #ffffff;
+  --wash: #f6f6f4;
+  --serif: 'Charter', 'Georgia', 'Songti SC', 'STSong', 'Noto Serif SC', 'SimSun', serif;
+  --sans: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', ui-monospace, 'Menlo', 'Consolas', monospace;
+  --col: 72rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
 }
-* { box-sizing: border-box }
-html, body {
-  margin: 0;
-  height: 100%;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  color: var(--body);
+  background: var(--paper);
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
-a { color: #8fb6ff; text-decoration: none }
-#app { min-height: 100% }
+::selection { background: var(--accent); color: #fff; }
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.wrap { max-width: var(--col); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ——— 顶部导航 ——— */
+.site-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 1.75rem var(--gutter);
+  max-width: var(--col); margin: 0 auto;
+}
+.brand {
+  font-family: var(--serif); font-weight: 700; font-size: 1.15rem; color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.site-head nav { display: flex; gap: 1.75rem; font-size: 0.86rem; }
+.site-head nav a {
+  color: var(--muted); position: relative; padding-bottom: 2px;
+  transition: color 0.2s;
+}
+.site-head nav a:hover { color: var(--accent); }
+.site-head nav a.hot { color: var(--ink); border-bottom: 1px solid var(--ink); }
+@media (max-width: 560px) {
+  .site-head nav { gap: 1rem; font-size: 0.8rem; }
+}
+
+/* ——— 章节栅格:左标签 + 右内容 ——— */
+.sec {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  max-width: var(--col); margin: 0 auto;
+  padding: clamp(3.5rem, 8vw, 6.5rem) var(--gutter) 0;
+}
+.sec-label { position: relative; }
+.sec-label-inner { position: sticky; top: 2rem; }
+.sec-label .no {
+  font-family: var(--mono); font-size: 0.78rem; color: var(--accent);
+  display: block; margin-bottom: 0.5rem;
+}
+.sec-label .zh {
+  font-family: var(--serif); font-size: 1.35rem; font-weight: 700; color: var(--ink);
+  display: block; line-height: 1.3;
+}
+.sec-label .en {
+  font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.14em;
+  color: var(--faint); text-transform: uppercase; display: block; margin-top: 0.4rem;
+}
+@media (max-width: 720px) {
+  .sec { grid-template-columns: 1fr; gap: 1.5rem; }
+  .sec-label-inner { position: static; }
+  .sec-label .no { display: inline; margin-right: 0.6rem; }
+  .sec-label .zh { display: inline; }
+  .sec-label .en { display: inline; margin-left: 0.6rem; }
+}
+
+/* ——— 主题小药丸 ——— */
+.pill {
+  font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.04em;
+  color: var(--accent); background: rgba(14, 99, 255, 0.07);
+  border-radius: 999px; padding: 0.14rem 0.6rem;
+  white-space: nowrap;
+}
+
+/* ——— 文章行(编号存档列表) ——— */
+.entry {
+  display: grid;
+  grid-template-columns: 2.6rem 6.4rem 1fr auto;
+  align-items: baseline; gap: 1.1rem;
+  padding: 0.85rem 0.25rem;
+  border-bottom: 1px solid #eeeeeb;
+  transition: background 0.15s;
+}
+.entry:hover { background: var(--wash); }
+.entry .idx { font-family: var(--mono); font-size: 0.75rem; color: var(--faint); }
+.entry .date { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
+.entry .ttl {
+  font-family: var(--serif); font-size: 1.02rem; font-weight: 600; color: var(--ink);
+  line-height: 1.5;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%;
+  transition: background-size 0.25s;
+  display: inline;
+}
+.entry:hover .ttl { background-size: 100% 1px; }
+@media (max-width: 640px) {
+  .entry { grid-template-columns: 1fr auto; grid-template-areas: "ttl pill" "meta meta"; row-gap: 0.2rem; }
+  .entry .idx { display: none; }
+  .entry .date { grid-area: meta; }
+  .entry .ttl { grid-area: ttl; }
+  .entry .pill { grid-area: pill; justify-self: end; }
+}
+
+/* ——— 蓝色签名页脚 ——— */
+.signoff {
+  margin-top: clamp(4rem, 9vw, 7rem);
+  background: var(--accent); color: var(--accent-deep);
+  padding: clamp(3.5rem, 8vw, 6rem) var(--gutter) 2.5rem;
+}
+.signoff-inner { max-width: var(--col); margin: 0 auto; }
+.signoff .big {
+  font-family: var(--serif); font-weight: 700;
+  font-size: clamp(1.9rem, 5vw, 3.4rem); line-height: 1.25;
+  color: #fff; max-width: 22em;
+}
+.signoff .big em { font-style: normal; color: var(--accent-deep); }
+.signoff .row {
+  display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: baseline;
+  margin-top: 2.75rem; padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  font-size: 0.88rem;
+}
+.signoff .row .k { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; display: block; margin-bottom: 0.3rem; color: rgba(255,255,255,0.75); }
+.signoff .row .v { color: #fff; font-weight: 600; }
+.signoff .row a.v:hover { text-decoration: underline; }
+.signoff .fine { margin-top: 2.5rem; font-family: var(--mono); font-size: 0.7rem; color: rgba(255,255,255,0.65); }

@@ -1,6 +1,7 @@
 // site/build/generate-data.mjs
-// manifest 驱动的数据生成：扫描 _kb_build/manifest.json 的成品文章，
-// 产出 public/data/{graph.json,articles.json} 并复制配图到 public/article-assets。
+// manifest 驱动的数据生成：扫描 _kb_build/manifest.json 的成品文章,
+// 产出 public/data/{graph.json,articles.json}。
+// 配图不入产物:直接引用 GitHub 图床(jsDelivr 回源 Jouryjc/blogs 仓库内的 imgs/)。
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -11,7 +12,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const REPO = path.resolve(__dirname, '../..') // 仓库根
 const SITE = path.resolve(__dirname, '..')
 const DATA_DIR = path.join(SITE, 'public/data')
-const ASSET_DIR = path.join(SITE, 'public/article-assets')
+
+// GitHub 图床:jsDelivr 回源 main 分支(新增图片推送后可能有最长数小时 CDN 缓存延迟)
+const CDN_BASE = 'https://cdn.jsdelivr.net/gh/Jouryjc/blogs@main'
 
 const md = new MarkdownIt({ html: true, linkify: true, typographer: true })
 
@@ -62,9 +65,7 @@ function parseMocFrontmatter(data) {
 
 function main() {
   fs.rmSync(DATA_DIR, { recursive: true, force: true })
-  fs.rmSync(ASSET_DIR, { recursive: true, force: true })
   fs.mkdirSync(DATA_DIR, { recursive: true })
-  fs.mkdirSync(ASSET_DIR, { recursive: true })
 
   const manifest = JSON.parse(read(path.join(REPO, '_kb_build/manifest.json')))
   const topics = buildTopics()
@@ -110,16 +111,12 @@ function main() {
     const body = g.content.replace(/^\s*#\s+.*(\r?\n)+/, '')
     const htmlRaw = md.render(body)
 
-    // 仅复制被正文引用的配图 + 封面：outputs/ 下扁平文章共用一个 imgs/，
-    // 整目录复制会把 37MB 共享目录重复塞进每篇（9 篇×37MB），故按引用精确复制
+    // 配图:不复制进产物,直接指到 GitHub 图床(jsDelivr 回源仓库内原始路径)
+    const dirRel = path.dirname(c.p).split(path.sep).join('/')
     const coverRel = (d.coverImage || d.cover || '').replace(/^\.\//, '')
-    const refs = new Set()
-    for (const m of htmlRaw.matchAll(/src="(?:\.\/)?(imgs\/[^"]+)"/g)) refs.add(m[1])
-    if (coverRel) refs.add(coverRel)
-    for (const rel of refs) copyOne(path.join(dir, rel), path.join(ASSET_DIR, slug, rel))
 
-    const html = rewriteImgs(htmlRaw, slug)
-    const cover = coverRel && exists(path.join(dir, coverRel)) ? `/article-assets/${slug}/${coverRel}` : null
+    const html = rewriteImgs(htmlRaw, dirRel)
+    const cover = coverRel && exists(path.join(dir, coverRel)) ? `${CDN_BASE}/${dirRel}/${coverRel}` : null
 
     nodes.push({
       id: slug, type: 'article', title: d.title, slug,
@@ -167,13 +164,8 @@ function main() {
   for (const c of chosen) console.log(`  + ${c.slug}  [${c.p}]`)
 }
 
-function copyOne(src, dst) {
-  if (!exists(src)) return
-  fs.mkdirSync(path.dirname(dst), { recursive: true })
-  fs.copyFileSync(src, dst)
-}
-function rewriteImgs(html, slug) {
-  return html.replace(/(src=")(\.\/)?(imgs\/[^"]+)(")/g, (_, a, _b, p, z) => `${a}/article-assets/${slug}/${p}${z}`)
+function rewriteImgs(html, dirRel) {
+  return html.replace(/(src=")(\.\/)?(imgs\/[^"]+)(")/g, (_, a, _b, p, z) => `${a}${CDN_BASE}/${dirRel}/${p}${z}`)
 }
 
 main()

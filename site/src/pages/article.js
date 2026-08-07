@@ -1,31 +1,59 @@
-// site/src/pages/article.js —— 文章详情：站内全文 + 配图 + 相关文章（无微信外链）
-import './../styles/article.css'
+// site/src/pages/article.js —— 站内全文阅读
 import { getArticles } from '../data.js'
-import { navigate } from '../router.js'
+import { TOPICS } from '../topics.js'
+import { siteHead, signoff, esc } from '../ui.js'
 
 export async function renderArticle(app, ctx) {
-  const slug = ctx.params.slug
   const articles = await getArticles()
-  const a = articles[slug]
+  const a = articles.find((x) => x.slug === ctx.params.slug)
   if (!a) {
-    app.innerHTML = `<div class="article-wrap"><p>文章不存在。</p>
-      <a href="/articles" data-link>← 返回列表</a></div>`
+    app.innerHTML = `${siteHead('archive')}
+      <section class="read-head"><h1>文章不存在</h1>
+      <p class="summary">这篇内容可能已被移除。<a class="read-back" href="/articles" data-link>回到文章存档</a></p></section>
+      ${signoff()}`
     return
   }
-  const related = (a.related || []).map((s) => ({ slug: s, ...articles[s] })).filter((x) => x.title)
+  document.title = `${a.title} · 蒸馏小余`
+
+  const related = (a.related || [])
+    .map((r) => articles.find((x) => x.slug === r || x.slug.endsWith(r)))
+    .filter(Boolean)
+    .slice(0, 3)
+
   app.innerHTML = `
-    <div class="article-wrap">
-      <div class="nav"><a href="/" data-link>← 星图</a>
-        <a href="/articles" data-link>全部文章</a></div>
-      ${a.cover ? `<img class="hero" src="${a.cover}" alt="">` : ''}
-      <h1>${a.title}</h1>
-      <div class="meta">${a.author || '蒸馏小余'} · ${a.date || ''}</div>
-      <article class="prose">${a.html}</article>
-      ${related.length ? `<section class="related"><h3>相关文章</h3>
-        <div class="rel-grid">${related.map((r) => `
-          <a class="rel" data-link href="/article/${r.slug}">
-            <span>${r.title}</span><small>${r.summary || ''}</small></a>`).join('')}</div>
-      </section>` : ''}
-    </div>`
-  scrollTo(0, 0)
+    ${siteHead('archive')}
+    <section class="read-head">
+      <div class="meta">
+        <span>${a.date || ''}</span>
+        <span class="dot"></span>
+        <span class="pill">${TOPICS[a.topic]?.zh || a.topic}</span>
+        <span class="dot"></span>
+        <span>蒸馏小余</span>
+      </div>
+      <h1>${esc(a.title)}</h1>
+      ${a.summary ? `<p class="summary">${esc(a.summary)}</p>` : ''}
+    </section>
+    <article class="prose">${a.html || ''}</article>
+    ${
+      related.length
+        ? `<section class="read-tail">
+            <p class="k">Related · 相关阅读</p>
+            ${related
+              .map(
+                (r) => `
+              <a class="entry" href="/article/${r.slug}" data-link>
+                <span class="idx"></span>
+                <span class="date">${r.date || ''}</span>
+                <span class="ttl">${esc(r.title)}</span>
+                <span class="pill">${TOPICS[r.topic]?.zh || r.topic}</span>
+              </a>`,
+              )
+              .join('')}
+          </section>`
+        : ''
+    }
+    <section class="read-tail"><a class="read-back" href="/articles" data-link>回到文章存档</a></section>
+    ${signoff()}
+  `
+  window.scrollTo(0, 0)
 }

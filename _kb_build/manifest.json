@@ -1841,5 +1841,155 @@
     "related": [
       "post-to-wechat/2026-07-25/claude-opus-5/article"
     ]
+  },
+  "post-to-wechat/2026-07-25/nl2dashboard/nl2dashboard.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-design",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-25/nl2dashboard/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-07-25/nl2dashboard/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-design",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-25/nl2dashboard/nl2dashboard"
+    ]
+  },
+  "post-to-wechat/2026-07-27/graph-engineering/graph-engineering.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-design",
+      "topic/agent-runtime",
+      "topic/managed-agents",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime",
+      "managed-agents"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-27/graph-engineering/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-07-27/graph-engineering/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-design",
+      "topic/agent-runtime",
+      "topic/managed-agents"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime",
+      "managed-agents"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-27/graph-engineering/graph-engineering"
+    ]
+  },
+  "post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering.md": {
+    "tags": [
+      "type/article",
+      "topic/context-engineering",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-30/backend-context-engineering/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-07-30/backend-context-engineering/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/context-engineering",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "context-engineering",
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering"
+    ]
+  },
+  "post-to-wechat/2026-08-02/fde-career-guide/article.md": {
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-02/fde-career-guide/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-08-02/fde-career-guide/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/ai-industry",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "ai-industry",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-02/fde-career-guide/article"
+    ]
+  },
+  "post-to-wechat/2026-08-06/one-gpu-5-models/one-gpu-5-models.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "akshay-5-models-one-gpu",
+      "rag-ideablock"
+    ]
+  },
+  "raw/akshay-2084992645966016757/akshay-5-models-one-gpu.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-runtime"
+    ],
+    "related": [
+      "one-gpu-5-models"
+    ]
   }
 }
