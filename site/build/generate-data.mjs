@@ -165,7 +165,8 @@ function main() {
 }
 
 function rewriteImgs(html, dirRel) {
-  return html.replace(/(src=")(\.\/)?(imgs\/[^"]+)(")/g, (_, a, _b, p, z) => `${a}${CDN_BASE}/${dirRel}/${p}${z}`)
+  // 所有相对路径图片(imgs/、illustrations/、raw/ 等)统一改指 GitHub 图床
+  return html.replace(/(src=")(?!https?:|data:|\/)(?:\.\/)?([^"]+)(")/g, (_, a, p, z) => `${a}${CDN_BASE}/${dirRel}/${p}${z}`)
 }
 
 main()
