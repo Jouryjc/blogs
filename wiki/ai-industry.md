@@ -12,6 +12,7 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-08-02/fde-career-guide/article|AI 项目不缺 Demo，缺能把它送进生产的 FDE]] · 见 [[agent-runtime]]
 - [[claude-fable-5-programmers|Claude 5来了，程序员该交出去哪些任务]]
 - [[deepseek-v4-pro-api|DeepSeek-V4-Pro 支持 1M 上下文,可接入 Claude Code]]
 - [[claude-code-remote-control|Claude Code Remote Control:手机接管本地会话]] · 见 [[claude-code]]
@@ -22,6 +23,7 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-08-02/fde-career-guide/research-notes|FDE 岗位与转型研究笔记]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-06-10/claude-fable-5-programmers/source/research-notes|Claude Fable 5 / Mythos 5 研究笔记]]
 - [[claude-opus-4-7-source-notes|Claude Opus 4.7 资料笔记]]
 - [[luo-fuli-interview-source-notes|罗福莉访谈资料笔记]]

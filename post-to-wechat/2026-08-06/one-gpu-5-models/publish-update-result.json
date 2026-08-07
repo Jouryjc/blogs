@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeQulE51gAh7JA7dBYCczmQXYrMTxcP_HcMFmKvLZ52_d",
+  "title": "5 个模型，1 张 GPU：小模型省的钱，别还给 serving",
+  "articleType": "news",
+  "updated": true,
+  "index": 0,
+  "verified": {
+    "digest": "多模型 pipeline 换上小模型后，token 账单降了，GPU 却可能一直空转。本文拆解两种常见部署的浪费，介绍 SIE 的共享 serving 思路，并附一张五问自查表。",
+    "imageCount": 6,
+    "optimizedCtaPresent": true,
+    "needOpenComment": 1,
+    "onlyFansCanComment": 0
+  }
+}

@@ -27,6 +27,11 @@ tags:
 
 ## 🆕 最近文章
 
+- [[post-to-wechat/2026-08-06/one-gpu-5-models/one-gpu-5-models|5 个模型，1 张 GPU：小模型省的钱，别还给 serving]] · 2026-08-06
+- [[post-to-wechat/2026-08-02/fde-career-guide/article|AI 项目不缺 Demo，缺能把它送进生产的 FDE]] · 2026-08-02
+- [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 2026-07-30
+- [[post-to-wechat/2026-07-27/graph-engineering/graph-engineering|多 Agent 别急着画 Graph：先守住这 4 条工程边界]] · 2026-07-27
+- [[post-to-wechat/2026-07-25/nl2dashboard/nl2dashboard|别让 Agent 重写整个页面：NL2Dashboard 用 IR 管住修改边界]] · 2026-07-25
 - [[post-to-wechat/2026-07-25/claude-opus-5/article|Opus 5 不是全面替换：先把最难的任务交给它]] · 2026-07-25
 - [[post-to-wechat/2026-07-25/guardian-agent-bench/article|Agent 安全别再只改 Prompt：先给工具调用加一道闸]] · 2026-07-25
 - [[post-to-wechat/2026-07-01/microservice-agent-context/article|微服务别直接塞给 Agent：先补上下文地图和契约测试]] · 2026-07-01

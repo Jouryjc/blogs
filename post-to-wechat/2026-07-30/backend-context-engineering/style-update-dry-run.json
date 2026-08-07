@@ -1,0 +1,8 @@
+{
+  "articleType": "news",
+  "title": "Claude Code 越聪明越烧钱？先检查后端有没有让它猜",
+  "digest": "同一个 DocuRAG 项目出现 2.5 倍 token 差距，问题不只在模型和 Prompt，而在后端怎样向 Agent 暴露工具、状态与错误。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-AwT2jq/temp-article.html",
+  "contentLength": 18346,
+  "placeholderImageCount": 2
+}

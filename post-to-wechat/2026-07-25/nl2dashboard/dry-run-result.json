@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "articleType": "news",
+  "title": "别让 Agent 重写整个页面：NL2Dashboard 用 IR 管住修改边界",
+  "digest": "NL2Dashboard 把数据分析与页面渲染拆开：模型只生成结构化 IR，确定性工具负责组装。它给 Agent 工程带来一条更通用的原则。",
+  "theme": "grace",
+  "color": "#0F4C81",
+  "contentLength": 19129,
+  "placeholderImageCount": 2
+}

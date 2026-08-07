@@ -1,0 +1,14 @@
+{
+  "title": "多 Agent 别急着画 Graph：先守住这 4 条工程边界",
+  "author": "",
+  "summary": "Graph Engineering 不是 Loop 的替代品，而是多个 Loop 的协调层。节点、状态、路由和审查没守住，Graph 只会放大成本与错误。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-rbfseU/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "Graph 不是替代 Loop，而是协调多个 Loop",
+      "originalPath": "illustrations/graph-engineering/loop-to-graph.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-07-27/graph-engineering/illustrations/graph-engineering/loop-to-graph.png"
+    }
+  ]
+}

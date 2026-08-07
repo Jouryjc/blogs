@@ -11,6 +11,9 @@ Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设
 
 ## 文章
 
+- [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 见 [[context-engineering]] / [[agent-runtime]]
+- [[post-to-wechat/2026-07-27/graph-engineering/graph-engineering|多 Agent 别急着画 Graph：先守住这 4 条工程边界]] · 见 [[agent-runtime]] / [[managed-agents]]
+- [[post-to-wechat/2026-07-25/nl2dashboard/nl2dashboard|别让 Agent 重写整个页面：NL2Dashboard 用 IR 管住修改边界]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-07-25/claude-opus-5/article|Opus 5 不是全面替换：先把最难的任务交给它]] · 见 [[claude-code]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/article|微服务别直接塞给 Agent：先补上下文地图和契约测试]] · 见 [[context-engineering]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 见 [[claude-code]] / [[agent-runtime]] / [[context-engineering]]
@@ -30,6 +33,8 @@ Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设
 
 ## 原始素材
 
+- [[post-to-wechat/2026-07-27/graph-engineering/research-notes|Graph Engineering 原文与一手资料研究笔记]] · 见 [[agent-runtime]] / [[managed-agents]]
+- [[post-to-wechat/2026-07-25/nl2dashboard/research-notes|NL2Dashboard 论文研究笔记]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-07-25/claude-opus-5/research-notes|Claude Opus 5 官方发布资料]] · 见 [[claude-code]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes|跨微服务 Agent 上下文与契约验证研究笔记]] · 见 [[context-engineering]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/source/dotey-microservice-agent-source|宝玉：跨微服务 Agent 问答源文]] · 见 [[context-engineering]] / [[agent-runtime]]
