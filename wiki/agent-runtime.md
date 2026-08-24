@@ -11,6 +11,10 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 见 [[agent-design]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache|Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来]] · 见 [[context-engineering]] / [[prompt-caching]]
+- [[post-to-wechat/2026-08-16/gpu-inference-memory-bandwidth/gpu-inference-memory-bandwidth|LLM 单请求推理慢，不是 GPU 算不动，而是权重搬不动]]
+- [[post-to-wechat/2026-08-13/deepseek-harness/deepseek-harness|DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件]] · 见 [[agent-design]]
 - [[post-to-wechat/2026-08-06/one-gpu-5-models/one-gpu-5-models|5 个模型，1 张 GPU：小模型省的钱，别还给 serving]]
 - [[post-to-wechat/2026-08-02/fde-career-guide/article|AI 项目不缺 Demo，缺能把它送进生产的 FDE]] · 见 [[ai-industry]]
 - [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 见 [[context-engineering]] / [[agent-design]]
@@ -37,6 +41,15 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-08-22/codex-harness/source/research-notes|Codex Harness 架构研究笔记]] · 见 [[agent-design]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-22/codex-harness/source/official-snapshot|Codex Harness 官方事实快照]] · 见 [[agent-design]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-22/codex-harness/source/source-manifest|Codex Harness 一手资料清单]] · 见 [[agent-design]] / [[context-engineering]]
+- [[x-to-markdown/akshay_pachaar/2074502882812952666/your-kv-caching-is-broken|Akshay: Your KV Caching Is Broken (X Article)]] · 见 [[context-engineering]] / [[prompt-caching]]
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/source/research-notes|LMCache 与 KV Cache 复用研究笔记]] · 见 [[context-engineering]] / [[prompt-caching]]
+- [[x-to-markdown/akshay_pachaar/2087928032904523980/how-a-gpu-actually-works|Akshay: How a GPU Actually Works (X Article)]]
+- [[post-to-wechat/2026-08-16/gpu-inference-memory-bandwidth/source/research-notes|GPU 推理性能补充研究]]
+- [[post-to-wechat/2026-08-13/deepseek-harness/source/research-notes|DeepSeek Harness 研究笔记]] · 见 [[agent-design]]
+- [[post-to-wechat/2026-08-13/deepseek-harness/source/official-snapshot|DeepSeek Harness 一手资料快照]] · 见 [[agent-design]]
 - [[akshay-5-models-one-gpu|Akshay: How to serve 5 models on one GPU (X Article)]]
 - [[post-to-wechat/2026-08-02/fde-career-guide/research-notes|FDE 岗位与转型研究笔记]] · 见 [[ai-industry]]
 - [[post-to-wechat/2026-07-30/backend-context-engineering/research-notes|Backend Context Engineering 研究笔记]] · 见 [[context-engineering]] / [[agent-design]]

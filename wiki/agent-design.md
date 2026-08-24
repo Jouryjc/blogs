@@ -11,6 +11,8 @@ Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设
 
 ## 文章
 
+- [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-13/deepseek-harness/deepseek-harness|DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 见 [[context-engineering]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-27/graph-engineering/graph-engineering|多 Agent 别急着画 Graph：先守住这 4 条工程边界]] · 见 [[agent-runtime]] / [[managed-agents]]
 - [[post-to-wechat/2026-07-25/nl2dashboard/nl2dashboard|别让 Agent 重写整个页面：NL2Dashboard 用 IR 管住修改边界]] · 见 [[agent-runtime]]
@@ -33,6 +35,11 @@ Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设
 
 ## 原始素材
 
+- [[post-to-wechat/2026-08-22/codex-harness/source/research-notes|Codex Harness 架构研究笔记]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-22/codex-harness/source/official-snapshot|Codex Harness 官方事实快照]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-22/codex-harness/source/source-manifest|Codex Harness 一手资料清单]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-13/deepseek-harness/source/research-notes|DeepSeek Harness 研究笔记]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-13/deepseek-harness/source/official-snapshot|DeepSeek Harness 一手资料快照]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-07-27/graph-engineering/research-notes|Graph Engineering 原文与一手资料研究笔记]] · 见 [[agent-runtime]] / [[managed-agents]]
 - [[post-to-wechat/2026-07-25/nl2dashboard/research-notes|NL2Dashboard 论文研究笔记]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-07-25/claude-opus-5/research-notes|Claude Opus 5 官方发布资料]] · 见 [[claude-code]] / [[agent-runtime]]

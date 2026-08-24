@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "baoyu-danger-x-to-markdown": {
+      "source": "jimliu/baoyu-skills",
+      "sourceType": "github",
+      "skillPath": "skills/baoyu-danger-x-to-markdown/SKILL.md",
+      "computedHash": "b786800bd291f647eaef5a3d42102e0a050620a1df95a65e7f0f239af53d8680"
+    }
+  }
+}

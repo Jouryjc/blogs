@@ -1,0 +1,21 @@
+[wechat-api] Theme: grace, color: #0F4C81, citeStatus: true
+[wechat-api] Rendering markdown with placeholders via md-to-wechat: grace, color: #0F4C81, citeStatus: true
+[wechat-api] HTML generated: /var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-EiMuT4/temp-article.html
+[wechat-api] Placeholder images: 3
+[wechat-api] Title: DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件
+[wechat-api] Author: 蒸馏小余
+[wechat-api] Digest: DeepSeek Harness 把模型、Loop、工具、会话、沙箱和 UI 都做成插件。拆开它的收...
+[wechat-api] Type: news
+[wechat-api] Credentials source: ~/.baoyu-skills/.env
+[wechat-api] Fetching access token...
+[wechat-api] Uploading body images...
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-08-13/deepseek-harness/illustrations/deepseek-harness/01-three-layers.png
+[wechat-api] Processed 01-three-layers.png for body upload: compressed 1.75MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-08-13/deepseek-harness/illustrations/deepseek-harness/02-cordis-plugin-tree.png
+[wechat-api] Processed 02-cordis-plugin-tree.png for body upload: compressed 1.91MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading body image: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-08-13/deepseek-harness/illustrations/deepseek-harness/03-benefit-cost.png
+[wechat-api] Processed 03-benefit-cost.png for body upload: compressed 2.18MB source below 1MB, encoded as JPEG (82 quality)
+[wechat-api] Uploading cover: /Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-08-13/deepseek-harness/imgs/article-cover.png
+[wechat-api] Cover uploaded successfully, media_id: GHixSPLvYVluGTAOLz6FedgI0vcQ-m6DYMB-m8CT9bNkCobItTHnGnYfLbQyNHz3
+[wechat-api] Updating draft...
+[wechat-api] Updated successfully! media_id: GHixSPLvYVluGTAOLz6FebyheIvzNwZzGPlfVQ9RnMA86DUlE2YhqWUvk5P0D86N

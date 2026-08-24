@@ -11,6 +11,7 @@ tags:
 
 ## 文章
 
+- [[wechat-drafts/2026-08-10-agent-memory-observations/article|你的 Agent 什么都记得，却什么都不懂：记忆系统缺的不是检索，是模式识别]] · 见 [[knowledge-base]]
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 见 [[claude-code]] / [[agent-runtime]] / [[agent-skills]]
 - [[post-to-wechat/2026-06-29/task-specific-knowledge-bases/task-specific-knowledge-bases|别把模型当统一知识库：同一事实，换问法就换参数]] · 见 [[knowledge-base]] / [[context-engineering]]
 - [[context-attention-drift|上下文没爆，模型为什么还漏指令？]] · 见 [[context-engineering]] / [[agent-design]] / [[agent-runtime]]
@@ -25,6 +26,7 @@ tags:
 
 ## 原始素材
 
+- [[x-to-markdown/akshay_pachaar/2086451430580470095/your-agent-remembers-everything-and-understands-nothing|Akshay：Your Agent Remembers Everything and Understands Nothing]] · 见 [[knowledge-base]]
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/research-notes|Claude Code From Scratch 研究笔记]] · 见 [[claude-code]] / [[agent-runtime]] / [[agent-skills]]
 - [[post-to-wechat/2026-06-29/task-specific-knowledge-bases/research-notes|Task-specific knowledge bases 论文研究笔记]] · 见 [[knowledge-base]] / [[context-engineering]]
 - [[post-to-wechat/2026-06-20/context-attention-drift/source/research-notes|上下文没爆，模型为什么还漏指令？研究笔记]] · 见 [[context-engineering]] / [[agent-design]] / [[agent-runtime]]

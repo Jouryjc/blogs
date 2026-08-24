@@ -9,6 +9,10 @@ travel
 _kb_build/inventory.json
 _kb_build/__pycache__/
 
+# Local Codex/Superpowers runtime artifacts
+.codex_tmp/
+.superpowers/
+
 # wrangler files
 .wrangler
 .dev.vars*

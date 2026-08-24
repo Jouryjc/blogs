@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "article_count": 1,
+  "title": "DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件",
+  "author": "蒸馏小余",
+  "digest": "DeepSeek Harness 把模型、Loop、工具、会话、沙箱和 UI 都做成插件。拆开它的收益、代价与当前采用边界。",
+  "thumb_media_id_present": true,
+  "content_length": 30311,
+  "inline_img_count": 3,
+  "source_walkthrough_heading_present": true,
+  "source_paths_present": true,
+  "poc_checklist_present": true,
+  "verified_at": "2026-08-16"
+}

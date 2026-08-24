@@ -27,6 +27,12 @@ tags:
 
 ## 🆕 最近文章
 
+- [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 2026-08-23
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache|Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来]] · 2026-08-21
+- [[post-to-wechat/2026-08-16/gpu-inference-memory-bandwidth/gpu-inference-memory-bandwidth|LLM 单请求推理慢，不是 GPU 算不动，而是权重搬不动]] · 2026-08-16
+- [[post-to-wechat/2026-08-13/deepseek-harness/deepseek-harness|DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件]] · 2026-08-13
+- [[wechat-drafts/2026-08-10-agent-memory-observations/article|你的 Agent 什么都记得，却什么都不懂：记忆系统缺的不是检索，是模式识别]] · 2026-08-10
+- [[post-to-wechat/2026-08-10/context-graph-roadmap/context-graph-roadmap|RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链]] · 2026-08-10
 - [[post-to-wechat/2026-08-06/one-gpu-5-models/one-gpu-5-models|5 个模型，1 张 GPU：小模型省的钱，别还给 serving]] · 2026-08-06
 - [[post-to-wechat/2026-08-02/fde-career-guide/article|AI 项目不缺 Demo，缺能把它送进生产的 FDE]] · 2026-08-02
 - [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 2026-07-30

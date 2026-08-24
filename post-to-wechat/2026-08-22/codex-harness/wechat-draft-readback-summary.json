@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeUwcnCpdMbpPmQs1EPIKvUy0NB6vzaGO1Ll3kNLeG2bu",
+  "article_count": 1,
+  "title": "别只盯着模型：Codex 难抄的是这套 Harness",
+  "author": "蒸馏小余",
+  "digest": "Codex Harness 不只是 Agent Loop。拆开 Codex Core、App Server、Thread / Turn / Item、双向审批与沙箱边界，看同一套 Agent 如何进入 CLI、IDE 和产品。",
+  "thumb_media_id_present": true,
+  "thumb_url_present": true,
+  "inline_img_tag_count": 3,
+  "wechat_image_url_count": 3,
+  "expected_phrases_present": true,
+  "article_type": "news",
+  "need_open_comment": 1,
+  "only_fans_can_comment": 0
+}

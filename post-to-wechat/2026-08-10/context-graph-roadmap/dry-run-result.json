@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "articleType": "news",
+  "title": "RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链",
+  "digest": "RAG 能找到提到 Redis 的片段，却不一定能接起跨文档依赖链。用 9 步搭一张可遍历、可引用的 Context Graph。",
+  "contentLength": 23533,
+  "placeholderImageCount": 3,
+  "theme": "grace",
+  "color": "#0F4C81",
+  "source": "article-anti-ai.md"
+}

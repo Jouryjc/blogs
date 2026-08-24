@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeTrfjOUm1V8OKaVZ4a7wLtwqZAPrrZXl6h8mtgOktmUy",
+  "article_count": 1,
+  "title": "Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来",
+  "author": "蒸馏小余",
+  "digest": "Prompt Cache 能省下稳定前缀的重复计算，LMCache 则把 KV Cache 做成可跨进程、跨存储层复用的独立服务。本文拆清适用边界、测试数据与上线前该看的指标。",
+  "thumb_media_id_present": true,
+  "thumb_url_present": true,
+  "inline_img_tag_count": 3,
+  "wechat_image_url_count": 3,
+  "article_type": "news",
+  "need_open_comment": 1,
+  "only_fans_can_comment": 0
+}
+

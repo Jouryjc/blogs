@@ -1,0 +1,18 @@
+{
+  "path": "article-anti-ai.md",
+  "title": "RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链",
+  "chinese_chars_excluding_code": 1891,
+  "paragraph_count": 62,
+  "heading_count_h2_to_h4": 8,
+  "link_count": 5,
+  "image_count": 3,
+  "code_block_count": 5,
+  "cta_keyword_hits": [
+    "下一篇",
+    "关注",
+    "收藏",
+    "清单"
+  ],
+  "ai_smell_hits": [],
+  "warnings": []
+}

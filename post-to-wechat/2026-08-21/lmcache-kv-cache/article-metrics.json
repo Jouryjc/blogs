@@ -1,0 +1,14 @@
+{
+  "path": "post-to-wechat/2026-08-21/lmcache-kv-cache/article-anti-ai.md",
+  "title": "Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来",
+  "chinese_chars_excluding_code": 2059,
+  "paragraph_count": 50,
+  "heading_count_h2_to_h4": 6,
+  "link_count": 8,
+  "image_count": 3,
+  "code_block_count": 0,
+  "cta_keyword_hits": ["收藏", "留言"],
+  "ai_smell_hits": [],
+  "warnings": []
+}
+

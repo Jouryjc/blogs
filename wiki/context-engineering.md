@@ -11,6 +11,9 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 见 [[agent-runtime]] / [[agent-design]]
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache|Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来]] · 见 [[agent-runtime]] / [[prompt-caching]]
+- [[post-to-wechat/2026-08-10/context-graph-roadmap/context-graph-roadmap|RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链]] · 见 [[rag]] / [[knowledge-base]]
 - [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 见 [[agent-runtime]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/article|微服务别直接塞给 Agent：先补上下文地图和契约测试]] · 见 [[agent-design]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-01/claude-code-from-scratch/article|别硬啃 50 万行源码：先读这本 Claude Code 小书]] · 见 [[claude-code]] / [[agent-runtime]] / [[agent-skills]]
@@ -25,6 +28,13 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-08-22/codex-harness/source/research-notes|Codex Harness 架构研究笔记]] · 见 [[agent-runtime]] / [[agent-design]]
+- [[post-to-wechat/2026-08-22/codex-harness/source/official-snapshot|Codex Harness 官方事实快照]] · 见 [[agent-runtime]] / [[agent-design]]
+- [[post-to-wechat/2026-08-22/codex-harness/source/source-manifest|Codex Harness 一手资料清单]] · 见 [[agent-runtime]] / [[agent-design]]
+- [[x-to-markdown/akshay_pachaar/2074502882812952666/your-kv-caching-is-broken|Akshay: Your KV Caching Is Broken (X Article)]] · 见 [[agent-runtime]] / [[prompt-caching]]
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/source/research-notes|LMCache 与 KV Cache 复用研究笔记]] · 见 [[agent-runtime]] / [[prompt-caching]]
+- [[x-to-markdown/0xMorlex/2086754640968732729/from-rag-to-context-graphs-the-9-step-roadmap|Morlex：From RAG to Context Graphs]] · 见 [[rag]] / [[knowledge-base]]
+- [[post-to-wechat/2026-08-10/context-graph-roadmap/research-notes|Context Graph 公众号改写研究笔记]] · 见 [[rag]] / [[knowledge-base]]
 - [[post-to-wechat/2026-07-30/backend-context-engineering/research-notes|Backend Context Engineering 研究笔记]] · 见 [[agent-runtime]] / [[agent-design]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/source/research-notes|跨微服务 Agent 上下文与契约验证研究笔记]] · 见 [[agent-design]] / [[agent-runtime]]
 - [[post-to-wechat/2026-07-01/microservice-agent-context/source/dotey-microservice-agent-source|宝玉：跨微服务 Agent 问答源文]] · 见 [[agent-design]] / [[agent-runtime]]

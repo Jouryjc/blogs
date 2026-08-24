@@ -1,0 +1,13 @@
+{
+  "articleType": "news",
+  "title": "LLM 单请求推理慢，不是 GPU 算不动，而是权重搬不动",
+  "author": "蒸馏小余",
+  "digest": "小批量 Decode 经常卡在 HBM 带宽，不是峰值算力。用算术强度拆清 batching、量化、融合和 FlashAttention 为什么有效。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-Fo3rNd/temp-article.html",
+  "contentLength": 15621,
+  "placeholderImageCount": 6,
+  "theme": "grace",
+  "color": "#0F4C81",
+  "cover": "imgs/article-cover.png",
+  "status": "passed"
+}

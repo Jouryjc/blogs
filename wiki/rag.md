@@ -11,6 +11,7 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-08-10/context-graph-roadmap/context-graph-roadmap|RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链]] · 见 [[context-engineering]] / [[knowledge-base]]
 - [[rag-ideablock|RAG 总答偏，先查 chunk]]
 - [[wechat-drafts/2026-06-20-scholarquest/article|论文 Agent 搜得多还找偏？ScholarQuest 把坑量出来了]]〔草稿〕 · 见 [[managed-agents]] / [[agent-design]]
 - [[rag-embedding-rerank|RAG 总找错资料？Embedding 和 Rerank 讲清楚]]
@@ -23,6 +24,8 @@ tags:
 
 ## 原始素材
 
+- [[x-to-markdown/0xMorlex/2086754640968732729/from-rag-to-context-graphs-the-9-step-roadmap|Morlex：From RAG to Context Graphs]] · 见 [[context-engineering]] / [[knowledge-base]]
+- [[post-to-wechat/2026-08-10/context-graph-roadmap/research-notes|Context Graph 公众号改写研究笔记]] · 见 [[context-engineering]] / [[knowledge-base]]
 - [[wechat-drafts/2026-06-20-scholarquest/research-notes|ScholarQuest 论文编译研究笔记]] · 见 [[managed-agents]] / [[agent-design]]
 - [[raw/arxiv-2606-20235/github-readme|ScholarQuest README]] · 见 [[managed-agents]] / [[agent-design]]
 - [[post-to-wechat/2026-06-09/rag-embedding-rerank/source/research-notes|RAG Embedding 和 Rerank 研究笔记]]

@@ -11,11 +11,14 @@ Prompt 缓存如何让 LLM 提速与降本:以 Claude 达到 ~92% 缓存命中�
 
 ## 文章
 
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache|Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来]] · 见 [[agent-runtime]] / [[context-engineering]]
 - [[long-context-kv-cache|长上下文和 KV Cache:为什么上下文不是免费的]]
 - [[rag-ttft|RAG 系统的 TTFT 优化:从原理到工程实践]] · 见 [[rag]]
 
 ## 原始素材
 
+- [[x-to-markdown/akshay_pachaar/2074502882812952666/your-kv-caching-is-broken|Akshay: Your KV Caching Is Broken (X Article)]] · 见 [[agent-runtime]] / [[context-engineering]]
+- [[post-to-wechat/2026-08-21/lmcache-kv-cache/source/research-notes|LMCache 与 KV Cache 复用研究笔记]] · 见 [[agent-runtime]] / [[context-engineering]]
 - [[post-to-wechat/2026-05-20/akshay-2031021906254766128/source/original-article|Prompt caching, clearly explained(原文)]]
 - [[avi-prompt-caching-claude-code|Prompt Caching 是怎么让 Claude 提速的]]
 - [[2044670188998803855|Avi Chawla:Prompt caching in LLMs, clearly explained(推文)]]

@@ -1,0 +1,60 @@
+{
+  "path": "post-to-wechat/2026-08-13/deepseek-harness/article-anti-ai.md",
+  "title": "DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件",
+  "chinese_chars_excluding_code": 3249,
+  "paragraph_count": 78,
+  "heading_count_h2_to_h4": 10,
+  "link_count": 9,
+  "image_count": 3,
+  "code_block_count": 4,
+  "cta_keyword_hits": [
+    "下一篇",
+    "关注",
+    "收藏",
+    "清单",
+    "领取"
+  ],
+  "sections": [
+    {
+      "heading": "模型会想，Harness 才让它动手",
+      "chinese_chars": 375
+    },
+    {
+      "heading": "“一切皆插件”到底拆了什么",
+      "chinese_chars": 424
+    },
+    {
+      "heading": "Profile 和 Seam 决定怎么装",
+      "chinese_chars": 286
+    },
+    {
+      "heading": "顺着源码跑一轮",
+      "chinese_chars": 413
+    },
+    {
+      "heading": "任务不是消息，是事件流",
+      "chinese_chars": 554
+    },
+    {
+      "heading": "插件化的四张账单",
+      "chinese_chars": 317
+    },
+    {
+      "heading": "它不是产品排行榜",
+      "chinese_chars": 150
+    },
+    {
+      "heading": "谁适合现在试",
+      "chinese_chars": 254
+    },
+    {
+      "heading": "竞争正在移到模型之外",
+      "chinese_chars": 208
+    },
+    {
+      "heading": "参考资料",
+      "chinese_chars": 8
+    }
+  ],
+  "warnings": []
+}
