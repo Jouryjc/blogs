@@ -27,6 +27,12 @@ tags:
 
 ## 🆕 最近文章
 
+- [[post-to-wechat/2026-09-04/gpt-6-astra/gpt-6-astra|GPT‑6 Astra学会边等边干]] · 2026-09-04
+- [[post-to-wechat/2026-09-02/cross-model-kv-sharing/cross-model-kv-sharing|模型切换别再重算长上下文：KV Cache 开始跨模型接力]] · 2026-09-02
+- [[post-to-wechat/2026-08-30/webmcp-browser-tools/webmcp-browser-tools|别再让 Agent 猜按钮：WebMCP 把网页能力变成工具]] · 2026-08-30
+- [[post-to-wechat/2026-08-30/agentjudgebench-llm-judge/agentjudgebench-llm-judge|给 Agent 判卷，AI 裁判先撞上了结构性天花板]] · 2026-08-30
+- [[post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers|同样叫 Cache：前三层失效会变贵，最后一层命中却可能答错]] · 2026-08-30
+- [[post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/rag-knowledge-gap-canaries|RAG 幻觉不只怪模型：你的评测可能在奖励硬猜]] · 2026-08-30
 - [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 2026-08-23
 - [[post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache|Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来]] · 2026-08-21
 - [[post-to-wechat/2026-08-16/gpu-inference-memory-bandwidth/gpu-inference-memory-bandwidth|LLM 单请求推理慢，不是 GPU 算不动，而是权重搬不动]] · 2026-08-16

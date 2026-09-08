@@ -1,0 +1,17 @@
+{
+  "path": "post-to-wechat/2026-09-02/cross-model-kv-sharing/article-anti-ai.md",
+  "title": "模型切换别再重算长上下文：KV Cache 开始跨模型接力",
+  "chinese_chars_excluding_code": 2046,
+  "paragraph_count": 48,
+  "heading_count_h2_to_h4": 7,
+  "link_count": 4,
+  "image_count": 3,
+  "code_block_count": 0,
+  "cta_keyword_hits": [
+    "下一篇",
+    "关注",
+    "留言"
+  ],
+  "ai_smell_hits": [],
+  "warnings": []
+}

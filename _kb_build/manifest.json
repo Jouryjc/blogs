@@ -2283,5 +2283,261 @@
     "related": [
       "wechat-drafts/2026-08-10-agent-memory-observations/article"
     ]
+  },
+  "post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/rag-knowledge-gap-canaries.md": {
+    "tags": [
+      "type/article",
+      "topic/rag",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "rag",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/source/research-notes",
+      "rag-embedding-rerank",
+      "google-agentic-rag",
+      "post-to-wechat/2026-08-03/eval-engineering-gate/article"
+    ]
+  },
+  "post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/source/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/rag",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "rag",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/rag-knowledge-gap-canaries"
+    ]
+  },
+  "post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/context-engineering",
+      "topic/prompt-caching",
+      "topic/rag",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "context-engineering",
+      "prompt-caching",
+      "rag"
+    ],
+    "related": [
+      "x-to-markdown/avichawla/2093265776266637739/kv-prefix-prompt-and-semantic-caching-in-llms-clearly-exp",
+      "post-to-wechat/2026-08-30/llm-cache-four-layers/source/research-notes",
+      "post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache"
+    ]
+  },
+  "post-to-wechat/2026-08-30/llm-cache-four-layers/source/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-runtime",
+      "topic/context-engineering",
+      "topic/prompt-caching",
+      "topic/rag"
+    ],
+    "moc": [
+      "agent-runtime",
+      "context-engineering",
+      "prompt-caching",
+      "rag"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers",
+      "x-to-markdown/avichawla/2093265776266637739/kv-prefix-prompt-and-semantic-caching-in-llms-clearly-exp"
+    ]
+  },
+  "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/agentjudgebench-llm-judge.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-design",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/paper-source",
+      "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/research-notes",
+      "post-to-wechat/2026-08-03/eval-engineering-gate/article",
+      "post-to-wechat/2026-07-25/guardian-agent-bench/article"
+    ]
+  },
+  "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/paper-source.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-design",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/agentjudgebench-llm-judge",
+      "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-design",
+      "topic/agent-runtime"
+    ],
+    "moc": [
+      "agent-design",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/agentjudgebench-llm-judge",
+      "post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/paper-source"
+    ]
+  },
+  "x-to-markdown/avichawla/2093265776266637739/kv-prefix-prompt-and-semantic-caching-in-llms-clearly-exp.md": {
+    "tags": [
+      "type/thread",
+      "topic/agent-runtime",
+      "topic/context-engineering",
+      "topic/prompt-caching",
+      "topic/rag"
+    ],
+    "moc": [
+      "agent-runtime",
+      "context-engineering",
+      "prompt-caching",
+      "rag"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers"
+    ]
+  },
+  "post-to-wechat/2026-08-30/webmcp-browser-tools/webmcp-browser-tools.md": {
+    "tags": [
+      "type/article",
+      "topic/agent-runtime",
+      "topic/agent-design",
+      "platform/wechat"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "x-to-markdown/akshay_pachaar/2093452397402317239/webmcp-clearly-explained",
+      "post-to-wechat/2026-08-30/webmcp-browser-tools/source/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-08-30/webmcp-browser-tools/source/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/webmcp-browser-tools/webmcp-browser-tools",
+      "x-to-markdown/akshay_pachaar/2093452397402317239/webmcp-clearly-explained"
+    ]
+  },
+  "x-to-markdown/akshay_pachaar/2093452397402317239/webmcp-clearly-explained.md": {
+    "tags": [
+      "type/thread",
+      "topic/agent-runtime",
+      "topic/agent-design"
+    ],
+    "moc": [
+      "agent-runtime",
+      "agent-design"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-30/webmcp-browser-tools/webmcp-browser-tools",
+      "post-to-wechat/2026-08-30/webmcp-browser-tools/source/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-09-02/cross-model-kv-sharing/cross-model-kv-sharing.md": {
+    "tags": [
+      "type/article",
+      "topic/prompt-caching",
+      "topic/agent-runtime",
+      "topic/context-engineering",
+      "platform/wechat"
+    ],
+    "moc": [
+      "prompt-caching",
+      "agent-runtime",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-09-02/cross-model-kv-sharing/source/paper-source",
+      "post-to-wechat/2026-09-02/cross-model-kv-sharing/source/research-notes",
+      "post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache",
+      "post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers"
+    ]
+  },
+  "post-to-wechat/2026-09-02/cross-model-kv-sharing/source/paper-source.md": {
+    "tags": [
+      "type/source",
+      "topic/prompt-caching",
+      "topic/agent-runtime",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "prompt-caching",
+      "agent-runtime",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-09-02/cross-model-kv-sharing/cross-model-kv-sharing",
+      "post-to-wechat/2026-09-02/cross-model-kv-sharing/source/research-notes"
+    ]
+  },
+  "post-to-wechat/2026-09-02/cross-model-kv-sharing/source/research-notes.md": {
+    "tags": [
+      "type/source",
+      "topic/prompt-caching",
+      "topic/agent-runtime",
+      "topic/context-engineering"
+    ],
+    "moc": [
+      "prompt-caching",
+      "agent-runtime",
+      "context-engineering"
+    ],
+    "related": [
+      "post-to-wechat/2026-09-02/cross-model-kv-sharing/cross-model-kv-sharing",
+      "post-to-wechat/2026-09-02/cross-model-kv-sharing/source/paper-source",
+      "post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache",
+      "post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers"
+    ]
+  },
+  "post-to-wechat/2026-09-04/gpt-6-astra/gpt-6-astra.md": {
+    "tags": [
+      "type/article",
+      "topic/ai-industry",
+      "topic/agent-runtime",
+      "platform/wechat"
+    ],
+    "moc": [
+      "ai-industry",
+      "agent-runtime"
+    ],
+    "related": [
+      "post-to-wechat/2026-08-22/codex-harness/codex-harness",
+      "post-to-wechat/2026-06-11/agent-loop-engineering/agent-loop-engineering"
+    ]
   }
 }

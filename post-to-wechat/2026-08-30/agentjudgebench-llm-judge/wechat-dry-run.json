@@ -1,0 +1,12 @@
+{
+  "articleType": "news",
+  "title": "给 Agent 判卷，AI 裁判先撞上了结构性天花板",
+  "author": "蒸馏小余",
+  "digest": "AgentJudgeBench 发现：工具调用任务越难、越缺参考轨迹，LLM Judge 与程序评分器的一致度越低；可靠门禁需要多层证据。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-61Qdyx/temp-article.html",
+  "contentLength": 19533,
+  "placeholderImageCount": 4,
+  "theme": "grace",
+  "color": "#0F4C81",
+  "dryRunExitCode": 0
+}

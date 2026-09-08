@@ -1,0 +1,26 @@
+{
+  "title": "模型切换别再重算长上下文：KV Cache 开始跨模型接力",
+  "author": "蒸馏小余",
+  "summary": "多模型 Agent 每次切换模型都要重算长上下文。新论文尝试翻译 KV 状态，让模型直接接力，但 138ms 的漂亮数字有严格前提。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-UNX8h0/temp-article.html",
+  "contentImages": [
+    {
+      "alt": "",
+      "originalPath": "illustrations/cross-model-kv-sharing/01-context-reuse.png",
+      "placeholder": "WECHATIMGPH_1",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-09-02/cross-model-kv-sharing/illustrations/cross-model-kv-sharing/01-context-reuse.png"
+    },
+    {
+      "alt": "",
+      "originalPath": "illustrations/cross-model-kv-sharing/02-translation-layer.png",
+      "placeholder": "WECHATIMGPH_2",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-09-02/cross-model-kv-sharing/illustrations/cross-model-kv-sharing/02-translation-layer.png"
+    },
+    {
+      "alt": "",
+      "originalPath": "illustrations/cross-model-kv-sharing/03-performance-quality-gates.png",
+      "placeholder": "WECHATIMGPH_3",
+      "localPath": "/Users/yjcjour/Documents/code/2026/4/blogs/post-to-wechat/2026-09-02/cross-model-kv-sharing/illustrations/cross-model-kv-sharing/03-performance-quality-gates.png"
+    }
+  ]
+}

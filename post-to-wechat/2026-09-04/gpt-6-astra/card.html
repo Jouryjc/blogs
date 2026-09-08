@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=900, initial-scale=1" />
+  <title>GPT-6 Astra · 蒸馏小余贴图</title>
+  <style>
+    :root {
+      --paper: #f6eddc;
+      --paper-deep: #eadbc1;
+      --ink: #172029;
+      --muted: #52606b;
+      --red: #b83a2f;
+      --blue: #0f4c81;
+      --green: #dcebdc;
+      --sky: #dcecf5;
+      --peach: #f3d9c9;
+      --yellow: #f4dfa2;
+      --white: #fffaf0;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      min-width: 900px;
+      background: #d7d0c5;
+      color: var(--ink);
+      font-family: "HanziPen SC", "Kaiti SC", "STKaiti", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 0;
+    }
+
+    body.single {
+      width: 900px;
+      height: 1200px;
+      min-width: 900px;
+      padding: 0;
+      gap: 0;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    body.single .card { display: none; }
+    body.single .card.active { display: block; }
+
+    .card {
+      position: relative;
+      width: 900px;
+      height: 1200px;
+      overflow: hidden;
+      padding: 40px 46px 38px;
+      border: 8px solid var(--ink);
+      border-radius: 38px;
+      background:
+        radial-gradient(circle at 13% 11%, rgba(184, 58, 47, .10), transparent 23%),
+        radial-gradient(circle at 88% 22%, rgba(15, 76, 129, .08), transparent 25%),
+        linear-gradient(90deg, rgba(72, 55, 34, .042) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(72, 55, 34, .042) 1px, transparent 1px),
+        var(--paper);
+      background-size: auto, auto, 39px 39px, 39px 39px, auto;
+      box-shadow: inset 0 0 0 8px rgba(255, 255, 255, .26);
+    }
+
+    .card::before,
+    .card::after {
+      content: "";
+      position: absolute;
+      border: 4px solid rgba(23, 32, 41, .22);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .card::before {
+      width: 96px;
+      height: 96px;
+      right: -38px;
+      top: 172px;
+    }
+
+    .card::after {
+      width: 68px;
+      height: 68px;
+      left: -30px;
+      bottom: 118px;
+    }
+
+    .grain {
+      position: absolute;
+      inset: 0;
+      opacity: .2;
+      pointer-events: none;
+      background-image: radial-gradient(circle, rgba(74, 54, 33, .2) 1px, transparent 1.2px);
+      background-size: 17px 17px;
+      mix-blend-mode: multiply;
+    }
+
+    .inner {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 42px;
+    }
+
+    .eyebrow,
+    .counter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 8px 16px;
+      border: 3px solid var(--ink);
+      border-radius: 999px;
+      background: var(--white);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 20px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: .02em;
+    }
+
+    .eyebrow {
+      background: var(--green);
+      transform: rotate(-1deg);
+    }
+
+    .counter {
+      background: var(--yellow);
+      transform: rotate(1.2deg);
+    }
+
+    h1 {
+      margin: 20px 0 0;
+      font-size: 68px;
+      line-height: 1.03;
+      letter-spacing: -.02em;
+      font-weight: 950;
+    }
+
+    .red {
+      color: var(--red);
+      text-shadow: 3px 3px 0 rgba(23, 32, 41, .10);
+    }
+
+    .black {
+      color: var(--ink);
+      text-shadow: 3px 3px 0 rgba(184, 58, 47, .08);
+    }
+
+    .lead {
+      margin-top: 18px;
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 27px;
+      line-height: 1.35;
+      font-weight: 780;
+    }
+
+    .ink-box {
+      border: 4px solid var(--ink);
+      border-radius: 27px;
+      box-shadow: 9px 9px 0 rgba(23, 32, 41, .11);
+    }
+
+    .workflow {
+      margin-top: 24px;
+      padding: 22px 20px 18px;
+      background: var(--white);
+      transform: rotate(-.25deg);
+    }
+
+    .workflow svg {
+      display: block;
+      width: 100%;
+      height: 190px;
+    }
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .capability {
+      min-height: 92px;
+      padding: 13px 8px;
+      border: 3px solid var(--ink);
+      border-radius: 20px;
+      background: var(--peach);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 20px;
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    .capability:nth-child(2) { background: var(--green); transform: rotate(.7deg); }
+    .capability:nth-child(3) { background: var(--sky); transform: rotate(-.7deg); }
+    .capability:nth-child(4) { background: var(--yellow); transform: rotate(.5deg); }
+    .capability:nth-child(5) { background: #eaddeb; transform: rotate(-.5deg); }
+
+    .capability svg {
+      width: 29px;
+      height: 29px;
+      margin-bottom: 8px;
+    }
+
+    .takeaway {
+      margin-top: 24px;
+      padding: 19px 22px;
+      border: 4px solid var(--ink);
+      border-radius: 24px;
+      background: var(--blue);
+      color: #fffaf0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 27px;
+      line-height: 1.34;
+      font-weight: 850;
+      text-align: center;
+      transform: rotate(.25deg);
+    }
+
+    .source-line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 2px;
+      color: #66717b;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 650;
+      text-align: center;
+    }
+
+    .async-map {
+      position: relative;
+      margin-top: 22px;
+      height: 198px;
+      padding: 18px 18px;
+      background: var(--white);
+      transform: rotate(.2deg);
+    }
+
+    .lane {
+      display: grid;
+      grid-template-columns: 142px 1fr;
+      align-items: center;
+      gap: 15px;
+      min-height: 75px;
+    }
+
+    .lane + .lane {
+      margin-top: 10px;
+    }
+
+    .lane-label {
+      padding: 11px 10px;
+      border: 3px solid var(--ink);
+      border-radius: 18px;
+      background: var(--peach);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 23px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .lane-track {
+      position: relative;
+      height: 58px;
+      border: 3px dashed rgba(23, 32, 41, .48);
+      border-radius: 19px;
+      background: #fbf2df;
+    }
+
+    .lane-track::before {
+      content: "";
+      position: absolute;
+      left: 25px;
+      right: 25px;
+      top: 26px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--ink);
+    }
+
+    .task {
+      position: absolute;
+      top: 8px;
+      z-index: 1;
+      min-width: 108px;
+      padding: 8px 11px;
+      border: 3px solid var(--ink);
+      border-radius: 15px;
+      background: var(--sky);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 17px;
+      line-height: 1.1;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .task.wait { left: 18px; background: var(--yellow); }
+    .task.reason { left: 18px; background: var(--green); }
+    .task.next { right: 18px; background: var(--peach); }
+    .task.steer { left: auto; right: 18px; background: #eaddeb; }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 13px;
+      margin-top: 23px;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      align-items: center;
+      gap: 15px;
+      min-height: 112px;
+      padding: 15px 18px;
+      background: var(--white);
+    }
+
+    .feature:nth-child(2) { background: var(--green); transform: rotate(-.25deg); }
+    .feature:nth-child(3) { background: var(--sky); transform: rotate(.25deg); }
+
+    .feature-num {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border: 4px solid var(--ink);
+      border-radius: 50%;
+      background: var(--red);
+      color: #fffaf0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 950;
+    }
+
+    .feature h2 {
+      margin: 0 0 5px;
+      color: var(--red);
+      font-size: 30px;
+      line-height: 1.05;
+      font-weight: 950;
+    }
+
+    .feature p {
+      margin: 0;
+      color: #34424c;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 23px;
+      line-height: 1.32;
+      font-weight: 760;
+    }
+
+    .mini-note {
+      margin-top: 19px;
+      padding: 16px 20px;
+      border: 4px solid var(--ink);
+      border-radius: 23px;
+      background: var(--ink);
+      color: #fff8e9;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 25px;
+      line-height: 1.26;
+      font-weight: 850;
+      text-align: center;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      min-height: 135px;
+      padding: 17px 16px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .stat:nth-child(2) {
+      background: var(--green);
+      transform: rotate(.3deg);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--blue);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 45px;
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -.02em;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 10px;
+      color: #34424c;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      font-size: 21px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .price-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.45fr;
+      gap: 10px;
+      margin-top: 17px;
+      padding: 15px;
+      background: var(--yellow);
+    }
+
+    .price {
+      min-height: 84px;
+      padding: 10px 8px;
+      border: 3px solid var(--ink);
+      border-radius: 18px;
+      background: rgba(255, 250, 240, .75);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+      text-align: center;
+    }
+
+    .price b {
+      display: block;
+      color: var(--red);
+      font-size: 29px;
+      line-height: 1.05;
+      font-weight: 950;
+    }
+
+    .price span {
+      display: block;
+      margin-top: 6px;
+      color: #46535d;
+      font-size: 18px;
+      line-height: 1.18;
+      font-weight: 800;
+    }
+
+    .boundary-title {
+      margin: 20px 0 12px;
+      color: var(--red);
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 950;
+    }
+
+    .boundaries {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+    }
+
+    .boundary {
+      min-height: 112px;
+      padding: 14px 15px;
+      border: 3px solid var(--ink);
+      border-radius: 21px;
+      background: var(--peach);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+    }
+
+    .boundary:nth-child(2) { background: var(--sky); }
+    .boundary:nth-child(3) { background: var(--green); }
+    .boundary:nth-child(4) { background: #eaddeb; }
+
+    .boundary b {
+      display: block;
+      font-size: 23px;
+      line-height: 1.12;
+      font-weight: 950;
+    }
+
+    .boundary span {
+      display: block;
+      margin-top: 6px;
+      color: #44515b;
+      font-size: 19px;
+      line-height: 1.25;
+      font-weight: 740;
+    }
+
+    .card-3 .takeaway {
+      margin-top: 18px;
+      padding: 16px 19px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <article class="card card-1" data-card="1">
+    <div class="grain"></div>
+    <div class="inner">
+      <header class="topline">
+        <div class="eyebrow">OPENAI · GPT‑6 ASTRA</div>
+        <div class="counter">01 / 03</div>
+      </header>
+
+      <h1><span class="red">不只会答题</span><br /><span class="black">更要把活干完</span></h1>
+      <div class="lead">官方定位：面向最难的端到端工作，跨代码、浏览器和专业软件推进多步骤任务。</div>
+
+      <section class="workflow ink-box" aria-label="端到端工作流示意">
+        <svg viewBox="0 0 720 190" role="img" aria-label="代码、浏览器、专业软件到交付">
+          <path d="M92 95 C180 35, 245 150, 350 93 S540 40, 635 95" fill="none" stroke="#172029" stroke-width="7" stroke-linecap="round" stroke-dasharray="12 12"/>
+          <g transform="translate(26 42)">
+            <rect x="0" y="0" width="132" height="102" rx="24" fill="#f3d9c9" stroke="#172029" stroke-width="5"/>
+            <path d="M38 42l-16 10 16 10M91 42l16 10-16 10M69 30L55 74" fill="none" stroke="#b83a2f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="66" y="92" text-anchor="middle" font-size="20" font-weight="900" font-family="PingFang SC, sans-serif" fill="#172029">代码</text>
+          </g>
+          <g transform="translate(219 42)">
+            <rect x="0" y="0" width="132" height="102" rx="24" fill="#dcecf5" stroke="#172029" stroke-width="5"/>
+            <rect x="24" y="22" width="84" height="54" rx="10" fill="#fffaf0" stroke="#172029" stroke-width="5"/>
+            <path d="M24 38h84M36 30h1M48 30h1M60 30h1" stroke="#b83a2f" stroke-width="5" stroke-linecap="round"/>
+            <text x="66" y="94" text-anchor="middle" font-size="20" font-weight="900" font-family="PingFang SC, sans-serif" fill="#172029">浏览器</text>
+          </g>
+          <g transform="translate(412 42)">
+            <rect x="0" y="0" width="132" height="102" rx="24" fill="#dcebdc" stroke="#172029" stroke-width="5"/>
+            <rect x="27" y="22" width="78" height="55" rx="10" fill="#fffaf0" stroke="#172029" stroke-width="5"/>
+            <path d="M42 58l14-15 12 10 18-19" fill="none" stroke="#0f4c81" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="66" y="94" text-anchor="middle" font-size="20" font-weight="900" font-family="PingFang SC, sans-serif" fill="#172029">专业软件</text>
+          </g>
+          <g transform="translate(605 42)">
+            <circle cx="52" cy="51" r="51" fill="#f4dfa2" stroke="#172029" stroke-width="5"/>
+            <path d="M26 52l17 18 34-40" fill="none" stroke="#b83a2f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="52" y="95" text-anchor="middle" font-size="18" font-weight="900" font-family="PingFang SC, sans-serif" fill="#172029">交付</text>
+          </g>
+        </svg>
+      </section>
+
+      <section class="capabilities" aria-label="五类核心能力">
+        <div class="capability">
+          <svg viewBox="0 0 32 32"><path d="M6 19c-2-7 3-13 10-13s12 6 10 13c-1 4-4 5-5 8H11c-1-3-4-4-5-8z" fill="none" stroke="#172029" stroke-width="3"/><path d="M12 28h8" stroke="#b83a2f" stroke-width="3" stroke-linecap="round"/></svg>
+          复杂推理
+        </div>
+        <div class="capability">
+          <svg viewBox="0 0 32 32"><path d="M12 8L4 16l8 8M20 8l8 8-8 8" fill="none" stroke="#172029" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          编码
+        </div>
+        <div class="capability">
+          <svg viewBox="0 0 32 32"><rect x="4" y="5" width="24" height="18" rx="3" fill="none" stroke="#172029" stroke-width="3"/><path d="M11 28h10M16 23v5" stroke="#b83a2f" stroke-width="3" stroke-linecap="round"/></svg>
+          电脑操作
+        </div>
+        <div class="capability">
+          <svg viewBox="0 0 32 32"><circle cx="14" cy="14" r="8" fill="none" stroke="#172029" stroke-width="3"/><path d="M20 20l7 7" stroke="#b83a2f" stroke-width="4" stroke-linecap="round"/></svg>
+          研究
+        </div>
+        <div class="capability">
+          <svg viewBox="0 0 32 32"><path d="M7 4h14l5 5v19H7z" fill="none" stroke="#172029" stroke-width="3" stroke-linejoin="round"/><path d="M21 4v6h6M11 16h11M11 21h8" stroke="#b83a2f" stroke-width="3" stroke-linecap="round"/></svg>
+          文档创作
+        </div>
+      </section>
+
+      <div class="takeaway">真正的升级，是让 Agent 从“答对一个问题”走向“跑完一段工作”。</div>
+      <div class="source-line">来源：OpenAI 官方模型页与使用指南 · 2026‑09‑04 访问</div>
+    </div>
+  </article>
+
+  <article class="card card-2" data-card="2">
+    <div class="grain"></div>
+    <div class="inner">
+      <header class="topline">
+        <div class="eyebrow">ASTRA 的 3 个关键变化</div>
+        <div class="counter">02 / 03</div>
+      </header>
+
+      <h1><span class="red">工具在跑</span><br /><span class="black">它不必干等</span></h1>
+      <div class="lead">长任务的节奏变了：等待、纠偏、切换难度，都能在同一条工作流里继续推进。</div>
+
+      <section class="async-map ink-box" aria-label="异步工具调用示意">
+        <div class="lane">
+          <div class="lane-label">外部工具</div>
+          <div class="lane-track">
+            <div class="task wait">调用中…</div>
+            <div class="task next">返回结果</div>
+          </div>
+        </div>
+        <div class="lane">
+          <div class="lane-label">Astra</div>
+          <div class="lane-track">
+            <div class="task reason">继续推理</div>
+            <div class="task steer">再调工具 / 先答独立部分</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-grid">
+        <div class="feature ink-box">
+          <div class="feature-num">1</div>
+          <div>
+            <h2>异步工具调用</h2>
+            <p>等待一个工具时，继续推理、调用其他工具，或先处理互不依赖的部分。</p>
+          </div>
+        </div>
+        <div class="feature ink-box">
+          <div class="feature-num">2</div>
+          <div>
+            <h2>中途纠偏</h2>
+            <p>任务进行中追加修正；通过 WebSocket 保留已完成工作，再接着推进。</p>
+          </div>
+        </div>
+        <div class="feature ink-box">
+          <div class="feature-num">3</div>
+          <div>
+            <h2>动态推理档位</h2>
+            <p>同一对话可升档或降档，不必重写原始提示前缀，有利于保留缓存。</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="mini-note">注意：工具仍由应用实际执行，Astra 负责安排与衔接。</div>
+      <div class="source-line">来源：OpenAI 官方模型页与使用指南 · 2026‑09‑04 访问</div>
+    </div>
+  </article>
+
+  <article class="card card-3" data-card="3">
+    <div class="grain"></div>
+    <div class="inner">
+      <header class="topline">
+        <div class="eyebrow">能力账本 · 先看边界</div>
+        <div class="counter">03 / 03</div>
+      </header>
+
+      <h1><span class="red">百万上下文</span><br /><span class="black">也要会算账</span></h1>
+      <div class="lead">规格很猛，使用边界和价格同样清楚。</div>
+
+      <section class="stat-grid">
+        <div class="stat ink-box">
+          <strong>1,050,000</strong>
+          <span>Token 上下文窗口</span>
+        </div>
+        <div class="stat ink-box">
+          <strong>128,000</strong>
+          <span>Token 最大输出</span>
+        </div>
+      </section>
+
+      <section class="price-strip ink-box" aria-label="API 标准价格">
+        <div class="price">
+          <b>$10</b>
+          <span>输入 / 百万 Token</span>
+        </div>
+        <div class="price">
+          <b>$50</b>
+          <span>输出 / 百万 Token</span>
+        </div>
+        <div class="price">
+          <b>&gt; 272K</b>
+          <span>整次请求：输入与缓存 2×，输出 1.5×</span>
+        </div>
+      </section>
+
+      <h2 class="boundary-title">四条边界，别让参数遮住</h2>
+      <section class="boundaries">
+        <div class="boundary">
+          <b>图片可输入</b>
+          <span>文本可进出；图片可输入；音频、视频不支持。</span>
+        </div>
+        <div class="boundary">
+          <b>暂不支持微调</b>
+          <span>官方模型页标明：不支持 Fine-tuning。</span>
+        </div>
+        <div class="boundary">
+          <b>还在分阶段开放</b>
+          <span>官方仍写“分阶段开放”，并非全面上线。</span>
+        </div>
+        <div class="boundary">
+          <b>工具走 Responses</b>
+          <span>Chat Completions 可用；工具调用要求 Responses API。</span>
+        </div>
+      </section>
+
+      <div class="takeaway">把 Astra 留给最难的端到端工作；常规任务先算效果、时延和成本。</div>
+      <div class="source-line">标准 API 价格与能力边界 · OpenAI 官方文档 · 2026‑09‑04 访问</div>
+    </div>
+  </article>
+
+  <script>
+    const selected = new URLSearchParams(window.location.search).get("card");
+    if (selected) {
+      document.body.classList.add("single");
+      const active = document.querySelector('[data-card="' + selected + '"]');
+      if (active) active.classList.add("active");
+    }
+  </script>
+</body>
+</html>

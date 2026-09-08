@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeesI9qRvTGUEMJ76wYSXXXcFE1rE1z9G2gvfaYXM44jN",
+  "article_count": 1,
+  "title": "别再让 Agent 猜按钮：WebMCP 把网页能力变成工具",
+  "author": "蒸馏小余",
+  "digest": "Agent 操作网页不必永远靠截图和 DOM 猜按钮。WebMCP 让网站直接声明工具，但它仍处于试验期，也不会替代 MCP、鉴权与人工确认。",
+  "thumb_media_id_present": true,
+  "thumb_url_present": true,
+  "inline_img_tag_count": 2,
+  "wechat_image_url_count": 2,
+  "remote_image_checks": [
+    {
+      "kind": "cover",
+      "status": 206,
+      "ok": true
+    },
+    {
+      "kind": "inline_1",
+      "status": 206,
+      "ok": true
+    },
+    {
+      "kind": "inline_2",
+      "status": 206,
+      "ok": true
+    }
+  ],
+  "need_open_comment": 1,
+  "only_fans_can_comment": 0
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebMCP 公众号移动端预览</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #ffffff; overflow-x: hidden; }
+    body { width: 100%; }
+    img { display: block; width: 100%; max-width: 100%; height: auto; margin: 16px auto; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <main id="preview">正在加载本地预览…</main>
+  <script>
+    fetch("doocs-wechat-rendered.html")
+      .then((response) => response.text())
+      .then((html) => {
+        const replacements = {
+          WECHATIMGPH_1: '<img src="illustrations/webmcp-browser-tools/webmcp-tool-flow.png" alt="WebMCP 工具调用链">',
+          WECHATIMGPH_2: '<img src="illustrations/webmcp-browser-tools/three-access-paths.png" alt="Agent 访问应用的三条路">'
+        };
+        for (const [placeholder, image] of Object.entries(replacements)) {
+          html = html.replace(placeholder, image);
+        }
+        const parsed = new DOMParser().parseFromString(html, "text/html");
+        document.title = parsed.title;
+        document.getElementById("preview").replaceWith(...parsed.body.childNodes);
+      });
+  </script>
+</body>
+</html>

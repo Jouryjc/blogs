@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeSnftDvO2HQBoEqqmL9T0ZqZ18r-cYwBhDoCp0KfOUrO",
+  "article_count": 1,
+  "title": "RAG 幻觉不只怪模型：你的评测可能在奖励硬猜",
+  "author": "蒸馏小余",
+  "digest": "一篇新论文用惩罚感知评分与知识缺口金丝雀，揭示三套商用 RAG 的差距主要不在答对率，而在没有证据时是否拒答。",
+  "thumb_media_id_present": true,
+  "thumb_url_present": true,
+  "inline_img_tag_count": 3,
+  "wechat_image_url_count": 3,
+  "expected_phrases_present": true,
+  "article_type": "news",
+  "need_open_comment": 1,
+  "only_fans_can_comment": 0
+}

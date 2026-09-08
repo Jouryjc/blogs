@@ -11,6 +11,8 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers|同样叫 Cache：前三层失效会变贵，最后一层命中却可能答错]] · 见 [[prompt-caching]] / [[context-engineering]] / [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/rag-knowledge-gap-canaries|RAG 幻觉不只怪模型：你的评测可能在奖励硬猜]] · 见 [[agent-design]]
 - [[post-to-wechat/2026-08-10/context-graph-roadmap/context-graph-roadmap|RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链]] · 见 [[context-engineering]] / [[knowledge-base]]
 - [[rag-ideablock|RAG 总答偏，先查 chunk]]
 - [[wechat-drafts/2026-06-20-scholarquest/article|论文 Agent 搜得多还找偏？ScholarQuest 把坑量出来了]]〔草稿〕 · 见 [[managed-agents]] / [[agent-design]]
@@ -24,6 +26,9 @@ tags:
 
 ## 原始素材
 
+- [[x-to-markdown/avichawla/2093265776266637739/kv-prefix-prompt-and-semantic-caching-in-llms-clearly-exp|Avi：KV、Prefix、Prompt 与 Semantic Cache（X Article）]] · 见 [[prompt-caching]] / [[context-engineering]] / [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/llm-cache-four-layers/source/research-notes|LLM 四层缓存研究笔记]] · 见 [[prompt-caching]] / [[context-engineering]] / [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/source/research-notes|RAG 惩罚感知评测与知识缺口金丝雀研究笔记]] · 见 [[agent-design]]
 - [[x-to-markdown/0xMorlex/2086754640968732729/from-rag-to-context-graphs-the-9-step-roadmap|Morlex：From RAG to Context Graphs]] · 见 [[context-engineering]] / [[knowledge-base]]
 - [[post-to-wechat/2026-08-10/context-graph-roadmap/research-notes|Context Graph 公众号改写研究笔记]] · 见 [[context-engineering]] / [[knowledge-base]]
 - [[wechat-drafts/2026-06-20-scholarquest/research-notes|ScholarQuest 论文编译研究笔记]] · 见 [[managed-agents]] / [[agent-design]]

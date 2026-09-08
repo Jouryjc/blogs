@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeSUqHlbqDkMwu2BJhOOGJmCRAf5h-Vi0JXN-0i9-XOpG",
+  "article_count": 1,
+  "title": "同样叫 Cache：前三层失效会变贵，最后一层命中却可能答错",
+  "author": "蒸馏小余",
+  "digest": "KV、Prefix、Prompt Cache 复用的是计算状态，Semantic Cache 复用的是旧答案。本文拆清四层缓存的收益、失效点和上线检查单。",
+  "thumb_media_id_present": true,
+  "thumb_url_present": true,
+  "inline_img_tag_count": 3,
+  "wechat_image_url_count": 3,
+  "article_type": "news",
+  "need_open_comment": 1,
+  "only_fans_can_comment": 0,
+  "content_length": 18188,
+  "key_content_checks": {
+    "cache_200_scene": true,
+    "semantic_cache": true,
+    "checklist_12": true,
+    "final_heading": true
+  },
+  "remote_style_checks": {
+    "primary_color_count": 27,
+    "legacy_color_count": 0,
+    "h2_count": 7,
+    "h3_count": 0,
+    "inline_img_tag_count": 3,
+    "ol_count": 4,
+    "ul_count": 3,
+    "placeholder_count": 0,
+    "local_file_uri_count": 0,
+    "citation_section_present": true
+  },
+  "remote_asset_checks": [
+    {
+      "kind": "cover",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "kind": "inline",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "kind": "inline",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "kind": "inline",
+      "status": 200,
+      "ok": true,
+      "contentType": "image/jpeg"
+    }
+  ]
+}

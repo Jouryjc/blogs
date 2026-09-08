@@ -11,6 +11,9 @@ Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设
 
 ## 文章
 
+- [[post-to-wechat/2026-08-30/webmcp-browser-tools/webmcp-browser-tools|别再让 Agent 猜按钮：WebMCP 把网页能力变成工具]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/agentjudgebench-llm-judge/agentjudgebench-llm-judge|给 Agent 判卷，AI 裁判先撞上了结构性天花板]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/rag-knowledge-gap-canaries|RAG 幻觉不只怪模型：你的评测可能在奖励硬猜]] · 见 [[rag]]
 - [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 见 [[agent-runtime]] / [[context-engineering]]
 - [[post-to-wechat/2026-08-13/deepseek-harness/deepseek-harness|DeepSeek 没做第二个 Claude Code：它把 Agent 拆成了插件]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-07-30/backend-context-engineering/backend-context-engineering|Claude Code 越聪明越烧钱？先检查后端有没有让它猜]] · 见 [[context-engineering]] / [[agent-runtime]]
@@ -35,6 +38,11 @@ Agent 与 AI 产品的设计方法与取舍:Claude Code 这类工具背后的设
 
 ## 原始素材
 
+- [[x-to-markdown/akshay_pachaar/2093452397402317239/webmcp-clearly-explained|Akshay: WebMCP Clearly Explained (X Article)]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/webmcp-browser-tools/source/research-notes|WebMCP 一手资料核查与写作边界]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/paper-source|AgentJudgeBench 论文事实快照]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/agentjudgebench-llm-judge/source/research-notes|AgentJudgeBench 工程解读研究笔记]] · 见 [[agent-runtime]]
+- [[post-to-wechat/2026-08-30/rag-knowledge-gap-canaries/source/research-notes|RAG 惩罚感知评测与知识缺口金丝雀研究笔记]] · 见 [[rag]]
 - [[post-to-wechat/2026-08-22/codex-harness/source/research-notes|Codex Harness 架构研究笔记]] · 见 [[agent-runtime]] / [[context-engineering]]
 - [[post-to-wechat/2026-08-22/codex-harness/source/official-snapshot|Codex Harness 官方事实快照]] · 见 [[agent-runtime]] / [[context-engineering]]
 - [[post-to-wechat/2026-08-22/codex-harness/source/source-manifest|Codex Harness 一手资料清单]] · 见 [[agent-runtime]] / [[context-engineering]]

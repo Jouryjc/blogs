@@ -1,0 +1,9 @@
+{
+  "articleType": "news",
+  "title": "RAG 幻觉不只怪模型：你的评测可能在奖励硬猜",
+  "author": "蒸馏小余",
+  "digest": "一篇新论文用惩罚感知评分与知识缺口金丝雀，揭示三套商用 RAG 的差距主要不在答对率，而在没有证据时是否拒答。",
+  "htmlPath": "/var/folders/8c/nt_jq2kj7gzgh9v1xh7ky5mw0000gn/T/wechat-article-images-oQM266/temp-article.html",
+  "contentLength": 15470,
+  "placeholderImageCount": 3
+}

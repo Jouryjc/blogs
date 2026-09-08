@@ -1,0 +1,33 @@
+{
+  "media_id": "GHixSPLvYVluGTAOLz6FeazIdnH62yewwvYHNYdxbG6nbSFncAiMUWZIO70406fM",
+  "assets": [
+    {
+      "url": "http://mmbiz.qpic.cn/mmbiz_jpg/ZeKURSu9o9oicTKD47iaklj1icPAGico0gRt7DeTJIhZibdDO1MibAsicCnqHfzm897nWMIX8UvNHb9hLN9G6fGZFmuxAictBEOia9X9iapia8vDpCyWGM/0?wx_fmt=jpeg",
+      "status": 200,
+      "ok": true,
+      "bytes": 77151,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/ZeKURSu9o9oZMklXUBE5M8j3Sj3wfQXyVA2EbbUZ7651yhN2Br79ibSfwJMvBDTDmsa0Of8uTGsr06yAjfuhBhaCk5wMics4TiaoTS7EddufTQ/640?from=appmsg",
+      "status": 200,
+      "ok": true,
+      "bytes": 104764,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/ZeKURSu9o9obCCf5MpB13y74s2VMGcFWggIewqlAAWqHpkwIYzY3z69nLKh1AkZibHa5iaEZjv9XRr5RDOQE8mxNa4l6ibfsbPs5z6biaribqeAs/640?from=appmsg",
+      "status": 200,
+      "ok": true,
+      "bytes": 111706,
+      "contentType": "image/jpeg"
+    },
+    {
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/ZeKURSu9o9pfIqBmLlqsjlenXrcmiaJdjgLF2mvWJthVUrvdzXOibMpFS7ibxVQBebChRwEy6nqrN3x7b6miarUaaSnYTJl5XxaGGDmle6TtJn8/640?from=appmsg",
+      "status": 200,
+      "ok": true,
+      "bytes": 97828,
+      "contentType": "image/jpeg"
+    }
+  ]
+}

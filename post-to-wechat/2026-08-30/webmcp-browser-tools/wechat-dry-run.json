@@ -1,0 +1,11 @@
+{
+  "articleType": "news",
+  "title": "别再让 Agent 猜按钮：WebMCP 把网页能力变成工具",
+  "author": "蒸馏小余",
+  "digest": "Agent 操作网页不必永远靠截图和 DOM 猜按钮。WebMCP 让网站直接声明工具，但它仍处于试验期，也不会替代 MCP、鉴权与人工确认。",
+  "htmlPath": "post-to-wechat/2026-08-30/webmcp-browser-tools/doocs-wechat-rendered.html",
+  "contentLength": 23276,
+  "placeholderImageCount": 2,
+  "theme": "grace",
+  "color": "#0F4C81"
+}

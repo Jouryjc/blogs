@@ -12,6 +12,7 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-09-04/gpt-6-astra/gpt-6-astra|GPT‑6 Astra学会边等边干]] · 见 [[agent-runtime]]
 - [[post-to-wechat/2026-08-02/fde-career-guide/article|AI 项目不缺 Demo，缺能把它送进生产的 FDE]] · 见 [[agent-runtime]]
 - [[claude-fable-5-programmers|Claude 5来了，程序员该交出去哪些任务]]
 - [[deepseek-v4-pro-api|DeepSeek-V4-Pro 支持 1M 上下文,可接入 Claude Code]]

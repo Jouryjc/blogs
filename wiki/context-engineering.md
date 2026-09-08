@@ -11,6 +11,8 @@ tags:
 
 ## 文章
 
+- [[post-to-wechat/2026-09-02/cross-model-kv-sharing/cross-model-kv-sharing|模型切换别再重算长上下文：KV Cache 开始跨模型接力]] · 见 [[agent-runtime]] / [[prompt-caching]]
+- [[post-to-wechat/2026-08-30/llm-cache-four-layers/llm-cache-four-layers|同样叫 Cache：前三层失效会变贵，最后一层命中却可能答错]] · 见 [[agent-runtime]] / [[prompt-caching]] / [[rag]]
 - [[post-to-wechat/2026-08-22/codex-harness/codex-harness|别只盯着模型：Codex 难抄的是这套 Harness]] · 见 [[agent-runtime]] / [[agent-design]]
 - [[post-to-wechat/2026-08-21/lmcache-kv-cache/lmcache-kv-cache|Agent 上下文越跑越贵，先把 KV Cache 从推理进程里拆出来]] · 见 [[agent-runtime]] / [[prompt-caching]]
 - [[post-to-wechat/2026-08-10/context-graph-roadmap/context-graph-roadmap|RAG 找到 Redis，却答不出谁会挂：用 Context Graph 接起依赖链]] · 见 [[rag]] / [[knowledge-base]]
@@ -28,6 +30,10 @@ tags:
 
 ## 原始素材
 
+- [[post-to-wechat/2026-09-02/cross-model-kv-sharing/source/paper-source|跨模型 KV 共享论文事实快照]] · 见 [[agent-runtime]] / [[prompt-caching]]
+- [[post-to-wechat/2026-09-02/cross-model-kv-sharing/source/research-notes|跨模型 KV 共享工程解读研究笔记]] · 见 [[agent-runtime]] / [[prompt-caching]]
+- [[x-to-markdown/avichawla/2093265776266637739/kv-prefix-prompt-and-semantic-caching-in-llms-clearly-exp|Avi：KV、Prefix、Prompt 与 Semantic Cache（X Article）]] · 见 [[agent-runtime]] / [[prompt-caching]] / [[rag]]
+- [[post-to-wechat/2026-08-30/llm-cache-four-layers/source/research-notes|LLM 四层缓存研究笔记]] · 见 [[agent-runtime]] / [[prompt-caching]] / [[rag]]
 - [[post-to-wechat/2026-08-22/codex-harness/source/research-notes|Codex Harness 架构研究笔记]] · 见 [[agent-runtime]] / [[agent-design]]
 - [[post-to-wechat/2026-08-22/codex-harness/source/official-snapshot|Codex Harness 官方事实快照]] · 见 [[agent-runtime]] / [[agent-design]]
 - [[post-to-wechat/2026-08-22/codex-harness/source/source-manifest|Codex Harness 一手资料清单]] · 见 [[agent-runtime]] / [[agent-design]]

@@ -76,10 +76,10 @@ post-to-wechat/2026-08-30/agentjudgebench-llm-judge/
 
 ## 知识库接入
 
-- 主文标签：`type/article`、`topic/agent-design`、`topic/agent-runtime`、`topic/agent-safety`、`platform/wechat`。
+- 主文标签：`type/article`、`topic/agent-design`、`topic/agent-runtime`、`platform/wechat`。
 - 论文来源笔记标签：`type/source` 与相同三个 topic 标签。
 - 只在 frontmatter 和 wiki 中写关联，不向公众号正文追加 Obsidian 相关阅读。
-- 更新 `_kb_build/manifest.json`、`wiki/agent-design.md`、`wiki/agent-runtime.md`、`wiki/agent-safety.md` 与 `wiki/INDEX.md`。
+- 更新 `_kb_build/manifest.json`、`wiki/agent-design.md`、`wiki/agent-runtime.md` 与 `wiki/INDEX.md`。
 - 不改动任何既有 raw 正文和当前未跟踪的其他文章目录。
 
 ## 发布与验收

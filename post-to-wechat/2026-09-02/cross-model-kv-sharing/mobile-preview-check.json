@@ -1,0 +1,21 @@
+{
+  "viewportWidth": 430,
+  "scrollWidth": 430,
+  "bodyScrollWidth": 430,
+  "horizontalOverflow": false,
+  "imageCount": 3,
+  "brokenImages": 0,
+  "overflowingElements": 0,
+  "h2Count": 7,
+  "h3Count": 0,
+  "orderedListCount": 1,
+  "orderedItemCount": 5,
+  "unorderedItemCount": 2,
+  "orderedMarkerFailures": 0,
+  "unorderedMarkerFailures": 0,
+  "doubleBulletCount": 0,
+  "placeholderCount": 0,
+  "primaryColorCount": 22,
+  "legacyColorCount": 0,
+  "screenshot": "mobile-preview-430.png"
+}

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "media_id": "GHixSPLvYVluGTAOLz6FeVXgIly_VuLxOsKWMYWHyrK8qaHu2l4dKA5NT1DUgRyx",
+  "title": "给 Agent 判卷，AI 裁判先撞上了结构性天花板",
+  "articleType": "news",
+  "updated": false,
+  "publisher": "wechat-api.ts",
+  "verification": "The publish command uploaded the cover and four inline images; draft/batchget recovered the new media_id after stdout cutoff, then draft/get verified the same draft."
+}
